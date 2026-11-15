@@ -34,15 +34,39 @@ Nothing in the game folder is changed. To remove it, close the game and delete t
 
 ## Building from source
 
-Requirements: Windows 10/11 x64 and Visual Studio 2022 (or newer) with the *Desktop development with C++* workload.
+Requirements: Windows 10/11 x64, Visual Studio 2022 (or newer) with the *Desktop development with C++* workload,
+and Python 3 for packaging.
 
 ```bat
 build.bat
+python package.py 1.0.0
 ```
 
-The script finds Visual Studio with `vswhere`, builds MinHook and Dear ImGui once, then the trainer. Output:
-`build\ShadowOfWarTrainer.dll` and `build\ShadowOfWarTrainer.exe`. Put both next to the contents of `data\`
-(`panel.json`, `signatures.json`, `config.json`, `skin\`, `scripts\`, `data\`) to get a runnable folder.
+`build.bat` finds Visual Studio with `vswhere`, builds MinHook and Dear ImGui once, then the trainer
+(`build\ShadowOfWarTrainer.dll` and `build\ShadowOfWarTrainer.exe`). `package.py` puts the binaries next to the
+contents of `data\` in `release\ShadowOfWarTrainer\`, zips it as `release\ShadowOfWarTrainer_1.0.0.zip` - the same
+layout as the release download - and prints SHA-256 checksums.
+
+## What the trainer does (and does not do)
+
+- `ShadowOfWarTrainer.exe` (`loader/loader.cpp`) starts the game through Steam if needed and loads
+  `ShadowOfWarTrainer.dll` into `ShadowOfWar.exe` with `LoadLibraryW`. It copies the DLL into a `loaded\` folder next to
+  itself first, so the original file is never locked.
+- The DLL (`src/`) draws its panel through a DX11 Present hook (MinHook) and changes the game only in memory: code
+  patches and data edits listed in `data/signatures.json` / `data/panel.json`, and calls to the game's own functions
+  (`src/sow*.cpp`).
+- No network code: the DLL does not link `ws2_32` or any other network library and opens no sockets.
+- Nothing in the game folder is changed. Gear, level, skill and item edits end up in your save because the game saves
+  them itself.
+- Files it writes, all inside its own folder: `trainer.log` (+ `logs\`), `panel_state.json` (switched-on options),
+  `hotkeys.json`, `config.json`, and `data\gear_originals*.json` / `data\loot_templates.json` (gear editor undo data
+  and drop templates).
+- On any game build other than Steam 1.0.8874 (`src/sow.cpp`, `sow_game_supported`) it switches every feature off.
+
+## License
+
+Source-available, **not** open source: you may read it and build it for your own use, but not redistribute it or
+builds of it. See [LICENSE](LICENSE). Official download: https://www.nexusmods.com/middleearthshadowofwar/mods/298
 
 ## Layout
 
