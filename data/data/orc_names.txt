@@ -1,0 +1,238 @@
+# Orc/Olog/Forthog/Easterling first names usable with FactionMember SetName 0x1BC6040(m, hash). hash = exe string hash 0x423E70 of the NameStringID (h=h*0x397+tbl[c], tbl @exe+0x1DB50D0).
+# Text = live localization table [exe+0x2702000] (game language). Columns: hash<TAB>name<TAB>NameTable<TAB>NameStringID
+# Live pool: FM+0xC8 array (stride 0x20: +0 NameTable rec, +8/+0x10 u32 hash vector) = the hashes the random name picker 0x1B5C894 uses.
+225200A1	Flak	Orc	OrcNameGen1st_004
+225200A6	Kûga	Orc	OrcNameGen1st_009
+22520434	Lorm	Orc	OrcNameGen1st_010
+22520436	Mogg	Orc	OrcNameGen1st_012
+22520437	Orthog	Orc	OrcNameGen1st_013
+2252043B	Târz	Orc	OrcNameGen1st_017
+2252043C	Ûgakûga	Orc	OrcNameGen1st_018
+2252043D	Zâthra	Orc	OrcNameGen1st_019
+225207CB	Amûg	Orc	OrcNameGen1st_020
+225207CE	Bolg	Orc	OrcNameGen1st_023
+225207CF	Borgu	Orc	OrcNameGen1st_024
+225207D0	Bûbol	Orc	OrcNameGen1st_025
+225207D4	Glûk	Orc	OrcNameGen1st_029
+22520B62	Golm	Orc	OrcNameGen1st_030
+22520B65	Hork	Orc	OrcNameGen1st_033
+22520B66	Hûra	Orc	OrcNameGen1st_034
+22520B67	Khrosh	Orc	OrcNameGen1st_035
+22520B68	Krûk	Orc	OrcNameGen1st_036
+22520B6B	Lûga	Orc	OrcNameGen1st_039
+22520EFC	Ogbur	Orc	OrcNameGen1st_043
+22520EFE	Prâk	Orc	OrcNameGen1st_045
+22520EFF	Pushkrimp	Orc	OrcNameGen1st_046
+22520F00	Râsh	Orc	OrcNameGen1st_047
+22520F01	Ronk	Orc	OrcNameGen1st_048
+22521290	Skak	Orc	OrcNameGen1st_050
+22521292	Skûn	Orc	OrcNameGen1st_052
+22521293	Stakûga	Orc	OrcNameGen1st_053
+22521295	Thrak	Orc	OrcNameGen1st_055
+22521628	Bûth	Orc	OrcNameGen1st_061
+2252162A	Horza	Orc	OrcNameGen1st_063
+2252162B	Hoshgrish	Orc	OrcNameGen1st_064
+2252162F	Mozû	Orc	OrcNameGen1st_068
+225219BE	Pâsh	Orc	OrcNameGen1st_070
+225219BF	Pûg	Orc	OrcNameGen1st_071
+225219C1	Shaká	Orc	OrcNameGen1st_073
+225219C2	Skoth	Orc	OrcNameGen1st_074
+225219C4	Takra	Orc	OrcNameGen1st_076
+22521D55	Ashgarn	Orc	OrcNameGen1st_080
+22521D58	Ghûra	Orc	OrcNameGen1st_083
+22521D59	Grisha	Orc	OrcNameGen1st_084
+22521D5B	Ishmoz	Orc	OrcNameGen1st_086
+22521D5C	Krakhorn	Orc	OrcNameGen1st_087
+22521D5D	Krímp	Orc	OrcNameGen1st_088
+225220EC	Mâku	Orc	OrcNameGen1st_090
+225220ED	Nákra	Orc	OrcNameGen1st_091
+225220EE	Narûg	Orc	OrcNameGen1st_092
+225220F0	Nazû	Orc	OrcNameGen1st_094
+225220F1	Norsko	Orc	OrcNameGen1st_095
+225220F2	Norûk	Orc	OrcNameGen1st_096
+225220F4	Olrok	Orc	OrcNameGen1st_098
+225EE3AE	Rûg	Orc	OrcNameGen1st_100
+225EE3AF	Tûgog	Orc	OrcNameGen1st_101
+225EE3B0	Tûkâ	Orc	OrcNameGen1st_102
+225EE3B2	Ûkbûk	Orc	OrcNameGen1st_104
+225EE3B7	Zunn	Orc	OrcNameGen1st_109
+225EE746	Dûsh	Orc	OrcNameGen1st_111
+225EE74C	Zûgor	Orc	OrcNameGen1st_117
+225EEADC	Snafû	Orc	OrcNameGen1st_120
+225EEADD	Koth	Orc	OrcNameGen1st_121
+225EEADE	Ratak	Orc	OrcNameGen1st_122
+225EEADF	Tûhorn	Orc	OrcNameGen1st_123
+225EEAE0	Bagga	Orc	OrcNameGen1st_124
+225EEAE1	Shag	Orc	OrcNameGen1st_125
+225EEAE2	Flogg	Orc	OrcNameGen1st_126
+225EEAE3	Mûg	Orc	OrcNameGen1st_127
+225EEAE4	Gûnd	Orc	OrcNameGen1st_128
+225EEAE5	Muzu	Orc	OrcNameGen1st_129
+225EEE73	Ugol	Orc	OrcNameGen1st_130
+225EEE74	Ûshak	Orc	OrcNameGen1st_131
+225EEE75	Dûgz	Orc	OrcNameGen1st_132
+225EEE76	Bork	Orc	OrcNameGen1st_133
+225EEE78	Fûbar	Orc	OrcNameGen1st_135
+225EEE79	Garl	Orc	OrcNameGen1st_136
+225EEE7A	Ghash	Orc	OrcNameGen1st_137
+225EEE7C	Grom	Orc	OrcNameGen1st_139
+225EF20A	Gruk	Orc	OrcNameGen1st_140
+225EF20B	Gubu	Orc	OrcNameGen1st_141
+225EF20C	Hoglik	Orc	OrcNameGen1st_142
+225EF20D	Ogg	Orc	OrcNameGen1st_143
+225EF20E	Zuka	Orc	OrcNameGen1st_144
+C2EF0042	Az-Adar	Olog	OlogNameGen1st_000
+C2EF0044	Az-Laar	Olog	OlogNameGen1st_002
+C2EF0045	Az-Tarmo	Olog	OlogNameGen1st_003
+C2EF0046	Az-Bror	Olog	OlogNameGen1st_004
+C2EF0047	Az-Rans	Olog	OlogNameGen1st_005
+C2EF0048	Az-Grels	Olog	OlogNameGen1st_006
+C2EF0049	Az-Teru	Olog	OlogNameGen1st_007
+C2EF004A	Az-Agur	Olog	OlogNameGen1st_008
+C2EF03DE	Ar-Pratu	Olog	OlogNameGen1st_015
+C2EF03E0	Ar-Henok	Olog	OlogNameGen1st_017
+C2EF03E1	Ar-Kaius	Olog	OlogNameGen1st_018
+C2EF03E2	Ar-Saku	Olog	OlogNameGen1st_019
+C2EF0771	Ar-Baruk	Olog	OlogNameGen1st_021
+C2EF0772	Ar-Karo	Olog	OlogNameGen1st_022
+C2EF0774	Ar-Beka	Olog	OlogNameGen1st_024
+C2EF0775	Ar-Janek	Olog	OlogNameGen1st_025
+C2EF0776	Ar-Hissu	Olog	OlogNameGen1st_026
+C2EF0777	Ar-Benu	Olog	OlogNameGen1st_027
+C2EF0779	Ar-Gul	Olog	OlogNameGen1st_029
+C2EF0B07	Ur-Hakon	Olog	OlogNameGen1st_030
+C2EF0B08	Ur-Dag	Olog	OlogNameGen1st_031
+C2EF0B0B	Ur-Lisak	Olog	OlogNameGen1st_034
+C2EF0B0C	Ur-Kalmar	Olog	OlogNameGen1st_035
+C2EF0B0D	Ur-Benu	Olog	OlogNameGen1st_036
+C2EF0B10	Ur-Gram	Olog	OlogNameGen1st_039
+C2EF0E9E	Ur-Lasu	Olog	OlogNameGen1st_040
+C2EF0E9F	Ur-Masi	Olog	OlogNameGen1st_041
+C2EF0EA1	Ur-Edin	Olog	OlogNameGen1st_043
+C2EF0EA2	Ur-Heku	Olog	OlogNameGen1st_044
+C2EF0EA3	Az-Gang	Olog	OlogNameGen1st_045
+B9AF6C43	Forthog	Forthog	OrcName_Unique_Forthog
+520A54C7	Abraiz	Easterling	Merc_Name_Abraiz
+DC74524B	Adaal	Easterling	Merc_Name_Adaal
+7CF7758F	Amdûr	Easterling	Merc_Name_Amdur
+00AD63EA	Balakhôr	Easterling	Merc_Name_Balakhor
+3E689705	Blothára	Easterling	Merc_Name_Blothara
+BB44C5F4	Boshchi	Easterling	Merc_Name_Boshchi
+C35190BB	Daarul	Easterling	Merc_Name_Daarul
+CE7E7E72	Dhani	Easterling	Merc_Name_Dhani
+FA01542B	Drúgred	Easterling	Merc_Name_Drugred
+578F24F9	Eeran	Easterling	Merc_Name_Eeran
+797FB738	Ghalaar	Easterling	Merc_Name_Ghalaar
+7541126E	Górkov	Easterling	Merc_Name_Gorkov
+D61B1981	Graaz	Easterling	Merc_Name_Graaz
+CB6BAC6A	Hasiin	Easterling	Merc_Name_Hasiin
+4E0588DA	Himmat	Easterling	Merc_Name_Himmat
+3DD664B2	Jaan	Easterling	Merc_Name_Jaan
+3418394E	Jangchi	Easterling	Merc_Name_Jangchi
+3DD6A1B7	Jarl	Easterling	Merc_Name_Jarl
+B96C8A14	Jodugar	Easterling	Merc_Name_Jodugar
+DA3F27FD	Khalaas	Easterling	Merc_Name_Khalaas
+088249FD	Khamaal	Easterling	Merc_Name_Khamaal
+6C73BC35	Khas	Easterling	Merc_Name_Khas
+729F80B0	Khilich	Easterling	Merc_Name_Khilich
+2AF39EB5	Khorakhól	Easterling	Merc_Name_Khorakhol
+22EEED09	Lagan	Easterling	Merc_Name_Lagan
+E025D007	Mahmaan	Easterling	Merc_Name_Mahmaan
+367BD5F1	Maraz	Easterling	Merc_Name_Maraz
+367C24D2	Marwa	Easterling	Merc_Name_Marwa
+D3BA7E67	Murad	Easterling	Merc_Name_Murad
+F9A74C49	Nafrati	Easterling	Merc_Name_Nafrati
+F6E305F3	Nahr	Easterling	Merc_Name_Nahr
+F7E4E71C	Nura	Easterling	Merc_Name_Nura
+19E23AF3	Órmanchi	Easterling	Merc_Name_Ormanchi
+AFEF74E9	Raam	Easterling	Merc_Name_Raam
+6F569D85	Rab	Easterling	Merc_Name_Rab
+B0568D7E	Riaz	Easterling	Merc_Name_Riaz
+B0A43992	Rozi	Easterling	Merc_Name_Rozi
+A7F5FEB7	Sahil	Easterling	Merc_Name_Sahil
+0E97662E	Sergar	Easterling	Merc_Name_Sergar
+EB71A57B	Shadi	Easterling	Merc_Name_Shadi
+EB71B3D2	Shahd	Easterling	Merc_name_Shahd
+FDCE8326	Sherkóz	Easterling	Merc_Name_Sherkoz
+ADDA77E4	Sûhalar	Easterling	Merc_Name_Suhalar
+E6BDAFDF	Tabî-kohin	Easterling	Merc_Name_Tabikohin
+0C75D20C	Taha	Easterling	Merc_Name_Taha
+25A39A75	Tahaar	Easterling	Merc_Name_Tahaar
+DEB066BC	Talath	Easterling	Merc_Name_Talath
+B2E679E3	Tezlik	Easterling	Merc_Name_Tezlik
+CB7E43F1	Ulugh	Easterling	Merc_Name_Ulugh
+E1113B2F	Urush	Easterling	Merc_Name_Urush
+B8ACBF8D	Vairat	Easterling	Merc_Name_Vairat
+E9EDCC06	Waidad	Easterling	Merc_Name_Waidad
+F3C5631B	Yaan	Easterling	Merc_Name_Yaan
+AB3A5AED	Yakuub	Easterling	Merc_Name_Yakuub
+1C8500A9	Yaseef	Easterling	Merc_Name_Yaseef
+0DE8CB3D	Zaahir	Easterling	Merc_Name_Zaahir
+2208A903	Zaki	Easterling	Merc_Name_Zaki
+# --- string ids present in the localization table but NOT in any Faction/NameTable (retired / special names; work with SetName but the random picker never chooses them)
+2252009D	Akoth	(not in NameTable)	OrcNameGen1st_000
+2252009E	Bagabûg	(not in NameTable)	OrcNameGen1st_001
+2252009F	Brogg	(not in NameTable)	OrcNameGen1st_002
+225200A0	Dûshrat	(not in NameTable)	OrcNameGen1st_003
+225200A2	Ghâm	(not in NameTable)	OrcNameGen1st_005
+225200A3	Gorfel	(not in NameTable)	OrcNameGen1st_006
+225200A4	Horhog	(not in NameTable)	OrcNameGen1st_007
+225200A5	Kothûg	(not in NameTable)	OrcNameGen1st_008
+22520435	Malmûg	(not in NameTable)	OrcNameGen1st_011
+22520438	Pûgrish	(not in NameTable)	OrcNameGen1st_014
+22520439	Ratlûg	(not in NameTable)	OrcNameGen1st_015
+2252043A	Shágflak	(not in NameTable)	OrcNameGen1st_016
+225207CC	Azgrom	(not in NameTable)	OrcNameGen1st_021
+225207CD	Barfa	(not in NameTable)	OrcNameGen1st_022
+225207D1	Dharg	(not in NameTable)	OrcNameGen1st_026
+225207D2	Felgrat	(not in NameTable)	OrcNameGen1st_027
+225207D3	Folgûm	(not in NameTable)	OrcNameGen1st_028
+22520B63	Gorgûm	(not in NameTable)	OrcNameGen1st_031
+22520B64	Grûblik	(not in NameTable)	OrcNameGen1st_032
+22520B69	Kugáluga	(not in NameTable)	OrcNameGen1st_037
+22520B6A	Lamlûg	(not in NameTable)	OrcNameGen1st_038
+22520EF9	Mûggrish	(not in NameTable)	OrcNameGen1st_040
+22520EFA	Mûglûk	(not in NameTable)	OrcNameGen1st_041
+22520EFB	Mormog	(not in NameTable)	OrcNameGen1st_042
+22520EFD	Olgoth	(not in NameTable)	OrcNameGen1st_044
+22520F02	Rûkdûg	(not in NameTable)	OrcNameGen1st_049
+22521291	Skog	(not in NameTable)	OrcNameGen1st_051
+22521294	Thakrak	(not in NameTable)	OrcNameGen1st_054
+22521296	Torz	(not in NameTable)	OrcNameGen1st_056
+22521297	Ûggû	(not in NameTable)	OrcNameGen1st_057
+22521298	Ûkrom	(not in NameTable)	OrcNameGen1st_058
+22521299	Zog	(not in NameTable)	OrcNameGen1st_059
+22521627	Azdûsh	(not in NameTable)	OrcNameGen1st_060
+22521629	Gûndza	(not in NameTable)	OrcNameGen1st_062
+2252162C	Kâka	(not in NameTable)	OrcNameGen1st_065
+2252162D	Latbag	(not in NameTable)	OrcNameGen1st_066
+2252162E	Mûzglob	(not in NameTable)	OrcNameGen1st_067
+22521630	Otha	(not in NameTable)	OrcNameGen1st_069
+225219C0	Ratanák	(not in NameTable)	OrcNameGen1st_072
+225219C3	Snagog	(not in NameTable)	OrcNameGen1st_075
+225219C5	Tûmhorn	(not in NameTable)	OrcNameGen1st_077
+225219C6	Ûshgol	(not in NameTable)	OrcNameGen1st_078
+225219C7	Ûthûg	(not in NameTable)	OrcNameGen1st_079
+22521D56	Blorg	(not in NameTable)	OrcNameGen1st_081
+22521D57	Feldûsh	(not in NameTable)	OrcNameGen1st_082
+22521D5A	Hûmgrat	(not in NameTable)	OrcNameGen1st_085
+22521D5E	Lûgnak	(not in NameTable)	OrcNameGen1st_089
+225220EF	Nazdûg	(not in NameTable)	OrcNameGen1st_093
+225220F3	Ogthrak	(not in NameTable)	OrcNameGen1st_097
+225220F5	Pígug	(not in NameTable)	OrcNameGen1st_099
+225EE3B1	Tûmûg	(not in NameTable)	OrcNameGen1st_103
+225EE3B3	Ûkshak	(not in NameTable)	OrcNameGen1st_105
+225EE3B4	Ûshbaka	(not in NameTable)	OrcNameGen1st_106
+225EE3B5	Zogdûsh	(not in NameTable)	OrcNameGen1st_107
+225EE3B6	Zûmug	(not in NameTable)	OrcNameGen1st_108
+225EE745	Dûgza	(not in NameTable)	OrcNameGen1st_110
+225EE747	Hoshû	(not in NameTable)	OrcNameGen1st_112
+225EE748	Ishghra	(not in NameTable)	OrcNameGen1st_113
+225EE749	Lûgdash	(not in NameTable)	OrcNameGen1st_114
+225EE74A	Mozfel	(not in NameTable)	OrcNameGen1st_115
+225EE74B	Názkûga	(not in NameTable)	OrcNameGen1st_116
+225EE74D	Gimûb	(not in NameTable)	OrcNameGen1st_118
+225EE74E	Goroth	(not in NameTable)	OrcNameGen1st_119
+# check: Ratak id 249 hash 225EEADE -> table text Ratak
+# check: Muzu id 262 hash 225EEAE5 -> table text Muzu
+# check: Az-Agur id 297 hash C2EF004A -> table text Az-Agur

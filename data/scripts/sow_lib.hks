@@ -1,0 +1,7 @@
+-- sow_lib.hks - helper library the trainer loads into Shadow of War's own Havok Script VM (sow.cpp ensure_lib).
+-- Reloaded automatically when this file changes or the game's VM is recreated. Everything goes through the game's
+-- own script API (CCharacter / CPlayerObj / System / ...); no memory editing here.
+WB_LIB = 1
+WB = WB or {}
+
+function WB.P() return Engine:GetActivePlayer() end

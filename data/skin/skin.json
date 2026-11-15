@@ -1,0 +1,361 @@
+{
+ "version": 1,
+ "style": "shadowofwar",
+ "pieces": {
+  "tab": {
+   "kind": "3slice",
+   "w": 224,
+   "h": 47,
+   "l": 14,
+   "r": 14
+  },
+  "tab_active": {
+   "kind": "3slice",
+   "w": 233,
+   "h": 46,
+   "l": 16,
+   "r": 16
+  },
+  "row": {
+   "kind": "3slice",
+   "w": 696,
+   "h": 43,
+   "l": 20,
+   "r": 22
+  },
+  "check_off": {
+   "kind": "image",
+   "w": 34,
+   "h": 33
+  },
+  "check_on": {
+   "kind": "image",
+   "w": 34,
+   "h": 33
+  },
+  "switch_off": {
+   "kind": "image",
+   "w": 62,
+   "h": 32
+  },
+  "switch_on": {
+   "kind": "image",
+   "w": 62,
+   "h": 32
+  },
+  "knob": {
+   "kind": "image",
+   "w": 26,
+   "h": 27
+  },
+  "sec_icon": {
+   "kind": "image",
+   "w": 39,
+   "h": 33
+  },
+  "spin": {
+   "kind": "3slice",
+   "w": 106,
+   "h": 34,
+   "l": 8,
+   "r": 26
+  },
+  "field": {
+   "kind": "3slice",
+   "w": 303,
+   "h": 44,
+   "l": 12,
+   "r": 12
+  },
+  "search": {
+   "kind": "3slice",
+   "w": 303,
+   "h": 44,
+   "l": 12,
+   "r": 52
+  },
+  "track_fill": {
+   "kind": "3slice",
+   "w": 70,
+   "h": 16,
+   "l": 8,
+   "r": 0
+  },
+  "track_empty": {
+   "kind": "3slice",
+   "w": 110,
+   "h": 16,
+   "l": 0,
+   "r": 8
+  },
+  "button": {
+   "kind": "3slice",
+   "w": 159,
+   "h": 32,
+   "l": 14,
+   "r": 14
+  },
+  "button_hi": {
+   "kind": "3slice",
+   "w": 140,
+   "h": 33,
+   "l": 14,
+   "r": 14
+  },
+  "sec_line": {
+   "kind": "3slice",
+   "w": 494,
+   "h": 15,
+   "l": 90,
+   "r": 90
+  },
+  "ico_home": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_favorites": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_player": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_combat": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_skills": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_followers": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_army": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_world": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_travel": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_inventory": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_gear": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ico_settings": {
+   "kind": "image",
+   "w": 42,
+   "h": 38
+  },
+  "ri_shield": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_health": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_focus": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_rage": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_fall": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_stealth": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_might": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_speed": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_jump": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_skill": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_mirian": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_skull": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_gate": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "ri_captain": {
+   "kind": "image",
+   "w": 36,
+   "h": 36
+  },
+  "frame": {
+   "kind": "image",
+   "w": 1122,
+   "h": 1402
+  }
+ },
+ "layout": {
+  "ref_w": 1122,
+  "ref_h": 1402,
+  "tabs_x": 61,
+  "tabs_y": 274,
+  "tab_step": 49.4,
+  "tab_w": 230,
+  "tab_h": 46,
+  "tab_icon_cx": 38,
+  "tab_icon_size": 38,
+  "tab_text_x": 76,
+  "tabs_bottom": 866,
+  "tab_icons": {
+   "HOME": "ico_home",
+   "FAVORITES": "ico_favorites",
+   "PLAYER": "ico_player",
+   "COMBAT": "ico_combat",
+   "SKILLS": "ico_skills",
+   "FOLLOWERS": "ico_followers",
+   "ARMY": "ico_army",
+   "WORLD": "ico_world",
+   "TRAVEL": "ico_travel",
+   "INVENTORY": "ico_inventory",
+   "GEAR": "ico_gear",
+   "SETTINGS": "ico_settings",
+   "BRIDGE": "ico_settings"
+  },
+  "row_icons": [
+   "shield",
+   "health",
+   "focus",
+   "rage",
+   "fall",
+   "stealth",
+   "might",
+   "speed",
+   "jump",
+   "skill",
+   "mirian",
+   "skull",
+   "gate",
+   "captain"
+  ],
+  "content": [
+   312,
+   404,
+   1054,
+   1152
+  ],
+  "rows_top": 406,
+  "rows_pad_x": 14,
+  "title_box": [
+   560,
+   286,
+   792,
+   334
+  ],
+  "search_box": [
+   718,
+   359,
+   1021,
+   403
+  ],
+  "win_min": [
+   964,
+   156,
+   1020,
+   209
+  ],
+  "win_close": [
+   1030,
+   156,
+   1085,
+   209
+  ],
+  "status_icon": [
+   112,
+   1262,
+   150,
+   1300
+  ],
+  "status_text": [
+   158,
+   1258,
+   420,
+   1304
+  ],
+  "version_box": [
+   900,
+   1260,
+   1022,
+   1304
+  ],
+  "row_h": 42,
+  "row_gap": 2,
+  "check": 30,
+  "switch_w": 60,
+  "switch_h": 30,
+  "slider_w": 238,
+  "spin_w": 106,
+  "spin_h": 34,
+  "button_h": 30,
+  "style": {
+   "label": 15591126,
+   "section": 14138506,
+   "tab_text": 15591126,
+   "tab_text_sel": 16777215,
+   "accent": 6021994,
+   "title": 15260866,
+   "status": 4707930,
+   "version": 15591126
+  }
+ }
+}

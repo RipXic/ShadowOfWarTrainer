@@ -1,0 +1,2586 @@
+{
+ "title": "SHADOW OF WAR TRAINER",
+ "tabs": [
+  {
+   "name": "Home",
+   "sections": []
+  },
+  {
+   "name": "Favorites",
+   "sections": []
+  },
+  {
+   "name": "Player",
+   "sections": [
+    {
+     "name": "Survival",
+     "items": [
+      {
+       "id": "health",
+       "label": "Health",
+       "type": "text",
+       "icon": "shield",
+       "desc": "Live from the player object.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.HEALTH",
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "inf_hp",
+       "label": "Infinite Health",
+       "type": "toggle",
+       "icon": "health",
+       "desc": "Talion takes no damage: the game's damage code writes your max health instead of the lowered value (enemies and allies are hit normally). A 10x-a-second refill stays on as a backup.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.HEALTH_LOCK",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.HEALTH_LOCK",
+         "args": {
+          "on": false
+         }
+        },
+        "keep": {
+         "cmd": "SOW.HEALTH",
+         "args": {
+          "fill": true
+         }
+        },
+        "keep_ms": 100
+       }
+      },
+      {
+       "id": "summon_nocd",
+       "label": "No Summon Cooldown",
+       "type": "toggle",
+       "icon": "skill",
+       "desc": "Summon followers / bodyguards and call mounts again right away. Applies to the next summon (a cooldown already running finishes normally).",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.SUMMON_NOCD",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.SUMMON_NOCD",
+         "args": {
+          "on": false
+         }
+        }
+       }
+      },
+      {
+       "id": "heal",
+       "label": "Heal Now",
+       "type": "button",
+       "icon": "health",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.HEALTH",
+        "args": {
+         "fill": true
+        },
+        "button": "Heal",
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Power",
+     "items": [
+      {
+       "id": "dev_focus",
+       "label": "Infinite Focus",
+       "type": "toggle",
+       "icon": "focus",
+       "desc": "The game's own developer switch for Focus (bow slow-motion).",
+       "action": {
+        "kind": "mem",
+        "addr": "sig:devBool+0",
+        "vtype": "u8",
+        "on": 1,
+        "off": 0,
+        "freeze": true
+       }
+      },
+      {
+       "id": "dev_might",
+       "label": "Infinite Might",
+       "type": "toggle",
+       "icon": "might",
+       "style": "switch",
+       "desc": "The game's own developer switch for Might (executions, combos).",
+       "action": {
+        "kind": "mem",
+        "addr": "sig:devBool+1",
+        "vtype": "u8",
+        "on": 1,
+        "off": 0,
+        "freeze": true
+       }
+      },
+      {
+       "id": "might_no_drain",
+       "label": "Might Never Drains (no full-Might sound)",
+       "type": "toggle",
+       "icon": "might",
+       "style": "switch",
+       "desc": "Might stays full: attacks no longer spend it, so it never refills - which removes the growl/chime the game plays every time Might fills back up (that sound came from Infinite Might refilling). One-byte patch in the game's Might setter. Use it instead of, or together with, Infinite Might.",
+       "action": {
+        "kind": "patch",
+        "addr": "sig:mightNoDrain",
+        "bytes": "10",
+        "expect": "5D"
+       }
+      },
+      {
+       "id": "dev_elfshot",
+       "label": "Infinite Elf Shot",
+       "type": "toggle",
+       "icon": "speed",
+       "desc": "The game's own developer switch for Elf-Shot.",
+       "action": {
+        "kind": "mem",
+        "addr": "sig:devBool+2",
+        "vtype": "u8",
+        "on": 1,
+        "off": 0,
+        "freeze": true
+       }
+      },
+      {
+       "id": "dev_wrath",
+       "label": "Infinite Elven Rage",
+       "type": "toggle",
+       "icon": "rage",
+       "desc": "The game's own developer switch for Wrath / Elven Rage.",
+       "action": {
+        "kind": "mem",
+        "addr": "sig:devBool+3",
+        "vtype": "u8",
+        "on": 1,
+        "off": 0,
+        "freeze": true
+       }
+      },
+      {
+       "id": "rage_refill",
+       "label": "Elven Rage Refills After Use",
+       "type": "toggle",
+       "icon": "rage",
+       "desc": "Elven Rage runs its normal length (the Wrath meter drains), then the meter fills up again as soon as rage ends, ready for the next one. Use this INSTEAD of Infinite Elven Rage (keep that one off - it keeps rage on until you switch it off).",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.RAGE_REFILL",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.RAGE_REFILL",
+         "args": {
+          "on": false
+         }
+        }
+       }
+      },
+      {
+       "id": "arrows",
+       "label": "Arrows",
+       "type": "text",
+       "icon": "jump",
+       "action": {
+        "kind": "hks",
+        "get": "WB.P():GetAmmoAmount() .. ' / ' .. WB.P():GetAmmoMax()"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Wraith Chain",
+     "items": [
+      {
+       "id": "chain_aimfree",
+       "label": "Chain Without Aiming",
+       "type": "toggle",
+       "icon": "stealth",
+       "desc": "Chain targets are picked all around you (360 degrees, up to 25 m, closest first), not only where the camera faces. Also widens normal melee targeting, which the chain uses. The game reads these rules once when it starts, so after turning this ON, restart the game for it to take effect.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.CHAIN_TWEAK",
+         "args": {
+          "aim_free": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.CHAIN_TWEAK",
+         "args": {
+          "aim_free": false
+         }
+        }
+       }
+      },
+      {
+       "id": "chain_noslow",
+       "label": "No Chain Slow-Motion",
+       "type": "toggle",
+       "icon": "stealth",
+       "desc": "Celebrimbor's chain runs at full speed: the world and the spirit are no longer slowed while he jumps from orc to orc, and stealth / execution kills lose their slow-motion. Talion still holds still while the spirit chains, as the game intends.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.CHAIN_TWEAK",
+         "args": {
+          "no_slowmo": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.CHAIN_TWEAK",
+         "args": {
+          "no_slowmo": false
+         }
+        }
+       }
+      },
+      {
+       "id": "chain_fast",
+       "label": "Fast Chain",
+       "type": "toggle",
+       "icon": "stealth",
+       "desc": "The camera fly to the next target is 4x quicker. With No Chain Slow-Motion on, the whole chain plays at full speed.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.CHAIN_TWEAK",
+         "args": {
+          "fast": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.CHAIN_TWEAK",
+         "args": {
+          "fast": false
+         }
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Skills",
+   "sections": [
+    {
+     "name": "Progression",
+     "items": [
+      {
+       "id": "level",
+       "label": "Level",
+       "type": "int",
+       "min": 1,
+       "max": 80,
+       "icon": "skull",
+       "desc": "Talion's level through the game's own level setter (level-up rewards included; capped at the game's table, 80).",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.LEVEL",
+         "field": "level"
+        },
+        "set": {
+         "cmd": "SOW.LEVEL",
+         "args": {
+          "set": "{v}"
+         }
+        }
+       }
+      },
+      {
+       "id": "skill_points",
+       "label": "Skill Points",
+       "type": "int",
+       "min": 0,
+       "max": 9999,
+       "icon": "skill",
+       "desc": "Live count through the game's inventory. Type a number to set it; L = keep it there (infinite skill points).",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "SkillPoint"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "SkillPoint",
+          "value": "{v}"
+         }
+        }
+       }
+      },
+      {
+       "id": "sp_add10",
+       "label": "Add 10 Skill Points",
+       "type": "button",
+       "icon": "skill",
+       "action": {
+        "kind": "bridge",
+        "button": "+10",
+        "cmd": "SOW.ITEM_ADD",
+        "args": {
+         "name": "SkillPoint",
+         "count": 10
+        },
+        "quiet": false
+       }
+      },
+      {
+       "id": "mirian",
+       "label": "Mirian",
+       "type": "int",
+       "min": 0,
+       "max": 99999999,
+       "icon": "mirian",
+       "desc": "Live count through the game's inventory. Type a number to set it; L = keep it there (infinite Mirian).",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "PC_Mirian"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "PC_Mirian",
+          "value": "{v}"
+         }
+        }
+       }
+      },
+      {
+       "id": "mirian_add",
+       "label": "Add 100,000 Mirian",
+       "type": "button",
+       "icon": "mirian",
+       "action": {
+        "kind": "bridge",
+        "button": "+100k",
+        "cmd": "SOW.ITEM_ADD",
+        "args": {
+         "name": "PC_Mirian",
+         "count": 100000
+        },
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Items",
+     "items": [
+      {
+       "id": "give_item",
+       "label": "Give Item",
+       "type": "input",
+       "icon": "captain",
+       "desc": "Any of the game's 5618 item records by exact name, e.g. Gem_Blade_5Wondrous, Runegem_Red_Dmg_5Wondrous, Runegem_Green_Health_5Wondrous, Runegem_White_Resource_5Wondrous, XP_Boost, SkillPoint. Full list: research\\db\\Inventory_Items.txt",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ITEM_ADD",
+        "args": {
+         "name": "{text}",
+         "count": 1
+        },
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Skill Tree",
+     "items": [
+      {
+       "id": "multi_skill",
+       "label": "Choose Multiple Skills",
+       "type": "toggle",
+       "icon": "skill",
+       "desc": "Activating an upgrade no longer switches the other upgrades of that skill off (one-byte patch in the game's skill switcher). Keep this ON while you use the upgrade buttons below and when you activate upgrades in the game's skill menu.",
+       "action": {
+        "kind": "patch",
+        "addr": "sig:multiSkill",
+        "bytes": "EB",
+        "expect": "74"
+       }
+      },
+      {
+       "id": "skill_compat",
+       "label": "Upgrades Work Together (Shadow Dominate fix)",
+       "type": "toggle",
+       "icon": "skill",
+       "desc": "With every upgrade active, some upgrades block each other. Fixed so far: Shadow Dominate did nothing because owning the Shadow Pull upgrade switched off its dash-to-target moves. Only Dominate's own check is removed; Shadow Strike and Shadow Strike Kill keep their normal tap/hold behaviour. In-memory game data, re-applied after every launch.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.SKILL_COMPAT",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.SKILL_COMPAT",
+         "args": {
+          "on": false
+         }
+        },
+        "keep": {
+         "cmd": "SOW.SKILL_COMPAT",
+         "args": {
+          "on": true
+         }
+        },
+        "keep_ms": 10000
+       }
+      },
+      {
+       "id": "skill_menu_unlock",
+       "label": "Unlock All Skills in the Menu",
+       "type": "toggle",
+       "icon": "skill",
+       "desc": "The skill menu lets you buy every skill now: story-locked ones ('Unlocked by playing Story Quests'), ones above your level and ones missing prerequisites. You buy them with skill points and the game grants them its own way. From the 'Unlock All Skills' CT.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.SKILL_MENU_UNLOCK",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.SKILL_MENU_UNLOCK",
+         "args": {
+          "on": false
+         }
+        }
+       }
+      },
+      {
+       "id": "skills_all",
+       "label": "Activate All Upgrades",
+       "type": "button",
+       "icon": "skill",
+       "desc": "Every Talion skill and upgrade in the skill menu, owned and active at the same time, including the story-unlocked ones (Shadow Strider, Dominate, Death Threat ...) and the 6 Prestige skills (set their ranks below). Gives the game's own skill items; no story or quest flags are touched. Skips cut content the game never finished. Needs Choose Multiple Skills ON. Some upgrades are alternative versions of one move - the game still plays one of them per use.",
+       "action": {
+        "kind": "bridge",
+        "button": "ALL",
+        "cmd": "SOW.SKILLS_ALL",
+        "args": {
+         "buy_missing": true,
+         "prestige": true
+        },
+        "quiet": false
+       }
+      },
+      {
+       "id": "skills_reactivate",
+       "label": "Re-activate Swapped Upgrades",
+       "type": "button",
+       "icon": "skill",
+       "desc": "Turns back on every upgrade you already bought that was switched off earlier (buys nothing). Needs Choose Multiple Skills ON.",
+       "action": {
+        "kind": "bridge",
+        "button": "RESTORE",
+        "cmd": "SOW.SKILLS_ALL",
+        "args": {
+         "buy_missing": false
+        },
+        "quiet": false
+       }
+      },
+      {
+       "id": "raise_dead",
+       "label": "Raise the Dead (Dark Talion) - see warning",
+       "type": "toggle",
+       "icon": "skill",
+       "desc": "The end-game Raise Dead skill now, without finishing the story. Puts Raise Dead + its 3 upgrades (Undying Loyalty, Death Troll, Undying Beast) in the Story row of the skill menu, gives the skill items, and turns on the game's own Dark Talion state that the ability needs (Raise Dead does not fire without it, even with the attack gates opened). Raises everything: grunts, Ologs, sappers, enemy AND your captains (as followers), every creature (caragors, graugs, spiders, fell beasts...), up to 30 per kind per cast, decapitated bodies too (heads still fly off; beheaded captains can come back in the Nemesis system). Use: fill Might, then press [T] near fallen enemies. Isildur's Ring (Raise Dead radius) now works too. Story progress is not changed. Re-applied after every load. WARNING: Raise Dead only works in the game's own Dark Talion state, so this toggle turns it on. Dark Talion changes other powers: Elven Rage can switch to Dark Talion's version (floating spirit swords that get stuck and do nothing) or play plain, the stuck swords were undead Gondorian soldiers without bodies: the trainer now loads their bodies (except during story missions, which use their own character set), so the Gondorian Wights gear effect summons real soldiers. The trainer tries to keep Celebrimbor's Elven Rage; if rage still misbehaves, turn Raise the Dead OFF while you use Elven Rage.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.RAISE_DEAD",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.RAISE_DEAD",
+         "args": {
+          "on": false
+         }
+        },
+        "keep": {
+         "cmd": "SOW.RAISE_DEAD",
+         "args": {
+          "on": true
+         }
+        },
+        "keep_ms": 5000
+       }
+      }
+     ]
+    },
+    {
+     "name": "Prestige",
+     "items": [
+      {
+       "id": "prestige_sword",
+       "label": "Sword Prestige (Might gain)",
+       "type": "int",
+       "min": 0,
+       "max": 100,
+       "icon": "might",
+       "desc": "Post-game Prestige ranks without finishing the story: the game's own PS_1Sword_Prestige_SKILL items, one per rank (max 100). +2.5% Might gain at rank 1, +35% at 50, +50% at 100.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "PS_1Sword_Prestige_SKILL"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "PS_1Sword_Prestige_SKILL",
+          "value": "{v}",
+          "each": true
+         }
+        }
+       }
+      },
+      {
+       "id": "prestige_dagger",
+       "label": "Dagger Prestige (crit damage)",
+       "type": "int",
+       "min": 0,
+       "max": 100,
+       "icon": "fall",
+       "desc": "+2.5% critical damage at rank 1, +35% at 50, +50% at 100.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "PS_2Dagger_Prestige_SKILL"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "PS_2Dagger_Prestige_SKILL",
+          "value": "{v}",
+          "each": true
+         }
+        }
+       }
+      },
+      {
+       "id": "prestige_bow",
+       "label": "Bow Prestige (Focus on hit)",
+       "type": "int",
+       "min": 0,
+       "max": 100,
+       "icon": "focus",
+       "desc": "Focus gained on bow hits: 1 at rank 1, 14 at 50, 20 at 100.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "PS_3Bow_Prestige_SKILL"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "PS_3Bow_Prestige_SKILL",
+          "value": "{v}",
+          "each": true
+         }
+        }
+       }
+      },
+      {
+       "id": "prestige_armor",
+       "label": "Armor Prestige (health on kill)",
+       "type": "int",
+       "min": 0,
+       "max": 100,
+       "icon": "health",
+       "desc": "Health restored on kills: 2 at rank 1, 28 at 50, 40 at 100.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "PS_4Armor_Prestige_SKILL"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "PS_4Armor_Prestige_SKILL",
+          "value": "{v}",
+          "each": true
+         }
+        }
+       }
+      },
+      {
+       "id": "prestige_cape",
+       "label": "Cape Prestige (mount attack/defence)",
+       "type": "int",
+       "min": 0,
+       "max": 100,
+       "icon": "speed",
+       "desc": "Mount attack and defence: +3.75% at rank 1, +52.5% at 50, +75% at 100.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "PS_5Cape_Prestige_SKILL"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "PS_5Cape_Prestige_SKILL",
+          "value": "{v}",
+          "each": true
+         }
+        }
+       }
+      },
+      {
+       "id": "prestige_ring",
+       "label": "Ring Prestige (Wrath gain)",
+       "type": "int",
+       "min": 0,
+       "max": 100,
+       "icon": "rage",
+       "desc": "Wrath / Elven Rage gain: +5% at rank 1, +70% at 50, +100% at 100.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ITEM",
+         "args": {
+          "name": "PS_6Ring_Prestige_SKILL"
+         }
+        },
+        "set": {
+         "cmd": "SOW.ITEM_SET",
+         "args": {
+          "name": "PS_6Ring_Prestige_SKILL",
+          "value": "{v}",
+          "each": true
+         }
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Gear",
+   "sections": [
+    {
+     "name": "Choose Item",
+     "items": [
+      {
+       "id": "gear_item",
+       "label": "Item",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Talion's gear, live from the game (id: item (slot, level)). [equipped] = worn right now.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.GEAR_OPTIONS",
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "gear_card",
+       "label": "Selected",
+       "type": "text",
+       "icon": "shield",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.GEAR_CARD",
+         "args": {
+          "id": "{@gear_item}"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "gear_refresh",
+       "label": "Refresh Worn Item",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Re-equips the selected item right now (the game's own equip, via a quick swap with another item of the same kind), so look, rarity and effect edits on worn gear show immediately. Effect VALUES still update on the next load.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_REFRESH",
+        "args": {
+         "id": "{@gear_item}"
+        },
+        "button": "REFRESH",
+        "quiet": false
+       }
+      },
+      {
+       "id": "gear_reset_all",
+       "label": "Reset Item to Normal",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Everything back to how the item was before the trainer first edited it: look, effects, rarity/type and level. Items edited before resets existed have no saved original.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_RESET",
+        "args": {
+         "id": "{@gear_item}",
+         "what": "all"
+        },
+        "button": "RESET",
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Level (saved)",
+     "items": [
+      {
+       "id": "gear_level",
+       "label": "Item Level",
+       "type": "int",
+       "min": 1,
+       "max": 120,
+       "icon": "skull",
+       "desc": "The item's level. Saved with the game. The stats are recalculated from the new level the next time the save loads (save, then reload). Equipped items: also re-equip.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.GEAR_CARD",
+         "args": {
+          "id": "{@gear_item}"
+         },
+         "field": "level"
+        },
+        "set": {
+         "cmd": "SOW.GEAR_LEVEL",
+         "args": {
+          "id": "{@gear_item}",
+          "level": "{v}"
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "Effects",
+     "items": [
+      {
+       "id": "gear_fx_list",
+       "label": "Effects on this item",
+       "type": "fxlist",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.GEAR_CARD",
+         "args": {
+          "id": "{@gear_item}"
+         },
+         "field": "effects"
+        },
+        "remove": {
+         "cmd": "SOW.GEAR_REMOVE_AFFIX",
+         "args": {
+          "id": "{@gear_item}",
+          "index": "{i}"
+         }
+        },
+        "reset_on": "gear_item"
+       }
+      },
+      {
+       "id": "gear_fx_pick",
+       "label": "New Effect",
+       "type": "select",
+       "icon": "skill",
+       "desc": "Every effect in the game (809). Effects made for this item type are listed first; others may only work on their own item type.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.GEAR_AFFIX_OPTIONS",
+         "args": {
+          "id": "{@gear_item}"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "gear_fx_add",
+       "label": "Add / Replace Effect",
+       "type": "button",
+       "icon": "skill",
+       "desc": "Adds the New Effect to the item. If an effect is checked in the list above, it replaces that one instead (the check stays, so you can try several in a row).",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_ADD_AFFIX",
+        "args": {
+         "id": "{@gear_item}",
+         "affix": "{@gear_fx_pick}",
+         "replace": "{@gear_fx_list}"
+        },
+        "button": "ADD",
+        "quiet": false
+       }
+      },
+      {
+       "id": "gear_value",
+       "label": "Value",
+       "type": "float",
+       "min": -100000,
+       "max": 100000,
+       "icon": "skill",
+       "desc": "A number for effect #.",
+       "action": {
+        "kind": "local"
+       }
+      },
+      {
+       "id": "gear_value_apply",
+       "label": "Set Value (live only)",
+       "type": "button",
+       "icon": "skill",
+       "desc": "Sets the value of the checked effect (live only: the game recalculates values when it loads a save).",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_VALUE",
+        "args": {
+         "id": "{@gear_item}",
+         "index": "{@gear_fx_list}",
+         "value": "{@gear_value}"
+        },
+        "button": "SET",
+        "quiet": false
+       }
+      },
+      {
+       "id": "gear_reset_fx",
+       "label": "Reset Effects",
+       "type": "button",
+       "icon": "skill",
+       "desc": "Back to the item's original effects with their exact values - undoes replaced, added and removed effects.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_RESET",
+        "args": {
+         "id": "{@gear_item}",
+         "what": "effects"
+        },
+        "button": "RESET",
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Look (Transmog)",
+     "items": [
+      {
+       "id": "gear_look",
+       "label": "Appearance",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Picking a look shows it on Talion right away (the item must be worn). APPLY keeps it; closing the panel without APPLY puts the old look back.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.GEAR_LOOK_OPTIONS",
+         "args": {
+          "id": "{@gear_item}"
+         },
+         "field": "text"
+        },
+        "preview": {
+         "cmd": "SOW.GEAR_LOOK_PREVIEW",
+         "args": {
+          "id": "{@gear_item}",
+          "look": "{text}"
+         }
+        }
+       }
+      },
+      {
+       "id": "gear_look_apply",
+       "label": "Apply Look",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Changes only how the item looks; stats stay. Saved with the game. If you are wearing it, it is re-equipped instantly so you see the new look right away.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_LOOK",
+        "args": {
+         "id": "{@gear_item}",
+         "look": "{@gear_look}"
+        },
+        "button": "APPLY",
+        "quiet": false
+       }
+      },
+      {
+       "id": "gear_reset_look",
+       "label": "Reset Look",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Back to the item's original appearance (as it was before the trainer first edited it). Live if you are wearing it.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_RESET",
+        "args": {
+         "id": "{@gear_item}",
+         "what": "look"
+        },
+        "button": "RESET",
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Rarity / Type",
+     "items": [
+      {
+       "id": "gear_rec",
+       "label": "Becomes",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Every item of the same kind: Default, Standard, Rare, Epic, Legendary sets, DLC and variants (e.g. hammer / sniper bows).",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.GEAR_ITEM_OPTIONS",
+         "args": {
+          "id": "{@gear_item}"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "gear_rec_apply",
+       "label": "Change Rarity / Type",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Changes the item's name, rarity and set membership. Effects are kept - edit them above (e.g. add the set's own effect). Saved with the game; shows after re-equipping or reloading.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_ITEM",
+        "args": {
+         "id": "{@gear_item}",
+         "item": "{@gear_rec}"
+        },
+        "button": "CHANGE",
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Challenges",
+     "items": [
+      {
+       "id": "gear_challenges",
+       "label": "Auto-Complete Gear Challenges",
+       "type": "toggle",
+       "icon": "skill",
+       "desc": "Every Epic / Legendary gear challenge counts as done (progress is set to its target) the next time the game checks it - open the gear's upgrade screen or keep playing - and the item upgrades through the game's own upgrade, which is saved. Turn off to get normal challenges back (already completed ones stay completed). From the SeiKur0 CT.",
+       "action": {
+        "kind": "patch",
+        "addr": "sig:gearChallenge",
+        "bytes": "89 4A 30 B0 01 90",
+        "expect": "39 4A 30 0F 93 C0"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Inventory",
+   "sections": [
+    {
+     "name": "Your Gear",
+     "items": [
+      {
+       "id": "inv_item",
+       "label": "Item",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Every piece of gear you own (id: item (slot, level)). [equipped] = worn right now.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.GEAR_OPTIONS",
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "inv_card",
+       "label": "Selected",
+       "type": "text",
+       "icon": "shield",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.GEAR_CARD",
+         "args": {
+          "id": "{@inv_item}"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "inv_dup",
+       "label": "Copy Item",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Adds an exact copy of this item (level, look, effects and their values).",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_DUPLICATE",
+        "args": {
+         "id": "{@inv_item}"
+        },
+        "button": "COPY",
+        "quiet": true
+       }
+      },
+      {
+       "id": "inv_remove",
+       "label": "Remove Item",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Takes this one item out of your inventory for good (other copies are kept). Worn items can't be removed: equip something else first.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.GEAR_DELETE",
+        "args": {
+         "id": "{@inv_item}"
+        },
+        "button": "REMOVE",
+        "quiet": true
+       }
+      }
+     ]
+    },
+    {
+     "name": "Add Gear",
+     "items": [
+      {
+       "id": "inv_kind",
+       "label": "Kind",
+       "type": "select",
+       "icon": "shield",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_FILTER_OPTIONS",
+         "args": {
+          "which": "kind"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "inv_rarity",
+       "label": "Rarity",
+       "type": "select",
+       "icon": "shield",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_FILTER_OPTIONS",
+         "args": {
+          "which": "rarity"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "inv_gear",
+       "label": "Gear",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Captain gear the game can drop: name and its signature effect.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_OPTIONS",
+         "args": {
+          "kind": "{@inv_kind}",
+          "rarity": "{@inv_rarity}"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "inv_give",
+       "label": "Add to Inventory",
+       "type": "button",
+       "icon": "shield",
+       "style": "primary",
+       "desc": "Adds the chosen gear at your level with its signature effect. Effect numbers update after the next save and reload.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.LOOT_GIVE",
+        "args": {
+         "gear": "{@inv_gear}"
+        },
+        "button": "ADD",
+        "quiet": true
+       }
+      }
+     ]
+    },
+    {
+     "name": "Add an Edited Item",
+     "items": [
+      {
+       "id": "inv_template",
+       "label": "Edited Item",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Items saved with 'Save Gear-Tab Item as Template' on the Loot tab.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_TEMPLATES",
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "inv_give_tmpl",
+       "label": "Add to Inventory",
+       "type": "button",
+       "icon": "shield",
+       "style": "primary",
+       "desc": "Adds a copy of the saved edited item (its level, effects and look).",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.LOOT_GIVE",
+        "args": {
+         "template": "{@inv_template}"
+        },
+        "button": "ADD",
+        "quiet": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Loot",
+   "sections": [
+    {
+     "name": "Custom Captain Drops",
+     "items": [
+      {
+       "id": "loot_kind",
+       "label": "Kind",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Filter the gear list by kind.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_FILTER_OPTIONS",
+         "args": {
+          "which": "kind"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "loot_rarity",
+       "label": "Rarity",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Filter the gear list by rarity.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_FILTER_OPTIONS",
+         "args": {
+          "which": "rarity"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "loot_gear",
+       "label": "Gear to Drop",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Every named gear piece a captain can drop (the game's own 366 drop records), with its signature effect. The game builds the item itself, with its usual random extra effects and your level.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_OPTIONS",
+         "args": {
+          "kind": "{@loot_kind}",
+          "rarity": "{@loot_rarity}"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "loot_source",
+       "label": "Captains Drop",
+       "type": "select",
+       "icon": "shield",
+       "options": [
+        "Gear to Drop",
+        "Edited Item"
+       ],
+       "desc": "Gear to Drop = the gear chosen above. Edited Item = a copy of the item picked under 'Drop an Edited Item'.",
+       "action": {
+        "kind": "local"
+       }
+      },
+      {
+       "id": "loot_chance",
+       "label": "Drop Chance %",
+       "type": "int",
+       "min": 1,
+       "max": 100,
+       "icon": "skull",
+       "desc": "How often a captain's gear drop becomes your chosen gear. 100 = every time, 5 = rarely.",
+       "action": {
+        "kind": "local"
+       }
+      },
+      {
+       "id": "loot_on",
+       "label": "Custom Drops On",
+       "type": "toggle",
+       "icon": "shield",
+       "desc": "When a captain drops gear, it drops what 'Captains Drop' says (the chosen gear or the edited item) at the chance above. Changes apply within a few seconds.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.LOOT_SET",
+         "args": {
+          "on": true,
+          "gear": "{@loot_gear}",
+          "chance": "{@loot_chance}",
+          "template": "{@loot_template}",
+          "source": "{@loot_source}"
+         }
+        },
+        "off": {
+         "cmd": "SOW.LOOT_SET",
+         "args": {
+          "on": false
+         }
+        },
+        "keep": {
+         "cmd": "SOW.LOOT_SET",
+         "args": {
+          "on": true,
+          "gear": "{@loot_gear}",
+          "chance": "{@loot_chance}",
+          "template": "{@loot_template}",
+          "source": "{@loot_source}"
+         }
+        },
+        "keep_ms": 3000
+       }
+      },
+      {
+       "id": "loot_status",
+       "label": "Status",
+       "type": "text",
+       "icon": "shield",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.LOOT_STATUS",
+         "field": "text"
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "Drop an Edited Item",
+     "items": [
+      {
+       "id": "loot_tmpl_save",
+       "label": "Save Gear-Tab Item as Template",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Edit an item in the Gear tab (look, effects, values, rarity, level), then press this: it is saved as a drop template.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.LOOT_TEMPLATE_SAVE",
+        "args": {
+         "id": "{@gear_item}"
+        },
+        "button": "SAVE",
+        "quiet": false
+       }
+      },
+      {
+       "id": "loot_template",
+       "label": "Template",
+       "type": "select",
+       "icon": "shield",
+       "desc": "Pick a saved edited item. Captains drop it when 'Captains Drop' is set to Edited Item (the Inventory tab can also give it right away).",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.LOOT_TEMPLATES",
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "loot_tmpl_delete",
+       "label": "Delete Template",
+       "type": "button",
+       "icon": "shield",
+       "desc": "Deletes the chosen template.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.LOOT_TEMPLATE_DELETE",
+        "args": {
+         "template": "{@loot_template}"
+        },
+        "button": "DELETE",
+        "quiet": false
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Army",
+   "sections": [
+    {
+     "name": "Choose Orc",
+     "items": [
+      {
+       "id": "orc",
+       "label": "Follower",
+       "type": "select",
+       "icon": "captain",
+       "desc": "Your followers, live from the game (id: name, level, class, region). Story characters are marked [story] and are protected.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.ARMY_OPTIONS",
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "orc_card",
+       "label": "Selected",
+       "type": "text",
+       "icon": "skull",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ORC_CARD",
+         "args": {
+          "id": "{@orc}"
+         },
+         "field": "text"
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "Edit",
+     "items": [
+      {
+       "id": "orc_nocap",
+       "label": "No Level Cap",
+       "type": "toggle",
+       "icon": "skull",
+       "style": "switch",
+       "desc": "When setting a level: also give the orc the game's own 'ignore player level restriction' flag, so he can go above Talion's level (otherwise the game clamps him to it).",
+       "action": {
+        "kind": "local"
+       }
+      },
+      {
+       "id": "orc_level",
+       "label": "Level",
+       "type": "int",
+       "min": 1,
+       "max": 100,
+       "icon": "skull",
+       "desc": "The game's SetXPLevel (clears the orc's level lock first). Clamped by the game to its cap.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ORC",
+         "args": {
+          "id": "{@orc}"
+         },
+         "field": "level"
+        },
+        "set": {
+         "cmd": "SOW.ORC_LEVEL",
+         "args": {
+          "id": "{@orc}",
+          "level": "{v}",
+          "no_cap": "{@orc_nocap}"
+         }
+        }
+       }
+      },
+      {
+       "id": "orc_intel",
+       "label": "Reveal All Intel",
+       "type": "button",
+       "icon": "stealth",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_INTEL",
+        "args": {
+         "id": "{@orc}"
+        },
+        "button": "INTEL",
+        "quiet": false
+       }
+      },
+      {
+       "id": "orc_bodyguard",
+       "label": "Make Bodyguard",
+       "type": "button",
+       "icon": "shield",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_BODYGUARD",
+        "args": {
+         "id": "{@orc}",
+         "on": true
+        },
+        "button": "GUARD",
+        "quiet": false
+       }
+      },
+      {
+       "id": "orc_reward_pick",
+       "label": "Upgrade",
+       "type": "select",
+       "icon": "might",
+       "options": [
+        "AdvancedClass_Assassin",
+        "AdvancedClass_BeastMaster",
+        "AdvancedClass_Berserker",
+        "AdvancedClass_CombatMaster",
+        "AdvancedClass_Commander",
+        "AdvancedClass_Destroyer_Curse",
+        "AdvancedClass_Destroyer_Fire",
+        "AdvancedClass_Destroyer_Poison",
+        "AdvancedClass_Destroyer_Stun",
+        "AdvancedClass_Marksman",
+        "AdvancedClass_Tank_Curse",
+        "AdvancedClass_Tank_Fire",
+        "AdvancedClass_Tank_Poison",
+        "AdvancedClass_Tank_Stun",
+        "AdvancedClass_Tracker",
+        "AdvancedClass_Trickster",
+        "Armor_Assassin_All",
+        "Armor_Assassin_Chest",
+        "Armor_Assassin_Helmet",
+        "Armor_BeastMaster_All",
+        "Armor_BeastMaster_Arms",
+        "Armor_BeastMaster_ArmsChest",
+        "Armor_BeastMaster_ArmsShoulders",
+        "Armor_BeastMaster_Chest",
+        "Armor_BeastMaster_ChestShoulders",
+        "Armor_BeastMaster_Shoulders",
+        "Armor_Berserker_All",
+        "Armor_Berserker_Arms",
+        "Armor_Berserker_ArmsChest",
+        "Armor_Berserker_ArmsShoulders",
+        "Armor_Berserker_Chest",
+        "Armor_Berserker_ChestShoulders",
+        "Armor_Berserker_Shoulders",
+        "Armor_CombatMaster_All",
+        "Armor_CombatMaster_Arms",
+        "Armor_CombatMaster_ArmsHelmet",
+        "Armor_CombatMaster_ArmsPants",
+        "Armor_CombatMaster_Helmet",
+        "Armor_CombatMaster_HelmetPants",
+        "Armor_CombatMaster_Pants",
+        "Armor_Commander_All",
+        "Armor_Commander_Chest",
+        "Armor_Commander_ChestHelmet",
+        "Armor_Commander_ChestShoulders",
+        "Armor_Commander_Helmet",
+        "Armor_Commander_HelmetShoulders",
+        "Armor_Commander_Shoulders",
+        "Armor_Destroyer_All",
+        "Armor_Destroyer_Chest",
+        "Armor_Destroyer_ChestHelmet",
+        "Armor_Destroyer_ChestShoulders",
+        "Armor_Destroyer_Helmet",
+        "Armor_Destroyer_HelmetShoulders",
+        "Armor_Destroyer_Shoulders",
+        "Armor_Marksman_Buff_All",
+        "Armor_Marksman_Buff_Chest",
+        "Armor_Marksman_Buff_ChestHelmet",
+        "Armor_Marksman_Buff_ChestPants",
+        "Armor_Marksman_Buff_Helmet",
+        "Armor_Marksman_Buff_HelmetPants",
+        "Armor_Marksman_Buff_Pants",
+        "Armor_Marksman_Skinny_All",
+        "Armor_Marksman_Skinny_Chest",
+        "Armor_Marksman_Skinny_ChestHelmet",
+        "Armor_Marksman_Skinny_ChestPants",
+        "Armor_Marksman_Skinny_Helmet",
+        "Armor_Marksman_Skinny_HelmetPants",
+        "Armor_Marksman_Skinny_Pants",
+        "Armor_Tank_All",
+        "Armor_Tank_Chest",
+        "Armor_Tank_Shoulders",
+        "Armor_Tracker_All",
+        "Armor_Tracker_Chest",
+        "Armor_Tracker_ChestHelmet",
+        "Armor_Tracker_ChestShoulders",
+        "Armor_Tracker_Shoulders",
+        "Armor_Trickster_All",
+        "Armor_Trickster_Chest",
+        "Armor_Trickster_ChestPants",
+        "Armor_Trickster_ChestShoulders",
+        "Armor_Trickster_Pants",
+        "CV_AdvancedClass_Assassin",
+        "CV_AdvancedClass_BeastMaster",
+        "CV_AdvancedClass_CombatMaster",
+        "CV_AdvancedClass_Commander",
+        "CV_AdvancedClass_Destroyer_Curse",
+        "CV_AdvancedClass_Destroyer_Fire",
+        "CV_AdvancedClass_Destroyer_Poison",
+        "CV_AdvancedClass_Destroyer_Stun",
+        "CV_AdvancedClass_Marksman",
+        "CV_AdvancedClass_Tank_Curse",
+        "CV_AdvancedClass_Tank_Fire",
+        "CV_AdvancedClass_Tank_Poison",
+        "CV_AdvancedClass_Tank_Stun",
+        "CV_AdvancedClass_Tracker",
+        "CV_AdvancedClass_Trickster",
+        "Combat_ImmuneDowngrade",
+        "Combat_ResistantDowngrade",
+        "Combat_VulnerableDowngrade",
+        "CommonOrc_ChampionAssassin",
+        "CommonOrc_ChampionBeastmaster",
+        "CommonOrc_ChampionBerserker",
+        "CommonOrc_ChampionCombatMaster",
+        "CommonOrc_ChampionCommander",
+        "CommonOrc_ChampionDestroyer_Curse",
+        "CommonOrc_ChampionDestroyer_Fire",
+        "CommonOrc_ChampionDestroyer_Poison",
+        "CommonOrc_ChampionDestroyer_Stun",
+        "CommonOrc_ChampionMarksman",
+        "CommonOrc_ChampionTank_Curse",
+        "CommonOrc_ChampionTank_Fire",
+        "CommonOrc_ChampionTank_Poison",
+        "CommonOrc_ChampionTank_Stun",
+        "CommonOrc_ChampionTracker",
+        "CommonOrc_ChampionTrickster",
+        "CommonOrc_CurseMaster",
+        "CommonOrc_CurseWarder",
+        "CommonOrc_DireMount",
+        "CommonOrc_EliteGang",
+        "CommonOrc_FireMaster",
+        "CommonOrc_FireWarder",
+        "CommonOrc_GreatStrength",
+        "CommonOrc_GreatToughness",
+        "CommonOrc_MightyArchers",
+        "CommonOrc_MightyDefenders",
+        "CommonOrc_MightyHunters",
+        "CommonOrc_MightyOlogs",
+        "CommonOrc_MightySavages",
+        "CommonOrc_MightyWarriors",
+        "CommonOrc_PoisonMaster",
+        "CommonOrc_PoisonWarder",
+        "DLC4_WeaknessRemoval_MortalBeasts",
+        "DLC4_WeaknessRemoval_MortalFire",
+        "DLC4_WeaknessRemoval_MortalPoison",
+        "DLC4_WeaknessRemoval_TerrorCaragors",
+        "DLC4_WeaknessRemoval_TerrorFire",
+        "DLC4_WeaknessRemoval_TerrorPoison",
+        "DLC4_WeaknessRemoval_VulnFire",
+        "DLC4_WeaknessRemoval_VulnPoison",
+        "DLC4_WeaknessRemoval_VulnlBeasts",
+        "Default_EpicOrc_ChampionAssassin",
+        "Default_EpicOrc_ChampionBeastmaster",
+        "Default_EpicOrc_ChampionBerserker",
+        "Default_EpicOrc_ChampionCombatMaster",
+        "Default_EpicOrc_ChampionCommander",
+        "Default_EpicOrc_ChampionDestroyer_Curse",
+        "Default_EpicOrc_ChampionDestroyer_Fire",
+        "Default_EpicOrc_ChampionDestroyer_Poison",
+        "Default_EpicOrc_ChampionDestroyer_Stun",
+        "Default_EpicOrc_ChampionMarksman",
+        "Default_EpicOrc_ChampionTank_Curse",
+        "Default_EpicOrc_ChampionTank_Fire",
+        "Default_EpicOrc_ChampionTank_Poison",
+        "Default_EpicOrc_ChampionTank_Stun",
+        "Default_EpicOrc_ChampionTracker",
+        "Default_EpicOrc_ChampionTrickster",
+        "Default_EpicOrc_CurseMaster",
+        "Default_EpicOrc_CurseWarder",
+        "Default_EpicOrc_DireMount",
+        "Default_EpicOrc_EliteGang",
+        "Default_EpicOrc_EliteGang_NoOlog",
+        "Default_EpicOrc_FireMaster",
+        "Default_EpicOrc_FireWarder",
+        "Default_EpicOrc_GreatStrength",
+        "Default_EpicOrc_GreatToughness",
+        "Default_EpicOrc_MightyArchers",
+        "Default_EpicOrc_MightyDefenders",
+        "Default_EpicOrc_MightyHunters",
+        "Default_EpicOrc_MightyOlogs",
+        "Default_EpicOrc_MightySavages",
+        "Default_EpicOrc_MightyWarriors",
+        "Default_EpicOrc_PoisonMaster",
+        "Default_EpicOrc_PoisonWarder",
+        "Default_Immunity_Beast",
+        "Default_Immunity_Curse",
+        "Default_Immunity_Fire",
+        "Default_Immunity_Poison",
+        "Default_LegendOrc_ChampionAssassin",
+        "Default_LegendOrc_ChampionBeastmaster",
+        "Default_LegendOrc_ChampionBerserker",
+        "Default_LegendOrc_ChampionCombatMaster",
+        "Default_LegendOrc_ChampionCommander",
+        "Default_LegendOrc_ChampionDestroyer_Curse",
+        "Default_LegendOrc_ChampionDestroyer_Fire",
+        "Default_LegendOrc_ChampionDestroyer_Poison",
+        "Default_LegendOrc_ChampionDestroyer_Stun",
+        "Default_LegendOrc_ChampionMarksman",
+        "Default_LegendOrc_ChampionTank_Curse",
+        "Default_LegendOrc_ChampionTank_Fire",
+        "Default_LegendOrc_ChampionTank_Poison",
+        "Default_LegendOrc_ChampionTank_Stun",
+        "Default_LegendOrc_ChampionTracker",
+        "Default_LegendOrc_ChampionTrickster",
+        "Default_LegendOrc_CurseMaster",
+        "Default_LegendOrc_CurseWarder",
+        "Default_LegendOrc_DireMount",
+        "Default_LegendOrc_EliteGang",
+        "Default_LegendOrc_FireMaster",
+        "Default_LegendOrc_FireWarder",
+        "Default_LegendOrc_GreatStrength",
+        "Default_LegendOrc_GreatToughness",
+        "Default_LegendOrc_MightyArchers",
+        "Default_LegendOrc_MightyDefenders",
+        "Default_LegendOrc_MightyHunters",
+        "Default_LegendOrc_MightyOlogs",
+        "Default_LegendOrc_MightySavages",
+        "Default_LegendOrc_MightyWarriors",
+        "Default_LegendOrc_PoisonMaster",
+        "Default_LegendOrc_PoisonWarder",
+        "ET_MarkRemovable_ChampASS",
+        "ET_MarkRemovable_ChampBEA",
+        "ET_MarkRemovable_ChampBER",
+        "ET_MarkRemovable_ChampCMT",
+        "ET_MarkRemovable_ChampCOM",
+        "ET_MarkRemovable_ChampDES",
+        "ET_MarkRemovable_ChampMAR",
+        "ET_MarkRemovable_ChampTAN",
+        "ET_MarkRemovable_ChampTRA",
+        "ET_MarkRemovable_ChampTRI",
+        "ET_MarkRemovable_DireMount",
+        "ET_MarkRemovable_EliteGang",
+        "ET_MarkRemovable_GreatStrength",
+        "ET_MarkRemovable_GreatToughness",
+        "ET_MarkRemovable_MasterCurse",
+        "ET_MarkRemovable_MasterFire",
+        "ET_MarkRemovable_MasterPoison",
+        "ET_MarkRemovable_MightyArchers",
+        "ET_MarkRemovable_MightyDefenders",
+        "ET_MarkRemovable_MightyHunters",
+        "ET_MarkRemovable_MightyOlogs",
+        "ET_MarkRemovable_MightySavages",
+        "ET_MarkRemovable_MightyWarriors",
+        "ET_MarkRemovable_WarderCurse",
+        "ET_MarkRemovable_WarderFire",
+        "ET_MarkRemovable_WarderPoison",
+        "Element_Curse_BaseReplacement",
+        "Element_Curse_ExplodeOnDeathtReplacement",
+        "Element_Curse_GrenadeAtFeetReplacement",
+        "Element_Curse_GrenadeReplacement",
+        "Element_Curse_MineReplacement",
+        "Element_Fire_BaseReplacement",
+        "Element_Fire_ExplodeOnDeathtReplacement",
+        "Element_Fire_GrenadeAtFeetReplacement",
+        "Element_Fire_GrenadeReplacement",
+        "Element_Fire_MineReplacement",
+        "Element_Poison_BaseReplacement",
+        "Element_Poison_ExplodeOnDeathtReplacement",
+        "Element_Poison_GrenadeAtFeetReplacement",
+        "Element_Poison_GrenadeReplacement",
+        "Element_Poison_MineReplacement",
+        "EpicOrc_ChampionAssassin",
+        "EpicOrc_ChampionBeastmaster",
+        "EpicOrc_ChampionBerserker",
+        "EpicOrc_ChampionCombatMaster",
+        "EpicOrc_ChampionCommander",
+        "EpicOrc_ChampionDestroyer_Curse",
+        "EpicOrc_ChampionDestroyer_Fire",
+        "EpicOrc_ChampionDestroyer_Poison",
+        "EpicOrc_ChampionDestroyer_Stun",
+        "EpicOrc_ChampionMarksman",
+        "EpicOrc_ChampionTank_Curse",
+        "EpicOrc_ChampionTank_Fire",
+        "EpicOrc_ChampionTank_Poison",
+        "EpicOrc_ChampionTank_Stun",
+        "EpicOrc_ChampionTracker",
+        "EpicOrc_ChampionTrickster",
+        "EpicOrc_CurseMaster",
+        "EpicOrc_CurseWarder",
+        "EpicOrc_DireMount",
+        "EpicOrc_EliteGang",
+        "EpicOrc_FireMaster",
+        "EpicOrc_FireWarder",
+        "EpicOrc_GreatStrength",
+        "EpicOrc_GreatToughness",
+        "EpicOrc_MightyArchers",
+        "EpicOrc_MightyDefenders",
+        "EpicOrc_MightyHunters",
+        "EpicOrc_MightyOlogs",
+        "EpicOrc_MightySavages",
+        "EpicOrc_MightyWarriors",
+        "EpicOrc_PoisonMaster",
+        "EpicOrc_PoisonWarder",
+        "LT_CommonOrc_ChampionAssassin",
+        "LT_CommonOrc_ChampionBeastmaster",
+        "LT_CommonOrc_ChampionBerserker",
+        "LT_CommonOrc_ChampionCombatMaster",
+        "LT_CommonOrc_ChampionCommander",
+        "LT_CommonOrc_ChampionDestroyer_Curse",
+        "LT_CommonOrc_ChampionDestroyer_Fire",
+        "LT_CommonOrc_ChampionDestroyer_Poison",
+        "LT_CommonOrc_ChampionDestroyer_Stun",
+        "LT_CommonOrc_ChampionMarksman",
+        "LT_CommonOrc_ChampionTank_Curse",
+        "LT_CommonOrc_ChampionTank_Fire",
+        "LT_CommonOrc_ChampionTank_Poison",
+        "LT_CommonOrc_ChampionTank_Stun",
+        "LT_CommonOrc_ChampionTracker",
+        "LT_CommonOrc_ChampionTrickster",
+        "LT_CommonOrc_CurseMaster",
+        "LT_CommonOrc_CurseWarder",
+        "LT_CommonOrc_DireMount",
+        "LT_CommonOrc_EliteGang",
+        "LT_CommonOrc_EliteGang_NonOlog",
+        "LT_CommonOrc_FireMaster",
+        "LT_CommonOrc_FireWarder",
+        "LT_CommonOrc_GreatStrength",
+        "LT_CommonOrc_GreatToughness",
+        "LT_CommonOrc_MightyArchers",
+        "LT_CommonOrc_MightyDefenders",
+        "LT_CommonOrc_MightyHunters",
+        "LT_CommonOrc_MightyOlogs",
+        "LT_CommonOrc_MightySavages",
+        "LT_CommonOrc_MightyWarriors",
+        "LT_CommonOrc_PoisonMaster",
+        "LT_CommonOrc_PoisonWarder",
+        "LT_EpicOrc_ChampionAssassin",
+        "LT_EpicOrc_ChampionBeastmaster",
+        "LT_EpicOrc_ChampionBerserker",
+        "LT_EpicOrc_ChampionCombatMaster",
+        "LT_EpicOrc_ChampionCommander",
+        "LT_EpicOrc_ChampionDestroyer_Curse",
+        "LT_EpicOrc_ChampionDestroyer_Fire",
+        "LT_EpicOrc_ChampionDestroyer_Poison",
+        "LT_EpicOrc_ChampionDestroyer_Stun",
+        "LT_EpicOrc_ChampionMarksman",
+        "LT_EpicOrc_ChampionTank_Curse",
+        "LT_EpicOrc_ChampionTank_Fire",
+        "LT_EpicOrc_ChampionTank_Poison",
+        "LT_EpicOrc_ChampionTank_Stun",
+        "LT_EpicOrc_ChampionTracker",
+        "LT_EpicOrc_ChampionTrickster",
+        "LT_EpicOrc_CurseMaster",
+        "LT_EpicOrc_CurseWarder",
+        "LT_EpicOrc_DireMount",
+        "LT_EpicOrc_EliteGang",
+        "LT_EpicOrc_EliteGang_NonOlog",
+        "LT_EpicOrc_FireMaster",
+        "LT_EpicOrc_FireWarder",
+        "LT_EpicOrc_GreatStrength",
+        "LT_EpicOrc_GreatToughness",
+        "LT_EpicOrc_MightyArchers",
+        "LT_EpicOrc_MightyDefenders",
+        "LT_EpicOrc_MightyHunters",
+        "LT_EpicOrc_MightyOlogs",
+        "LT_EpicOrc_MightySavages",
+        "LT_EpicOrc_MightyWarriors",
+        "LT_EpicOrc_PoisonMaster",
+        "LT_EpicOrc_PoisonWarder",
+        "LT_MarkerSwap",
+        "Recruit_LevelBoost_PlayerGear",
+        "Remove_ChampionAssassin",
+        "Remove_ChampionBeastmaster",
+        "Remove_ChampionBerserker",
+        "Remove_ChampionCombatMaster",
+        "Remove_ChampionCommander",
+        "Remove_ChampionDestroyer",
+        "Remove_ChampionMarksman",
+        "Remove_ChampionTank",
+        "Remove_ChampionTracker",
+        "Remove_ChampionTrickster",
+        "Remove_CurseMaster",
+        "Remove_CurseWarder",
+        "Remove_DireMount",
+        "Remove_EliteGang",
+        "Remove_FireMaster",
+        "Remove_FireWarder",
+        "Remove_FrostImmune",
+        "Remove_GreatStrength",
+        "Remove_GreatToughness",
+        "Remove_MightyArchers",
+        "Remove_MightyDefenders",
+        "Remove_MightyHunters",
+        "Remove_MightyOlogs",
+        "Remove_MightySavages",
+        "Remove_MightyWarriors",
+        "Remove_PoisonMaster",
+        "Remove_PoisonWarder",
+        "Resist_Beast",
+        "Resist_Combat",
+        "Resist_Fire",
+        "Resist_Poison",
+        "Resist_Ranged",
+        "Resist_Stealth",
+        "StatusEffect_CurseGrenade",
+        "StatusEffect_CurseWeapon",
+        "StatusEffect_CurseWeapon_Necromancer",
+        "StatusEffect_Curse_RaiseDead",
+        "StatusEffect_Curse_UpgradeDestroyer",
+        "StatusEffect_Curse_UpgradeTank",
+        "StatusEffect_FireGrenade",
+        "StatusEffect_FireWeapon",
+        "StatusEffect_Fire_UpgradeDestroyer",
+        "StatusEffect_Fire_UpgradeTank",
+        "StatusEffect_OlogFlameThrower",
+        "StatusEffect_PoisonGrenade",
+        "StatusEffect_PoisonWeapon",
+        "StatusEffect_Poison_UpgradeDestroyer",
+        "StatusEffect_Poison_UpgradeTank"
+       ],
+       "desc": "The game's own reward records: AdvancedClass_* (class upgrades with new attacks), Armor_* (armor pieces), EpicOrc_* / LT_* / Default_LegendOrc* (epic & legendary traits), Remove_* (remove a trait), Resist_* / Element_* / StatusEffect_* (resistances, elemental weapons), DLC4_WeaknessRemoval_*. Each reward does exactly what the game defines; some only apply when their own conditions are met.",
+       "action": {
+        "kind": "local"
+       }
+      },
+      {
+       "id": "orc_reward",
+       "label": "Apply Upgrade",
+       "type": "button",
+       "icon": "might",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_REWARD",
+        "args": {
+         "id": "{@orc}",
+         "reward": "{@orc_reward_pick}"
+        },
+        "button": "APPLY",
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Gear & Identity",
+     "items": [
+      {
+       "id": "orc_gear",
+       "label": "Gear",
+       "type": "text",
+       "icon": "shield",
+       "desc": "The selected orc's weapons and armor by slot, live. (given) = from the trainer/rewards, (role) = from his role's gear set.",
+       "action": {
+        "kind": "bridge",
+        "get": {
+         "cmd": "SOW.ORC_GEAR",
+         "args": {
+          "id": "{@orc}"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "gear_pick",
+       "label": "Weapon / Armor",
+       "type": "select",
+       "icon": "shield",
+       "desc": "1348 equippable items from the game (slot, priority). A piece replaces his current one in that slot only if its priority is equal or higher - role pieces marked DoNotReplace have priority 10.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.ARMY_LISTS",
+         "args": {
+          "list": "gear"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "gear_give",
+       "label": "Equip Item",
+       "type": "button",
+       "icon": "shield",
+       "desc": "The game's own GiveItem (the reward equip path) + model rebuild.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_GIVE_ITEM",
+        "args": {
+         "id": "{@orc}",
+         "item": "{@gear_pick}"
+        },
+        "button": "EQUIP",
+        "quiet": false
+       }
+      },
+      {
+       "id": "role_pick",
+       "label": "Role / Title",
+       "type": "select",
+       "icon": "captain",
+       "desc": "914 roles: the title shown on his card ('the Dam') and the gear set that comes with it.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.ARMY_LISTS",
+         "args": {
+          "list": "roles"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "role_set",
+       "label": "Set Role",
+       "type": "button",
+       "icon": "captain",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_ROLE",
+        "args": {
+         "id": "{@orc}",
+         "role": "{@role_pick}"
+        },
+        "button": "SET",
+        "quiet": false
+       }
+      },
+      {
+       "id": "name_pick",
+       "label": "Name",
+       "type": "select",
+       "icon": "skull",
+       "desc": "The game's orc / Olog / Forthog / Easterling first names.",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.ARMY_LISTS",
+         "args": {
+          "list": "names"
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "name_set",
+       "label": "Rename",
+       "type": "button",
+       "icon": "skull",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_RENAME",
+        "args": {
+         "id": "{@orc}",
+         "name": "{@name_pick}"
+        },
+        "button": "RENAME",
+        "quiet": false
+       }
+      },
+      {
+       "id": "rarity_epic",
+       "label": "Make Epic",
+       "type": "button",
+       "icon": "might",
+       "desc": "The game's Upgrade_CommonOrcToEpic reward (Common orcs only): Epic = +20% damage, +30% health. His role/title/gear are kept.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_RARITY",
+        "args": {
+         "id": "{@orc}",
+         "to": "epic"
+        },
+        "button": "EPIC",
+        "quiet": false
+       }
+      },
+      {
+       "id": "rarity_legend",
+       "label": "Make Legendary",
+       "type": "button",
+       "icon": "might",
+       "desc": "The game's LT_MarkerSwap reward: Legendary = +35% damage, +50% health. His role/title/gear are kept.",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_RARITY",
+        "args": {
+         "id": "{@orc}",
+         "to": "legendary"
+        },
+        "button": "LEGEND",
+        "quiet": false
+       }
+      }
+     ]
+    },
+    {
+     "name": "Recruit & Create",
+     "items": [
+      {
+       "id": "dom_fast",
+       "label": "Instant Dominate",
+       "type": "toggle",
+       "icon": "captain",
+       "desc": "The domination gauge fills instantly on any enemy (orcs, captains, Ologs, graugs, drakes, beasts) - no more holding while it fills up.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.DOMINATE_FAST",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.DOMINATE_FAST",
+         "args": {
+          "on": false
+         }
+        }
+       }
+      },
+      {
+       "id": "instant_dom",
+       "label": "Dominate Captains at Full Health",
+       "type": "toggle",
+       "icon": "captain",
+       "desc": "Captains can be grabbed at full health, without wearing them down first, so you can dominate them straight away. Nazgul and Olog-hai stay immune to grabs.",
+       "action": {
+        "kind": "bridge",
+        "on": {
+         "cmd": "SOW.INSTANT_DOMINATE",
+         "args": {
+          "on": true
+         }
+        },
+        "off": {
+         "cmd": "SOW.INSTANT_DOMINATE",
+         "args": {
+          "on": false
+         }
+        }
+       }
+      },
+      {
+       "id": "any_orc",
+       "label": "Any Orc",
+       "type": "select",
+       "icon": "captain",
+       "desc": "Every living orc in the world (not only followers).",
+       "action": {
+        "kind": "bridge",
+        "options": {
+         "cmd": "SOW.ARMY_OPTIONS",
+         "args": {
+          "all": true
+         },
+         "field": "text"
+        }
+       }
+      },
+      {
+       "id": "orc_recruit",
+       "label": "Recruit",
+       "type": "button",
+       "icon": "captain",
+       "desc": "The game's own SetPlayerFollower (intel, level sync, relationships).",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_FOLLOWER",
+        "args": {
+         "id": "{@any_orc}",
+         "on": true
+        },
+        "button": "RECRUIT",
+        "quiet": false
+       }
+      },
+      {
+       "id": "builder_pick",
+       "label": "New Orc Type",
+       "type": "select",
+       "icon": "skull",
+       "options": [
+        "AssaultDebugOverlord",
+        "AssaultDebugWarchief",
+        "BL03_FriendlyOverlord",
+        "Blade1_Warchief",
+        "Captain",
+        "Captain_Bodyguard",
+        "Captain_Olog",
+        "Captain_Olog_Special",
+        "Challenge_Gear_Common",
+        "Challenge_Gear_Epic",
+        "Challenge_Gear_Legendary",
+        "Challenge_Gear_Rare",
+        "Challenge_Gear_Unique",
+        "Challenge_Gems",
+        "D4OD_OACaptain",
+        "D4REC_IntroCaptain",
+        "D4REC_Warchief",
+        "DLC3_FVO_FlintCaptain",
+        "DLC3_FollowerOverlord",
+        "DLC3_RecA_DrakeCaptain",
+        "DLC5_Endless_Bodyguard_01",
+        "DLC5_Endless_Bodyguard_02",
+        "DLC5_Inv_R_Beast",
+        "DLC5_Inv_R_Black",
+        "DLC5_Inv_R_Fanatic",
+        "DLC5_Inv_R_Industrial",
+        "DLC5_Inv_R_Mystic",
+        "DLC5_Inv_R_Regal",
+        "DLC5_Inv_R_Scavenger",
+        "DLC5_Inv_R_Slaughterhouse",
+        "DLC5_Inv_R_Torture",
+        "DLC5_Inv_R_Warmonger",
+        "DLC5_Inv_T_Dark",
+        "DLC5_Inv_T_Feral",
+        "DLC5_Inv_T_Machine",
+        "DLC5_Inv_T_Marauder",
+        "DLC5_Inv_T_Outlaw",
+        "DLC5_Inv_T_Slaughter",
+        "DLC5_Inv_T_Sorcerous",
+        "DLC5_Inv_T_Terror",
+        "DLC5_Inv_T_Undead",
+        "DLC5_Inv_T_Warmonger",
+        "DLC5_Y1_Captain",
+        "DLC5_Y1_IS_C1",
+        "DLC5_Y1_IS_C2",
+        "DLC5_Y1_IS_C3",
+        "DLC5_Y1_IS_C4",
+        "DLC5_Y1_IS_C5",
+        "DLC5_Y1_IS_C6",
+        "DLC5_Y1_IS_Reinforcer",
+        "DLC5_Y1_MP_C1",
+        "DLC5_Y1_MP_C2",
+        "DLC5_Y1_MP_C3",
+        "DLC5_Y1_MP_C4",
+        "DLC5_Y1_MP_C5",
+        "DLC5_Y1_MP_C6",
+        "DLC5_Y1_MP_Reinforcer",
+        "DLC5_Y1_Reinforcer",
+        "DLC5_Y1_SM_C1",
+        "DLC5_Y1_SM_C2",
+        "DLC5_Y1_SM_C3",
+        "DLC5_Y1_SM_C4",
+        "DLC5_Y1_SM_C5",
+        "DLC5_Y1_SM_C6",
+        "DLC5_Y1_SM_Reinforcer",
+        "DLC5_Y1_VO_C1",
+        "DLC5_Y1_VO_C2",
+        "DLC5_Y1_VO_C3",
+        "DLC5_Y1_VO_C4",
+        "DLC5_Y1_VO_C5",
+        "DLC5_Y1_VO_C6",
+        "DLC5_Y1_VO_Reinforcer",
+        "DLC5_Y2_Bodyguard",
+        "DLC5_Y2_Captain",
+        "DLC5_Y2_IS_Bodyguard",
+        "DLC5_Y2_IS_C1",
+        "DLC5_Y2_IS_C2",
+        "DLC5_Y2_IS_C3",
+        "DLC5_Y2_IS_C4",
+        "DLC5_Y2_IS_C5",
+        "DLC5_Y2_IS_C6",
+        "DLC5_Y2_IS_Reinforcer",
+        "DLC5_Y2_MP_Bodyguard",
+        "DLC5_Y2_MP_C1",
+        "DLC5_Y2_MP_C2",
+        "DLC5_Y2_MP_C3",
+        "DLC5_Y2_MP_C4",
+        "DLC5_Y2_MP_C5",
+        "DLC5_Y2_MP_C6",
+        "DLC5_Y2_MP_Reinforcer",
+        "DLC5_Y2_Reinforcer",
+        "DLC5_Y2_SM_Bodyguard",
+        "DLC5_Y2_SM_C1",
+        "DLC5_Y2_SM_C2",
+        "DLC5_Y2_SM_C3",
+        "DLC5_Y2_SM_C4",
+        "DLC5_Y2_SM_C5",
+        "DLC5_Y2_SM_C6",
+        "DLC5_Y2_SM_Reinforcer",
+        "DLC5_Y2_VO_Bodyguard",
+        "DLC5_Y2_VO_C1",
+        "DLC5_Y2_VO_C2",
+        "DLC5_Y2_VO_C3",
+        "DLC5_Y2_VO_C4",
+        "DLC5_Y2_VO_C5",
+        "DLC5_Y2_VO_C6",
+        "DLC5_Y2_VO_Reinforcer",
+        "DLC5_Y3_Bodyguard",
+        "DLC5_Y3_Captain",
+        "DLC5_Y3_IS_Bodyguard_01",
+        "DLC5_Y3_IS_Bodyguard_02",
+        "DLC5_Y3_IS_C1",
+        "DLC5_Y3_IS_C2",
+        "DLC5_Y3_IS_C3",
+        "DLC5_Y3_IS_C4",
+        "DLC5_Y3_IS_C5",
+        "DLC5_Y3_IS_C6",
+        "DLC5_Y3_IS_Reinforcer",
+        "DLC5_Y3_MP_Bodyguard_01",
+        "DLC5_Y3_MP_Bodyguard_02",
+        "DLC5_Y3_MP_C1",
+        "DLC5_Y3_MP_C2",
+        "DLC5_Y3_MP_C3",
+        "DLC5_Y3_MP_C4",
+        "DLC5_Y3_MP_C5",
+        "DLC5_Y3_MP_C6",
+        "DLC5_Y3_MP_Reinforcer",
+        "DLC5_Y3_Reinforcer",
+        "DLC5_Y3_SM_Bodyguard_01",
+        "DLC5_Y3_SM_Bodyguard_02",
+        "DLC5_Y3_SM_Bodyguard_Doppel_01",
+        "DLC5_Y3_SM_Bodyguard_Doppel_02",
+        "DLC5_Y3_SM_C1",
+        "DLC5_Y3_SM_C2",
+        "DLC5_Y3_SM_C3",
+        "DLC5_Y3_SM_C4",
+        "DLC5_Y3_SM_C5",
+        "DLC5_Y3_SM_C6",
+        "DLC5_Y3_SM_Reinforcer",
+        "DLC5_Y3_VO_Bodyguard_01",
+        "DLC5_Y3_VO_Bodyguard_02",
+        "DLC5_Y3_VO_C1",
+        "DLC5_Y3_VO_C2",
+        "DLC5_Y3_VO_C3",
+        "DLC5_Y3_VO_C4",
+        "DLC5_Y3_VO_C5",
+        "DLC5_Y3_VO_C6",
+        "DLC5_Y3_VO_Reinforcer",
+        "DebugFollowerOverlord",
+        "DebugFollowerWarchief",
+        "DebugOverlord",
+        "DebugWarchief",
+        "Debug_Overlord_Beast",
+        "Debug_Overlord_Black",
+        "Debug_Overlord_Fanatic",
+        "Debug_Overlord_Industrial",
+        "Debug_Overlord_Mystic",
+        "Debug_Overlord_Regal",
+        "Debug_Overlord_Scavenger",
+        "Debug_Overlord_Slaughterhouse",
+        "Debug_Overlord_Torture",
+        "Debug_Overlord_Warmonger",
+        "EmergencyOverlord",
+        "EmergencyPlayerFollower",
+        "EnemyToBeOverlord",
+        "Follower",
+        "FollowerOlog",
+        "GonSide2_Captain",
+        "GonSide3_Captain",
+        "GonSide4_Captain",
+        "GonSide5_Captain",
+        "Initial_Overlord_SnowMountain",
+        "Initial_Overlord_Volcano",
+        "MtnPassAct2NewOverlord",
+        "New_Olog",
+        "New_Olog_WC",
+        "Rat2_BackupCaptain",
+        "Rat2_BackupWarchief",
+        "Rat2_BackupWarchiefW1",
+        "SW_Base_Warchief",
+        "SW_Base_Warchief_Leader",
+        "SW_Y10_IS_Warchief",
+        "SW_Y10_IS_Warchief2",
+        "SW_Y10_IS_Warchief3",
+        "SW_Y10_IS_Warchief4",
+        "SW_Y10_IS_Warchief5",
+        "SW_Y10_IS_Warchief_Leader",
+        "SW_Y10_MP_Warchief",
+        "SW_Y10_MP_Warchief2",
+        "SW_Y10_MP_Warchief3",
+        "SW_Y10_MP_Warchief4",
+        "SW_Y10_MP_Warchief5",
+        "SW_Y10_MP_Warchief_Leader",
+        "SW_Y10_SM_Warchief",
+        "SW_Y10_SM_Warchief2",
+        "SW_Y10_SM_Warchief3",
+        "SW_Y10_SM_Warchief4",
+        "SW_Y10_SM_Warchief5",
+        "SW_Y10_SM_Warchief_Leader",
+        "SW_Y10_V_Warchief",
+        "SW_Y10_V_Warchief2",
+        "SW_Y10_V_Warchief3",
+        "SW_Y10_V_Warchief4",
+        "SW_Y10_V_Warchief5",
+        "SW_Y10_V_Warchief_Leader",
+        "SW_Y1_MP_Warchief_Beastmaster",
+        "SW_Y1_MP_Warchief_Beastmaster2",
+        "SW_Y1_MP_Warchief_Beastmaster3",
+        "SW_Y1_MP_Warchief_Tracker",
+        "SW_Y1_MP_Warchief_Tracker2",
+        "SW_Y1_MP_Warchief_Tracker_Leader",
+        "SW_Y2_IS_Warchief_CombatMaster",
+        "SW_Y2_IS_Warchief_CombatMaster2",
+        "SW_Y2_IS_Warchief_CombatMaster3",
+        "SW_Y2_IS_Warchief_CombatMaster_Leader",
+        "SW_Y2_IS_Warchief_Commander",
+        "SW_Y2_IS_Warchief_Commander2",
+        "SW_Y3_SM_Warchief_Destroyer",
+        "SW_Y3_SM_Warchief_Destroyer2",
+        "SW_Y3_SM_Warchief_Tank",
+        "SW_Y3_SM_Warchief_Tank2",
+        "SW_Y3_SM_Warchief_Tank3",
+        "SW_Y3_SM_Warchief_Tank_Leader",
+        "SW_Y4_V_Warchief_Berserker",
+        "SW_Y4_V_Warchief_Berserker2",
+        "SW_Y4_V_Warchief_Berserker3",
+        "SW_Y4_V_Warchief_Tracker",
+        "SW_Y4_V_Warchief_Tracker2",
+        "SW_Y4_V_Warchief_Tracker_Leader",
+        "SW_Y5_IS_Warchief_Assassin",
+        "SW_Y5_IS_Warchief_Assassin2",
+        "SW_Y5_IS_Warchief_Assassin3",
+        "SW_Y5_IS_Warchief_Assassin_Leader",
+        "SW_Y5_IS_Warchief_Marksman",
+        "SW_Y5_IS_Warchief_Marksman2",
+        "SW_Y5_MP_Warchief_Berserker",
+        "SW_Y5_MP_Warchief_Berserker2",
+        "SW_Y5_MP_Warchief_Berserker3",
+        "SW_Y5_MP_Warchief_Commander",
+        "SW_Y5_MP_Warchief_Commander2",
+        "SW_Y5_MP_Warchief_Commander_Leader",
+        "SW_Y6_SM_Warchief_Destroyer",
+        "SW_Y6_SM_Warchief_Destroyer2",
+        "SW_Y6_SM_Warchief_Destroyer3",
+        "SW_Y6_SM_Warchief_Tank",
+        "SW_Y6_SM_Warchief_Tank2",
+        "SW_Y6_SM_Warchief_Tank_Leader",
+        "SW_Y6_V_Warchief_BeastMaster",
+        "SW_Y6_V_Warchief_BeastMaster2",
+        "SW_Y6_V_Warchief_BeastMaster3",
+        "SW_Y6_V_Warchief_BeastMaster_Leader",
+        "SW_Y6_V_Warchief_Berserker",
+        "SW_Y6_V_Warchief_Berserker2",
+        "SW_Y7_IS_Warchief_Assassin",
+        "SW_Y7_IS_Warchief_Assassin2",
+        "SW_Y7_IS_Warchief_Assassin3",
+        "SW_Y7_IS_Warchief_Trickster",
+        "SW_Y7_IS_Warchief_Trickster2",
+        "SW_Y7_IS_Warchief_Trickster_Leader",
+        "SW_Y7_SM_Warchief_Commander",
+        "SW_Y7_SM_Warchief_Commander2",
+        "SW_Y7_SM_Warchief_Commander3",
+        "SW_Y7_SM_Warchief_Marksman",
+        "SW_Y7_SM_Warchief_Marksman2",
+        "SW_Y7_SM_Warchief_Marksman_Leader",
+        "SW_Y8_IS_Hench_01_Olog",
+        "SW_Y8_IS_Hench_02_Olog",
+        "SW_Y8_IS_Reinforcer_Olog",
+        "SW_Y8_IS_Warchief_Marksman",
+        "SW_Y8_IS_Warchief_Marksman2",
+        "SW_Y8_IS_Warchief_Marksman_Leader",
+        "SW_Y8_IS_Warchief_Olog",
+        "SW_Y8_IS_Warchief_Olog2",
+        "SW_Y8_IS_Warchief_Olog3",
+        "SW_Y8_MP_Hench_01_Olog",
+        "SW_Y8_MP_Hench_02_Olog",
+        "SW_Y8_MP_Reinforcer_Olog",
+        "SW_Y8_MP_Warchief_CombatMaster",
+        "SW_Y8_MP_Warchief_CombatMaster2",
+        "SW_Y8_MP_Warchief_CombatMaster_Leader",
+        "SW_Y8_MP_Warchief_Olog",
+        "SW_Y8_MP_Warchief_Olog2",
+        "SW_Y8_MP_Warchief_Olog3",
+        "SW_Y8_V_Hench_01_Olog",
+        "SW_Y8_V_Hench_02_Olog",
+        "SW_Y8_V_Reinforcer_Olog",
+        "SW_Y8_V_Warchief_Olog",
+        "SW_Y8_V_Warchief_Olog2",
+        "SW_Y8_V_Warchief_Olog3",
+        "SW_Y8_V_Warchief_Tracker",
+        "SW_Y8_V_Warchief_Tracker2",
+        "SW_Y8_V_Warchief_Tracker_Leader",
+        "SW_Y9_MP_Warchief_AssassinB",
+        "SW_Y9_MP_Warchief_AssassinB2",
+        "SW_Y9_MP_Warchief_Assassin_Leader",
+        "SW_Y9_MP_Warchief_BeastMaster",
+        "SW_Y9_MP_Warchief_BeastMaster2",
+        "SW_Y9_MP_Warchief_BeastMaster3",
+        "SW_Y9_SM_Warchief_Assassin",
+        "SW_Y9_SM_Warchief_Assassin2",
+        "SW_Y9_SM_Warchief_Assassin3",
+        "SW_Y9_SM_Warchief_Tracker",
+        "SW_Y9_SM_Warchief_Tracker2",
+        "SW_Y9_SM_Warchief_Tracker_Leader",
+        "SW_Y9_V_Warchief_Commander",
+        "SW_Y9_V_Warchief_Commander2",
+        "SW_Y9_V_Warchief_Commander3",
+        "SW_Y9_V_Warchief_Trickster",
+        "SW_Y9_V_Warchief_Trickster2",
+        "SW_Y9_V_Warchief_Trickster_Leader",
+        "SaveRecoveryFollower",
+        "She3_Overlord",
+        "SotP_Desert_04_Captain",
+        "SotP_Desert_06_Captain",
+        "SotP_MinasIthil_02_Captain",
+        "SotP_MtnPass_03_Captain",
+        "Store_Common",
+        "Store_Epic",
+        "Store_Legendary",
+        "Store_Mounted",
+        "Store_Olog",
+        "Store_Rare",
+        "Store_Test",
+        "Test_Mounted_Overlord",
+        "TribeBattle_Outlaw_Legendary",
+        "TribeBattle_Outlaw_Legendary_IS",
+        "TribeBattle_Outlaw_Legendary_MI",
+        "TribeBattle_Outlaw_Legendary_MP",
+        "TribeBattle_Outlaw_Legendary_SM",
+        "TribeBattle_Outlaw_Legendary_VO",
+        "TribeBattle_Slaughter_Legendary",
+        "TribeBattle_Slaughter_Legendary_IS",
+        "TribeBattle_Slaughter_Legendary_MI",
+        "TribeBattle_Slaughter_Legendary_MP",
+        "TribeBattle_Slaughter_Legendary_SM",
+        "TribeBattle_Slaughter_Legendary_VO",
+        "TribeFight_Outlaw_LegendEx",
+        "TribeFight_Slaughter_LegendEx",
+        "Warchief",
+        "_DebugBuilder_CommanderOlog",
+        "_DebugBuilder_MachineDestroyerOlog"
+       ],
+       "desc": "The game's own builder records (Captain, Captain_Olog, Challenge_Gear_Legendary, Store_*, DLC5_*...). A new orc is created in the region you are in, through the game's own creator.",
+       "action": {
+        "kind": "local"
+       }
+      },
+      {
+       "id": "orc_build",
+       "label": "Create Orc",
+       "type": "button",
+       "icon": "skull",
+       "action": {
+        "kind": "bridge",
+        "cmd": "SOW.ORC_BUILD",
+        "args": {
+         "builder": "{@builder_pick}"
+        },
+        "button": "CREATE",
+        "quiet": false
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "World",
+   "sections": [
+    {
+     "name": "Missions",
+     "items": [
+      {
+       "id": "mission_time",
+       "label": "Infinite Mission Time",
+       "type": "toggle",
+       "icon": "gate",
+       "desc": "Timed missions never fail on time (memory fallback).",
+       "action": {
+        "kind": "patch",
+        "addr": "sig:missionTimer",
+        "bytes": "EB 06",
+        "expect": "84 C0"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

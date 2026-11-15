@@ -1,0 +1,92 @@
+[
+ {
+  "add": 0,
+  "instr_len": 7,
+  "name": "arrowWrite",
+  "note": "mov [rcx+88],edx (89 91 88 00 00 00) writes the arrow count; NOP 6 = arrows never change. Wildcards over the patched bytes.",
+  "offset": 8,
+  "pattern": "3B D6 0F 84 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 49 8B D0 E8",
+  "resolve": "match",
+  "rip_disp": 3
+ },
+ {
+  "add": 0,
+  "instr_len": 7,
+  "name": "devBool",
+  "note": "Developer booleans (game's own dev cheats): +0 Focus, +1 Might, +2 Elf Shot, +3 Wrath. From SeiKur0 CT v21C; verified 2026-11-11 (HUD meters full).",
+  "offset": 0,
+  "pattern": "48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? 84 C0 74 37 48 8B CB",
+  "resolve": "rip",
+  "rip_disp": 3
+ },
+ {
+  "add": 0,
+  "instr_len": 7,
+  "name": "missionTimer",
+  "note": "+0xF: 84 C0 -> EB 06 = timed missions never fail on time. Wildcards over the patched bytes.",
+  "offset": 15,
+  "pattern": "48 8D 59 10 48 8B F9 48 8B CB E8 ?? ?? ?? ?? ?? ?? 0F 85",
+  "resolve": "match",
+  "rip_disp": 3
+ },
+ {
+  "add": 0,
+  "instr_len": 7,
+  "name": "multiSkill",
+  "note": "je -> jmp (74 3B -> EB 3B) at AcquireAbility exe+0x1BC8DEF: activating an upgrade no longer revokes the siblings' items. Wildcards over the patched byte so it resolves when already patched.",
+  "offset": 0,
+  "pattern": "?? ?? 48 8B ?? 40 04 00 00 48 85 ?? 74 ?? 4C 39 ?? 40 74 ?? ?? ?? ?? ?? ?? ?? ?? ?? 08 00 00 00",
+  "resolve": "match",
+  "rip_disp": 3
+ },
+ {
+  "add": 0,
+  "instr_len": 8,
+  "name": "mightNoDrain",
+  "note": "Might setter exe+0x44FCD0: minss xmm6,[rcx+0x3A8] -> movss (F3 0F 5D -> F3 0F 10 at exe+0x44FD16). Every Might write becomes max, old==new so the setter skips its update: no drain, no refill, no 'Might full' growl. With Infinite Might (devBool+1) the dev branch exe+0x44F520 refilled to max each tick after a spend = the growl. Wildcard over the patched byte.",
+  "offset": 20,
+  "pattern": "41 0F 28 C0 48 8B D9 F3 0F 10 F0 0F 28 C7 F3 0F 5F F7 F3 0F ?? B1 A8 03 00 00 45 84 C0 75",
+  "resolve": "match",
+  "rip_disp": 0
+ },
+ {
+  "add": 0,
+  "instr_len": 5,
+  "name": "lootPick",
+  "note": "Captain gear drop pick: call exe+0x579F90(&tmp, picker, 0) at exe+0x6483FC returns a Faction/Loot/NemesisGear record (SeiKur0 CT 'Epic/Legendary Uruks drop specific item'). Points at the E8; the rel32 is redirected by the Loot tab.",
+  "offset": 8,
+  "pattern": "48 8D 4C 24 ?? 49 8B D4 E8 ?? ?? ?? ?? 48 8B D8 48 85 C0 74",
+  "resolve": "match",
+  "rip_disp": 0
+ },
+ {
+  "add": 0,
+  "instr_len": 7,
+  "name": "canPurchaseSkill",
+  "note": "CanPurchaseSkill entry (exe+0x1BC9830). From the user's CT 'Unlock All Skills' (Reverser 2024): +0xA4 je 0F 84 2A 01 00 00 (story/setup lock) -> NOP 6, +0xEB jae 73 (min level) -> EB, +0x12F je 74 (requires N of X) -> EB.",
+  "offset": 0,
+  "pattern": "48 89 5C 24 10 48 89 6C 24 18 48 89 74 24 20 57 41 54 41 55 41 56 41 57 48 83 EC 30 48 8B F1 49 8B D9 48 8B 89 38 07 00 00",
+  "resolve": "match",
+  "rip_disp": 0
+ },
+ {
+  "add": 0,
+  "instr_len": 11,
+  "name": "healthWrite",
+  "note": "Damage write: comiss xmm6,xmm2 ; movss [rbx+42C],xmm2 (exe+0x2E4D26). From the user's SeiKur0 CT 'Unlimited Health'. Hooked by SOW.HEALTH_LOCK.",
+  "offset": 0,
+  "pattern": "0F 2F F2 F3 0F 11 93 2C 04 00 00",
+  "resolve": "match",
+  "rip_disp": 0
+ },
+ {
+  "add": 0,
+  "instr_len": 6,
+  "name": "gearChallenge",
+  "note": "Gear challenge check exe+0x1C02560: task=[rcx+8]; return [task+0x30] >= [task+0x34]. +0xE: cmp [rdx+30],ecx ; setae al (39 4A 30 0F 93 C0) -> mov [rdx+30],ecx ; mov al,1 ; nop (89 4A 30 B0 01 90): progress = target, always complete. From the user's SeiKur0 CT 'Complete all item challenges'. Patched bytes wildcarded.",
+  "offset": 14,
+  "pattern": "48 8B 51 08 33 C0 48 85 D2 74 09 8B 4A 34 ?? ?? ?? ?? ?? ?? C3",
+  "resolve": "match",
+  "rip_disp": 0
+ }
+]

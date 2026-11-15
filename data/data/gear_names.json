@@ -1,0 +1,4995 @@
+{
+"affix": {
+"6Ring_E_DrainGruntsFaster": {
+"t": "Drain or Dominate grunts {1!.0f}% faster",
+"s": 100.0
+},
+"1Sword_5Lgnd_SetProp_Mystic": {
+"t": "Wraith Execution chain Attacks consume {1!.0f}% less Focus",
+"s": 100.0
+},
+"1Sword_Poison_Might_On_EnemyPoisoned": {
+"t": "Gain {1!.0f} Might when an enemy is Poisoned",
+"s": 1.0
+},
+"Rune_Red_Dmg_Cape_1": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Cape_2": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Cape_3": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Cape_4": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Cape_5": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"5Cape_Base_Prop_Light_DLC3": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"2Dagger_Beast_Might_OnStealthAttack": {
+"t": "Gain Might for each kill while remaining undetected.",
+"s": 1.0
+},
+"6Ring_Base_Property_Eltariel": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"5Armor_4Epic_FollowerLvlGain": {
+"t": "Followers gain {1!.0f} additional levels from completing Nemesis Missions",
+"s": 1.0
+},
+"4Armor_Base_HealthRegenWrathFull": {
+"t": "{1!.1f}% Health Recovery per second while your Wrath is Full",
+"s": 100.0
+},
+"6Ring_E_HealthRegenCursed": {
+"t": "{1!.0f} Health Recovery per second while Cursed",
+"s": 1.0
+},
+"3Bow_Base_Property_1Default_Ham": {
+"t": "Hammer",
+"s": 1.0
+},
+"5Cape_HealthRecovAnyKill": {
+"t": "{1!.0f} Health Recovery per Kill",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Dark": {
+"t": "Increases Poison damage to enemies by {1!.0f}%",
+"s": 100.0
+},
+"5Cape_Base_Chameleon": {
+"t": "Become undetectable after remaining motionless for {1!.0f} seconds",
+"s": 1.0
+},
+"1Sword_E_ExecuteApplyCurseOnElite": {
+"t": "Executions on a Captain make your Attacks apply Curse for 10 seconds.",
+"s": 1.0
+},
+"1Sword_4Epic_CritChance_HitstreakHigh": {
+"t": "{1!.0f}% increased Critical Hit chance per point of Hitstreak",
+"s": 100.0
+},
+"4Armor_5Lgnd_SetProp_Marauder": {
+"t": "Defeated enemies have a {1!.0f}% increased chance of dropping {M}",
+"s": 100.0
+},
+"3Bow_E_RangedDmgVsOnFire": {
+"t": "{1!.0f}% increased Ranged Damage to enemies that are on Fire",
+"s": 100.0
+},
+"1Sword_Base_Prop_5Lgnd_Marauder": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"4Armor_E_DefenseMightMeterCharged": {
+"t": "All incoming damage reduced by {1!.0f}% when your Might is Full",
+"s": 100.0
+},
+"3Bow_MightRecovOnCrit": {
+"t": "{1!.0f} Might Gain on Critical Hit",
+"s": 1.0
+},
+"3BowHam_5Lgnd_SetProp_Warmonger": {
+"t": "Charged Ranged Attacks create Fire explosions",
+"s": 1.0
+},
+"1Sword_Fire_Might_PerfectCounter": {
+"t": "Gain Might from each Counter.",
+"s": 1.0
+},
+"1Sword_DmgBoostHealthFull": {
+"t": "{1!.0f}% increased damage when Health is Full",
+"s": 100.0
+},
+"5Cape_Base_Prop_5Lgnd_Outlaw": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"1Sword_E_HealthRecoveryOnGroundTake": {
+"t": "{1!.0f} Health Recovery on a Ground Execution",
+"s": 1.0
+},
+"Rune_Red_Dmg_Bow_1": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Bow_2": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Bow_3": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Bow_4": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Bow_5": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"1Sword_GoldReward_DmgHighHealthLow": {
+"t": "Melee Damage increases by 1% for each 2% decreased Health",
+"s": 1.0
+},
+"2Dagger_E_StealthApplyCurseOnElite": {
+"t": "Your Stealth Attacks always apply Curse",
+"s": 1.0
+},
+"3Bow_5Lgnd_SetProp_Feral": {
+"t": "Reduces Call Mount cooldown by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_Base_Prop_5Lgnd_Ringwraith": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"3BowHam_5Lgnd_SetProp_Celebrimbor": {
+"t": "Charged Ranged Attacks Freeze nearby enemies",
+"s": 1.0
+},
+"1Sword_E_MightUnlimOnEliteKill": {
+"t": "Might is unlimited for {1!.1f} seconds after killing a Captain",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Vendetta": {
+"t": "Melee Damage dealt increases by {1!.0f}% when Health is below 35%",
+"s": 100.0
+},
+"5Armor_5Lgnd_Heal_PerCoin": {
+"t": "Picking up {Coin} recovers {1!.0f} Health per {Coin} gained",
+"s": 1.0
+},
+"4Armor_E_C_RefillAmmoFocusOnGetHitElite": {
+"t": "{1!.0f}% chance to replenish all Elf-shot and all Focus when hit by a Captain",
+"s": 100.0
+},
+"2Dagger_5Legendary_SDmgUp_HPDown": {
+"t": "+{1!.0f}% Stealth Attack damage, -50% max Health",
+"s": 100.0
+},
+"3Bow_ChanceAmmoRecovBowKill": {
+"t": "{1!.0f}% chance to replenish 1 Elf-shot per Ranged Kill",
+"s": 100.0
+},
+"3Crossbow_4Epic_SlowFocus_AerialRanged": {
+"t": "Focus is consumed {1!.0f}% slower while in the air",
+"s": 100.0
+},
+"LegendarySet_Mystic_Affix1": {
+"t": "Dominated grunts take {1!.0f}% less damage",
+"s": 100.0
+},
+"LegendarySet_Mystic_Affix2": {
+"t": "Dominated grunts gain Cursed weapons",
+"s": 1.0
+},
+"3Crossbow_4Epic_PiercingShot": {
+"t": "Steel Bolts pierce through enemies",
+"s": 1.0
+},
+"2Dagger_E_WrathRecovStealthKillCaragor": {
+"t": "Gain {1!.0f} Wrath per Stealth Kill while mounted on a caragor",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Warmonger": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"5Cape_HealthRecovMonsterKill": {
+"t": "{1!.0f} Health Recovery per Beast Kill",
+"s": 1.0
+},
+"3Bow_Base_Property_3Rare_Ham": {
+"t": "Epic Hammer",
+"s": 1.0
+},
+"1Sword_ChanceApplyCurseOnCrit": {
+"t": "Critical Hits have a {1!.0f}% chance to Curse enemies",
+"s": 100.0
+},
+"2Dagger_E_StealthApplyFireOnElite": {
+"t": "Your Stealth Attacks always light enemies on Fire",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Outlaw": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"5Cape_Base_Prop_5Lgnd_Warmonger": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"3Bow_Base_Prop_5Lgnd_Terror": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"1Sword_4Epic_MightGain_OnHPack": {
+"t": "Restore {1!.0f} Might when you use a Healing Elixir",
+"s": 1.0
+},
+"6Ring_Base_Property_5Lgnd_Terror": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Ringwraith_Nazgul_Sist_Alt": {
+"t": "Wraith Stun and Ice Storm bind Uruk targets",
+"s": 1.0
+},
+"4Armor_RangedDefBoost": {
+"t": "{1!.0f}% less damage from Ranged Attacks",
+"s": 100.0
+},
+"4Shield_Base_Prop_DLC4": {
+"t": "Take {1!.0f}% less damage",
+"s": 100.0
+},
+"3Bow_Base_Property_1Default": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SetProp_Machine": {
+"t": "Quick Throws hits create an explosion every {1!.0f} seconds",
+"s": 1.0
+},
+"6Ring_ChanceAllHealthRecovEliteKill": {
+"t": "{1!.0f}% chance to recover all Health when killing a Captain",
+"s": 100.0
+},
+"3BowHam_5Lgnd_SetProp_Ringwraith": {
+"t": "Charged hammer throws heal nearby Undead allies",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Warmonger": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Feral": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"4Shield_5Lgnd_Curse_OnPerfectCounter": {
+"t": "Perfect Counters Curse nearby enemies",
+"s": 100.0
+},
+"3Bow_Poison_DmgHighHealthLow": {
+"t": "1% Ranged Damage increase with each 1% Health lost",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Ringwraith": {
+"t": "Raise Dead causes enemies to flee in terror",
+"s": 1.0
+},
+"3Bow_Base_Property_4Epic_Snipe": {
+"t": "Epic Long Bow",
+"s": 1.0
+},
+"4Armor_E_ChanceRecovWrathGetHit": {
+"t": "{1!.0f}% chance to Gain 10 Wrath when hit",
+"s": 100.0
+},
+"6Light_FrostCurse_GameChanger_Duration": {
+"t": "Increase duration of Elven Rage by {1!.0f}%",
+"s": 100.0
+},
+"6Ring_Base_Property_SotP": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"Rune_Red_Dmg_Armor_1": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Armor_2": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Armor_3": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Armor_4": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"Rune_Red_Dmg_Armor_5": {
+"t": "Armor: {1!.1f}% increased damage with all Attacks",
+"s": 100.0
+},
+"3Bow_Base_Prop_5Lgnd_Marauder": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"2Dagger_ChanceApplyCurseQuickthrow": {
+"t": "Quick Throw applies Curse every {1!.0f} seconds",
+"s": 1.0
+},
+"6Ring_E_DmgBoostTroopsVsOnFire": {
+"t": "{1!.0f}% increased damage dealt by allies to enemies that are on Fire",
+"s": 100.0
+},
+"2Dagger_5Lgnd_SetProp_Feral": {
+"t": "Reduces Call Mount cooldown by {1!.0f}%",
+"s": 100.0
+},
+"Rune_Green_Health_Ring_1": {
+"t": "Rune: {1!.0f}% less damage to Followers",
+"s": 100.0
+},
+"Rune_Green_Health_Ring_2": {
+"t": "Rune: {1!.0f}% less damage to Followers",
+"s": 100.0
+},
+"Rune_Green_Health_Ring_3": {
+"t": "Rune: {1!.0f}% less damage to Followers",
+"s": 100.0
+},
+"Rune_Green_Health_Ring_4": {
+"t": "Rune: {1!.0f}% less damage to Followers",
+"s": 100.0
+},
+"Rune_Green_Health_Ring_5": {
+"t": "Rune: {1!.0f}% less damage to Followers",
+"s": 100.0
+},
+"2Dagger_E_StealthDmgBoostOnFireNME": {
+"t": "{1!.0f}% increased Stealth Damage to enemies that are on Fire",
+"s": 100.0
+},
+"6Ring_Base_Property_5Lgnd_Dark": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"1Sword_ChanceApplyFireOnCrit": {
+"t": "Critical Hits have a {1!.0f}% chance to light enemies on Fire",
+"s": 100.0
+},
+"6Ring_5Lgnd_SetProp_Machine": {
+"t": "Defeated enemies have a {1!.0f}% chance of exploding",
+"s": 100.0
+},
+"6Light_Base_Prop_DLC3": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"4Armor_HealthRecovEliteKill_NoRerolls": {
+"t": "{1!.0f} Health Recovery per Captain Killed",
+"s": 1.0
+},
+"6Ring_MightRecovOnDominate": {
+"t": "{1!.0f} Might Gain per enemy Drained or Dominated",
+"s": 1.0
+},
+"1Sword_Base_Prop_5Lgnd_Terror": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"6Ring_HealthRecovAfterCombat": {
+"t": "Recover Health to {1!.0f}% when combat ends",
+"s": 100.0
+},
+"6Ring_Base_Property_4Epic": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"5Cape_E_IncreasePoisonDuration": {
+"t": "Increases the duration of Poison inflicted on enemies by {1!.0f}%",
+"s": 100.0
+},
+"3Bow_E_DmgHitstreakHigh": {
+"t": "Increases Ranged Damage by {1!.0f}% when your Hitstreak is over 10",
+"s": 100.0
+},
+"4Armor_WrathRecovAnyKill": {
+"t": "Gain {1!.0f} Wrath per Kill",
+"s": 1.0
+},
+"4Armor_5Lgnd_SetProp_Mystic": {
+"t": "Reduces Call Followers cooldown by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_E_AmmoRecovStealthKillCaragor": {
+"t": "{1!.0f} Elf-shot Replenished per Stealth Kill while mounted on a caragor",
+"s": 1.0
+},
+"Rune_Green_Health_Dagger_1": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Dagger_2": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Dagger_3": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Dagger_4": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Dagger_5": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"1Sword_E_MightRecovGlaiveHit": {
+"t": "{1!.0f} Might Gain on Glaive Attacks",
+"s": 1.0
+},
+"3BowSnipe_5Lgnd_SetProp_Terror": {
+"t": "Charged headshots make enemy heads explode, causing nearby enemies to flee",
+"s": 1.0
+},
+"2Dagger_4Epic_HPRefill_OnStealthAttack": {
+"t": "Refill all Health on Stealth Attack",
+"s": 1.0
+},
+"6Ring_Base_Property_5Lgnd_Machine": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"1Sword_E_DmgBoostOnFireNME": {
+"t": "{1!.0f}% increased damage to enemies that are on Fire",
+"s": 100.0
+},
+"4Armor_5Lgnd_SetProp_Vendetta": {
+"t": "Damage dealt increases by {1!.0f}% when Health is below 35%",
+"s": 100.0
+},
+"4Armor_ChanceCritAppliesFire": {
+"t": "{1!.0f}% chance that a Critical Hit lights enemies on fire",
+"s": 100.0
+},
+"2Dagger_FrostCurse_BrutalStealth_MoreFear": {
+"t": "Brutalize causes more enemies to flee.",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SetProp_Celebrimbor": {
+"t": "Gain {1!.0f} Wrath when performing Stealth Kills on Frozen enemies",
+"s": 1.0
+},
+"1Sword_Base_Prop_5Lgnd_Vendetta": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"4Armor_5Lgnd_SetProp_Dark": {
+"t": "{1!.0f}% chance enemies are Poisoned when they hit you with Melee Attacks",
+"s": 100.0
+},
+"4Armor_E_ChanceMightRefillOnGetHit": {
+"t": "{1!.0f}% chance to gain full Might when hit by an enemy",
+"s": 100.0
+},
+"6Ring_E_DmgBoostTroopsVsPoisoned": {
+"t": "{1!.0f}% increased damage dealt by allies to Poisoned enemies",
+"s": 100.0
+},
+"3Bow_E_ChanceHealthRefillBowKill": {
+"t": "{1!.0f}% chance to recover all Health on Ranged Kills",
+"s": 100.0
+},
+"6Light_Base_Prop_Light_DLC3": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"5Cape_HealthRecovStealthKill": {
+"t": "{1!.0f} Health Recovery per Stealth Kill",
+"s": 1.0
+},
+"5Armor_5Lgnd_Might_OnFollowerHitEnemy": {
+"t": "+{1!.0f} Might when an ally hits an enemy",
+"s": 1.0
+},
+"Rune_Red_Dmg_Ring_1": {
+"t": "Rune: {1!.0f}% increased Follower damage",
+"s": 100.0
+},
+"Rune_Red_Dmg_Ring_2": {
+"t": "Rune: {1!.0f}% increased Follower damage",
+"s": 100.0
+},
+"Rune_Red_Dmg_Ring_3": {
+"t": "Rune: {1!.0f}% increased Follower damage",
+"s": 100.0
+},
+"Rune_Red_Dmg_Ring_4": {
+"t": "Rune: {1!.0f}% increased Follower damage",
+"s": 100.0
+},
+"Rune_Red_Dmg_Ring_5": {
+"t": "Rune: {1!.0f}% increased Follower damage",
+"s": 100.0
+},
+"1Sword_E_AmmoRecovExecution": {
+"t": "{1!.0f} Elf-shot Replenished on an Execution",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Ringwraith_Nazgul_Isildur": {
+"t": "Raise Dead summons Gondorian Wights",
+"s": 1.0
+},
+"1Sword_Base_Prop_5Lgnd_Dark": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Celebrimbor": {
+"t": "Gain {1!.1f} Wrath when killing Frozen enemies",
+"s": 1.0
+},
+"3BowHam_5Lgnd_SetProp_Marauder": {
+"t": "Enemies killed by Ranged Attacks have a {1!.0f}% increased chance of dropping {M}",
+"s": 100.0
+},
+"6Light_Beast_MightRegen_Mount": {
+"t": "Mounts gain {1!.0f} Might per second",
+"s": 1.0
+},
+"3Bow_E_RangedDmgVsPoisoned": {
+"t": "{1!.0f}% increased Ranged Damage to Poisoned enemies",
+"s": 100.0
+},
+"2Dagger_E_StaminaRecovStealthKillCaragor": {
+"t": "{1!.0f} Might Gain per Stealth Kill while mounted on a caragor",
+"s": 1.0
+},
+"Rune_Red_Dmg_Dagger_1": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Dagger_2": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Dagger_3": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Dagger_4": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Dagger_5": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"3Crossbow_5Lgnd_ConcBomb_InfightEnrage": {
+"t": "Concussion Bombs confuse and enrage enemies, causing them to fight each other",
+"s": 1.0
+},
+"4Armor_Fire_Wrath_OnKillByBurning": {
+"t": "Gain {1!.0f} Wrath when an enemy is killed by Fire",
+"s": 1.0
+},
+"6Ring_E_ChanceApplyPoisonWrathFull": {
+"t": "{1!.0f}% chance for any Attack to apply Poison while Wrath is Full",
+"s": 100.0
+},
+"1Sword_Base_Prop_4Epic_DLC_OfDominion": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"5Cape_Fire_HealthRecovAnyKill": {
+"t": "{1!.0f} Health Recovery per Kill",
+"s": 1.0
+},
+"1Sword_Base_Prop_MightOnHit_DLC4": {
+"t": "+{1!.0f} Might Gain on Hit",
+"s": 1.0
+},
+"3Bow_5Lgnd_SetProp_Celebrimbor": {
+"t": "Charged headshots Freeze nearby enemies",
+"s": 1.0
+},
+"3Bow_E_ChanceCritHeadExp": {
+"t": "{1!.0f}% chance charged Headshots cause a head explosion, making nearby enemies flee",
+"s": 100.0
+},
+"4Armor_E_CritChanceBoostWhileOnFire": {
+"t": "{1!.0f}% increased chance for a Critical Hit while on Fire",
+"s": 100.0
+},
+"3Bow_FocusRecovHit": {
+"t": "{1!.0f} Focus Recovery per Ranged Attack Hit",
+"s": 1.0
+},
+"6Ring_ElvenWrathDurationBoost": {
+"t": "Elven Rage lasts {1!.0f}% longer",
+"s": 100.0
+},
+"4Shield_5Lgnd_ApplyPoison_OnGetHit": {
+"t": "{1!.0f}% chance enemies are Poisoned when they hit you with Melee Attacks",
+"s": 100.0
+},
+"6Ring_DefenseBoostUrukTroops": {
+"t": "Allied Uruks take {1!.0f}% less damage",
+"s": 100.0
+},
+"Rune_Green_Health_Sword_1": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Sword_2": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Sword_3": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Sword_4": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Sword_5": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"3Bow_E_RangedDmgVsFrozen": {
+"t": "{1!.0f}% increased Ranged Damage to Frozen enemies",
+"s": 100.0
+},
+"4Shield_2Common_DefMod": {
+"t": "Take {1!.0f}% less damage",
+"s": 100.0
+},
+"1Sword_Beast_PerfectCounter_Kill": {
+"t": "Well-timed {Blue_Counter} {Color_Player}Counters</font> instantly kill enemy grunts. Ineffective against Captains and Beasts.",
+"s": 1.0
+},
+"1Sword_ChanceApplyPoisonOnCrit": {
+"t": "Critical Hits have a {1!.0f}% chance to Poison enemies",
+"s": 100.0
+},
+"6Ring_Base_Property_5Lgnd_Slaughter": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"5Cape_Light_StealthDamage_WhileInvis": {
+"t": "{1!.0f}% increase to Stealth Attack damage while Invisible",
+"s": 100.0
+},
+"4Armor_Base_Skill_MightOnGetHit": {
+"t": "Gain Might each time you are damaged in combat.",
+"s": 1.0
+},
+"1Sword_Base_Prop_5Lgnd_Ringwraith": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"4Armor_HealthRecovAnyKill": {
+"t": "{1!.0f} Health Recovery per Kill",
+"s": 1.0
+},
+"1Sword_Base_Light_On_M_Crit": {
+"t": "Critical Melee Attacks infuse targets with {1!.0f} Light",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SetProp_Dark": {
+"t": "Increases Poison damage to enemies by {1!.0f}%",
+"s": 100.0
+},
+"5Cape_Base_Prop_DLC3": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"2Dagger_AmmoRecovBrutalKill": {
+"t": "{1!.0f} Elf-shot Replenished per Brutalize Kill",
+"s": 1.0
+},
+"5Cape_DefBoostBeastTroops": {
+"t": "Allied Beasts take {1!.0f}% less damage",
+"s": 100.0
+},
+"2Dagger_5Lgnd_SetProp_Terror": {
+"t": "Stealth Drain Attacks make enemy heads explode, causing nearby enemies to flee",
+"s": 1.0
+},
+"2Dagger_Fire_MightRecovOnFleeByBrutalKill": {
+"t": "{1!.0f} Might Gain per Uruk made to flee from a Brutalize Kill",
+"s": 1.0
+},
+"6Ring_WrathRecovOnDominate": {
+"t": "Gain {1!.0f} Wrath per enemy Drained or Dominated",
+"s": 1.0
+},
+"2Dagger_E_RecovAllHealthMightEliteKill": {
+"t": "Recover all Health and gain full Might after Stealth Killing a Captain",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Vendetta": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"LegendarySet_Celebrimbor_Affix1": {
+"t": "Gain Wrath 50% faster, but Elven Rage lasts half as long",
+"s": 100.0
+},
+"LegendarySet_Celebrimbor_Affix2": {
+"t": "Replenish all Elf-shot when killing an enemy during Elven Rage",
+"s": 1.0
+},
+"2Dagger_5Lgnd_StealthKill_SpawnGhoul": {
+"t": "Friendly ghûls are summoned after performing a Stealth Kill",
+"s": 1.0
+},
+"1Sword_Base_Property_Eltariel": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"3Crossbow_4Epic_HeadExplode_OnChainKill": {
+"t": "Chained kills explode heads, inciting terror",
+"s": 1.0
+},
+"3Bow_ChanceCritAppliesFire": {
+"t": "{1!.0f}% chance that a Headshot lights enemies on Fire",
+"s": 100.0
+},
+"5Cape_E_MightRecovGetHitCursed": {
+"t": "{1!.0f} Might Gain when damaged while Cursed",
+"s": 1.0
+},
+"1Sword_Base_Prop_Lgnd_DLC3": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"5Cape_ReduceFireDuration": {
+"t": "Reduces the duration of Fire by {1!.0f}%",
+"s": 100.0
+},
+"3Bow_Base_Property_4Epic": {
+"t": "Epic Bow",
+"s": 1.0
+},
+"Rune_White_Resource_Cape_1": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Cape_2": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Cape_3": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Cape_4": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Cape_5": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"2Dagger_E_AmmoRecovStealthAttackVsElite": {
+"t": "Replenish {1!.0f} Elf-shot when performing a Stealth Attack on a Captain",
+"s": 1.0
+},
+"2Dagger_4Epic_RecovAllHealthMightCptnKill": {
+"t": "Recover all Health and gain full Might after Stealth Killing a Captain",
+"s": 1.0
+},
+"3BowSnipe_5Lgnd_SetProp_Slaughter": {
+"t": "Recover {1!.0f} Health when killing an enemy",
+"s": 1.0
+},
+"5Cape_E_HideAfterLastChance": {
+"t": "Enter Stealth for a short period after a successful Last Chance",
+"s": 1.0
+},
+"2Dagger_Poison_RecovAllHealthMightEliteKill": {
+"t": "Recover all Health and gain full Might after Stealth Killing a Captain",
+"s": 1.0
+},
+"5Armor_4Epic_Command_OnFollowerDie": {
+"t": "+{1!.0f} Command when a Follower dies",
+"s": 1.0
+},
+"3Bow_E_MightRecoverHit": {
+"t": "{1!.0f} Might Gain per Ranged Attack Hit",
+"s": 1.0
+},
+"5Cape_FocusRecovAnyKill": {
+"t": "{1!.0f} Focus Recovery per Kill",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Marauder": {
+"t": "Enemies killed by Beast Attacks have a {1!.0f}% increased chance of dropping {M}",
+"s": 100.0
+},
+"3Crossbow_4Epic_Ammo_OnHeadshotKill": {
+"t": "+{1!.0f} Steel Bolts restored on headshot kill",
+"s": 1.0
+},
+"5Cape_Light_LightHeal_LongerDuration": {
+"t": "Radiance duration increases by {1!.0f}% ",
+"s": 100.0
+},
+"5Armor_4Epic_FollowerAbilityCooldown": {
+"t": "{1!.0f}% reduction in charge time for Follower abilities",
+"s": 100.0
+},
+"1Sword_MightRecovOnAttack": {
+"t": "Gain {1!.0f} Might on any Melee Attack",
+"s": 1.0
+},
+"4Armor_FrostCurse_ReduceCurseDuration": {
+"t": "Reduces the duration of Curse by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_5Lgnd_SetProp_Slaughter": {
+"t": "Recover {1!.0f} Health when killing an enemy",
+"s": 1.0
+},
+"5Cape_RangedDefBoost": {
+"t": "{1!.0f}% less damage from Ranged Attacks",
+"s": 100.0
+},
+"2Dagger_Fire_Explode_OnStealthKill": {
+"t": "Stealth Kills cause enemies to explode",
+"s": 1.0
+},
+"5Cape_DmgBoostBeastTroops": {
+"t": "{1!.0f}% increased damage dealt by Beast allies",
+"s": 100.0
+},
+"2Dagger_WrathRecoverStealthKill": {
+"t": "Gain {1!.0f} Wrath on a Stealth Kill",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Outlaw": {
+"t": "{1!.0f}% increased Melee Damage to Enraged enemies",
+"s": 100.0
+},
+"Rune_White_Resource_Bow_1": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Bow_2": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Bow_3": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Bow_4": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Bow_5": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"3Bow_Base_Prop_DLC3": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"3Bow_E_FocusRecoverHit": {
+"t": "{1!.0f} Focus Recovery per Ranged Attack Hit",
+"s": 1.0
+},
+"Rune_White_Resource_Dagger_1": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Dagger_2": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Dagger_3": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Dagger_4": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Dagger_5": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"3Bow_Base_Property_2Standard_Ham": {
+"t": "Hammer",
+"s": 1.0
+},
+"6Ring_E_AmmoRefillElvenWrath": {
+"t": "Replenish all Elf-shot when killing enemies during Elven Rage",
+"s": 1.0
+},
+"5Cape_Fire_FireAoE_OnSetOnFire": {
+"t": "Creates a Fire explosion when you are set on Fire",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Slaughter": {
+"t": "Recover {1!.0f} Health when killing an enemy",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SetProp_Marauder": {
+"t": "Enemies killed by Stealth Attacks have a {1!.0f}% increased chance of dropping {M}",
+"s": 100.0
+},
+"6Ring_Base_Property_5Lgnd_Warmonger": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Feral": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"4Armor_5Lgnd_SetProp_Ringwraith_Black": {
+"t": "Allied Grunts have a {1!.0f}% chance to resurrect when they die",
+"s": 100.0
+},
+"5Cape_E_HealthRecovMountHowl": {
+"t": "Mounted caragors recover 15% Health when they Howl",
+"s": 1.0
+},
+"3Bow_E_DmgBoostPerAmmoUnderMax": {
+"t": "{1!.0f}% increased Ranged Damage for each Elf-shot below max capacity",
+"s": 100.0
+},
+"5Armor_4Epic_FollowerHeal_OnPlyrKill": {
+"t": "Followers heal {1!.0f} health when you kill an enemy",
+"s": 1.0
+},
+"6Light_Poison_RemovePoison_OnLightBubble": {
+"t": "Restore, Restoration, Ward, and Elven Star cure Poison for you and nearby allies",
+"s": 1.0
+},
+"3Bow_E_DmgBoostVsEnragedNME": {
+"t": "{1!.0f}% increased Ranged Damage to Enraged enemies",
+"s": 100.0
+},
+"6Ring_AmmoRecovOnDominate": {
+"t": "Replenish {1!.0f} Elf-shot when Dominating an enemy",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SetProp_Ringwraith": {
+"t": "Grunts killed by Stealth Attacks have a {1!.0f}% chance to resurrect as allies",
+"s": 100.0
+},
+"5Cape_Base_Property_SotP": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"2Dagger_WrathRecoverStealthKill_NoRerolls": {
+"t": "Gain {1!.0f} Wrath on a Stealth Kill",
+"s": 1.0
+},
+"1Sword_E_ChanceRecoverAllMightExecute": {
+"t": "{1!.0f}% chance to Gain full Might on an Execution",
+"s": 100.0
+},
+"1Sword_Base_Prop_4Epic": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"5Cape_E_IncreaseCurseDuration": {
+"t": "Increases the duration of Curse inflicted on enemies by {1!.0f}%",
+"s": 100.0
+},
+"5Cape_FrostCurse_Vanish_OnCursed": {
+"t": "Become Invisible for {1!.0f} seconds when Cursed",
+"s": 1.0
+},
+"1Sword_E_DLC_GainLvlOnDominate": {
+"t": "Captains automatically gain {1!.f} level(s) when Recruited",
+"s": 1.0
+},
+"2Dagger_Base_Property_4Epic": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"5Armor_4Epic_Might_OnFollowerTakeDmg": {
+"t": "+{1!.0f} Might when an ally takes damage",
+"s": 1.0
+},
+"3Bow_A_Property_Hammer": {
+"t": "Hammer: Charged throws damage enemies near impact",
+"s": 1.0
+},
+"2Dagger_E_MightRecovStealthAttackVsElite": {
+"t": "{1!.0f} Might Gain when performing a Stealth Attack on a Captain",
+"s": 1.0
+},
+"Rune_Green_Health_Armor_1": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Armor_2": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Armor_3": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Armor_4": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Armor_5": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"5Armor_4Epic_FollowerSummonCooldown": {
+"t": "Reduces Call Followers cooldown by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_AmmoRecovStealthKill": {
+"t": "{1!.0f} Elf-shot Replenished on a Stealth Kill",
+"s": 1.0
+},
+"4Armor_E_DefenseWhilePoisoned": {
+"t": "All incoming damage reduced by {1!.0f}% while Poisoned",
+"s": 100.0
+},
+"6Ring_E_HealthRecovWhileElvenWActive": {
+"t": "Recover {1!.0f}% Health per second while Elven Rage is active",
+"s": 100.0
+},
+"5Cape_ReducePoisonDuration": {
+"t": "Reduces the duration of Poison by {1!.0f}%",
+"s": 100.0
+},
+"5Armor_4Epic_Command_OnFollowerKill": {
+"t": "+{1!.0f} Command when a Follower kills an enemy",
+"s": 1.0
+},
+"1Sword_Base_Prop_2Standard": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Terror": {
+"t": "Recover {1!.0f} Health per second while Cursed",
+"s": 1.0
+},
+"2Dagger_E_StealthDmgMightFull": {
+"t": "{1!.0f}% increased Stealth Damage when your Might is Full",
+"s": 100.0
+},
+"5Cape_Base_Prop_5Lgnd_Marauder": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"2Dagger_E_ChanceBecomeUndetectedEliteKill": {
+"t": "{1!.0f}% chance to become briefly undetected after killing a Captain",
+"s": 100.0
+},
+"1Sword_2Common_MightOnHit": {
+"t": "+{1!.0f} Might Gain on Hit",
+"s": 1.0
+},
+"2Dagger_E_MightRecovOnFleeByBrutalKill": {
+"t": "{1!.0f} Might Gain per Uruk made to flee from a Brutalize Kill",
+"s": 1.0
+},
+"4Armor_E_DefenseWhileOnFire": {
+"t": "All incoming damage reduced by {1!.0f}% while on Fire",
+"s": 100.0
+},
+"2Dagger_5Lgnd_SetProp_Warmonger": {
+"t": "Stealth Attacks light enemies on Fire",
+"s": 1.0
+},
+"4Armor_ChanceCritAppliesPoison": {
+"t": "{1!.0f}% chance that a Critical Hit applies Poison",
+"s": 100.0
+},
+"6Light_FrostCurse_ExtraLight_FrozenEnemy": {
+"t": "{1!.0f}% increased Light added to Frozen enemies",
+"s": 100.0
+},
+"4Shield_5Lgnd_ExtraLastChance": {
+"t": "Gain one extra Last Chance",
+"s": 1.0
+},
+"1Sword_Base_Property_SotP": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"3Bow_ChanceCritAppliesFreeze": {
+"t": "{1!.0f}% chance that a Headshot Freezes enemies",
+"s": 100.0
+},
+"3Bow_XPBoostOnExploit": {
+"t": "{1!.0f} XP Boost on Exploiting a fear or vulnerability",
+"s": 1.0
+},
+"6Light_Fire_RemoveFire_OnLightBubble": {
+"t": "Restore, Restoration, Ward, and Elven Star extinguish Fire for you and nearby allies",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_CelebrimborShortbow": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"1Sword_Base_Prop_Light_DLC3": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Mystic": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Warmonger": {
+"t": "Recover {1!.0f} Health per second while on Fire",
+"s": 1.0
+},
+"6Ring_Base_Property_5Lgnd_Mystic": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"4Armor_Light_LightShield_Blind": {
+"t": "Shield unleashes an explosion of Light when you are attacked",
+"s": 1.0
+},
+"4Shield_4Epic_HPRefill_OnEnemyKill": {
+"t": "+{1!.0f} Health recovered when you kill an enemy",
+"s": 1.0
+},
+"2Dagger_4Epic_CoinDrop_OnStealthKill": {
+"t": "Stealth kills are guaranteed to drop {Coin}",
+"s": 1.0
+},
+"3Bow_E_RangedDmgVsCursed": {
+"t": "{1!.0f}% increased Ranged Damage to Cursed enemies",
+"s": 100.0
+},
+"1Sword_E_DmgHighHealthLow": {
+"t": "Melee Damage increases by 1% for each 2% decreased Health",
+"s": 1.0
+},
+"6Ring_Base_Property_5Lgnd_Celebrimbor": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"Rune_White_Resource_Sword_1": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Sword_2": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Sword_3": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Sword_4": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Sword_5": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"4Shield_2Common_FollowerHPMod": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"1Sword_FrostCurse_Freeze_OnPerfectCounter": {
+"t": "Perfect Counter Freezes enemies",
+"s": 1.0
+},
+"1Sword_HealthRecovExecution_NoRerolls": {
+"t": "{1!.0f} Health Recovery on an Execution",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SlowMo_OnBrutalStealth": {
+"t": "Time slows for {1!.0f} seconds after performing a Brutal Stealth Kill",
+"s": 1.0
+},
+"1Sword_DmgBoostHealthFull_NoRerolls": {
+"t": "{1!.0f}% increased damage when Health is Full",
+"s": 100.0
+},
+"5Cape_5Lgnd_SetProp_Vendetta": {
+"t": "Damage dealt increases by {1!.0f}% when Health is below 35%",
+"s": 100.0
+},
+"5Armor_2Common_FocusMod": {
+"t": "+{1!.0f} Focus",
+"s": 1.0
+},
+"LegendarySet_Light_Affix1": {
+"t": "Gain {1!.0f} Might when an enemy is Blinded",
+"s": 1.0
+},
+"LegendarySet_Light_Affix2": {
+"t": "Perfect Counter infuses enemies with Light",
+"s": 100.0
+},
+"3Bow_ChanceCritAppliesCurse": {
+"t": "{1!.0f}% chance that a Headshot Curses enemies",
+"s": 100.0
+},
+"3Bow_BaseEltariel_Property": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"6Ring_Base_Property_3Rare": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"6Light_Beast_Boost_Dmg_Mount": {
+"t": "Mounts deal {1!.0f}% increased damage",
+"s": 100.0
+},
+"6Light_Light_Wrath_On_KillBlinded": {
+"t": "Gain {1!.0f} Wrath when killing a Blinded enemy",
+"s": 1.0
+},
+"Rune_White_Resource_Ring_1": {
+"t": "Rune: Captains automatically gain {1!.f} level(s) when Recruited",
+"s": 1.0
+},
+"Rune_White_Resource_Ring_2": {
+"t": "Rune: Captains automatically gain {1!.f} level(s) when Recruited",
+"s": 1.0
+},
+"Rune_White_Resource_Ring_3": {
+"t": "Rune: Captains automatically gain {1!.f} level(s) when Recruited",
+"s": 1.0
+},
+"Rune_White_Resource_Ring_4": {
+"t": "Rune: Captains automatically gain {1!.f} level(s) when Recruited",
+"s": 1.0
+},
+"Rune_White_Resource_Ring_5": {
+"t": "Rune: Captains automatically gain {1!.f} level(s) when Recruited",
+"s": 1.0
+},
+"4Armor_5Lgnd_SetProp_Outlaw": {
+"t": "{1!.0f}% less damage from Enraged enemies",
+"s": 100.0
+},
+"2Dagger_Base_Prop_5Lgnd_Celebrimbor": {
+"t": "A design based on a sword carried by the Bright Lord during the Second Age.",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SetProp_Vendetta": {
+"t": "Stealth Damage dealt increases by {1!.0f}% when Health is below 35%",
+"s": 100.0
+},
+"5Cape_E_ResistanceBoostBeastTroops": {
+"t": "Beast allies reduce the duration of Fire, Poison, and Curse by {1!.0f}%",
+"s": 100.0
+},
+"6Ring_Base_Property_5Lgnd_Ringwraith": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"2Dagger_Base_WrathRecoverStealthKill": {
+"t": "Gain {1!.0f} Wrath on a Stealth Kill",
+"s": 1.0
+},
+"2Dagger_Base_Light_On_Stealth": {
+"t": "Stealth Attacks infuse targets with {1!.0f} Light ",
+"s": 1.0
+},
+"4Armor_E_HealthRegenWrathFull": {
+"t": "{1!.1f}% Health Recovery per second while your Wrath is Full",
+"s": 100.0
+},
+"6Ring_5Lgnd_SetProp_Terror": {
+"t": "Consume attacks make enemy heads explode, causing nearby enemies to flee",
+"s": 1.0
+},
+"1Sword_Base_Prop_1Default": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Feral": {
+"t": "Reduces Call Mount cooldown by {1!.0f}%",
+"s": 100.0
+},
+"4Armor_E_DefenseVsEnraged": {
+"t": "{1!.0f}% less damage from Enraged enemies",
+"s": 100.0
+},
+"1Sword_Base_Prop_5Lgnd_Mystic": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"1Sword_FrostCurse_DmgBoost_VsFrozenOrCurse": {
+"t": "{1!.0f}% increased Melee Damage against Cursed and Frozen enemies",
+"s": 100.0
+},
+"4Armor_MightRecovEliteKill": {
+"t": "{1!.0f} Might Gain per Captain Killed",
+"s": 1.0
+},
+"3Bow_Base_Property_4Epic_Ham": {
+"t": "Epic Hammer",
+"s": 1.0
+},
+"6Ring_E_ChanceApplyFireWrathFull": {
+"t": "{1!.0f}% chance for any Attack to light enemies on Fire while your Wrath is Full",
+"s": 100.0
+},
+"3Crossbow_4Epic_Focus_OnRangedHit": {
+"t": "+{1!.0f} Focus on Ranged Hit",
+"s": 1.0
+},
+"3Bow_Base_Prop_DmgR_DLC4": {
+"t": "+{1!.0f} Ranged Damage on Steel, Fire, and Poison Bolts",
+"s": 1.0
+},
+"1Sword_4Epic_MightGain_HPFull": {
+"t": "+{1!.0f}% Might on hit while your Health is full",
+"s": 100.0
+},
+"6Ring_Base_Property_5Lgnd_Feral": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"2Dagger_ChanceApplyFreezeQuickthrow_NoRerolls": {
+"t": "Quick Throw applies Frost every {1!.0f} seconds",
+"s": 1.0
+},
+"1Sword_E_DmgBoostWkndFearedNME": {
+"t": "{1!.0f}% increased damage to Dazed Captains",
+"s": 100.0
+},
+"Rune_Green_Health_Bow_1": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Bow_2": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Bow_3": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Bow_4": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Bow_5": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"3Crossbow_5Legendary_DelayedExplosive": {
+"t": "Steel Bolts do no damage, but explode shortly after impact",
+"s": 1.0
+},
+"1Sword_4Epic_MightUnlimOnCptnKill_DLC4": {
+"t": "Might is unlimited for {1!.1f} seconds after killing a Captain",
+"s": 1.0
+},
+"3Bow_FrostCurse_Freeze_OnPin": {
+"t": "Pinning shot freezes enemies completely",
+"s": 1.0
+},
+"3Bow_5Lgnd_SetProp_Mystic": {
+"t": "Chain of Shadows consumes {1!.0f}% less Focus",
+"s": 100.0
+},
+"6Ring_E_DmgBoostTroopsVsWknFear": {
+"t": "{1!.0f}% increased damage dealt by allies to Dazed Captains",
+"s": 100.0
+},
+"6Ring_E_DmgBoostTroopsVsCursed": {
+"t": "{1!.0f}% increased damage dealt by allies to Cursed enemies",
+"s": 100.0
+},
+"6Ring_E_DmgBoostHealthFull": {
+"t": "{1!.0f}% increased Melee Damage when Health is Full",
+"s": 100.0
+},
+"5Cape_Base_Prop_5Lgnd_Ringwraith": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"1Sword_SilverReward_MightOnGetHit": {
+"t": "Gain Might each time you are damaged in combat",
+"s": 1.0
+},
+"3Bow_BaseSotP_Property_Ham": {
+"t": "Hammer",
+"s": 1.0
+},
+"5Cape_E_FocusRefillKillElite": {
+"t": "Recover all Focus after killing a Captain",
+"s": 1.0
+},
+"LegendarySet_FrostCurse_Affix1": {
+"t": "Ranged Attacks with a bow shatter Frozen enemies, dealing heavy damage",
+"s": 100.0
+},
+"LegendarySet_FrostCurse_Affix2": {
+"t": "Unleash a Frost explosion when Cursed",
+"s": 100.0
+},
+"3Bow_Base_Property_1Default_Snipe": {
+"t": "Long Bow",
+"s": 1.0
+},
+"5Cape_Base_Prop_5Lgnd_Terror": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"6Light_Fire_ExtraLight_OnFireEnemy": {
+"t": "{1!.0f}% increased Light added to enemies who are on Fire",
+"s": 100.0
+},
+"5Cape_Base_Prop_5Lgnd_Vendetta": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"5Cape_Base_Property_1Default": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"6Ring_Base_Property_2Standard": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"2Dagger_E_StealthDmgBoostPoisonedNME": {
+"t": "{1!.0f}% increased Stealth Damage to Poisoned enemies",
+"s": 100.0
+},
+"3Crossbow_2Common_DmgMod": {
+"t": "+{1!.0f} Ranged Damage on Steel, Fire, and Poison Bolts",
+"s": 1.0
+},
+"2Dagger_StealthDmgBoostHealthFull": {
+"t": "{1!.0f}% increased Stealth Damage when Health is filled",
+"s": 100.0
+},
+"1Sword_Base_Prop_5Lgnd_Machine": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Terror": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"3Crossbow_4Epic_PinOlogs": {
+"t": "Pin affects Olog-hai and Beasts",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Ringwraith": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"5Armor_5Lgnd_FlwrEnrage_OnPlayerTakeDmg": {
+"t": "Allies become Enraged when you take damage",
+"s": 1.0
+},
+"Gem_Blade_Cape_1": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Cape_2": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Cape_3": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Cape_4": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Cape_5": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"LegendarySet_Dark_Affix1": {
+"t": "Gain {1!.0f} Might when enemies take damage from your Poison",
+"s": 1.0
+},
+"LegendarySet_Dark_Affix2": {
+"t": "All attacks have a {1!.0f}% chance to inflict an explosive poison on grunts",
+"s": 100.0
+},
+"2Dagger_MightRecoverQuickThrow_NoRerolls": {
+"t": "Quick Throw gains Might every {1!.0f} seconds",
+"s": 1.0
+},
+"4Armor_WrathRecovEliteKill": {
+"t": "Gain {1!.0f} Wrath when a Captain is killed",
+"s": 1.0
+},
+"2Dagger_Base_Property_1Default": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"LegendarySet_Fire_Affix1": {
+"t": "Elven Light sets nearby enemies on fire, instead of infusing them with Light and Blinding them",
+"s": 100.0
+},
+"LegendarySet_Fire_Affix2": {
+"t": "Killing Blinded enemies creates a Fire explosion",
+"s": 100.0
+},
+"Rune_White_Resource_Armor_1": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Armor_2": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Armor_3": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Armor_4": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"Rune_White_Resource_Armor_5": {
+"t": "Armor: {1!.1f}% increase to XP earned",
+"s": 100.0
+},
+"1Sword_MightRecovWeakenedNME": {
+"t": "{1!.0f} Might Gain when striking a Dazed Captain",
+"s": 1.0
+},
+"3Bow_Fire_FireAoE_OnHeadshot": {
+"t": "Charged bow shots against Blinded enemies create Fire explosions",
+"s": 1.0
+},
+"3Bow_Base_Property_3Rare": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"2Dagger_5Lgnd_SetProp_Mystic": {
+"t": "Wraith Chain Stealth Attacks consume {1!.0f}% less Focus",
+"s": 100.0
+},
+"2Dagger_4Epic_Fire_OnStealthHit": {
+"t": "Stealth Attacks light enemies on Fire",
+"s": 1.0
+},
+"1Sword_5Legendary_RiskyMight": {
+"t": "+{1!.0f}% Might on hit. Might fully resets after you take damage.",
+"s": 100.0
+},
+"4Armor_ChanceCritAppliesCurse_NoRerolls": {
+"t": "{1!.0f}% chance that a Critical Hit applies Curse",
+"s": 100.0
+},
+"LegendarySet_Terror_Affix1": {
+"t": "Quick Throw instantly kills fleeing grunts",
+"s": 1.0
+},
+"LegendarySet_Terror_Affix2": {
+"t": "Recover {1!.0f} Health when killing a fleeing enemy",
+"s": 1.0
+},
+"5Armor_4Epic_HealthPack_NearbyAllies": {
+"t": "Using a Healing Elixir heals all nearby allies",
+"s": 1.0
+},
+"1Sword_E_MightRecoveryHitStreak10+": {
+"t": "{1!.0f} Might Gain when Hitstreak is above 10",
+"s": 1.0
+},
+"3Bow_Base_Light_OnHeadshot": {
+"t": "Headshots infuse targets with {1!.0f} Light",
+"s": 1.0
+},
+"4Armor_E_CritChanceBoostWhileCursed": {
+"t": "{1!.0f}% increased chance for a Critical Hit while Cursed",
+"s": 100.0
+},
+"6Light_Base_Ammo_OnGameChanger": {
+"t": "Recover all Elf-shot after activating Elven Rage",
+"s": 1.0
+},
+"4Armor_E_CritChanceBoostWhilePoisoned": {
+"t": "{1!.0f}% increased chance for a Critical Hit while Poisoned",
+"s": 100.0
+},
+"3Bow_MightRecovBowKill": {
+"t": "{1!.0f} Might Gain per Ranged Kill",
+"s": 1.0
+},
+"4Armor_E_DmgBoostWhenCursed": {
+"t": "{1!.0f}% increased damage while Cursed",
+"s": 100.0
+},
+"6Ring_E_HealthRefillKillElite": {
+"t": "Recover all Health after killing a Captain",
+"s": 1.0
+},
+"1Sword_4Epic_MightRecover_OverTime": {
+"t": "+{1!.0f} Might recovered per second",
+"s": 1.0
+},
+"2Dagger_Base_Property_SotP": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"6Light_Light_LightHeal_On_LightAoE": {
+"t": "Elven Light also activates Radiance",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Marauder": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"5Armor_5Lgnd_MortalDmgRedirect": {
+"t": "If you take damage that would normally kill you, a nearby Mercenary Bodyguard sacrifices himself in your place",
+"s": 1.0
+},
+"4Armor_AmmoRecovEliteKill": {
+"t": "{1!.0f} Elf-shot Replenished per Captain Killed",
+"s": 1.0
+},
+"4Armor_ChanceCritAppliesCurse": {
+"t": "{1!.0f}% chance that a Critical Hit applies Curse",
+"s": 100.0
+},
+"5Cape_FrostCurse_Boost_MaxElfshot": {
+"t": "Increase Max Elf-shot by {1!.0f}",
+"s": 1.0
+},
+"6Ring_E_DmgBoostUndeadTroops": {
+"t": "{1!.0f}% increased damage dealt by Undead followers",
+"s": 100.0
+},
+"5Cape_E_IncreaseFreezeDuration": {
+"t": "Increases the duration of Frost inflicted on enemies by {1!.0f}%",
+"s": 100.0
+},
+"1Sword_4Epic_ChainAoE_Ignite": {
+"t": "Cyclone causes a Fire explosion",
+"s": 1.0
+},
+"3Bow_AmmoRecovOnWknFear_NoRerolls": {
+"t": "{1!.0f} Elf-shot Replenished when a Captain becomes Dazed",
+"s": 1.0
+},
+"3Crossbow_4Epic_MoreChainShots": {
+"t": "Chained kills require {1!.0f}% less Focus",
+"s": 100.0
+},
+"5Cape_Base_Property_Eltariel": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"3Bow_MightRecovOnCrit_NoRerolls": {
+"t": "{1!.0f} Might Gain on Critical Hit",
+"s": 1.0
+},
+"1Sword_Base_Prop_3Rare": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"4Armor_Beast_Def_VsBeasts": {
+"t": "Reduce damage from Beasts by {1!.0f}%",
+"s": 100.0
+},
+"3Bow_Base_Prop_Lgnd_DLC3": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"4Shield_MithrilReward_HPOnKill_NoHPack": {
+"t": "{Color_Enemy}Survival Challenge</font>: You lose the ability to use Healing Elixirs, but you restore {1!.0f} Health on each kill",
+"s": 1.0
+},
+"2Dagger_Base_Property_3Rare": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Ringwraith_Nazgul_Hmrhand": {
+"t": "Graug Call summons an elemental Graug",
+"s": 1.0
+},
+"2Dagger_ChanceApplyPoisonQuickthrow": {
+"t": "Quick Throw applies Poison every {1!.0f} seconds",
+"s": 1.0
+},
+"6Ring_5Lgnd_SetProp_Celebrimbor": {
+"t": "Gain {1!.1f} Wrath when killing Frozen enemies",
+"s": 1.0
+},
+"1Sword_Base_Prop_CritChance_DLC4": {
+"t": "+{1!.0f}% Critical Hit Chance",
+"s": 1.0
+},
+"3Bow_Base_Focus_OnKill_Blinded": {
+"t": "Gain {1!.0f} Focus when killing a Blinded enemy",
+"s": 1.0
+},
+"1Sword_4Epic_DmgVsNMEEnraged_Melee": {
+"t": "{1!.0f}% increased Melee Damage to Enraged enemies",
+"s": 100.0
+},
+"2Dagger_E_ChanceQTGainAmmo": {
+"t": "Quick Throw replenishes 1 Elf-shot every {1!.0f} seconds",
+"s": 1.0
+},
+"2Dagger_Base_Property_Eltariel": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"4Armor_MightRecovCrit": {
+"t": "{1!.0f} Might Gain on Critical Hit",
+"s": 1.0
+},
+"1Sword_E_AllHealthMightLC": {
+"t": "Recover full Health and Might after a Last Chance success",
+"s": 1.0
+},
+"2Dagger_ChanceApplyFireQuickthrow": {
+"t": "Quick Throw lights enemies on Fire every {1!.0f} seconds",
+"s": 1.0
+},
+"LegendarySet_Warmonger_Affix1": {
+"t": "Recover {1!.0f} Health when killing an enemy who is on Fire",
+"s": 1.0
+},
+"LegendarySet_Warmonger_Affix2": {
+"t": "While on Fire, you will periodically explode, releasing a burst of flames",
+"s": 1.0
+},
+"2Dagger_5Lgnd_Invis_OnHealthPackUse": {
+"t": "Become invisible for {1!.0f} seconds after using a Healing Elixir",
+"s": 1.0
+},
+"6Ring_5Lgnd_SetProp_Ringwraith": {
+"t": "Increased Raise Dead radius",
+"s": 1.0
+},
+"6Light_Fire_Might_On_EnemyOnFire": {
+"t": "Gain {1!.0f} Might when an enemy is set on Fire",
+"s": 1.0
+},
+"1Sword_Base_Prop_5Lgnd_Slaughter": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"6Light_Poison_ExtraLight_PoisonedEnemy": {
+"t": "{1!.0f}% increased Light added to Poisoned enemies",
+"s": 100.0
+},
+"1Sword_HealthRecovOnCritHit": {
+"t": "{1!.0f} Health Recovery on a Critical Hit",
+"s": 1.0
+},
+"5Cape_E_IncreaseFireDuration": {
+"t": "Increases the duration of Fire inflicted on enemies by {1!.0f}%",
+"s": 100.0
+},
+"5Cape_5Lgnd_SetProp_Ringwraith_Nazgul_ArPharzn": {
+"t": "Consume and Drain kills create a Curse explosion",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Dark": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Machine": {
+"t": "Defeated enemies have a {1!.0f}% chance of exploding",
+"s": 100.0
+},
+"6Ring_E_ChanceApplyFreezeWrathFull": {
+"t": "{1!.0f}% chance for any Attack to apply Frost while your Wrath is Full",
+"s": 100.0
+},
+"6Light_Base_Wrath_OnKill_Blinded": {
+"t": "Gain {1!.0f} Wrath when killing a Blinded enemy",
+"s": 1.0
+},
+"4Shield_4Epic_StunPunch_Freeze": {
+"t": "Shield bash ({CombatPrimary03}) freezes enemies for a long duration",
+"s": 100.0
+},
+"1Sword_E_ExecuteApplyPoisonOnElite": {
+"t": "Executions on a Captain make your Attacks apply Poison for 10 seconds.",
+"s": 1.0
+},
+"5Cape_Base_Property_4Epic": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"1Sword_E_LCAttemptEasier": {
+"t": "More time to succeed during a Last Chance",
+"s": 1.0
+},
+"5Armor_5Lgnd_DmgBoost_PerCoin": {
+"t": "Picking up {Coin} increases damage by {1!.0f}% per {Coin} gained for 20 seconds",
+"s": 100.0
+},
+"4Armor_5Lgnd_SetProp_Slaughter": {
+"t": "Recover {1!.0f} Health when killing an enemy",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Outlaw": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"6Light_Base_Prop_Lgnd_DLC3": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"6Ring_Base_Property_5Lgnd_Outlaw": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"1Sword_Base_Prop_5Lgnd_Celebrimbor": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Mystic": {
+"t": "Reduces Call Followers cooldown by {1!.0f}%",
+"s": 100.0
+},
+"3Bow_Beast_MightyShot_BrandBeasts": {
+"t": "Elven Star dominates unbroken Beasts",
+"s": 100.0
+},
+"3Bow_FocusRecovHit_NoRerolls": {
+"t": "{1!.0f} Focus Recovery per Ranged Attack Hit",
+"s": 1.0
+},
+"2Dagger_Base_Prop_Lgnd_DLC3": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"Gem_Blade_Ring_1": {
+"t": "Rune: {1!.0f}% increased Light added to enemies",
+"s": 100.0
+},
+"Gem_Blade_Ring_2": {
+"t": "Rune: {1!.0f}% increased Light added to enemies",
+"s": 100.0
+},
+"Gem_Blade_Ring_3": {
+"t": "Rune: {1!.0f}% increased Light added to enemies",
+"s": 100.0
+},
+"Gem_Blade_Ring_4": {
+"t": "Rune: {1!.0f}% increased Light added to enemies",
+"s": 100.0
+},
+"Gem_Blade_Ring_5": {
+"t": "Rune: {1!.0f}% increased Light added to enemies",
+"s": 100.0
+},
+"LegendarySet_Vendetta_Affix1": {
+"t": "Perform attacks requiring Might by consuming {1!.0f}% of your max Health instead",
+"s": 100.0
+},
+"LegendarySet_Vendetta_Affix2": {
+"t": "If you have no Elf-shot, you can perform Ranged Attacks by consuming {1!.0f}% of your max Health",
+"s": 100.0
+},
+"1Sword_4Epic_CritChance_FullHealth": {
+"t": "{1!.0f}% increased Critical Hit chance for Melee Attacks while your Health is full",
+"s": 100.0
+},
+"LegendarySet_Outlaw_Affix1": {
+"t": "{1!.0f}% chance to inflict Fire, Poison, Frost, or Curse upon an enemy on a hit",
+"s": 100.0
+},
+"LegendarySet_Outlaw_Affix2": {
+"t": "Follower Attacks have a {1!.0f}% chance to inflict Fire, Poison, Frost, or Curse on enemies",
+"s": 100.0
+},
+"3Bow_FrostCurse_Freeze_FleeingEnemy": {
+"t": "Ranged Attacks Freeze fleeing enemies",
+"s": 1.0
+},
+"3BowSnipe_5Lgnd_SetProp_Dark": {
+"t": "Increases Poison damage to enemies by {1!.0f}%",
+"s": 100.0
+},
+"LegendarySet_Marauder_Affix1": {
+"t": "Picking up {M} increases damage by {1!.0f}% per {M} gained for 20 seconds",
+"s": 100.0
+},
+"LegendarySet_Marauder_Affix2": {
+"t": "Picking up {M} recovers {1!.0f} Health per {M} gained",
+"s": 1.0
+},
+"2Dagger_Poison_StealthApplyPoisonOnElite": {
+"t": "Your Stealth Attacks always apply Poison",
+"s": 1.0
+},
+"2Dagger_MightRecoverStealthKill": {
+"t": "{1!.0f} Might Gain on a Stealth Kill",
+"s": 1.0
+},
+"4Armor_5Lgnd_SetProp_Feral": {
+"t": "Reduces Call Mount cooldown by {1!.0f}%",
+"s": 100.0
+},
+"3Crossbow_5Lgnd_Headshot_FreezeAoE": {
+"t": "Headshots Freeze nearby enemies",
+"s": 1.0
+},
+"1Sword_2Common_DmgMod": {
+"t": "+{1!.0f} Melee Damage",
+"s": 1.0
+},
+"3Bow_A_Property_MarkExecute_Fake": {
+"t": "Drawing the bow can Mark enemies. Release to Execute enemies.",
+"s": 1.0
+},
+"2Dagger_5Lgnd_StealthKill_SpawnSpiders": {
+"t": "Friendly spiders are summoned after performing a Stealth Kill",
+"s": 1.0
+},
+"2Dagger_4Epic_StealthFromGlide_DmgUp": {
+"t": "+{1!.0f}% damage for Stealth attacks performed while Gliding",
+"s": 100.0
+},
+"3Bow_Beast_Might_OnBowCrit": {
+"t": "Gain {1!.0f} Might on Headshots",
+"s": 1.0
+},
+"1Sword_E_MightRecoveryOnGroundTake": {
+"t": "{1!.0f} Might Gain on a Ground Execution",
+"s": 1.0
+},
+"3Bow_E_AmmoRefillEliteKill_Any": {
+"t": "Replenish all Elf-shot after killing a Captain",
+"s": 1.0
+},
+"3Bow_Base_Property_2Standard_Snipe": {
+"t": "Long Bow",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Vendetta": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_CelebrimborHam": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"6Ring_FocusRecovAnyKill": {
+"t": "{1!.0f} Focus Recovery per Kill",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Dark": {
+"t": "A tainted blade designed by the Dark Tribe.",
+"s": 1.0
+},
+"6Ring_5Lgnd_SetProp_Marauder": {
+"t": "Enemies killed by Follower Attacks have a {1!.0f}% increased chance of dropping {M}",
+"s": 100.0
+},
+"5Cape_E_Chameleon": {
+"t": "Become undetectable after remaining motionless for {1!.0f} seconds",
+"s": 1.0
+},
+"2Dagger_2Common_DmgMod": {
+"t": "+{1!.0f} Stealth Damage",
+"s": 1.0
+},
+"4Armor_E_PoisonImmunity": {
+"t": "Take no damage from Poison",
+"s": 1.0
+},
+"4Shield_4Epic_RangedDefBoost": {
+"t": "{1!.0f}% less damage from Ranged Attacks",
+"s": 100.0
+},
+"3Crossbow_4Epic_RangedDmgVsPoisoned": {
+"t": "{1!.0f}% increased Ranged Damage to Poisoned enemies",
+"s": 100.0
+},
+"3Bow_E_AmmoFocusRefillEliteKill_Bow": {
+"t": "Fully replenish Elf-shot and Focus after a Ranged Kill on a Captain",
+"s": 1.0
+},
+"1Sword_Base_Prop_5Lgnd_Outlaw": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Machine": {
+"t": "Each Glaive Attack creates an explosion",
+"s": 100.0
+},
+"4Armor_E_DefenseWhileCursed": {
+"t": "All incoming damage reduced by {1!.0f}% while Cursed",
+"s": 100.0
+},
+"1Sword_Base_Prop_5Lgnd_Warmonger": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"6Ring_Base_Property_5Lgnd_Marauder": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Terror": {
+"t": "After a Brutal Execution, Melee Attacks inflict Curse for 10 seconds",
+"s": 1.0
+},
+"4Armor_E_MightRegenCursed": {
+"t": "{1!.1f} Might Gain per second while Cursed",
+"s": 100.0
+},
+"1Sword_5Lgnd_SetProp_Feral": {
+"t": "Reduces Call Mount cooldown by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_E_StealthDmgBoostCursedNME": {
+"t": "{1!.0f}% increased Stealth Damage to enemies that are Cursed",
+"s": 100.0
+},
+"1Sword_Light_LightAoE_VsBlinded": {
+"t": "Melee Attacks against Blinded enemies create Light explosions",
+"s": 1.0
+},
+"4Shield_5Lgnd_AutoHPackUse": {
+"t": "Healing Elixir is automatically used if you would die from taking damage",
+"s": 1.0
+},
+"Gem_Blade_Dagger_1": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Dagger_2": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Dagger_3": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Dagger_4": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Dagger_5": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"2Dagger_E_StealthApplyPoisonOnElite": {
+"t": "Your Stealth Attacks always apply Poison",
+"s": 1.0
+},
+"5Cape_Base_Prop_5Lgnd_Celebrimbor": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"3Bow_HealthRecovHit": {
+"t": "{1!.0f} Health Recovery per Ranged Hit",
+"s": 1.0
+},
+"3Bow_FrostCurse_ChanceCritHeadExp": {
+"t": "{1!.0f}% chance charged Headshots cause a head explosion, making nearby enemies flee",
+"s": 100.0
+},
+"3Bow_E_DmgBoostWkndFearedNME": {
+"t": "{1!.0f}% increased Ranged Damage to Dazed Captains",
+"s": 100.0
+},
+"4Shield_4Epic_PoisonImmunity_DLC4": {
+"t": "Take no damage from Poison",
+"s": 1.0
+},
+"1Sword_4Epic_Poison_On_M_Crit": {
+"t": "Critical melee hits Poison enemies",
+"s": 1.0
+},
+"1Sword_E_ExecuteApplyFireOnElite": {
+"t": "Executions on a Captain make your Attacks light enemies on Fire for 10 seconds.",
+"s": 1.0
+},
+"6Ring_5Lgnd_SetProp_Mystic": {
+"t": "Reduces Call Followers cooldown by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_CritDamageBonus": {
+"t": "Critical Hit Damage is increased by {1!.0f}%",
+"s": 100.0
+},
+"4Armor_5Lgnd_SetProp_Warmonger": {
+"t": "Recover {1!.0f} Health per second while on Fire",
+"s": 1.0
+},
+"3Bow_WrathRecovBowKill": {
+"t": "Gain {1!.0f} Wrath per Ranged Kill",
+"s": 1.0
+},
+"3Bow_5Lgnd_SetProp_Outlaw": {
+"t": "{1!.0f}% increased Ranged Damage to Enraged enemies",
+"s": 100.0
+},
+"LegendarySet_Beast_Affix1": {
+"t": "Cone of Light deals damage to enemy Beasts",
+"s": 100.0
+},
+"LegendarySet_Beast_Affix2": {
+"t": "All nearby Beasts are dominated while you are mounted",
+"s": 100.0
+},
+"5Cape_FocusRecovAnyKill_NoRerolls": {
+"t": "{1!.0f} Focus Recovery per Kill",
+"s": 1.0
+},
+"5Armor_BronzeReward_BetterLoot": {
+"t": "Increase your chances of high-quality gear drops from Captains or higher ranking Orcs",
+"s": 100.0
+},
+"1Sword_MightRecovWeakenedNME_NoRerolls": {
+"t": "{1!.0f} Might Gain when striking a Dazed Captain",
+"s": 1.0
+},
+"1Sword_Fire_DmgBoost_OnFireNME": {
+"t": "{1!.0f}% increased damage to enemies that are on Fire",
+"s": 100.0
+},
+"1Sword_DmgHitStreak10+": {
+"t": "{1!.0f}% increased Melee Damage when Hitstreak is over 10",
+"s": 100.0
+},
+"LegendarySet_Slaughter_Affix1": {
+"t": "Slowly drains Health but briefly increases damage by {1!.0f}% after Drain or Dominate",
+"s": 100.0
+},
+"LegendarySet_Slaughter_Affix2": {
+"t": "Having Followers and allied Beasts nearby increases your damage by {1!.0f}%, but their Health slowly drains",
+"s": 100.0
+},
+"3Crossbow_4Epic_RangedDmgVsOnFire": {
+"t": "{1!.0f}% increased Ranged Damage to enemies that are on Fire",
+"s": 100.0
+},
+"2Dagger_E_FearAoEGruntsOnEliteStealthHit": {
+"t": "Stealth Attacks on Captains cause nearby grunts to Flee",
+"s": 1.0
+},
+"4Armor_FrostCurse_Health_OnKillFrozenEnemy": {
+"t": "Recover {1!.0f} Health when a Frozen enemy is killed",
+"s": 1.0
+},
+"2Dagger_FrostCurse_LightCone_Freeze": {
+"t": "Light Bolt instead creates a freezing cone",
+"s": 1.0
+},
+"5Cape_E_HealthRecovMountStealthKill": {
+"t": "{1!.0f} Health Recovery per Stealth Kill while mounted on a caragor",
+"s": 1.0
+},
+"3Bow_Light_Ammo_OnKill_Blinded": {
+"t": "Replenish {1!.0f} Elf-shot when killing a Blinded enemy",
+"s": 1.0
+},
+"1Sword_5Lgnd_MeleePoisons_WhileHealthLow": {
+"t": "Melee attacks have a {1!.0f}% chance to inflict Poison while your Health is low",
+"s": 100.0
+},
+"6Ring_FocusRecovAnyKill_NoRerolls": {
+"t": "{1!.0f} Focus Recovery per Kill",
+"s": 1.0
+},
+"5Cape_E_HealthRefillStealthKill": {
+"t": "Recover all Health after a successful Stealth Kill",
+"s": 1.0
+},
+"1Sword_E_WrathRecovExecution": {
+"t": "Gain {1!.0f} Wrath on an Execution",
+"s": 1.0
+},
+"3Bow_Base_Prop_5Lgnd_Machine": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"5Cape_Poison_LightAoE_OnPoisoned": {
+"t": "Creates a Light explosion when you are Poisoned",
+"s": 1.0
+},
+"5Armor_4Epic_FollowerFasterRegen": {
+"t": "Followers heal {1!.0f}% per second",
+"s": 100.0
+},
+"6Ring_5Lgnd_SetProp_Dark": {
+"t": "Enemies remain Poisoned {1!.0f}% longer",
+"s": 100.0
+},
+"4Armor_5Lgnd_SetProp_Celebrimbor": {
+"t": "Gain {1!.0f} Wrath when getting hit",
+"s": 1.0
+},
+"5Cape_Base_Prop_5Lgnd_Mystic": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"Gem_Blade_Sword_1": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Sword_2": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Sword_3": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Sword_4": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Sword_5": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"4Shield_4Epic_HPRegen_OnWrathFull": {
+"t": "{1!.1f}% Health Recovery per second while your Command meter is Full",
+"s": 100.0
+},
+"1Sword_Base_Prop_DLC3": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"1Sword_Base_Prop_DLC4": {
+"t": "+{1!.0f} Melee Damage",
+"s": 1.0
+},
+"3Bow_Base_Property_2Standard": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"3Bow_E_MightRecovShadowstrike": {
+"t": "{1!.0f} Might Gain on Shadow Strike",
+"s": 1.0
+},
+"3Bow_BaseSotP_Property": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Ringwraith": {
+"t": "Grunts killed by Melee Attacks have a {1!.0f}% chance to resurrect as allies",
+"s": 100.0
+},
+"1Sword_4Epic_Fire_On_M_Crit": {
+"t": "Critical melee hits light enemies on Fire",
+"s": 1.0
+},
+"5Armor_5Lgnd_FlwrBoost_MinusOwnHP": {
+"t": "All nearby allies gain +{1!.0f}% Defense and Damage. Your max Health is halved.",
+"s": 100.0
+},
+"2Dagger_Light_Invis_AfterKill_Blinded": {
+"t": "Vanish for {1!.0f} seconds after a Brutalize kill",
+"s": 1.0
+},
+"4Armor_5Lgnd_SetProp_Machine": {
+"t": "Defeated enemies have a {1!.0f}% chance of exploding",
+"s": 100.0
+},
+"5Armor_Base_Prop_DLC4": {
+"t": "+{1!.0f} Focus",
+"s": 1.0
+},
+"5Cape_Base_RangedDefBoost": {
+"t": "{1!.0f}% less damage from Ranged Attacks",
+"s": 100.0
+},
+"3Bow_FocusRecovHit_5Lgnd_CB": {
+"t": "{1!.0f} Focus Recovery per Ranged Attack Hit",
+"s": 1.0
+},
+"2Dagger_Base_Prop_DLC3": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"2Dagger_Base_Prop_DLC4": {
+"t": "+{1!.0f} Stealth Damage",
+"s": 1.0
+},
+"Rune_Green_Health_Weapon_1": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Weapon_2": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Weapon_3": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Weapon_4": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"Rune_Green_Health_Weapon_5": {
+"t": "Weapon: Increase Health stolen by {1!.0f}% with this weapon",
+"s": 100.0
+},
+"2Dagger_Base_Prop_5Lgnd_Mystic": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"3Bow_MightRecovHit": {
+"t": "{1!.0f} Might Gain per Ranged Attack Hit",
+"s": 1.0
+},
+"4Armor_5Lgnd_SetProp_Ringwraith": {
+"t": "Damage from Undead reduced by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_5Lgnd_SetProp_Outlaw": {
+"t": "{1!.0f}% increased Stealth Damage to Enraged enemies",
+"s": 100.0
+},
+"1Sword_Base_CritHitChance": {
+"t": "{1!.0f}% Critical Hit Chance",
+"s": 100.0
+},
+"5Cape_E_ChanceHealthRefillKillBeast": {
+"t": "{1!.0f}% chance to recover all Health when killing a Beast",
+"s": 100.0
+},
+"3Bow_E_DmgHighHealthLow": {
+"t": "1% Ranged Damage increase with each 1% Health lost",
+"s": 1.0
+},
+"5Cape_Beast_Mount_Def": {
+"t": "Mounts take {1!.0f}% less damage",
+"s": 100.0
+},
+"5Cape_Beast_HealthForMight": {
+"t": "Perform mounted attacks requiring Might by consuming {1!.0f}% of your Mount's max Health instead",
+"s": 100.0
+},
+"1Sword_5Lgnd_SetProp_Celebrimbor": {
+"t": "Gain {1!.0f} Wrath after performing an Ice Storm Finisher",
+"s": 1.0
+},
+"1Sword_5Legendary_DmgBoost_IfAlone": {
+"t": "+{1!.0f}% Melee damage when no allies are nearby",
+"s": 100.0
+},
+"6Ring_5Lgnd_SetProp_Slaughter": {
+"t": "Recover {1!.0f} Health when killing an enemy",
+"s": 1.0
+},
+"5Cape_Base_Prop_5Lgnd_Dark": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"6Ring_HealthRecovAnyKill": {
+"t": "{1!.0f} Health Recovery per Kill",
+"s": 1.0
+},
+"3Bow_Poison_ContagionSkill": {
+"t": "Enemies Poisoned by grog barrels spread Poison.",
+"s": 1.0
+},
+"3Bow_ChanceCritAppliesPoison": {
+"t": "{1!.0f}% chance that a Headshot Poisons enemies",
+"s": 100.0
+},
+"3Crossbow_4Epic_FreezeBombs": {
+"t": "Concussion bombs emit a freezing blast",
+"s": 1.0
+},
+"5Cape_E_ChanceMightRefillKillBeast": {
+"t": "{1!.0f}% chance to gain full Might when killing a Beast",
+"s": 100.0
+},
+"2Dagger_5Lgnd_StunAoE_OnLowHealth": {
+"t": "When your Health gets low, an explosion triggers, stunning all nearby enemies",
+"s": 1.0
+},
+"4Shield_4Epic_HPRegen_WhileGliding": {
+"t": "Recover Health while gliding",
+"s": 100.0
+},
+"3Bow_Base_Prop_Light_DLC3": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"6Ring_5Lgnd_SetProp_Vendetta": {
+"t": "Damage dealt increases by {1!.0f}% when Health is below 35%",
+"s": 100.0
+},
+"4Shield_5Lgnd_FireAoE_OnSetOnFire": {
+"t": "Creates a Fire explosion when you are set on Fire",
+"s": 1.0
+},
+"3BowHam_5Lgnd_SetProp_Machine": {
+"t": "Headshots have a {1!.0f}% chance to create an explosion",
+"s": 100.0
+},
+"2Dagger_Beast_LightTrap_KillBeasts": {
+"t": "Light Trap kills Beasts",
+"s": 1.0
+},
+"1Sword_Light_CritHitChance": {
+"t": "{1!.0f}% Critical Hit Chance",
+"s": 100.0
+},
+"Rune_Red_Dmg_Weapon_1": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Weapon_2": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Weapon_3": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Weapon_4": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Weapon_5": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"LegendarySet_Feral_Affix1": {
+"t": "Shadow Mount unbroken graugs",
+"s": 1.0
+},
+"LegendarySet_Feral_Affix2": {
+"t": "Shadow Mount unbroken drakes",
+"s": 1.0
+},
+"6Ring_Base_Property_5Lgnd_Vendetta": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Slaughter": {
+"t": "Recover {1!.0f} Health when killing an enemy",
+"s": 1.0
+},
+"4Armor_E_MightRecovLastChance": {
+"t": "{1!.0f} Might Gain after a successful Last Chance",
+"s": 1.0
+},
+"5Armor_4Epic_Command_OnKill": {
+"t": "+{1!.0f} Command when you kill an enemy",
+"s": 1.0
+},
+"4Armor_E_ChanceRecovMightGetHit": {
+"t": "{1!.0f}% chance to Gain 10 Might when hit",
+"s": 100.0
+},
+"1Sword_ChanceApplyFreezeOnCrit": {
+"t": "Critical Hits have a {1!.0f}% chance to Freeze enemies",
+"s": 100.0
+},
+"4Armor_5Lgnd_SetProp_Terror": {
+"t": "Recover {1!.0f} Health per second while Cursed",
+"s": 1.0
+},
+"5Cape_Base_Prop_5Lgnd_Feral": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"4Armor_E_HealthRecovLastChance": {
+"t": "Full Health Recovery after a successful Last Chance",
+"s": 1.0
+},
+"3Bow_Poison_MightyShot_PoisonAoE": {
+"t": "Elven Star creates a Poison explosion",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Ringwraith_Nazgul_Sisters": {
+"t": "Wraith Execution, Wraith Chain, and Chain of Shadows each deal  {1!.0f}% more damage with each successive Wraith",
+"s": 100.0
+},
+"1Sword_4Epic_CritChance_HealthLow": {
+"t": "{1!.0f}% increased Critical Hit chance while your Health is low",
+"s": 100.0
+},
+"3Bow_E_DmgBoostMightFull": {
+"t": "{1!.0f}% increased Ranged Damage when your Might is Full",
+"s": 100.0
+},
+"6Ring_E_ChanceApplyCurseWrathFull": {
+"t": "{1!.0f}% chance for any Attack to apply Curse while your Wrath is Full",
+"s": 100.0
+},
+"LegendarySet_Ringwraith_Affix1": {
+"t": "Call Followers and Iron Guard summon Revenants",
+"s": 100.0
+},
+"LegendarySet_Ringwraith_Affix2": {
+"t": "Restore {1!.0f} Health when a nearby Undead follower dies",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Ringwraith_Nazgul_Generic": {
+"t": "Waters of Lórien and Spectral Dash cost no Focus. Melee and Stealth damage will increase by {1!.0f}% for 5 seconds after use.",
+"s": 100.0
+},
+"2Dagger_Fire_LightTrap_FireAoE": {
+"t": "Light Trap creates a Fire explosion",
+"s": 1.0
+},
+"3Bow_E_HealthRecoverHit": {
+"t": "{1!.0f} Health Recovery per Ranged Attack Hit",
+"s": 1.0
+},
+"1Sword_5Lgnd_HPLow_MightRegen": {
+"t": "+{1!.0f} Might recovered per second while your Health is low",
+"s": 1.0
+},
+"4Shield_4Epic_DefVsEnraged": {
+"t": "{1!.0f}% less damage from Enraged enemies",
+"s": 100.0
+},
+"4Armor_RangedDefBoost_NoRerolls": {
+"t": "{1!.0f}% less damage from Ranged Attacks",
+"s": 100.0
+},
+"2Dagger_E_DmgBoostRecentStealthKill": {
+"t": "{1!.0f}% increased Stealth Damage when a Stealth Kill has been performed recently",
+"s": 100.0
+},
+"4Armor_FrostCurse_Curse_Refill_Wrath": {
+"t": "While Cursed, gain {1!.0f} Wrath per second",
+"s": 1.0
+},
+"LegendarySet_Poison_Affix1": {
+"t": "Attacks have a {1!.0f}% chance to inflict Poison while your Health is low",
+"s": 100.0
+},
+"LegendarySet_Poison_Affix2": {
+"t": "Orcs Poisoned by you have a chance to spread the Poison to nearby enemies",
+"s": 100.0
+},
+"1Sword_HealthRecovExecution": {
+"t": "{1!.0f} Health Recovery on an Execution",
+"s": 1.0
+},
+"2Dagger_Base_Prop_Light_DLC3": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"3Bow_E_AmmoRecoverKillElite": {
+"t": "{1!.0f} Elf-shot Replenished when killing a Captain",
+"s": 1.0
+},
+"5Cape_Poison_HealthRefillStealthKill": {
+"t": "Recover all Health after a successful Stealth Kill",
+"s": 1.0
+},
+"3Crossbow_5Lgnd_HeadshotKill_Explode": {
+"t": "Enemies killed with headshots explode after a few seconds",
+"s": 1.0
+},
+"1Sword_E_MightRecoveryPlayerHitorMissed": {
+"t": "{1!.0f} Might Gain on a missed Attack or if hit",
+"s": 1.0
+},
+"6Ring_5Lgnd_SetProp_Warmonger": {
+"t": "Recover {1!.0f} Health per second while on Fire",
+"s": 1.0
+},
+"2Dagger_4Epic_PoisonExplode_OnBrutalStealthKill": {
+"t": "Enemies killed with a Brutalize attack create a Poison explosion",
+"s": 1.0
+},
+"4Armor_ChanceCritAppliesFreeze": {
+"t": "{1!.0f}% chance that a Critical Hit applies Frost",
+"s": 100.0
+},
+"2Dagger_E_WrathRecovOnFleeByBrutalKill": {
+"t": "Gain {1!.0f} Wrath per Uruk made to flee from a Brutalize Kill",
+"s": 1.0
+},
+"Gem_Blade_Armor_1": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Armor_2": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Armor_3": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Armor_4": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"Gem_Blade_Armor_5": {
+"t": "Armor: {1!.0f}% increased healing rate from healing abilities",
+"s": 100.0
+},
+"5Cape_Base_Property_3Rare": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"3Bow_Fire_DmgBoostPerAmmoUnderMax": {
+"t": "{1!.0f}% increased Ranged Damage for each Elf-shot below max capacity",
+"s": 100.0
+},
+"2Dagger_4Epic_StealthRatingUp": {
+"t": "Increase Stealth rating by {1!.0f}, decreasing the range at which you are spotted",
+"s": 100.0
+},
+"4Armor_Beast_HealthRecov_BeastEat": {
+"t": "Devour attacks recover more Health for mounted Beasts",
+"s": 1.0
+},
+"6Ring_Base_Property_1Default": {
+"t": "{1!.0f} Maximum Focus",
+"s": 1.0
+},
+"Gem_Blade_Bow_1": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Bow_2": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Bow_3": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Bow_4": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"Gem_Blade_Bow_5": {
+"t": "Weapon: {1!.0f}% increased Critical Hit damage",
+"s": 100.0
+},
+"1Sword_E_DmgBoostPoisonedNME": {
+"t": "{1!.0f}% increased damage to Poisoned enemies",
+"s": 100.0
+},
+"3Bow_Base_Property_3Rare_Snipe": {
+"t": "Epic Long Bow",
+"s": 1.0
+},
+"5Cape_E_HealthRecovMountedKill": {
+"t": "{1!.0f} Health Recovery per Kill while mounted on a Beast",
+"s": 1.0
+},
+"5Cape_ReduceCurseDuration": {
+"t": "Reduces the duration of Curse by {1!.0f}%",
+"s": 100.0
+},
+"1Sword_Base_Prop_5Lgnd_Feral": {
+"t": "{1!.0f} Melee Damage",
+"s": 1.0
+},
+"1Sword_Poison_PoisonBomb_MeleeVsBlinded": {
+"t": "Melee Kills against Blinded enemies create Poison explosions",
+"s": 1.0
+},
+"1Sword_5Lgnd_SetProp_Warmonger": {
+"t": "Execution sets enemies on Fire",
+"s": 1.0
+},
+"1Sword_E_ExecuteApplyFreezeOnElite": {
+"t": "Executions on a Captain make your Attacks apply Frost for 10 seconds.",
+"s": 1.0
+},
+"5Cape_5Lgnd_SetProp_Outlaw": {
+"t": "Allied Beasts deal {1!.0f}% increased damage to Enraged enemies",
+"s": 100.0
+},
+"1Sword_5Lgnd_SetProp_Marauder": {
+"t": "Enemies killed by Melee Attacks have a {1!.0f}% increased chance of dropping {M}",
+"s": 100.0
+},
+"1Sword_5Lgnd_Resurrect_MeleeKills": {
+"t": "Grunts killed by Melee Attacks have a {1!.0f}% chance to resurrect as allies",
+"s": 100.0
+},
+"3BowSnipe_5Lgnd_SetProp_Vendetta": {
+"t": "Ranged Damage dealt increases by {1!.0f}% when Health is below 35%",
+"s": 100.0
+},
+"6Ring_5Lgnd_SetProp_Feral": {
+"t": "Reduces Call Mount cooldown by {1!.0f}%",
+"s": 100.0
+},
+"3Crossbow_5Lgnd_BombTraps": {
+"t": "Bombs also create a mine",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Machine": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"2Dagger_Light_GameChanger_Duration": {
+"t": "Increase duration of Elven Rage by {1!.0f}%",
+"s": 100.0
+},
+"6Light_Poison_Boost_PoisonDmg": {
+"t": "Increases Poison damage to enemies by {1!.0f}%",
+"s": 100.0
+},
+"3Bow_A_Property_MarkExecute": {
+"t": "Drawing the bow can Mark enemies. Release to Execute enemies.",
+"s": 1.0
+},
+"Rune_White_Resource_Weapon_1": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Weapon_2": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Weapon_3": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Weapon_4": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"Rune_White_Resource_Weapon_5": {
+"t": "Weapon: {1!.1f}% increased chance that enemies killed by this weapon drop {M}",
+"s": 100.0
+},
+"4Armor_Poison_ChanceMightRefillOnGetHit": {
+"t": "{1!.0f}% chance to gain full Might when hit by an enemy",
+"s": 100.0
+},
+"4Armor_Poison_Heal_OnPoison": {
+"t": "Recover {1!.0f} Health per second while Poisoned",
+"s": 1.0
+},
+"2Dagger_4Epic_HPackRefill_OnStealthAtk": {
+"t": "Restore {1!.0f} Healing Elixir on a Stealth Attack",
+"s": 1.0
+},
+"3Bow_Beast_Boost_RDamage_VsBeasts": {
+"t": "{1!.0f}% increased Ranged Damage against Beasts",
+"s": 100.0
+},
+"1Sword_Beast_MDamage_VsBeasts": {
+"t": "{1!.0f}% increased Melee Damage against Beasts",
+"s": 100.0
+},
+"1Sword_CritHitChance": {
+"t": "{1!.0f}% Critical Hit Chance",
+"s": 100.0
+},
+"2Dagger_Base_Property_2Standard": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"5Cape_Base_Prop_5Lgnd_Machine": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"6Light_FrostCurse_RemoveCurse_OnLightBubble": {
+"t": "Restore, Restoration, Ward, and Elven Star remove Curse from you and nearby allies",
+"s": 1.0
+},
+"4Shield_4Epic_DefVsBeasts": {
+"t": "Reduce damage from Beasts by {1!.0f}%",
+"s": 100.0
+},
+"2Dagger_4Epic_FearAoE_OnCptnStealthHit_DLC4": {
+"t": "Stealth Attacks on Captains cause nearby grunts to Flee",
+"s": 1.0
+},
+"3Bow_Light_SlowFocus_AerialRanged": {
+"t": "Focus is consumed at a slower rate while in the air.",
+"s": 1.0
+},
+"4Armor_Light_CritChance_FullHealth": {
+"t": "{1!.0f}% increased Critical Hit chance for Melee Attacks while your Health is full",
+"s": 100.0
+},
+"4Armor_Fire_LightShield_Burn": {
+"t": "Shield unleashes a Fiery explosion when you are attacked",
+"s": 1.0
+},
+"Rune_Green_Health_Cape_1": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Cape_2": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Cape_3": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Cape_4": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"Rune_Green_Health_Cape_5": {
+"t": "Armor: Increase max Health by {1!.0f}% ",
+"s": 100.0
+},
+"5Cape_Base_Property_2Standard": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"2Dagger_Beast_Boost_Damage_VsBeasts_Unaware": {
+"t": "{1!.0f}% increased damage against Beasts while undetected",
+"s": 1.0
+},
+"1Sword_E_ChanceAllWrathLC": {
+"t": "{1!.0f}% chance to gain full Wrath after a Last Chance success",
+"s": 100.0
+},
+"2Dagger_4Epic_PsnAmmoRefill_OnStealthAtk": {
+"t": "Restore {1!.0f} Poison Bolts on a Stealth Attack",
+"s": 1.0
+},
+"4Armor_MightRecovAnyKill": {
+"t": "{1!.0f} Might Gain per Kill",
+"s": 1.0
+},
+"2Dagger_ChanceApplyFreezeQuickthrow": {
+"t": "Quick Throw applies Frost every {1!.0f} seconds",
+"s": 1.0
+},
+"5Cape_Base_Prop_Lgnd_DLC3": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"5Cape_5Lgnd_SetProp_Dark": {
+"t": "Increases Poison damage to enemies by {1!.0f}%",
+"s": 100.0
+},
+"1Sword_E_MightRecovOnAttack": {
+"t": "Gain {1!.0f} Might on any Melee Attack",
+"s": 1.0
+},
+"Rune_Red_Dmg_Sword_1": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Sword_2": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Sword_3": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Sword_4": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"Rune_Red_Dmg_Sword_5": {
+"t": "Weapon: {1!.0f}% increased damage with this weapon",
+"s": 100.0
+},
+"6Ring_DmgBoostUrukTroops": {
+"t": "{1!.0f}% increased damage dealt by Uruk allies",
+"s": 100.0
+},
+"4Shield_4Epic_HealthRegenCursed": {
+"t": "{1!.0f} Health Recovery per second while Cursed",
+"s": 1.0
+},
+"2Dagger_Base_Prop_5Lgnd_Slaughter": {
+"t": "{1!.0f} Dagger Damage",
+"s": 1.0
+},
+"4Armor_HealthRecovEliteKill": {
+"t": "{1!.0f} Health Recovery per Captain Killed",
+"s": 1.0
+},
+"3Bow_E_CritHeadExpHit20+": {
+"t": "Headshots always cause head explosions when Hitstreak is over 15",
+"s": 1.0
+},
+"3Crossbow_4Epic_DmgVsNMEEnraged_Ranged": {
+"t": "{1!.0f}% increased Ranged Damage to Enraged enemies",
+"s": 100.0
+},
+"6Ring_FullHealthOnDrain": {
+"t": "Draining or Dominating enemies recovers {1!.0f}% more Health",
+"s": 100.0
+},
+"3Bow_A_Property_Snipe": {
+"t": "Longbow: Charged shots pierce through enemies",
+"s": 1.0
+},
+"6Ring_E_DefenseBoostUndeadTroops": {
+"t": "Undead allies take {1!.0f}% less damage",
+"s": 100.0
+},
+"5Cape_Base_Prop_5Lgnd_Slaughter": {
+"t": "{1!.0f}% improved Stealth",
+"s": 100.0
+},
+"LegendarySet_Machine_Affix1": {
+"t": "Call Followers summons Sappers and Iron Guard summons more Sappers",
+"s": 1.0
+},
+"LegendarySet_Machine_Affix2": {
+"t": "Elven Light also scatters explosives around you",
+"s": 1.0
+},
+"3Bow_AmmoRecovOnWknFear": {
+"t": "{1!.0f} Elf-shot Replenished when a Captain becomes Dazed",
+"s": 1.0
+},
+"1Sword_2Common_CritChance": {
+"t": "+{1!.0f}% Critical Hit Chance",
+"s": 1.0
+},
+"6Ring_5Lgnd_SetProp_Outlaw": {
+"t": "Followers deal {1!.0f}% increased damage to Enraged enemies",
+"s": 100.0
+},
+"1Sword_MightRecovOnCriticalHit": {
+"t": "{1!.0f} Might Gain on a Critical Hit",
+"s": 1.0
+},
+"2Dagger_MightRecoverQuickThrow": {
+"t": "Quick Throw gains Might every {1!.0f} seconds",
+"s": 1.0
+},
+"1Sword_E_DmgBoostFrozenNME": {
+"t": "{1!.0f}% increased damage to Frozen enemies",
+"s": 100.0
+},
+"3Bow_Base_Prop_5Lgnd_Slaughter": {
+"t": "{1!.0f} Ranged Damage",
+"s": 1.0
+},
+"2Dagger_E_StealthApplyFreezeOnElite": {
+"t": "Your Stealth Attacks always apply Frost",
+"s": 1.0
+},
+"5Armor_4Epic_ResetFlwrCooldown_OnCptnKill": {
+"t": "Refresh allies' Combat and Stealth Abilities when an enemy Captain is killed",
+"s": 1.0
+}
+},
+"look": {
+"Player_2HR_NumenoreanBowT1_Tint3_2Common": "Númenórean Bow",
+"Player_2HR_RhovanionBowT1_Tint1": "Rhovanion Bow",
+"Player_2HR_NumenoreanBowT2_Tint8_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT2_Tint5_2Common": "Gondorian Dagger",
+"Baranor_1HD_DesertDaggerT1": "Dagger",
+"Player_1HB_ElvenHammerT1_Tint_Machine": "Threshing Hammer",
+"Player_1HS_NumenoreanSwordT2_Tint1": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint2": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint3": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint4": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint5": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint6": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint7": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint8": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT2_Tint9": "Númenórean Sword",
+"Player_2HR_NumenoreanBowSnipeT2_Tint5_2Common": "Númenórean Longbow",
+"Player_1HS_RohanSwordT1_Tint5_2Common": "Rohirrim Sword",
+"Player_2HR_RangerBowT2_Menu": "Ranger's Bow",
+"Player_2HR_RohanHamT2_Tint4_2Common": "Skull Hammer",
+"Eltariel_1HS_WoodElfSwordT2_MHTint_Fire": "Fire Chaser's Blade",
+"Player_1HD_RhovanionDaggerT3_Tint7_2Common": "Rhovanion Dagger",
+"Player_2HR_GondorianBowT2_Tint10": "Gondorian Bow",
+"Player_2HR_GondorianBowSnipeT1_Tint7_2Common": "Gondorian Longbow",
+"Player_1HS_BlackNumSwordT1_Tint_Dark": "Darkest Sword",
+"Player_1HS_RangerSwordT1_Tint1": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint2": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint3": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint4": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint5": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint6": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint7": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint8": "Ranger's Sword",
+"Player_1HS_RangerSwordT1_Tint9": "Ranger's Sword",
+"Player_1HB_ElvenHammerT4_Tint_Celebrimbor": "Bright Lord's Hammer",
+"Player_2HR_ElvenBowT4_Tint_Slaughter": "Blood Longbow",
+"Player_1HD_BlackNumDaggerT3_Tint_Terror": "Dagger of Horrors",
+"Player_1HS_GondorianSwordT2_Tint10": "Gondorian Sword",
+"Player_1HS_RangerSwordT1_Tint9_2Common": "Ranger's Sword",
+"Player_2HR_ElvenBowT4_Tint_Mystic": "Arcane Bow",
+"Player_1HS_RangerSwordT2_Tint1_2Common": "Ranger's Sword",
+"Eltariel_2HR_BladeBowT2_Tint_Light": "Light Bringer's Bow",
+"Player_2HR_RhovanionBowT1_Tint1_2Common": "Rhovanion Bow",
+"Player_2HR_RangerBowT1_Tint2_2Common": "Ranger's Bow",
+"Eltariel_1HS_WoodElfSwordT2_OH_Tint_Beast": "Beast Hunter's Dagger",
+"Eltariel_1HS_BladeSwordT1_Stealth_Tint_Light": "Light Bringer's Dagger",
+"Player_1HB_ElvenHammerT3_Tint_Celebrimbor": "Bright Lord's Hammer",
+"Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Poison": "Serpent Tamer's Dagger",
+"Player_1HS_GondorianSwordT1_Tint6_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint5_2Common": "Rohirrim Bow",
+"Eltariel_1HS_BladeSwordT1_MH_Tint_Light": "Light Bringer's Blade",
+"Player_2HR_RangerBowT1_Tint1": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint2": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint3": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint4": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint5": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint6": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint7": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint8": "Ranger's Bow",
+"Player_2HR_RangerBowT1_Tint9": "Ranger's Bow",
+"Player_1HS_RohanSwordT1": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2": "Rohirrim Sword",
+"Player_1HB_ElvenHammerT2_Tint_Celebrimbor": "Bright Lord's Hammer",
+"Player_1HS_NumenoreanSwordT2_Tint5_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint7_2Common": "Ranger's Bow",
+"Player_2HR_RangerBowSnipeT1_Tint9_2Common": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint1_2Common": "Ranger's Longbow",
+"Player_1HD_ElvenDaggerT2_Tint_Slaughter": "Blood Dagger",
+"Player_1HS_RhovanionSwordT1_Tint8_2Common": "Rhovanion Sword",
+"Player_1HS_BlackNumSwordT1_Tint_Vendetta": "Sword of Vengeance",
+"Player_1HB_ElvenHammerT1_Tint_Celebrimbor": "Bright Lord's Hammer",
+"Player_2HR_GondorianBowT2_Tint5_2Common": "Gondorian Bow",
+"Player_1HS_RhovanionSwordT3_Tint5_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint4_2Common": "Númenórean Dagger",
+"Player_1HD_BlackNumDaggerT2_Tint_Ringwraith": "Acharn",
+"Player_1HD_RohanDaggerT2_Tint2_2Common": "Rohirrim Dagger",
+"Player_2HR_ElvenBowT4_Tint_Celebrimbor": "Bright Lord's Bow",
+"Player_2HR_BlackNumBowT3_Tint_Dark": "Darkest Longbow",
+"Player_2HR_RohanBowT2_Tint10": "Rohirrim Bow",
+"Player_1HD_RangerDaggerT2_Tint10_2Common": "Ranger's Dagger",
+"Player_1HD_BlackNumDaggerT4_Tint_Dark": "Darkest Dagger",
+"Player_2HR_RohanBowSnipeT2_Tint3_2Common": "Rohirrim Longbow",
+"Eltariel_2HR_WoodElfBowT2_Tint_Frost": "Ice Stalker's Bow",
+"Eltariel_2HR_WoodElfBowT1_Tint_Beast": "Beast Hunter's Bow",
+"Player_2HR_ElvenBowT3_Tint_Celebrimbor": "Bright Lord's Bow",
+"Player_1HD_NumenoreanDaggerT2_Tint9_2Common": "Númenórean Dagger",
+"Player_1HD_RangerDaggerT2_Tint5_2Common": "Ranger's Dagger",
+"Player_2HR_NumenoreanBowT1_Tint8_2Common": "Númenórean Bow",
+"Player_1HD_RhovanionDaggerT1_Tint2_2Common": "Rhovanion Dagger",
+"Player_1HD_GondorianDaggerT1_Tint5_2Common": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint10_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowSnipeT1_Tint5_2Common": "Númenórean Longbow",
+"Player_1HD_GondorianDaggerT2_Tint10": "Gondorian Dagger",
+"Player_2HR_ElvenBowT2_Tint_Celebrimbor": "Bright Lord's Bow",
+"Player_2HR_RohanHamT1_Tint4_2Common": "Skull Hammer",
+"Player_1HB_ElvenHammerT2_Tint_Warmonger": "Hammer of War",
+"Player_2HR_ElvenBowT1_Tint_Celebrimbor": "Bright Lord's Bow",
+"Player_1HS_RohanSwordT2_Tint2_2Common": "Rohirrim Sword",
+"Eltariel_1HS_WoodElfSwordT2_MHTint_Frost": "Ice Stalker's Blade",
+"Player_2HR_GondorianBowSnipeT2_Tint4_2Common": "Gondorian Longbow",
+"Player_1HS_RangerSwordT1_Tint1_2Common": "Ranger's Sword",
+"Player_2HR_GondorianBowSnipeT2_Tint10": "Gondorian Longbow",
+"Eltariel_1HS_WoodElfSwordT1_OH_Tint_Beast": "Beast Hunter's Dagger",
+"Player_1HD_ElvenDaggerT4_Tint_Mystic": "Arcane Dagger",
+"Player_1HS_RhovanionSwordT1_Tint10": "Rhovanion Sword",
+"Player_1HS_RangerSwordT2_Tint6_2Common": "Ranger's Sword",
+"Player_1HS_RhovanionSwordT1_Tint_Outlaw": "Blackguard Sword",
+"Player_2HR_NumenoreanBowT2_Tint10": "Númenórean Bow",
+"Player_2HR_HaradrimBowT3_Tint_Feral": "Bow of Beasts",
+"Player_1HS_NumenoreanSwordT1_Tint5_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT1_Tint7_2Common": "Ranger's Bow",
+"Player_2HR_ElvenBowT2_Menu": "Elven Bow",
+"Player_1HS_GondorianSwordT2_Tint3_2Common": "Gondorian Sword",
+"Player_2HR_RangerBowSnipeT1_Tint1_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint2_2Common": "Rohirrim Bow",
+"Player_1HS_ElvenSwordT2_Tint_Mystic": "Arcane Sword",
+"Player_1HS_BlackNumSwordT2_Tint_Terror": "Sword of Horrors",
+"Player_1HD_BlackNumDaggerT2_Tint_DarkRanger": "Acharn",
+"Player_2HR_HaradrimBowT1_Menu": "Haradrim Bow",
+"Player_1HS_RhovanionSwordT1_Tint10_2Common": "Rhovanion Sword",
+"Player_2HR_GondorianBowT1_Tint5_2Common": "Gondorian Bow",
+"Player_2HR_RangerBowSnipeT2_Tint6_2Common": "Ranger's Longbow",
+"Player_1HS_DwarvenSwordT2_Tint_Machine": "Threshing Sword",
+"Player_2HR_GondorianBowSnipeT1_Tint1": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint2": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint3": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint4": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint5": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint6": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint7": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint8": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint9": "Gondorian Longbow",
+"Player_1HD_ElvenDaggerT4_Tint_Slaughter": "Blood Dagger",
+"Player_1HD_RohanDaggerT1_Tint2_2Common": "Rohirrim Dagger",
+"Player_2HR_GondorianBowSnipeT2_Tint10_2Common": "Gondorian Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint3_2Common": "Rohirrim Longbow",
+"Player_1HD_NumenoreanDaggerT1_Tint9_2Common": "Númenórean Dagger",
+"Player_1HD_RangerDaggerT1_Tint5_2Common": "Ranger's Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint1_2Common": "Númenórean Dagger",
+"Player_1HS_BlackNumSwordT1": "Númenórean Sword",
+"Player_1HS_BlackNumSwordT2": "Númenórean Sword",
+"Player_1HS_BlackNumSwordT3": "Númenórean Sword",
+"Player_1HS_BlackNumSwordT4": "Númenórean Sword",
+"Player_1HD_RohanDaggerT2_Tint7_2Common": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint1": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint2": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint3": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint4": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint5": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint6": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint7": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint8": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT1_Tint9": "Rohirrim Dagger",
+"Player_2HR_RohanBowSnipeT2_Tint8_2Common": "Rohirrim Longbow",
+"Eltariel_1HS_BladeSwordT2_Stealth": "Huntress Dagger",
+"Eltariel_1HS_BladeSwordT2_Stealth_Tint_Light": "Light Bringer's Dagger",
+"Player_1HS_GondorianSwordT1_Tint1": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint2": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint3": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint4": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint5": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint6": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint7": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint8": "Gondorian Sword",
+"Player_1HS_GondorianSwordT1_Tint9": "Gondorian Sword",
+"Player_1HD_RhovanionDaggerT1_Tint7_2Common": "Rhovanion Dagger",
+"Player_2HR_NumenoreanBowT2_Tint5_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT2_Tint2_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowSnipeT2_Tint2_2Common": "Númenórean Longbow",
+"Player_1HS_RohanSwordT1_Tint2_2Common": "Rohirrim Sword",
+"Player_2HR_RohanHamT2_Tint1_2Common": "War Hammer",
+"Eltariel_2HR_BladeBowT1_Menu": "Huntress Bow",
+"Player_1HD_RhovanionDaggerT3_Tint4_2Common": "Rhovanion Dagger",
+"Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Beast": "Beast Hunter's Dagger",
+"Player_2HR_RhovanionBowSnipeT1_Tint1": "Rhovanion Longbow",
+"Player_1HS_RohanSwordT2_Tint10_2Common": "Rohirrim Sword",
+"Player_1HB_ElvenHammerT4_Tint_Warmonger": "Hammer of War",
+"Player_2HR_NumenoreanBowT1_Menu": "Númenórean Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint4_2Common": "Gondorian Longbow",
+"Player_1HS_RohanSwordT2_Tint7_2Common": "Rohirrim Sword",
+"Baranor_Misc_DesertXBowT1": "Crossbow",
+"Player_1HD_HaradrimDaggerT2_Tint_Feral": "Dagger of Beasts",
+"Player_1HD_BlackNumDaggerT3_Tint_Ringwraith": "Acharn",
+"Player_2HR_GondorianBowSnipeT2_Tint9_2Common": "Gondorian Longbow",
+"Player_1HS_RangerSwordT1_Tint6_2Common": "Ranger's Sword",
+"Eltariel_2HR_WoodElfBowT1_Tint_Poison": "Serpent Tamer's Bow",
+"Player_2HR_BlackNumBowT4_Tint_Terror": "Longbow of Horrors",
+"Player_1HS_GondorianSwordT1_Tint3_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint2_2Common": "Rohirrim Bow",
+"Player_1HD_RhovanionDaggerT3_Tint_Outlaw": "Blackguard Dagger",
+"Player_2HR_BlackNumBowT1_Tint_Dark": "Darkest Longbow",
+"Player_2HR_ElvenBowT1_Tint_Mystic": "Arcane Bow",
+"Player_1HD_BlackNumDaggerT2_Tint_Dark": "Darkest Dagger",
+"Player_1HS_NumenoreanSwordT2_Tint2_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint4_2Common": "Ranger's Bow",
+"Eltariel_1HS_WoodElfSwordT1_MH_Tint_Frost": "Ice Stalker's Blade",
+"Player_1HS_GondorianSwordT2_Tint8_2Common": "Gondorian Sword",
+"Player_2HR_RangerBowSnipeT1_Tint6_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint7_2Common": "Rohirrim Bow",
+"Player_1HS_RhovanionSwordT1_Tint5_2Common": "Rhovanion Sword",
+"Player_1HS_DwarvenSwordT1": "Dwarven Sword",
+"Player_1HS_DwarvenSwordT2": "Dwarven Sword",
+"Player_1HS_DwarvenSwordT3": "Dwarven Sword",
+"Player_1HS_DwarvenSwordT4": "Dwarven Sword",
+"Player_2HR_GondorianBowT2_Tint2_2Common": "Gondorian Bow",
+"Player_1HS_RhovanionSwordT3_Tint10_2Common": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint2_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint1_2Common": "Númenórean Dagger",
+"Player_1HD_RohanDaggerT1_Tint7_2Common": "Rohirrim Dagger",
+"Player_2HR_NumenoreanBowT1_Tint1": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint2": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint3": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint4": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint5": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint6": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint7": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint8": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT1_Tint9": "Númenórean Bow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint10_2Common": "Númenórean Longbow",
+"Player_1HD_HaradrimDaggerT1": "Haradrim Dagger",
+"Player_1HD_HaradrimDaggerT2": "Haradrim Dagger",
+"Player_1HD_HaradrimDaggerT3": "Haradrim Dagger",
+"Player_1HD_HaradrimDaggerT4": "Haradrim Dagger",
+"Player_2HR_RohanBowSnipeT1_Tint8_2Common": "Rohirrim Longbow",
+"Player_1HS_RangerSwordT1_Tint10_2Common": "Ranger's Sword",
+"Player_1HD_NumenoreanDaggerT2_Tint6_2Common": "Númenórean Dagger",
+"Eltariel_1HS_StealthX2": "Sword",
+"Player_1HD_RangerDaggerT2_Tint2_2Common": "Ranger's Dagger",
+"Player_2HR_RangerBowSnipeT1_Tint1": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint2": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint3": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint4": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint5": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint6": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint7": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint8": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT1_Tint9": "Ranger's Longbow",
+"Player_2HR_NumenoreanBowT1_Tint5_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT1_Tint2_2Common": "Gondorian Dagger",
+"Player_2HR_RhovanionBowSnipeT3_Tint1_2Common": "Rhovanion Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint2_2Common": "Númenórean Longbow",
+"Player_2HR_GondorianBowT1_Tint1": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint2": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint3": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint4": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint5": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint6": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint7": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint8": "Gondorian Bow",
+"Player_2HR_GondorianBowT1_Tint9": "Gondorian Bow",
+"Player_2HR_RohanHamT1_Tint1_2Common": "War Hammer",
+"Player_1HD_GondorianDaggerT2_Tint7_2Common": "Gondorian Dagger",
+"Baranor_Shld_DesertT1_Menu": "Shield",
+"Player_2HR_NumenoreanBowSnipeT2_Tint7_2Common": "Númenórean Longbow",
+"Player_1HS_RohanSwordT1_Tint7_2Common": "Rohirrim Sword",
+"Player_2HR_RohanHamT2_Tint1": "War Hammer",
+"Player_2HR_RohanHamT2_Tint2": "Battle Hammer",
+"Player_2HR_RohanHamT2_Tint3": "Skull Hammer",
+"Player_2HR_RohanHamT2_Tint4": "Foe Hammer",
+"Player_2HR_RohanBowT2_Tint10_2Common": "Rohirrim Bow",
+"Player_2HR_RhovanionBowT3_Tint_Outlaw": "Blackguard Bow",
+"Player_2HR_RangerBowT2_Tint10_2Common": "Ranger's Bow",
+"Player_1HD_RhovanionDaggerT3_Tint9_2Common": "Rhovanion Dagger",
+"Player_1HD_DwarvenDaggerT2_Tint_Machine": "Threshing Dagger",
+"Player_1HD_RohanDaggerT1": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2": "Rohirrim Dagger",
+"Player_2HR_GondorianBowSnipeT1_Tint9_2Common": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint1_2Common": "Gondorian Longbow",
+"Player_2HR_RohanBowT1_Tint1": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint2": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint3": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint4": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint5": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint6": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint7": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint8": "Rohirrim Bow",
+"Player_2HR_RohanBowT1_Tint9": "Rohirrim Bow",
+"Eltariel_2HR_BladeBowT1_Wraith": "Huntress Bow",
+"Player_1HS_RangerSwordT2_Tint3_2Common": "Ranger's Sword",
+"Player_1HS_RhovanionSwordT3_Tint10": "Rhovanion Sword",
+"Player_1HB_ElvenHammerT2_Tint_Machine": "Threshing Hammer",
+"Player_1HS_NumenoreanSwordT1_Tint2_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT1_Tint4_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT1_Tint8_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint7_2Common": "Rohirrim Bow",
+"Player_1HD_ElvenDaggerT1_Tint_Mystic": "Arcane Dagger",
+"Player_1HB_RohanHamT2_Tint_DarkRanger": "Helm's Hammer",
+"Player_1HS_HaradrimSwordT1_Tint_Feral": "Sword of Beasts",
+"Player_1HS_NumenoreanSwordT2_Tint7_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint9_2Common": "Ranger's Bow",
+"Player_1HD_NumenoreanDaggerT2_Tint10": "Númenórean Dagger",
+"Player_1HS_GondorianSwordT1_Tint10_2Common": "Gondorian Sword",
+"Player_2HR_GondorianBowT1_Tint2_2Common": "Gondorian Bow",
+"Player_2HR_RangerBowSnipeT2_Tint3_2Common": "Ranger's Longbow",
+"Eltariel_1HS_WoodElfSwordT2_Stealth_Tint_Beast": "Beast Hunter's Dagger",
+"Player_1HD_ElvenDaggerT4_Tint_Celebrimbor": "Bright Lord's Dagger",
+"Player_1HS_NumenoreanSwordT2_Tint10": "Númenórean Sword",
+"Player_2HR_GondorianBowT2_Tint7_2Common": "Gondorian Bow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint10": "Númenórean Longbow",
+"Player_1HD_BlackNumDaggerT4_Tint_Ringwraith": "Acharn",
+"Player_1HS_RhovanionSwordT3_Tint7_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint6_2Common": "Númenórean Dagger",
+"Player_1HD_RangerDaggerT1_Tint2_2Common": "Ranger's Dagger",
+"Player_1HD_ElvenDaggerT3_Tint_Celebrimbor": "Bright Lord's Dagger",
+"Player_1HD_RohanDaggerT2_Tint4_2Common": "Rohirrim Dagger",
+"Player_2HR_RohanBowSnipeT2_Tint5_2Common": "Rohirrim Longbow",
+"Player_1HS_HaradrimSwordT1": "Haradrim Sword",
+"Player_1HS_HaradrimSwordT2": "Haradrim Sword",
+"Player_1HS_HaradrimSwordT3": "Haradrim Sword",
+"Player_1HS_HaradrimSwordT4": "Haradrim Sword",
+"Player_1HD_ElvenDaggerT2_Tint_Celebrimbor": "Bright Lord's Dagger",
+"Player_1HS_ElvenSwordT2_Tint_Slaughter": "Blood Sword",
+"Player_1HD_RangerDaggerT2_Tint7_2Common": "Ranger's Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint4_2Common": "Rhovanion Dagger",
+"Player_1HD_BlackNumDaggerT4_Tint_Terror": "Dagger of Horrors",
+"Player_1HD_GondorianDaggerT1_Tint7_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowT2_Tint2_2Common": "Númenórean Bow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint7_2Common": "Númenórean Longbow",
+"Player_1HD_ElvenDaggerT1_Tint_Celebrimbor": "Bright Lord's Dagger",
+"Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Fire": "Fire Chaser's Dagger",
+"Player_2HR_ElvenBowT3_Menu": "Elven Bow",
+"Player_1HD_DwarvenDaggerT1_Tint_Warmonger": "Dagger of War",
+"Player_2HR_RohanBowSnipeT2_Tint10": "Rohirrim Longbow",
+"Player_1HB_RohanHammerT1": "Rohirrim Hammer",
+"Player_1HB_RohanHammerT2": "Rohirrim Hammer",
+"Player_2HR_HaradrimBowT2_Menu": "Haradrim Bow",
+"Player_1HD_RhovanionDaggerT3_Tint1_2Common": "Rhovanion Dagger",
+"Player_1HS_DwarvenSwordT2_Tint_Warmonger": "Sword of War",
+"Player_2HR_GondorianBowSnipeT1_Tint1_2Common": "Gondorian Longbow",
+"Player_1HD_GondorianDaggerT1_Tint1": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint2": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint3": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint4": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint5": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint6": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint7": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint8": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT1_Tint9": "Gondorian Dagger",
+"Player_1HS_RohanSwordT2_Tint4_2Common": "Rohirrim Sword",
+"Player_1HS_HaradrimSwordT4_Tint_Feral": "Sword of Beasts",
+"Player_2HR_NumenoreanBowSnipeT1_Tint1": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint2": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint3": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint4": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint5": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint6": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint7": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint8": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint9": "Númenórean Longbow",
+"Eltariel_2HR_WoodElfBowT2_Tint_Fire": "Fire Chaser's Bow",
+"Player_1HS_BlackNumSwordT4_Tint_Dark": "Darkest Sword",
+"Player_2HR_GondorianBowSnipeT2_Tint6_2Common": "Gondorian Longbow",
+"Player_1HS_RangerSwordT1_Tint3_2Common": "Ranger's Sword",
+"Eltariel_1HS_BaseX2_Wraith": "Sword",
+"Player_2HR_HaradrimBowT1": "Haradrim Bow",
+"Player_2HR_HaradrimBowT2": "Haradrim Bow",
+"Player_2HR_HaradrimBowT3": "Haradrim Bow",
+"Player_2HR_HaradrimBowT4": "Haradrim Bow",
+"Player_1HB_RohamHamT2_Tint_RingwraithT1": "Helm's Hammer",
+"Player_1HB_RohamHamT2_Tint_RingwraithT2": "Helm's Hammer",
+"Player_1HB_RohamHamT2_Tint_RingwraithT3": "Helm's Hammer",
+"Player_1HB_RohamHamT2_Tint_RingwraithT4": "Helm's Hammer",
+"Player_1HS_RangerSwordT2_Tint8_2Common": "Ranger's Sword",
+"Player_1HS_NumenoreanSwordT1_Tint7_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT1_Tint9_2Common": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint1_2Common": "Ranger's Bow",
+"Player_2HR_BlackNumBowT1_Tint_Terror": "Longbow of Horrors",
+"Player_1HS_RangerSwordT1_Tint10": "Ranger's Sword",
+"Player_1HS_GondorianSwordT2_Tint5_2Common": "Gondorian Sword",
+"Player_2HR_RangerBowSnipeT1_Tint3_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint4_2Common": "Rohirrim Bow",
+"Player_2HR_RohanBowSnipeT1_Tint1": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint2": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint3": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint4": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint5": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint6": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint7": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint8": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint9": "Rohirrim Longbow",
+"Player_1HS_RhovanionSwordT1_Tint2_2Common": "Rhovanion Sword",
+"Eltariel_1HS_WoodElfSwordT1_OH_Tint_Poison": "Serpent Tamer's Dagger",
+"Player_2HR_GondorianBowT1_Tint7_2Common": "Gondorian Bow",
+"Player_2HR_RangerBowSnipeT2_Tint8_2Common": "Ranger's Longbow",
+"Eltariel_2HR_BladeBowT2_Menu": "Huntress Bow",
+"Player_1HD_RohanDaggerT1_Tint4_2Common": "Rohirrim Dagger",
+"Player_2HR_RohanBowSnipeT2_Tint10_2Common": "Rohirrim Longbow",
+"Player_2HR_NumenoreanBowT2_Menu": "Númenórean Longbow",
+"Player_2HR_RhovanionBowSnipeT1_Tint1_2Common": "Rhovanion Longbow",
+"Player_2HR_RohanBowSnipeT1_Tint5_2Common": "Rohirrim Longbow",
+"Player_1HS_RangerSwordT2_Tint1": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint2": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint3": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint4": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint5": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint6": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint7": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint8": "Ranger's Sword",
+"Player_1HS_RangerSwordT2_Tint9": "Ranger's Sword",
+"Player_2HR_RangerBowT1_Starting": "Azkâr",
+"Player_1HD_RohanDaggerT1_Tint10_2Common": "Rohirrim Dagger",
+"Player_2HR_RangerBowSnipeT1_Tint10_2Common": "Ranger's Longbow",
+"Player_1HD_RangerDaggerT1_Tint7_2Common": "Ranger's Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint3_2Common": "Númenórean Dagger",
+"Player_1HD_RohanDaggerT2_Tint9_2Common": "Rohirrim Dagger",
+"Player_2HR_RangerBowSnipeT1_Tint10": "Ranger's Longbow",
+"Player_2HR_NumenoreanBowT1_Tint2_2Common": "Númenórean Bow",
+"Player_1HD_RangerDaggerT1_Tint1": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint2": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint3": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint4": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint5": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint6": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint7": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint8": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT1_Tint9": "Ranger's Dagger",
+"Player_1HS_RohanSwordT1_Tint1": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint2": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint3": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint4": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint5": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint6": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint7": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint8": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint9": "Rohirrim Sword",
+"Player_1HS_DwarvenSwordT3_Tint_Machine": "Threshing Sword",
+"Player_2HR_RangerBowT2_Tint1": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint2": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint3": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint4": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint5": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint6": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint7": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint8": "Ranger's Bow",
+"Player_2HR_RangerBowT2_Tint9": "Ranger's Bow",
+"Player_1HD_RhovanionDaggerT1_Tint9_2Common": "Rhovanion Dagger",
+"Player_2HR_NumenoreanBowT2_Tint7_2Common": "Númenórean Bow",
+"Player_1HS_ElvenSwordT4_Tint_Slaughter": "Blood Sword",
+"Player_1HD_GondorianDaggerT2_Tint4_2Common": "Gondorian Dagger",
+"Player_1HS_RhovanionSwordT2_Tint_Outlaw": "Blackguard Sword",
+"Player_2HR_NumenoreanBowSnipeT2_Tint4_2Common": "Númenórean Longbow",
+"Player_1HS_RhovanionSwordT3_Tint1": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint2": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint3": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint4": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint5": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint6": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint7": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint8": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT3_Tint9": "Rhovanion Sword",
+"Player_1HS_RohanSwordT1_Tint4_2Common": "Rohirrim Sword",
+"Player_1HD_RohanDaggerT1_Tint10": "Rohirrim Dagger",
+"Player_1HD_DwarvenDaggerT3_Tint_Warmonger": "Dagger of War",
+"Player_2HR_RohanHamT2_Tint3_2Common": "Foe Hammer",
+"Player_1HD_RangerDaggerT1_Tint10": "Ranger's Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint6_2Common": "Rhovanion Dagger",
+"Player_1HS_ElvenSwordT3_Tint_Mystic": "Arcane Sword",
+"Player_1HS_BlackNumSwordT3_Tint_Terror": "Sword of Horrors",
+"Player_2HR_ElvenBowT1_Tint_Slaughter": "Blood Longbow",
+"Player_2HR_GondorianBowSnipeT1_Tint6_2Common": "Gondorian Longbow",
+"Player_1HS_RohanSwordT2_Tint9_2Common": "Rohirrim Sword",
+"Player_1HS_DwarvenSwordT4_Tint_Warmonger": "Sword of War",
+"Player_1HS_RangerSwordT1_Tint8_2Common": "Ranger's Sword",
+"Player_2HR_HaradrimBowT1_Tint_Feral": "Bow of Beasts",
+"Player_2HR_RangerBowT1_Tint1_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT1_Tint5_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint4_2Common": "Rohirrim Bow",
+"Eltariel_2HR_WoodElfBowT2_Tint_Beast": "Beast Hunter's Bow",
+"Player_2HR_GondorianBowT2_Tint10_2Common": "Gondorian Bow",
+"Player_1HS_NumenoreanSwordT2_Tint4_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint6_2Common": "Ranger's Bow",
+"Player_2HR_RangerBowSnipeT1_Tint8_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint9_2Common": "Rohirrim Bow",
+"Player_1HS_RhovanionSwordT1_Tint7_2Common": "Rhovanion Sword",
+"Player_2HR_GondorianBowT1_Tint10": "Gondorian Bow",
+"Player_1HD_NumenoreanDaggerT2_Tint10_2Common": "Númenórean Dagger",
+"Player_2HR_GondorianBowT2_Tint4_2Common": "Gondorian Bow",
+"Player_1HS_RhovanionSwordT3_Tint4_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint3_2Common": "Númenórean Dagger",
+"Player_1HD_RohanDaggerT1_Tint9_2Common": "Rohirrim Dagger",
+"Player_1HB_ElvenHammerT4_Tint_Marauder": "Raider's Hammer",
+"Player_1HD_RohanDaggerT2_Tint1_2Common": "Rohirrim Dagger",
+"Eltariel_1HS_WoodElfSwordT2_MHTint_Beast": "Beast Hunter's Blade",
+"Player_2HR_RohanBowSnipeT2_Tint2_2Common": "Rohirrim Longbow",
+"Player_1HS_GondorianSwordT1_Tint10": "Gondorian Sword",
+"Player_1HD_NumenoreanDaggerT2_Tint8_2Common": "Númenórean Dagger",
+"Player_1HD_RangerDaggerT2_Tint4_2Common": "Ranger's Dagger",
+"Player_1HS_BlackNumSwordT1_Tint_Ringwraith": "Urfael",
+"Player_2HR_NumenoreanBowT1_Tint7_2Common": "Númenórean Bow",
+"Player_1HD_RhovanionDaggerT1_Tint1_2Common": "Rhovanion Dagger",
+"Player_1HD_GondorianDaggerT1_Tint4_2Common": "Gondorian Dagger",
+"Player_1HS_BlackNumSwordT2_Tint_Dark": "Darkest Sword",
+"Eltariel_2HR_BladeBowT1": "Huntress Bow",
+"Eltariel_2HR_BladeBowT2": "Huntress Bow",
+"Player_2HR_NumenoreanBowSnipeT1_Tint4_2Common": "Númenórean Longbow",
+"Eltariel_2HR_WoodElfBowT2_Tint_Poison": "Serpent Tamer's Bow",
+"Player_2HR_HaradrimBowT4_Tint_Feral": "Bow of Beasts",
+"Player_1HS_ElvenSwordT1": "Elven Sword",
+"Player_1HS_ElvenSwordT2": "Elven Sword",
+"Player_1HS_ElvenSwordT3": "Elven Sword",
+"Player_1HS_ElvenSwordT4": "Elven Sword",
+"Player_2HR_RohanHamT1_Tint3_2Common": "Foe Hammer",
+"Player_1HD_BlackNumDaggerT4_Tint_Vendetta": "Dagger of Vengeance",
+"Player_1HD_GondorianDaggerT2_Tint9_2Common": "Gondorian Dagger",
+"Player_1HD_RhovanionDaggerT4_Tint_Outlaw": "Blackguard Dagger",
+"Player_1HD_BlackNumDaggerT1_Tint_Terror": "Dagger of Horrors",
+"Player_2HR_NumenoreanBowSnipeT2_Tint9_2Common": "Númenórean Longbow",
+"Player_2HR_ElvenBowT2_Tint_Mystic": "Arcane Bow",
+"Player_1HS_RohanSwordT1_Tint9_2Common": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint1_2Common": "Rohirrim Sword",
+"Player_1HD_ElvenDaggerT1": "Elven Dagger",
+"Player_1HD_ElvenDaggerT2": "Elven Dagger",
+"Player_1HD_ElvenDaggerT3": "Elven Dagger",
+"Player_1HD_ElvenDaggerT4": "Elven Dagger",
+"Player_2HR_GondorianBowSnipeT2_Tint1": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint2": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint3": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint4": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint5": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint6": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint7": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint8": "Gondorian Longbow",
+"Player_2HR_GondorianBowSnipeT2_Tint9": "Gondorian Longbow",
+"Player_2HR_RohanBowT1_Menu": "Rohirrim Bow",
+"Player_2HR_GondorianBowSnipeT2_Tint3_2Common": "Gondorian Longbow",
+"Player_2HR_ElvenBowT3_Tint_Slaughter": "Blood Longbow",
+"Player_2HR_RohanBowT1_Tint10": "Rohirrim Bow",
+"Player_1HD_RhovanionDaggerT1_Tint10_2Common": "Rhovanion Dagger",
+"Player_1HD_RohanDaggerT2_Tint1": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint2": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint3": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint4": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint5": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint6": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint7": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint8": "Rohirrim Dagger",
+"Player_1HD_RohanDaggerT2_Tint9": "Rohirrim Dagger",
+"Player_1HS_RohanSwordT2_Tint10": "Rohirrim Sword",
+"Player_1HS_RangerSwordT2_Tint5_2Common": "Ranger's Sword",
+"Player_1HS_GondorianSwordT2_Tint1": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint2": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint3": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint4": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint5": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint6": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint7": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint8": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2_Tint9": "Gondorian Sword",
+"Player_1HS_NumenoreanSwordT1_Tint4_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT1_Tint6_2Common": "Ranger's Bow",
+"Player_2HR_BlackNumBowT4_Tint_Dark": "Darkest Longbow",
+"Player_1HD_BlackNumDaggerT1": "Númenórean Dagger",
+"Player_1HD_BlackNumDaggerT2": "Númenórean Dagger",
+"Player_1HD_BlackNumDaggerT3": "Númenórean Dagger",
+"Player_1HD_BlackNumDaggerT4": "Númenórean Dagger",
+"Player_2HR_RohanBowT1_Tint9_2Common": "Rohirrim Bow",
+"Player_1HS_GondorianSwordT2_Tint2_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT2_Tint1_2Common": "Rohirrim Bow",
+"Player_1HD_GondorianDaggerT1_Tint10": "Gondorian Dagger",
+"Player_2HR_RohanBowT1": "Rohirrim Bow",
+"Player_2HR_RohanBowT2": "Rohirrim Bow",
+"Player_1HD_DwarvenDaggerT3_Tint_Machine": "Threshing Dagger",
+"Player_1HD_ElvenDaggerT1_Tint_Slaughter": "Blood Dagger",
+"Player_2HR_ElvenBowT4_Menu": "Elven Bow",
+"Player_2HR_ElvenBowT1": "Elven Bow",
+"Player_2HR_ElvenBowT2": "Elven Bow",
+"Player_2HR_ElvenBowT3": "Elven Bow",
+"Player_2HR_ElvenBowT4": "Elven Bow",
+"Player_1HS_NumenoreanSwordT2_Tint9_2Common": "Númenórean Sword",
+"Player_2HR_NumenoreanBowT2_Tint10_2Common": "Númenórean Bow",
+"Player_1HS_ElvenSwordT4_Tint_Celebrimbor": "Bright Lord's Sword",
+"Player_2HR_GondorianBowT1_Tint4_2Common": "Gondorian Bow",
+"Player_2HR_RangerBowSnipeT2_Tint5_2Common": "Ranger's Longbow",
+"Player_2HR_GondorianBowT1_Menu": "Gondorian Bow",
+"Player_2HR_HaradrimBowT3_Menu": "Haradrim Bow",
+"Player_1HB_ElvenHammerT3_Tint_Marauder": "Raider's Hammer",
+"Player_1HD_RohanDaggerT1_Tint1_2Common": "Rohirrim Dagger",
+"Player_1HS_ElvenSwordT3_Tint_Celebrimbor": "Bright Lord's Sword",
+"Player_1HS_RangerSwordT1_Starting": "Urfael",
+"Player_2HR_RohanBowSnipeT1_Tint2_2Common": "Rohirrim Longbow",
+"Player_1HB_ElvenHammerT3_Tint_Machine": "Threshing Hammer",
+"Player_2HR_GondorianBowT2_Tint9_2Common": "Gondorian Bow",
+"Player_1HS_NumenoreanSwordT2_Tint10_2Common": "Númenórean Sword",
+"Player_2HR_BlackNumBowT4_Tint_Vendetta": "Longbow of Vengeance",
+"Player_1HD_RangerDaggerT1_Tint10_2Common": "Ranger's Dagger",
+"Player_2HR_RhovanionBowT4_Tint_Outlaw": "Blackguard Bow",
+"Player_1HD_HaradrimDaggerT3_Tint_Feral": "Dagger of Beasts",
+"Eltariel_1HS_BladeSwordT2_OH_Tint_Light": "Light Bringer's Dagger",
+"Player_1HS_RhovanionSwordT3_Tint9_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint8_2Common": "Númenórean Dagger",
+"Player_2HR_GondorianBowSnipeT1_Tint10": "Gondorian Longbow",
+"Player_1HD_RangerDaggerT1_Tint4_2Common": "Ranger's Dagger",
+"Player_1HD_RohanDaggerT2_Tint6_2Common": "Rohirrim Dagger",
+"Player_1HS_ElvenSwordT2_Tint_Celebrimbor": "Bright Lord's Sword",
+"Player_2HR_RohanBowSnipeT2_Tint7_2Common": "Rohirrim Longbow",
+"Eltariel_1HS_BladeSwordT1_Stealth": "Huntress Dagger",
+"Player_2HR_NumenoreanBowT1_Tint10": "Númenórean Bow",
+"Player_1HS_ElvenSwordT1_Tint_Celebrimbor": "Bright Lord's Sword",
+"Player_1HD_RangerDaggerT2_Tint9_2Common": "Ranger's Dagger",
+"Player_1HD_BlackNumDaggerT3_Tint_Vendetta": "Dagger of Vengeance",
+"Player_1HD_RhovanionDaggerT1_Tint6_2Common": "Rhovanion Dagger",
+"Player_1HD_GondorianDaggerT1_Tint9_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowT2_Tint4_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT2_Tint1_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowSnipeT1_Tint9_2Common": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint1_2Common": "Númenórean Longbow",
+"Player_1HB_ElvenHammerT1_Tint_Warmonger": "Hammer of War",
+"Player_1HS_RohanSwordT1_Tint1_2Common": "Rohirrim Sword",
+"Eltariel_1HS_WoodElfSwordT1_MH_Tint_Beast": "Beast Hunter's Blade",
+"Player_1HD_ElvenDaggerT2_Tint_Mystic": "Arcane Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint3_2Common": "Rhovanion Dagger",
+"Eltariel_1HS_StealthX2_Wraith": "Sword",
+"Player_1HD_HaradrimDaggerT4_Tint_Marauder": "Raider's Dagger",
+"Player_2HR_GondorianBowSnipeT1_Tint3_2Common": "Gondorian Longbow",
+"Player_1HS_RohanSwordT2_Tint6_2Common": "Rohirrim Sword",
+"Player_2HR_NumenoreanBowT2_Tint1": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint2": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint3": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint4": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint5": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint6": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint7": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint8": "Númenórean Bow",
+"Player_2HR_NumenoreanBowT2_Tint9": "Númenórean Bow",
+"Eltariel_1HS_BladeSwordT1_MH": "Huntress Blade",
+"Eltariel_1HS_BladeSwordT1_OH": "Huntress Dagger",
+"Eltariel_1HS_BladeSwordT1_MH_Wraith": "Huntress Blade",
+"Player_2HR_RangerBowT2_Tint10": "Ranger's Bow",
+"Player_2HR_GondorianBowSnipeT2_Tint8_2Common": "Gondorian Longbow",
+"Player_1HS_RangerSwordT1_Tint5_2Common": "Ranger's Sword",
+"Player_2HR_RangerBowSnipeT2_Tint1": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint2": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint3": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint4": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint5": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint6": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint7": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint8": "Ranger's Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint9": "Ranger's Longbow",
+"Player_1HD_DwarvenDaggerT1": "Dwarven Dagger",
+"Player_1HD_DwarvenDaggerT2": "Dwarven Dagger",
+"Player_1HD_DwarvenDaggerT3": "Dwarven Dagger",
+"Player_1HD_DwarvenDaggerT4": "Dwarven Dagger",
+"Eltariel_1HS_WoodElfSwordT2_MHTint_Poison": "Serpent Tamer's Blade",
+"Player_1HD_RhovanionDaggerT3_Tint10_2Common": "Rhovanion Dagger",
+"Player_1HS_BlackNumSwordT2_Tint_Ringwraith": "Urfael",
+"Player_1HS_GondorianSwordT1_Tint2_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint1_2Common": "Rohirrim Bow",
+"Player_2HR_NumenoreanBowT1": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowT2": "Númenórean Longbow",
+"Player_2HR_GondorianBowT2_Tint1": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint2": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint3": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint4": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint5": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint6": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint7": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint8": "Gondorian Bow",
+"Player_2HR_GondorianBowT2_Tint9": "Gondorian Bow",
+"Player_1HS_NumenoreanSwordT1_Tint9_2Common": "Númenórean Sword",
+"Player_1HS_HaradrimSwordT4_Tint_Marauder": "Raider's Sword",
+"Player_1HS_NumenoreanSwordT2_Tint1_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint3_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT2_Tint7_2Common": "Gondorian Sword",
+"Player_2HR_RangerBowSnipeT1_Tint5_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint6_2Common": "Rohirrim Bow",
+"Player_1HS_RhovanionSwordT1_Tint4_2Common": "Rhovanion Sword",
+"Player_1HD_RhovanionDaggerT1_Tint10": "Rhovanion Dagger",
+"Player_1HB_ElvenHammerT2_Tint_Marauder": "Raider's Hammer",
+"Player_1HD_ElvenDaggerT3_Tint_Slaughter": "Blood Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint1": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint2": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint3": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint4": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint5": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint6": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint7": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint8": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT1_Tint9": "Númenórean Dagger",
+"Player_2HR_GondorianBowT1_Tint9_2Common": "Gondorian Bow",
+"Player_2HR_GondorianBowSnipeT1_Tint10_2Common": "Gondorian Longbow",
+"Player_2HR_GondorianBowT2_Tint1_2Common": "Gondorian Bow",
+"Player_2HR_BlackNumBowT3_Tint_Vendetta": "Longbow of Vengeance",
+"Eltariel_1HS_BladeSwordT1_OH_Tint_Light": "Light Bringer's Dagger",
+"Player_1HS_RhovanionSwordT3_Tint1_2Common": "Rhovanion Sword",
+"Player_1HD_RohanDaggerT1_Tint6_2Common": "Rohirrim Dagger",
+"Player_2HR_RohanBowT2_Tint1": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint2": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint3": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint4": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint5": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint6": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint7": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint8": "Rohirrim Bow",
+"Player_2HR_RohanBowT2_Tint9": "Rohirrim Bow",
+"Player_2HR_RohanBowSnipeT1_Tint7_2Common": "Rohirrim Longbow",
+"Player_1HB_RohanHammerT1_Menu": "Rohirrim Hammer",
+"Player_1HD_RangerDaggerT1_Tint9_2Common": "Ranger's Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint5_2Common": "Númenórean Dagger",
+"Player_1HD_BlackNumDaggerT2_Tint_Vendetta": "Dagger of Vengeance",
+"Player_1HD_RangerDaggerT2_Tint1_2Common": "Ranger's Dagger",
+"Player_2HR_NumenoreanBowT1_Tint4_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT1_Tint1_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common": "Númenórean Longbow",
+"Baranor_1HS_DesertSwordT1": "Sword",
+"Player_1HD_GondorianDaggerT2_Tint10_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowT2_Tint9_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT2_Tint6_2Common": "Gondorian Dagger",
+"Player_1HD_HaradrimDaggerT3_Tint_Marauder": "Raider's Dagger",
+"Player_2HR_NumenoreanBowSnipeT2_Tint6_2Common": "Númenórean Longbow",
+"Player_1HS_HaradrimSwordT2_Tint_Feral": "Sword of Beasts",
+"Player_1HS_RohanSwordT1_Tint6_2Common": "Rohirrim Sword",
+"Player_1HS_RohanSwordT1_Tint10_2Common": "Rohirrim Sword",
+"Player_2HR_BlackNumBowT2_Tint_Dark": "Darkest Longbow",
+"Player_1HB_ElvenHammerT3_Tint_Warmonger": "Hammer of War",
+"Player_2HR_BlackNumBowT2_Tint_Terror": "Longbow of Horrors",
+"Player_1HS_RohanSwordDLC": "Sword of Dominion",
+"Player_1HD_BlackNumDaggerT3_Tint_Dark": "Darkest Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint8_2Common": "Rhovanion Dagger",
+"Player_1HS_BlackNumSwordT2_Tint_DarkRanger": "Urfael",
+"Player_1HD_RhovanionDaggerT1_Tint_Outlaw": "Blackguard Dagger",
+"Player_2HR_GondorianBowSnipeT1_Tint8_2Common": "Gondorian Longbow",
+"Player_1HS_DwarvenSwordT4_Tint_Machine": "Threshing Sword",
+"Player_1HS_RangerSwordT2_Tint2_2Common": "Ranger's Sword",
+"Player_1HS_HaradrimSwordT3_Tint_Marauder": "Raider's Sword",
+"Player_1HS_NumenoreanSwordT1_Tint1_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT1_Tint3_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT1_Tint7_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint6_2Common": "Rohirrim Bow",
+"Player_1HB_ElvenHammerT1_Tint_Marauder": "Raider's Hammer",
+"Player_1HS_NumenoreanSwordT2_Tint6_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint8_2Common": "Ranger's Bow",
+"Eltariel_1HS_BaseX2": "Sword",
+"Player_2HR_GondorianBowT1_Tint1_2Common": "Gondorian Bow",
+"Player_1HS_NumenoreanSwordT1_Tint1": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint2": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint3": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint4": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint5": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint6": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint7": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint8": "Númenórean Sword",
+"Player_1HS_NumenoreanSwordT1_Tint9": "Númenórean Sword",
+"Player_2HR_BlackNumBowT2_Tint_Vendetta": "Longbow of Vengeance",
+"Player_2HR_RangerBowSnipeT2_Tint2_2Common": "Ranger's Longbow",
+"Player_1HS_RhovanionSwordT1_Tint9_2Common": "Rhovanion Sword",
+"Player_1HD_GondorianDaggerT2_Tint1": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint2": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint3": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint4": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint5": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint6": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint7": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint8": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2_Tint9": "Gondorian Dagger",
+"Eltariel_1HS_WoodElfSwordT1_OH_Tint_Fire": "Fire Chaser's Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint1": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint2": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint3": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint4": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint5": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint6": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint7": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint8": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint9": "Rhovanion Dagger",
+"Player_2HR_NumenoreanBowSnipeT2_Tint1": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint2": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint3": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint4": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint5": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint6": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint7": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint8": "Númenórean Longbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint9": "Númenórean Longbow",
+"Player_1HS_RhovanionSwordT3_Tint_Outlaw": "Blackguard Sword",
+"Player_2HR_RohanBowT2_Menu": "Rohirrim Bow",
+"Player_2HR_GondorianBowT2_Tint6_2Common": "Gondorian Bow",
+"Player_1HS_RhovanionSwordT3_Tint6_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint5_2Common": "Númenórean Dagger",
+"Player_1HS_ElvenSwordT4_Tint_Mystic": "Arcane Sword",
+"Player_1HD_BlackNumDaggerT1_Tint_Vendetta": "Dagger of Vengeance",
+"Player_1HD_RangerDaggerT1_Tint1_2Common": "Ranger's Dagger",
+"Player_1HS_BlackNumSwordT4_Tint_Terror": "Sword of Horrors",
+"Player_1HD_RohanDaggerT2_Tint3_2Common": "Rohirrim Dagger",
+"Eltariel_2HR_BladeBowT1_Tint_Light": "Light Bringer's Bow",
+"Player_2HR_RohanBowSnipeT2_Tint4_2Common": "Rohirrim Longbow",
+"Eltariel_1HS_WoodElfSwordT2_OH_Tint_Frost": "Ice Stalker's Dagger",
+"Player_1HS_BlackNumSwordT3_Tint_Ringwraith": "Urfael",
+"Player_2HR_RhovanionBowT1_Tint_Outlaw": "Blackguard Bow",
+"Player_1HD_RangerDaggerT2_Tint6_2Common": "Ranger's Dagger",
+"Player_2HR_NumenoreanBowT1_Tint9_2Common": "Númenórean Bow",
+"Player_1HD_RhovanionDaggerT1_Tint3_2Common": "Rhovanion Dagger",
+"Player_1HD_GondorianDaggerT1_Tint6_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowT2_Tint1_2Common": "Númenórean Bow",
+"Player_2HR_RhovanionBowT3_Tint1": "Rhovanion Bow",
+"Player_1HD_HaradrimDaggerT2_Tint_Marauder": "Raider's Dagger",
+"Player_2HR_NumenoreanBowSnipeT1_Tint6_2Common": "Númenórean Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint1": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint2": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint3": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint4": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint5": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint6": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint7": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint8": "Rohirrim Longbow",
+"Player_2HR_RohanBowSnipeT2_Tint9": "Rohirrim Longbow",
+"Player_1HD_NumenoreanDaggerT1_Tint10": "Númenórean Dagger",
+"Player_2HR_RohanBowT1_Tint10_2Common": "Rohirrim Bow",
+"Player_1HS_RhovanionSwordT1_Tint1": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint2": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint3": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint4": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint5": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint6": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint7": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint8": "Rhovanion Sword",
+"Player_1HS_RhovanionSwordT1_Tint9": "Rhovanion Sword",
+"Player_2HR_RangerBowT1_Tint10_2Common": "Ranger's Bow",
+"Player_1HS_RohanSwordT2_Tint3_2Common": "Rohirrim Sword",
+"Player_2HR_GondorianBowT2_Menu": "Gondorian Bow",
+"Player_2HR_HaradrimBowT4_Menu": "Haradrim Bow",
+"Player_1HS_NumenoreanSwordT1_Tint10": "Númenórean Sword",
+"Player_2HR_GondorianBowSnipeT2_Tint5_2Common": "Gondorian Longbow",
+"Player_1HS_RangerSwordT1_Tint2_2Common": "Ranger's Sword",
+"Player_1HS_HaradrimSwordT2_Tint_Marauder": "Raider's Sword",
+"Eltariel_2HR_WoodElfBowT1_Tint_Frost": "Ice Stalker's Bow",
+"Player_1HD_RangerDaggerT2_Tint1": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint2": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint3": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint4": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint5": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint6": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint7": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint8": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2_Tint9": "Ranger's Dagger",
+"Player_1HS_RangerSwordT2_Tint7_2Common": "Ranger's Sword",
+"Player_1HS_RohanSwordT2_Tint1": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint2": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint3": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint4": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint5": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint6": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint7": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint8": "Rohirrim Sword",
+"Player_1HS_RohanSwordT2_Tint9": "Rohirrim Sword",
+"Player_1HS_NumenoreanSwordT1_Tint6_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT1_Tint8_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT2_Tint4_2Common": "Gondorian Sword",
+"Player_2HR_BlackNumBowT1_Tint_Vendetta": "Longbow of Vengeance",
+"Player_2HR_RangerBowSnipeT1_Tint2_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint3_2Common": "Rohirrim Bow",
+"Player_2HR_RohanBowSnipeT1_Tint10": "Rohirrim Longbow",
+"Player_1HS_RhovanionSwordT1_Tint1_2Common": "Rhovanion Sword",
+"Player_1HD_RhovanionDaggerT3_Tint10": "Rhovanion Dagger",
+"Eltariel_1HS_BladeSwordT2_MH": "Huntress Blade",
+"Eltariel_1HS_BladeSwordT2_OH": "Huntress Dagger",
+"Player_2HR_GondorianBowT1_Tint6_2Common": "Gondorian Bow",
+"Player_2HR_RangerBowSnipeT2_Tint7_2Common": "Ranger's Longbow",
+"Player_1HD_BlackNumDaggerT2_Tint_Terror": "Dagger of Horrors",
+"Player_1HD_RohanDaggerT1_Tint3_2Common": "Rohirrim Dagger",
+"Player_2HR_ElvenBowT3_Tint_Mystic": "Arcane Bow",
+"Player_2HR_RohanBowSnipeT1_Tint4_2Common": "Rohirrim Longbow",
+"Eltariel_1HS_WoodElfSwordT1_OH_Tint_Frost": "Ice Stalker's Dagger",
+"Player_2HR_NumenoreanBowSnipeT2_Tint10_2Common": "Númenórean Longbow",
+"Player_1HD_RangerDaggerT1_Tint6_2Common": "Ranger's Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint2_2Common": "Númenórean Dagger",
+"Player_1HD_BlackNumDaggerT1_Tint_Dark": "Darkest Dagger",
+"Player_1HD_RohanDaggerT2_Tint8_2Common": "Rohirrim Dagger",
+"Eltariel_1HS_WoodElfSwordT2_Stealth_Tint_Fire": "Fire Chaser's Dagger",
+"Player_1HD_DwarvenDaggerT4_Tint_Machine": "Threshing Dagger",
+"Player_2HR_NumenoreanBowT1_Tint1_2Common": "Númenórean Bow",
+"Player_1HS_ElvenSwordT1_Tint_Slaughter": "Blood Sword",
+"Player_2HR_RohanBowSnipeT2_Tint9_2Common": "Rohirrim Longbow",
+"Player_2HR_HaradrimBowT2_Tint_Feral": "Bow of Beasts",
+"Player_1HS_RangerSwordT2_Tint10_2Common": "Ranger's Sword",
+"Player_1HD_HaradrimDaggerT1_Tint_Marauder": "Raider's Dagger",
+"Player_1HD_GondorianDaggerT1": "Gondorian Dagger",
+"Player_1HD_GondorianDaggerT2": "Gondorian Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint8_2Common": "Rhovanion Dagger",
+"Player_2HR_NumenoreanBowT2_Tint6_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT2_Tint3_2Common": "Gondorian Dagger",
+"Torvin_Misc_DesertXBowT1": "Crossbow",
+"Player_2HR_NumenoreanBowSnipeT2_Tint3_2Common": "Númenórean Longbow",
+"Player_1HS_RohanSwordT1_Tint3_2Common": "Rohirrim Sword",
+"Player_1HS_DwarvenSwordT1_Tint_Warmonger": "Sword of War",
+"Player_1HB_ElvenHammerT4_Tint_Machine": "Threshing Hammer",
+"Player_2HR_RohanHamT2_Tint2_2Common": "Battle Hammer",
+"Player_1HD_RhovanionDaggerT3_Tint5_2Common": "Rhovanion Dagger",
+"Player_2HR_GondorianBowSnipeT1_Tint5_2Common": "Gondorian Longbow",
+"Player_1HS_RohanSwordT2_Tint8_2Common": "Rohirrim Sword",
+"Player_1HD_RangerDaggerT1_Starting": "Acharn",
+"Player_1HS_HaradrimSwordT1_Tint_Marauder": "Raider's Sword",
+"Eltariel_1HS_BladeSwordT1_OH_Wraith": "Huntress Dagger",
+"Player_1HS_RangerSwordT1_Tint7_2Common": "Ranger's Sword",
+"Player_1HS_BlackNumSwordT4_Tint_Ringwraith": "Urfael",
+"Player_1HB_RohanHammerT2_Menu": "Rohirrim Hammer",
+"Eltariel_1HS_WoodElfSwordT2_Stealth_Tint_Poison": "Serpent Tamer's Dagger",
+"Player_1HS_GondorianSwordT1_Tint4_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint3_2Common": "Rohirrim Bow",
+"Player_1HS_NumenoreanSwordT2_Tint3_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint5_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT2_Tint9_2Common": "Gondorian Sword",
+"Player_2HR_RangerBowSnipeT1_Tint7_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint8_2Common": "Rohirrim Bow",
+"Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Frost": "Ice Stalker's Dagger",
+"Player_2HR_RangerBowT1_Menu": "Ranger's Bow",
+"Player_1HS_RhovanionSwordT1_Tint6_2Common": "Rhovanion Sword",
+"Player_1HS_GondorianSwordT2_Tint10_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowSnipeT1_Tint10_2Common": "Rohirrim Longbow",
+"Player_2HR_GondorianBowT2_Tint3_2Common": "Gondorian Bow",
+"Player_1HD_HaradrimDaggerT1_Tint_Feral": "Dagger of Beasts",
+"Player_1HD_ElvenDaggerT3_Tint_Mystic": "Arcane Dagger",
+"Player_1HS_RhovanionSwordT3_Tint3_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint2_2Common": "Númenórean Dagger",
+"Player_1HD_RohanDaggerT1_Tint8_2Common": "Rohirrim Dagger",
+"Player_2HR_RangerHamT1": "Ranger's Hammer",
+"Player_2HR_RangerHamT2": "Ranger's Hammer",
+"Player_2HR_RohanBowSnipeT1_Tint9_2Common": "Rohirrim Longbow",
+"Baranor_Shld_DesertT1": "Shield",
+"Player_2HR_RohanBowSnipeT2_Tint1_2Common": "Rohirrim Longbow",
+"Player_1HD_NumenoreanDaggerT2_Tint7_2Common": "Númenórean Dagger",
+"Player_1HS_BlackNumSwordT4_Tint_Vendetta": "Sword of Vengeance",
+"Player_1HD_RangerDaggerT2_Tint3_2Common": "Ranger's Dagger",
+"Eltariel_1HS_WoodElfSwordT1_MH_Tint_Poison": "Serpent Tamer's Blade",
+"Player_1HS_ElvenSwordT1_Tint_Mystic": "Arcane Sword",
+"Player_1HS_BlackNumSwordT1_Tint_Terror": "Sword of Horrors",
+"Player_2HR_NumenoreanBowT1_Tint6_2Common": "Númenórean Bow",
+"Player_1HD_GondorianDaggerT1_Tint3_2Common": "Gondorian Dagger",
+"Player_1HD_RangerDaggerT1": "Ranger's Dagger",
+"Player_1HD_RangerDaggerT2": "Ranger's Dagger",
+"Player_2HR_NumenoreanBowSnipeT1_Tint3_2Common": "Númenórean Longbow",
+"Player_1HS_ElvenSwordT3_Tint_Slaughter": "Blood Sword",
+"Player_2HR_RohanHamT1_Tint2_2Common": "Battle Hammer",
+"Player_1HD_GondorianDaggerT2_Tint8_2Common": "Gondorian Dagger",
+"Player_1HD_DwarvenDaggerT2_Tint_Warmonger": "Dagger of War",
+"Player_2HR_NumenoreanBowSnipeT2_Tint8_2Common": "Númenórean Longbow",
+"Player_2HR_RhovanionBowSnipeT3_Tint1": "Rhovanion Longbow",
+"Player_1HS_RohanSwordT1_Tint8_2Common": "Rohirrim Sword",
+"Player_1HS_DwarvenSwordT3_Tint_Warmonger": "Sword of War",
+"Player_2HR_NumenoreanBowSnipeT2_Tint10": "Númenórean Longbow",
+"Player_1HS_GondorianSwordT1": "Gondorian Sword",
+"Player_1HS_GondorianSwordT2": "Gondorian Sword",
+"Baranor_Misc_DesertXBowT1_Menu": "Crossbow",
+"Player_2HR_GondorianBowSnipeT2_Tint2_2Common": "Gondorian Longbow",
+"Player_1HS_DwarvenSwordT1_Tint_Machine": "Threshing Sword",
+"Player_1HD_HaradrimDaggerT4_Tint_Feral": "Dagger of Beasts",
+"Player_1HS_RangerSwordT2_Tint4_2Common": "Ranger's Sword",
+"Player_2HR_GondorianBowT1_Tint10_2Common": "Gondorian Bow",
+"Player_1HS_NumenoreanSwordT1_Tint3_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT1_Tint5_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT1_Tint9_2Common": "Gondorian Sword",
+"Player_2HR_RohanBowT1_Tint8_2Common": "Rohirrim Bow",
+"Player_1HS_GondorianSwordT2_Tint1_2Common": "Gondorian Sword",
+"Eltariel_2HR_WoodElfBowT1_Tint_Fire": "Fire Chaser's Bow",
+"Player_1HS_NumenoreanSwordT2_Tint8_2Common": "Númenórean Sword",
+"Player_2HR_RhovanionBowT3_Tint1_2Common": "Rhovanion Bow",
+"Player_2HR_GondorianBowT1": "Gondorian Bow",
+"Player_2HR_GondorianBowT2": "Gondorian Bow",
+"Player_1HS_BlackNumSwordT3_Tint_Dark": "Darkest Sword",
+"Player_2HR_GondorianBowT1_Tint3_2Common": "Gondorian Bow",
+"Player_2HR_RangerBowSnipeT2_Tint4_2Common": "Ranger's Longbow",
+"Eltariel_1HS_WoodElfSwordT2_OH_Tint_Poison": "Serpent Tamer's Dagger",
+"Player_2HR_RohanHamT1_Tint1": "War Hammer",
+"Player_2HR_RohanHamT1_Tint2": "Battle Hammer",
+"Player_2HR_RohanHamT1_Tint3": "Skull Hammer",
+"Player_2HR_RohanHamT1_Tint4": "Foe Hammer",
+"Player_1HD_NumenoreanDaggerT1_Tint10_2Common": "Númenórean Dagger",
+"Player_2HR_RohanBowSnipeT1_Tint1_2Common": "Rohirrim Longbow",
+"Player_2HR_GondorianBowT2_Tint8_2Common": "Gondorian Bow",
+"Player_2HR_BlackNumBowT3_Tint_Terror": "Longbow of Horrors",
+"Player_1HS_RhovanionSwordT3_Tint8_2Common": "Rhovanion Sword",
+"Player_1HD_NumenoreanDaggerT1_Tint7_2Common": "Númenórean Dagger",
+"Player_1HS_BlackNumSwordT3_Tint_Vendetta": "Sword of Vengeance",
+"Player_1HD_RangerDaggerT1_Tint3_2Common": "Ranger's Dagger",
+"Player_1HD_RohanDaggerT2_Tint5_2Common": "Rohirrim Dagger",
+"Player_1HS_RohanSwordT1_Tint10": "Rohirrim Sword",
+"Player_1HD_RhovanionDaggerT2_Tint_Outlaw": "Blackguard Dagger",
+"Player_1HD_RohanDaggerT2_Tint10_2Common": "Rohirrim Dagger",
+"Player_2HR_RohanBowSnipeT2_Tint6_2Common": "Rohirrim Longbow",
+"Player_2HR_RangerBowSnipeT2_Tint10_2Common": "Ranger's Longbow",
+"Player_2HR_RangerBowT1": "Ranger's Bow",
+"Player_2HR_RangerBowT2": "Ranger's Bow",
+"Player_1HD_RangerDaggerT2_Tint8_2Common": "Ranger's Dagger",
+"Player_1HS_RangerSwordT1": "Ranger's Sword",
+"Player_1HS_RangerSwordT2": "Ranger's Sword",
+"Player_2HR_ElvenBowT1_Menu": "Elven Bow",
+"Player_1HD_RhovanionDaggerT1_Tint5_2Common": "Rhovanion Dagger",
+"Player_1HD_GondorianDaggerT1_Tint8_2Common": "Gondorian Dagger",
+"Player_2HR_NumenoreanBowT2_Tint3_2Common": "Númenórean Bow",
+"Eltariel_1HS_WoodElfSwordT2_OH_Tint_Fire": "Fire Chaser's Dagger",
+"Player_2HR_NumenoreanBowSnipeT1_Tint8_2Common": "Númenórean Longbow",
+"Player_1HS_RangerSwordT2_Tint10": "Ranger's Sword",
+"Eltariel_1HS_WoodElfSwordT2_Stealth_Tint_Frost": "Ice Stalker's Dagger",
+"Player_1HD_RhovanionDaggerT3_Tint2_2Common": "Rhovanion Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint1": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint2": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint3": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint4": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint5": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint6": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint7": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint8": "Númenórean Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint9": "Númenórean Dagger",
+"Player_2HR_GondorianBowSnipeT1_Tint2_2Common": "Gondorian Longbow",
+"Player_1HS_RohanSwordT2_Tint5_2Common": "Rohirrim Sword",
+"Player_1HD_DwarvenDaggerT4_Tint_Warmonger": "Dagger of War",
+"Torvin_Shld_DesertT1": "Shield",
+"Player_2HR_ElvenBowT2_Tint_Slaughter": "Blood Longbow",
+"Player_1HD_BlackNumDaggerT1_Tint_Ringwraith": "Acharn",
+"Player_1HS_RhovanionSwordT4_Tint_Outlaw": "Blackguard Sword",
+"Player_2HR_GondorianBowSnipeT2_Tint7_2Common": "Gondorian Longbow",
+"Player_1HS_RangerSwordT1_Tint4_2Common": "Ranger's Sword",
+"Player_2HR_RangerBowSnipeT2_Tint10": "Ranger's Longbow",
+"Player_1HS_GondorianSwordT1_Tint1_2Common": "Gondorian Sword",
+"Player_1HS_RangerSwordT2_Tint9_2Common": "Ranger's Sword",
+"Player_1HS_NumenoreanSwordT1_Tint8_2Common": "Númenórean Sword",
+"Player_2HR_RangerBowT2_Tint2_2Common": "Ranger's Bow",
+"Player_1HS_GondorianSwordT2_Tint6_2Common": "Gondorian Sword",
+"Player_2HR_RangerBowSnipeT1_Tint4_2Common": "Ranger's Longbow",
+"Player_2HR_RohanBowT2_Tint5_2Common": "Rohirrim Bow",
+"Player_2HR_RhovanionBowT2_Tint_Outlaw": "Blackguard Bow",
+"Eltariel_1HS_BladeSwordT2_MH_Tint_Light": "Light Bringer's Blade",
+"Eltariel_1HS_WoodElfSwordT1_MH_Tint_Fire": "Fire Chaser's Blade",
+"Player_1HS_RhovanionSwordT1_Tint3_2Common": "Rhovanion Sword",
+"Player_2HR_NumenoreanBowT1_Tint10_2Common": "Númenórean Bow",
+"Player_1HD_RohanDaggerT2_Tint10": "Rohirrim Dagger",
+"Player_1HS_HaradrimSwordT3_Tint_Feral": "Sword of Beasts",
+"Player_1HD_RangerDaggerT2_Tint10": "Ranger's Dagger",
+"Player_2HR_GondorianBowT1_Tint8_2Common": "Gondorian Bow",
+"Player_2HR_RangerBowSnipeT2_Tint9_2Common": "Ranger's Longbow",
+"Player_1HD_RhovanionDaggerT1_Tint1": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint2": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint3": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint4": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint5": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint6": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint7": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint8": "Rhovanion Dagger",
+"Player_1HD_RhovanionDaggerT1_Tint9": "Rhovanion Dagger",
+"Player_1HS_BlackNumSwordT2_Tint_Vendetta": "Sword of Vengeance",
+"Player_1HS_NumenoreanSwordT1_Tint10_2Common": "Númenórean Sword",
+"Player_1HD_RohanDaggerT1_Tint5_2Common": "Rohirrim Dagger",
+"Player_2HR_RohanBowSnipeT1_Tint6_2Common": "Rohirrim Longbow",
+"Player_2HR_RangerBowT1_Tint10": "Ranger's Bow",
+"Player_1HD_DwarvenDaggerT1_Tint_Machine": "Threshing Dagger",
+"Player_1HD_RangerDaggerT1_Tint8_2Common": "Ranger's Dagger",
+"Player_1HD_NumenoreanDaggerT2_Tint4_2Common": "Númenórean Dagger",
+"AD_Eltariel_BladeT2_Light_Tint_Light": "Light Bringer's Rune",
+"AD_BladeT1_Armor_Tint_Light": "Light Bringer's Armor",
+"AD_RangerT2_Cloak_Tint2_2Common": "Ranger's Cloak",
+"AD_RohanT1_Cloak_Tint4_2Common": "Rohirrim Cloak",
+"AD_ElvenT1_Cloak_Tint_Slaughter": "Blood Cloak",
+"AD_RohanT2_Cloak_Tint6_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint5_2Common": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint7_2Common": "Ranger's Armor",
+"AD_RangerT2_Cloak_Tint10_2Common": "Ranger's Cloak",
+"AD_RohanT1_Armor_Tint9_2Common": "Rohirrim Armor",
+"AD_Eltariel_BladeT1_Light_Tint_Light": "Light Bringer's Rune",
+"AD_RohanT1_Cloak_Tint10": "Rohirrim Cloak",
+"AD_HaradrimT4_Cloak": "Haradrim Cloak",
+"6Ring_5Lgnd_Outlaw": "Blackguard Rune",
+"AD_NumenoreanT2_Cloak_Tint10": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint2_2Common": "Númenórean Cloak",
+"AD_BladeT1_Armor": "Huntress Armor",
+"AD_NumenoreanT1_Armor_Tint5_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint7_2Common": "Númenórean Armor",
+"AD_ElvenT4_Armor_Tint_Mystic": "Arcane Armor",
+"AD_HaradrimT3_Cloak_Tint_Marauder": "Raider's Cloak",
+"AD_GondorianT1_Cloak_Tint10_2Common": "Gondorian Cloak",
+"AD_RhovanionT1_Cloak_Tint1_2Common": "Rhovanion Cloak",
+"AD_GondorianT1_Cloak_Tint4_2Common": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint6_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint5_2Common": "Rhovanion Cloak",
+"AD_RhovanionT1_Armor_Tint6_2Common": "Rhovanion Armor",
+"AD_GondorianT1_Armor_Tint9_2Common": "Gondorian Armor",
+"AD_RhovanionT2_Cloak_Tint_Outlaw": "Blackguard Cloak",
+"AD_RangerT1_Armor_Tint1": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint2": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint3": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint4": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint5": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint6": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint7": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint8": "Ranger's Armor",
+"AD_RangerT1_Armor_Tint9": "Ranger's Armor",
+"AD_GondorianT2_Armor": "Gondorian Armor",
+"6Ring_5Lgnd_Marauder": "Raider's Rune",
+"AD_DwarvenT3_Armor": "Dwarven Armor",
+"AD_RohanT1_Armor_Tint1_2Common": "Rohirrim Armor",
+"AD_GondorianT2_Armor_Tint10": "Gondorian Armor",
+"AD_RohanT2_Armor_Tint3_2Common": "Rohirrim Armor",
+"AD_RangerT1_Cloak_Tint5_2Common": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint7_2Common": "Ranger's Cloak",
+"AD_RohanT1_Cloak_Tint9_2Common": "Rohirrim Cloak",
+"AD_NumenoreanT2_Armor_Tint1": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint2": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint3": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint4": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint5": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint6": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint7": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint8": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint9": "Númenórean Armor",
+"AD_BladeT1_Cloak": "Huntress Cloak",
+"AD_RangerT1_Cloak_Tint10_2Common": "Ranger's Cloak",
+"AD_BlackNumT1_Armor_Tint_Terror": "Armor of Horrors",
+"AD_ElvenT2_Armor": "Elven Armor",
+"AD_ElvenT3_Cloak_Tint_Celebrimbor": "Bright Lord's Cloak",
+"AD_DwarvenT4_Cloak_Tint_Machine": "Threshing Cloak",
+"AD_NumenoreanT1_Cloak_Tint5_2Common": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint7_2Common": "Númenórean Cloak",
+"AD_BlackNumT2_Armor_Tint_Vendetta": "Armor of Vengeance",
+"AD_Talion_Ringcraft_Starting": "The New Ring",
+"AD_Talion_Ringcraft_Tint2_2Common": "Rune of the North",
+"AD_ElvenT2_Armor_Tint_Mystic": "Arcane Armor",
+"AD_GondorianT1_Armor_Tint1_2Common": "Gondorian Armor",
+"AD_GondorianT2_Cloak": "Gondorian Cloak",
+"AD_RangerT1_Armor_Starting": "Guardian Armor",
+"AD_GondorianT2_Armor_Tint3_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint2_2Common": "Rhovanion Armor",
+"AD_RohanT2_Cloak_Tint1": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint2": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint3": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint4": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint5": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint6": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint7": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint8": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint9": "Rohirrim Cloak",
+"AD_DwarvenT3_Cloak": "Dwarven Cloak",
+"AD_RhovanionT1_Cloak_Tint6_2Common": "Rhovanion Cloak",
+"AD_GondorianT1_Cloak_Tint9_2Common": "Gondorian Cloak",
+"AD_WoodElfT1_Cloak_Tint_Poison": "Serpent Tamer's Cloak",
+"AD_RohanT1_Cloak_Tint1_2Common": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint3_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint2_2Common": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint4_2Common": "Ranger's Armor",
+"AD_RohanT1_Armor_Tint6_2Common": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint8_2Common": "Rohirrim Armor",
+"AD_ElvenT2_Cloak": "Elven Cloak",
+"AD_Eltariel_WoodElfT2_Light_Tint_Frost": "Ice Stalker's Rune",
+"AD_RhovanionT3_Armor_Tint10_2Common": "Rhovanion Armor",
+"AD_RangerT1_Armor_Tint10": "Ranger's Armor",
+"AD_Eltariel_WoodElfT1_Light_Tint_Frost": "Ice Stalker's Rune",
+"AD_RangerT1_Cloak_Starting": "Ioreth's Embrace",
+"AD_WoodElfT2_Armor_Tint_Beast": "Beast Hunter's Armor",
+"AD_NumenoreanT1_Armor_Tint2_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint4_2Common": "Númenórean Armor",
+"AD_ElvenT4_Armor_Tint_Celebrimbor": "Bright Lord's Armor",
+"AD_WoodElfT1_Armor_Tint_Beast": "Beast Hunter's Armor",
+"AD_BlackNumT2_Cloak_Tint_Vendetta": "Cloak of Vengeance",
+"AD_RohanT1_Armor_Tint10": "Rohirrim Armor",
+"AD_BlackNumT1_Armor": "Númenórean Armor",
+"AD_HaradrimT2_Armor_Tint_Marauder": "Raider's Armor",
+"AD_NumenoreanT2_Armor_Tint10": "Númenórean Armor",
+"6Ring_5Lgnd_Vendetta": "Rune of Vengeance",
+"AD_Talion_Ringcraft_Tint7_2Common": "Rune of Leaves",
+"AD_NumenoreanT1_Cloak_Tint1": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint2": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint3": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint4": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint5": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint6": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint7": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint8": "Númenórean Cloak",
+"AD_NumenoreanT1_Cloak_Tint9": "Númenórean Cloak",
+"AD_GondorianT1_Cloak_Tint1_2Common": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint3_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint2_2Common": "Rhovanion Cloak",
+"AD_RhovanionT1_Armor_Tint3_2Common": "Rhovanion Armor",
+"AD_GondorianT1_Armor_Tint6_2Common": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint8_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint7_2Common": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint_Outlaw": "Blackguard Armor",
+"AD_DwarvenT4_Armor_Tint_Warmonger": "Armor of War",
+"AD_BlackNumT4_Armor": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint10_2Common": "Númenórean Armor",
+"AD_RangerT1_Cloak_Tint2_2Common": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint4_2Common": "Ranger's Cloak",
+"AD_RohanT1_Cloak_Tint6_2Common": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint8_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint7_2Common": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint9_2Common": "Ranger's Armor",
+"AD_RhovanionT3_Cloak_Tint10": "Rhovanion Cloak",
+"AD_ElvenT1_Armor_Tint_Celebrimbor": "Bright Lord's Armor",
+"AD_RangerT2_Cloak_Tint10": "Ranger's Cloak",
+"6Ring_5Lgnd_Machine": "Threshing Rune",
+"AD_NumenoreanT1_Cloak_Tint2_2Common": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint4_2Common": "Númenórean Cloak",
+"AD_HaradrimT2_Armor": "Haradrim Armor",
+"AD_NumenoreanT1_Armor_Tint7_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint9_2Common": "Númenórean Armor",
+"AD_BlackNumT1_Cloak": "Black Númenórean Cloak",
+"AD_RohanT2_Cloak_Tint10": "Rohirrim Cloak",
+"AD_HaradrimT2_Cloak_Tint_Marauder": "Raider's Cloak",
+"AD_BlackNumT3_Cloak_Tint_Terror": "Cloak of Horrors",
+"AD_GondorianT1_Armor_Tint1": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint2": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint3": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint4": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint5": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint6": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint7": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint8": "Gondorian Armor",
+"AD_GondorianT1_Armor_Tint9": "Gondorian Armor",
+"AD_BlackNumT4_Cloak": "Black Númenórean Cloak",
+"AD_RhovanionT1_Cloak_Tint3_2Common": "Rhovanion Cloak",
+"AD_GondorianT1_Cloak_Tint6_2Common": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint8_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint7_2Common": "Rhovanion Cloak",
+"AD_RhovanionT1_Armor_Tint8_2Common": "Rhovanion Armor",
+"AD_RhovanionT3_Cloak_Tint10_2Common": "Rhovanion Cloak",
+"AD_AlpharazonT1_Cloak_Tint_Nazgul": "Mask of the General",
+"AD_Eltariel_WoodElfT1_Light_Tint_Poison": "Serpent Tamer's Rune",
+"AD_WoodElfT2_Armor_Tint_Poison": "Serpent Tamer's Armor",
+"AD_DwarvenT2_Armor_Tint_Machine": "Threshing Armor",
+"AD_RangerT2_Armor_Tint1_2Common": "Ranger's Armor",
+"AD_RohanT1_Armor_Tint3_2Common": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint5_2Common": "Rohirrim Armor",
+"AD_DwarvenT3_Armor_Tint_Warmonger": "Armor of War",
+"AD_NumenoreanT1_Armor_Tint10_2Common": "Númenórean Armor",
+"AD_RangerT1_Cloak_Tint7_2Common": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint9_2Common": "Ranger's Cloak",
+"AD_NumenoreanT1_Cloak": "Númenórean Cloak",
+"AD_HaradrimT2_Cloak": "Haradrim Cloak",
+"AD_ElvenT4_Cloak_Tint_Mystic": "Arcane Cloak",
+"AD_NumenoreanT2_Armor_Tint1_2Common": "Númenórean Armor",
+"AD_RhovanionT1_Armor_Tint_Outlaw": "Blackguard Armor",
+"AD_NumenoreanT1_Cloak_Tint7_2Common": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint9_2Common": "Númenórean Cloak",
+"AD_RhovanionT1_Armor_Tint10_2Common": "Rhovanion Armor",
+"AD_IsildurT1_Cloak_Tint_Nazgul": "Mask of the High King",
+"AD_BlackNumT1_Armor_Tint_Vendetta": "Armor of Vengeance",
+"AD_RangerT2_Armor_Tint1": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint2": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint3": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint4": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint5": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint6": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint7": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint8": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint9": "Ranger's Armor",
+"AD_RhovanionT1_Cloak_Tint1": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint2": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint3": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint4": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint5": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint6": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint7": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint8": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint9": "Rhovanion Cloak",
+"AD_DwarvenT1_Armor_Light_Blue_Machine": "Threshing Armor",
+"AD_DesertT1_Armor_Slimy": "Armor",
+"AD_DwarvenT4_Cloak_Tint_Warmonger": "Cloak of War",
+"AD_NumenoreanT2_Cloak_Tint10_2Common": "Númenórean Cloak",
+"AD_Talion_Ringcraft_Tint4_2Common": "Lunar Rune",
+"AD_BladeT2_Armor": "Huntress Armor",
+"AD_GondorianT1_Armor_Tint3_2Common": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint5_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint4_2Common": "Rhovanion Armor",
+"AD_RhovanionT1_Cloak_Tint8_2Common": "Rhovanion Cloak",
+"AD_Eltariel_WoodElfT1_Light_Tint_Fire": "Fire Chaser's Rune",
+"AD_RangerT2_Cloak_Tint1_2Common": "Ranger's Cloak",
+"AD_BlackNumT1_Cloak_Tint_Terror": "Cloak of Horrors",
+"AD_RohanT1_Cloak_Tint3_2Common": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint5_2Common": "Rohirrim Cloak",
+"AD_DwarvenT1_Armor": "Dwarven Armor",
+"AD_RangerT1_Armor_Tint4_2Common": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint6_2Common": "Ranger's Armor",
+"AD_RohanT1_Armor_Tint8_2Common": "Rohirrim Armor",
+"AD_DwarvenT2_Armor_Tint_Warmonger": "Armor of War",
+"AD_NumenoreanT2_Cloak_Tint1_2Common": "Númenórean Cloak",
+"AD_BlackNumT1_Cloak_Tint_Dark": "Darkest Cloak",
+"AD_NumenoreanT1_Armor_Tint4_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint6_2Common": "Númenórean Armor",
+"AD_ElvenT4_Cloak_Tint_Celebrimbor": "Bright Lord's Cloak",
+"AD_BlackNumT4_Armor_Tint_Nazgul": "Servant's Blackened Armor",
+"AD_RhovanionT3_Armor_Tint10": "Rhovanion Armor",
+"AD_DwarvenT3_Armor_Tint_Machine": "Threshing Armor",
+"AD_BlackNumT1_Cloak_Tint_Vendetta": "Cloak of Vengeance",
+"AD_DwarvenT4_Armor": "Dwarven Armor",
+"AD_ElvenT2_Cloak_Tint_Mystic": "Arcane Cloak",
+"AD_RangerT2_Armor_Tint10": "Ranger's Armor",
+"AD_HaradrimT1_Armor_Tint_Marauder": "Raider's Armor",
+"6Ring_5Lgnd_Ringwraith": "Isildur's Ring",
+"AD_BladeT2_Cloak": "Huntress Cloak",
+"AD_BlackNumT4_Armor_Tint_Terror": "Armor of Horrors",
+"AD_DwarvenT3_Cloak_Tint_Warmonger": "Cloak of War",
+"AD_ElvenT3_Armor": "Elven Armor",
+"AD_NumenoreanT1_Cloak_Tint10_2Common": "Númenórean Cloak",
+"6Ring_5Lgnd_Terror": "Rune of Horrors",
+"AD_RohanT2_Armor_Tint10": "Rohirrim Armor",
+"AD_GondorianT1_Cloak_Tint3_2Common": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint5_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint4_2Common": "Rhovanion Cloak",
+"AD_RhovanionT1_Armor_Tint5_2Common": "Rhovanion Armor",
+"AD_GondorianT1_Armor_Tint8_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint9_2Common": "Rhovanion Armor",
+"AD_DwarvenT1_Cloak": "Dwarven Cloak",
+"AD_RohanT1_Armor_Tint1": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint2": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint3": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint4": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint5": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint6": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint7": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint8": "Rohirrim Armor",
+"AD_RohanT1_Armor_Tint9": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint2_2Common": "Rohirrim Armor",
+"AD_RangerT1_Cloak_Tint4_2Common": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint6_2Common": "Ranger's Cloak",
+"AD_RohanT1_Cloak_Tint8_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint9_2Common": "Ranger's Armor",
+"AD_RhovanionT1_Cloak_Tint10_2Common": "Rhovanion Cloak",
+"AD_BlackNumT1_Armor_Tint_Dark": "Darkest Armor",
+"AD_RangerT1_Cloak_Tint1": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint2": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint3": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint4": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint5": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint6": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint7": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint8": "Ranger's Cloak",
+"AD_RangerT1_Cloak_Tint9": "Ranger's Cloak",
+"AD_ElvenT1_Cloak_Tint_Celebrimbor": "Bright Lord's Cloak",
+"AD_DwarvenT4_Cloak": "Dwarven Cloak",
+"AD_NumenoreanT1_Cloak_Tint4_2Common": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint6_2Common": "Númenórean Cloak",
+"AD_RangerT1_Armor": "Ranger's Armor",
+"AD_NumenoreanT1_Armor_Tint9_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Cloak_Tint1": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint2": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint3": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint4": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint5": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint6": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint7": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint8": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint9": "Númenórean Cloak",
+"AD_WoodElfT2_Cloak_Tint_Frost": "Ice Stalker's Cloak",
+"AD_WoodElfT1_Cloak_Tint_Frost": "Ice Stalker's Cloak",
+"AD_Eltariel_WoodElfT2_Light_Tint_Fire": "Fire Chaser's Rune",
+"AD_RhovanionT3_Armor_Tint1": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint2": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint3": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint4": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint5": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint6": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint7": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint8": "Rhovanion Armor",
+"AD_RhovanionT3_Armor_Tint9": "Rhovanion Armor",
+"AD_HaradrimT1_Cloak_Tint_Marauder": "Raider's Cloak",
+"AD_ElvenT3_Cloak": "Elven Cloak",
+"AD_Talion_Ringcraft_Tint1_2Common": "Rune of Conquerors",
+"AD_Eltariel_WoodElfT2_Light_Tint_Beast": "Beast Hunter's Rune",
+"AD_RhovanionT3_Cloak_Tint_Outlaw": "Blackguard Cloak",
+"AD_GondorianT2_Armor_Tint2_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint1_2Common": "Rhovanion Armor",
+"AD_BlackNumT2_Cloak_Tint_Dark": "Darkest Cloak",
+"AD_Eltariel_WoodElfT1_Light_Tint_Beast": "Beast Hunter's Rune",
+"AD_RohanT1_Armor": "Rohirrim Armor",
+"AD_RhovanionT1_Cloak_Tint5_2Common": "Rhovanion Cloak",
+"AD_GondorianT1_Cloak_Tint8_2Common": "Gondorian Cloak",
+"AD_DwarvenT2_Cloak_Tint_Warmonger": "Cloak of War",
+"AD_RhovanionT3_Cloak_Tint9_2Common": "Rhovanion Cloak",
+"AD_DwarvenT4_Armor_Tint_Machine": "Threshing Armor",
+"AD_BlackNumT2_Armor": "Númenórean Armor",
+"AD_RohanT2_Cloak_Tint2_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint1_2Common": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint3_2Common": "Ranger's Armor",
+"AD_RohanT1_Armor_Tint5_2Common": "Rohirrim Armor",
+"AD_Eltariel_BladeT1_Light": "Huntress Rune",
+"AD_RohanT2_Armor_Tint7_2Common": "Rohirrim Armor",
+"AD_BlackNumT2_Armor_Tint_Terror": "Armor of Horrors",
+"AD_RangerT1_Cloak_Tint9_2Common": "Ranger's Cloak",
+"AD_RangerT1_Cloak": "Ranger's Cloak",
+"AD_ElvenT2_Armor_Tint_Celebrimbor": "Bright Lord's Armor",
+"AD_NumenoreanT1_Armor_Tint1_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint3_2Common": "Númenórean Armor",
+"AD_NumenoreanT1_Cloak_Tint9_2Common": "Númenórean Cloak",
+"AD_GondorianT2_Armor_Tint1": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint2": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint3": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint4": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint5": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint6": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint7": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint8": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint9": "Gondorian Armor",
+"AD_Eltariel_Celebrimbor_Ring": "The New Ring",
+"AD_BlackNumT4_Armor_Tint_Ringwraith": "Servant's Armor",
+"AD_WoodElfT1_Cloak_Tint_Fire": "Fire Chaser's Cloak",
+"AD_ElvenT3_Armor_Tint_Mystic": "Arcane Armor",
+"AD_BlackNumT2_Armor_Tint_Dark": "Darkest Armor",
+"AD_RohanT1_Cloak": "Rohirrim Cloak",
+"AD_WoodElfT2_Cloak_Tint_Poison": "Serpent Tamer's Cloak",
+"AD_Talion_Ringcraft_Tint6_2Common": "Forest Rune",
+"AD_GondorianT2_Cloak_Tint2_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint1_2Common": "Rhovanion Cloak",
+"AD_RhovanionT1_Armor_Tint2_2Common": "Rhovanion Armor",
+"AD_GondorianT1_Armor_Tint5_2Common": "Gondorian Armor",
+"AD_HaradrimT3_Armor": "Haradrim Armor",
+"AD_GondorianT2_Armor_Tint7_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint6_2Common": "Rhovanion Armor",
+"AD_BlackNumT2_Cloak": "Black Númenórean Cloak",
+"AD_DwarvenT1_Cloak_Tint_Warmonger": "Cloak of War",
+"6Ring_5Lgnd_Feral": "Rune of Beasts",
+"AD_HaradrimT4_Cloak_Tint_Feral": "Cloak of Beasts",
+"AD_RangerT1_Cloak_Tint1_2Common": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint3_2Common": "Ranger's Cloak",
+"AD_RhovanionT1_Cloak_Tint_Outlaw": "Blackguard Cloak",
+"AD_ElvenT4_Armor_Tint_Slaughter": "Blood Armor",
+"AD_RohanT1_Cloak_Tint5_2Common": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint7_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint6_2Common": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint8_2Common": "Ranger's Armor",
+"AD_HaradrimT3_Cloak_Tint_Feral": "Cloak of Beasts",
+"AD_BlackNumT4_Cloak_Tint_Ringwraith": "Dark Embrace",
+"AD_HaradrimT2_Cloak_Tint_Feral": "Cloak of Beasts",
+"AD_BlackNumT3_Cloak_Tint_Dark": "Darkest Cloak",
+"AD_NumenoreanT1_Cloak_Tint1_2Common": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint3_2Common": "Númenórean Cloak",
+"AD_WoodElfT1_Armor_Tint_Fire": "Fire Chaser's Armor",
+"AD_HaradrimT1_Cloak_Tint_Feral": "Cloak of Beasts",
+"AD_GondorianT1_Cloak_Tint10": "Gondorian Cloak",
+"AD_NumenoreanT1_Armor_Tint6_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint8_2Common": "Númenórean Armor",
+"AD_BlackNumT4_Armor_Tint_Vendetta": "Armor of Vengeance",
+"AD_RohanT2_Armor_Tint10_2Common": "Rohirrim Armor",
+"AD_HammerHandT1_Cloak_Tint_Nazgul": "Mask of the Fell Rider",
+"AD_BladeT2_Cloak_Tint_Light": "Light Bringer's Cloak",
+"AD_NumenoreanT2_Cloak": "Númenórean Cloak",
+"AD_HaradrimT3_Cloak": "Haradrim Cloak",
+"AD_BladeT1_Cloak_Tint_Light": "Light Bringer's Cloak",
+"AD_Talion_Ringcraft_Tint1": "Rune of Conquerors",
+"AD_Talion_Ringcraft_Tint2": "Rune of the North",
+"AD_Talion_Ringcraft_Tint3": "Sun Rune",
+"AD_Talion_Ringcraft_Tint4": "Lunar Rune",
+"AD_Talion_Ringcraft_Tint5": "Celestial Rune",
+"AD_Talion_Ringcraft_Tint6": "Forest Rune",
+"AD_Talion_Ringcraft_Tint7": "Rune of Leaves",
+"AD_BlackNumT3_Armor_Tint_Ringwraith": "Servant's Armor",
+"AD_RhovanionT4_Armor_Tint_Outlaw": "Blackguard Armor",
+"AD_RhovanionT1_Cloak_Tint2_2Common": "Rhovanion Cloak",
+"AD_GondorianT1_Cloak_Tint5_2Common": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint7_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint6_2Common": "Rhovanion Cloak",
+"AD_RhovanionT1_Armor_Tint7_2Common": "Rhovanion Armor",
+"AD_ElvenT1_Armor_Tint_Mystic": "Arcane Armor",
+"AD_WoodElfT2_Cloak_Tint_Fire": "Fire Chaser's Cloak",
+"AD_GondorianT1_Cloak_Tint1": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint2": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint3": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint4": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint5": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint6": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint7": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint8": "Gondorian Cloak",
+"AD_GondorianT1_Cloak_Tint9": "Gondorian Cloak",
+"AD_RohanT1_Armor_Tint2_2Common": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint4_2Common": "Rohirrim Armor",
+"AD_Eltariel_BladeT1_Light_Bloody": "Huntress Rune",
+"AD_RangerT1_Cloak_Tint6_2Common": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint8_2Common": "Ranger's Cloak",
+"AD_DesertT1_Armor_Dirty": "Armor",
+"AD_BlackNumT3_Armor_Tint_Dark": "Darkest Armor",
+"AD_ElvenT3_Armor_Tint_Slaughter": "Blood Armor",
+"AD_NumenoreanT1_Cloak_Tint6_2Common": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint8_2Common": "Númenórean Cloak",
+"AD_RhovanionT1_Cloak_Tint10": "Rhovanion Cloak",
+"AD_BlackNumT4_Cloak_Tint_Vendetta": "Cloak of Vengeance",
+"AD_DesertT1_Armor": "Armor",
+"AD_GondorianT1_Armor": "Gondorian Armor",
+"AD_BlackNumT3_Cloak_Tint_Ringwraith": "Dark Embrace",
+"AD_BlackNumT4_Cloak_Tint_Terror": "Cloak of Horrors",
+"AD_DwarvenT2_Armor": "Dwarven Armor",
+"AD_RohanT2_Armor_Tint1": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint2": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint3": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint4": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint5": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint6": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint7": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint8": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint9": "Rohirrim Armor",
+"AD_Talion_Ringcraft_DarkRanger": "Isildur's Ring",
+"AD_HaradrimT4_Armor_Tint_Marauder": "Raider's Armor",
+"AD_RohanT1_Armor_Tint10_2Common": "Rohirrim Armor",
+"6Ring_5Lgnd_Mystic": "Arcane Rune",
+"AD_Talion_Ringcraft_Tint3_2Common": "Sun Rune",
+"AD_ElvenT4_Cloak_Tint_Slaughter": "Blood Cloak",
+"AD_BlackNumT4_Cloak_Tint_Dark": "Darkest Cloak",
+"AD_Eltariel_WoodElfT2_Light_Tint_Poison": "Serpent Tamer's Rune",
+"AD_GondorianT1_Armor_Tint2_2Common": "Gondorian Armor",
+"AD_RangerT2_Cloak_Tint1": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint2": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint3": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint4": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint5": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint6": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint7": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint8": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint9": "Ranger's Cloak",
+"AD_GondorianT2_Armor_Tint4_2Common": "Gondorian Armor",
+"AD_ElvenT1_Armor": "Elven Armor",
+"AD_RhovanionT3_Armor_Tint3_2Common": "Rhovanion Armor",
+"AD_WoodElfT2_Armor_Tint_Fire": "Fire Chaser's Armor",
+"AD_DwarvenT1_Cloak_Tint_Machine": "Threshing Cloak",
+"AD_RhovanionT1_Cloak_Tint7_2Common": "Rhovanion Cloak",
+"AD_NumenoreanT1_Cloak_Tint10": "Númenórean Cloak",
+"AD_RohanT1_Cloak_Tint2_2Common": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint4_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint3_2Common": "Ranger's Armor",
+"AD_RangerT2_Armor_Tint5_2Common": "Ranger's Armor",
+"AD_RohanT1_Armor_Tint7_2Common": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint9_2Common": "Rohirrim Armor",
+"AD_BlackNumT2_Armor_Tint_Ringwraith": "Servant's Armor",
+"AD_RhovanionT2_Armor_Tint_Outlaw": "Blackguard Armor",
+"AD_RohanT2_Cloak_Tint10_2Common": "Rohirrim Cloak",
+"AD_ElvenT4_Armor": "Elven Armor",
+"AD_ElvenT2_Cloak_Tint_Celebrimbor": "Bright Lord's Cloak",
+"AD_ElvenT2_Armor_Tint_Slaughter": "Blood Armor",
+"AD_GondorianT1_Cloak": "Gondorian Cloak",
+"AD_NumenoreanT1_Armor_Tint3_2Common": "Númenórean Armor",
+"AD_NumenoreanT2_Armor_Tint5_2Common": "Númenórean Armor",
+"AD_DwarvenT2_Cloak": "Dwarven Cloak",
+"AD_NumenoreanT1_Armor_Tint1": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint2": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint3": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint4": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint5": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint6": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint7": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint8": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint9": "Númenórean Armor",
+"AD_HaradrimT4_Cloak_Tint_Marauder": "Raider's Cloak",
+"AD_BlackNumT4_Armor_Tint_Dark": "Servant's Armor",
+"AD_ElvenT1_Cloak": "Elven Cloak",
+"AD_GondorianT1_Armor_Tint10": "Gondorian Armor",
+"AD_WoodElfT2_Armor_Tint_Frost": "Ice Stalker's Armor",
+"AD_GondorianT1_Cloak_Tint2_2Common": "Gondorian Cloak",
+"6Ring_5Lgnd_Slaughter": "Blood Rune",
+"AD_GondorianT2_Cloak_Tint4_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint3_2Common": "Rhovanion Cloak",
+"AD_WoodElfT1_Armor_Tint_Frost": "Ice Stalker's Armor",
+"AD_RangerT2_Armor": "Ranger's Armor",
+"AD_RhovanionT1_Armor_Tint4_2Common": "Rhovanion Armor",
+"AD_BlackNumT2_Cloak_Tint_Ringwraith": "Dark Embrace",
+"AD_GondorianT1_Armor_Tint7_2Common": "Gondorian Armor",
+"AD_ElvenT3_Cloak_Tint_Slaughter": "Blood Cloak",
+"AD_GondorianT2_Armor_Tint9_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint8_2Common": "Rhovanion Armor",
+"AD_BlackNumT2_Cloak_Tint_Terror": "Cloak of Horrors",
+"6Ring_5Lgnd_Dark": "Darkest Rune",
+"AD_GondorianT2_Armor_Tint10_2Common": "Gondorian Armor",
+"AD_WoodElfT2_Cloak_Tint_Beast": "Beast Hunter's Cloak",
+"AD_SistersT1_Cloak_Tint_Nazgul": "Mask of an Empress",
+"AD_RohanT2_Armor_Tint1_2Common": "Rohirrim Armor",
+"AD_RangerT1_Cloak_Tint3_2Common": "Ranger's Cloak",
+"AD_RangerT2_Cloak_Tint5_2Common": "Ranger's Cloak",
+"AD_WoodElfT1_Cloak_Tint_Beast": "Beast Hunter's Cloak",
+"AD_ElvenT4_Cloak": "Elven Cloak",
+"AD_RohanT1_Cloak_Tint7_2Common": "Rohirrim Cloak",
+"AD_RohanT2_Cloak_Tint9_2Common": "Rohirrim Cloak",
+"AD_RangerT1_Armor_Tint8_2Common": "Ranger's Armor",
+"AD_WoodElfT1_Armor_Tint_Poison": "Serpent Tamer's Armor",
+"AD_RohanT1_Cloak_Tint1": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint2": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint3": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint4": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint5": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint6": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint7": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint8": "Rohirrim Cloak",
+"AD_RohanT1_Cloak_Tint9": "Rohirrim Cloak",
+"AD_ElvenT3_Armor_Tint_Celebrimbor": "Bright Lord's Armor",
+"AD_RohanT1_Cloak_Tint10_2Common": "Rohirrim Cloak",
+"AD_RohanT2_Armor": "Rohirrim Armor",
+"AD_NumenoreanT1_Cloak_Tint3_2Common": "Númenórean Cloak",
+"AD_NumenoreanT2_Cloak_Tint5_2Common": "Númenórean Cloak",
+"AD_DwarvenT2_Cloak_Tint_Machine": "Threshing Cloak",
+"AD_NumenoreanT1_Armor_Tint8_2Common": "Númenórean Armor",
+"AD_ElvenT3_Cloak_Tint_Mystic": "Arcane Cloak",
+"AD_ElvenT1_Armor_Tint_Slaughter": "Blood Armor",
+"AD_RangerT2_Armor_Tint10_2Common": "Ranger's Armor",
+"AD_BlackNumT1_Armor_Tint_Ringwraith": "Servant's Armor",
+"AD_BlackNumT3_Armor_Tint_Vendetta": "Armor of Vengeance",
+"AD_BlackNumT3_Armor": "Númenórean Armor",
+"AD_Eltariel_BladeT2_Light": "Huntress Rune",
+"AD_NazgulT1_Cloak_Tint_Nazgul": "Mask of the Undying",
+"AD_BlackNumT2_Cloak_Tint_DarkRanger": "Dark Embrace",
+"AD_RangerT2_Cloak": "Ranger's Cloak",
+"AD_GondorianT2_Cloak_Tint10": "Gondorian Cloak",
+"AD_GondorianT2_Armor_Tint1_2Common": "Gondorian Armor",
+"AD_RhovanionT1_Armor_Tint10": "Rhovanion Armor",
+"AD_RhovanionT3_Cloak_Tint1": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint2": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint3": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint4": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint5": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint6": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint7": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint8": "Rhovanion Cloak",
+"AD_RhovanionT3_Cloak_Tint9": "Rhovanion Cloak",
+"AD_RhovanionT1_Cloak_Tint4_2Common": "Rhovanion Cloak",
+"AD_GondorianT1_Cloak_Tint7_2Common": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint9_2Common": "Gondorian Cloak",
+"AD_RhovanionT3_Cloak_Tint8_2Common": "Rhovanion Cloak",
+"AD_HaradrimT1_Armor": "Haradrim Armor",
+"AD_RhovanionT1_Armor_Tint9_2Common": "Rhovanion Armor",
+"6Ring_5Lgnd_Warmonger": "Rune of War",
+"AD_ElvenT2_Cloak_Tint_Slaughter": "Blood Cloak",
+"AD_RohanT2_Cloak_Tint1_2Common": "Rohirrim Cloak",
+"AD_RangerT2_Armor_Tint2_2Common": "Ranger's Armor",
+"6Ring_5Lgnd_Celebrimbor": "Bright Lord's Rune",
+"AD_RohanT1_Armor_Tint4_2Common": "Rohirrim Armor",
+"AD_RohanT2_Armor_Tint6_2Common": "Rohirrim Armor",
+"AD_GondorianT1_Armor_Tint10_2Common": "Gondorian Armor",
+"AD_RangerT1_Cloak_Tint8_2Common": "Ranger's Cloak",
+"AD_RohanT2_Cloak": "Rohirrim Cloak",
+"AD_BlackNumT1_Cloak_Tint_Ringwraith": "Dark Embrace",
+"AD_BlackNumT1_Armor_Tint_DarkRanger": "Servant's Armor",
+"AD_RhovanionT1_Armor_Tint1": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint2": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint3": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint4": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint5": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint6": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint7": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint8": "Rhovanion Armor",
+"AD_RhovanionT1_Armor_Tint9": "Rhovanion Armor",
+"AD_NumenoreanT2_Armor_Tint2_2Common": "Númenórean Armor",
+"AD_NumenoreanT1_Armor_Tint10": "Númenórean Armor",
+"AD_HaradrimT4_Armor": "Haradrim Armor",
+"AD_BlackNumT3_Cloak": "Black Númenórean Cloak",
+"AD_HaradrimT4_Armor_Tint_Feral": "Armor of Beasts",
+"AD_NumenoreanT1_Cloak_Tint8_2Common": "Númenórean Cloak",
+"AD_BlackNumT3_Cloak_Tint_Vendetta": "Cloak of Vengeance",
+"AD_HaradrimT3_Armor_Tint_Feral": "Armor of Beasts",
+"AD_RangerT1_Armor_Tint10_2Common": "Ranger's Armor",
+"AD_RhovanionT4_Cloak_Tint_Outlaw": "Blackguard Cloak",
+"AD_HaradrimT2_Armor_Tint_Feral": "Armor of Beasts",
+"AD_HaradrimT3_Armor_Tint_Marauder": "Raider's Armor",
+"AD_GondorianT2_Cloak_Tint1": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint2": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint3": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint4": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint5": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint6": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint7": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint8": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint9": "Gondorian Cloak",
+"AD_GondorianT2_Cloak_Tint10_2Common": "Gondorian Cloak",
+"AD_HaradrimT1_Armor_Tint_Feral": "Armor of Beasts",
+"AD_HaradrimT1_Cloak": "Haradrim Cloak",
+"AD_ElvenT1_Cloak_Tint_Mystic": "Arcane Cloak",
+"AD_Talion_Ringcraft_Tint5_2Common": "Celestial Rune",
+"AD_GondorianT2_Cloak_Tint1_2Common": "Gondorian Cloak",
+"AD_RhovanionT1_Armor_Tint1_2Common": "Rhovanion Armor",
+"AD_GondorianT1_Armor_Tint4_2Common": "Gondorian Armor",
+"AD_GondorianT2_Armor_Tint6_2Common": "Gondorian Armor",
+"AD_RhovanionT3_Armor_Tint5_2Common": "Rhovanion Armor",
+"AD_DwarvenT3_Cloak_Tint_Machine": "Threshing Cloak",
+"AD_RangerT1_Cloak_Tint10": "Ranger's Cloak",
+"AD_RhovanionT1_Cloak_Tint9_2Common": "Rhovanion Cloak",
+"AD_BladeT2_Armor_Tint_Light": "Light Bringer's Armor",
+"AD_DwarvenT1_Armor_Dark_Blue_Warmonger": "Armor of War",
+"AD_BlackNumT3_Armor_Tint_Terror": "Armor of Horrors"
+},
+"item": {
+"Primary_6Ring_3Rare_DebugGrant": "3Rare DebugGrant Ring",
+"Primary_1Sword_ArtSet_Dwarven1": "ArtSet Dwarven1 Sword",
+"Primary_1Sword_ArtSet_Dwarven2": "ArtSet Dwarven2 Sword",
+"Primary_1Sword_ArtSet_Dwarven3": "ArtSet Dwarven3 Sword",
+"Primary_1Sword_ArtSet_Dwarven4": "ArtSet Dwarven4 Sword",
+"Primary_4Armor_5Lgnd_Outlaw_DebugGrant": "Blackguard Armor - Legendary Outlaw DebugGrant",
+"PrimHam_3Bow_5Lgnd_Celebrimbor_SotP": "Bright Lord's Bow - Legendary Celebrimbor SotP (Hammer bow)",
+"Primary_5Cape_ArtSet_Elven1": "ArtSet Elven1 Cloak",
+"Primary_5Cape_ArtSet_Elven2": "ArtSet Elven2 Cloak",
+"Primary_5Cape_ArtSet_Elven3": "ArtSet Elven3 Cloak",
+"Primary_5Cape_ArtSet_Elven4": "ArtSet Elven4 Cloak",
+"Primary_3Bow_4Epic_DebugGrant": "4Epic DebugGrant Bow",
+"Primary_1Sword_ArtSet_Numenor1": "ArtSet Numenor1 Sword",
+"Primary_1Sword_ArtSet_Numenor2": "ArtSet Numenor2 Sword",
+"Primary_1Sword_ArtSet_Numenor3": "ArtSet Numenor3 Sword",
+"Primary_1Sword_ArtSet_Numenor4": "ArtSet Numenor4 Sword",
+"Primary_5Cape_5Lgnd_Feral": "Cloak of Beasts - Legendary Feral",
+"Primary_1Sword_5Lgnd_Mystic": "Arcane Sword - Legendary Mystic",
+"Primary_4Armor_5Lgnd_Marauder": "Raider's Armor - Legendary Marauder",
+"Primary_5Cape_5Lgnd_Celebrimbor": "Bright Lord's Cloak - Legendary Celebrimbor",
+"Primary_6Ring_5Lgnd_Celebrimbor_DebugGrant": "Bright Lord's Rune - Legendary Celebrimbor DebugGrant",
+"Primary_3Bow_5Lgnd_Outlaw": "Blackguard Bow - Legendary Outlaw",
+"PrimHam_3Bow_3Rare": "Rare Bow (Hammer bow)",
+"Primary_1Sword_ArtSet_Rohan1": "ArtSet Rohan1 Sword",
+"Primary_1Sword_ArtSet_Rohan2": "ArtSet Rohan2 Sword",
+"Primary_4Armor_5Lgnd_Slaughter": "Blood Armor - Legendary Slaughter",
+"Primary_1Sword_5Lgnd_Celebrimbor_DebugGrant": "Bright Lord's Sword - Legendary Celebrimbor DebugGrant",
+"Primary_5Cape_1DarkRanger": "Dark Ranger Cloak",
+"Primary_2Dagger_5Lgnd_Outlaw_DebugGrant": "Blackguard Dagger - Legendary Outlaw DebugGrant",
+"Primary_5Cape_5Lgnd_Terror_DebugGrant": "Cloak of Horrors - Legendary Terror DebugGrant",
+"Primary_2Dagger_5Lgnd_Celebrimbor_SotP": "Bright Lord's Dagger - Legendary Celebrimbor SotP",
+"Primary_1Sword_5Lgnd_Warmonger": "Sword of War - Legendary Warmonger",
+"Primary_6Ring_2Standard": "Common Ring",
+"Primary_4Armor_ArtSet_Dwarven1": "ArtSet Dwarven1 Armor",
+"Primary_4Armor_ArtSet_Dwarven2": "ArtSet Dwarven2 Armor",
+"Primary_4Armor_ArtSet_Dwarven3": "ArtSet Dwarven3 Armor",
+"Primary_4Armor_ArtSet_Dwarven4": "ArtSet Dwarven4 Armor",
+"Primary_5Cape_ArtSet_Ranger1": "ArtSet Ranger1 Cloak",
+"Primary_5Cape_ArtSet_Ranger2": "ArtSet Ranger2 Cloak",
+"Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Sisters": "Legendary Ringwraith Nazgul Sisters",
+"Primary_4Armor_2Standard": "Common Armor",
+"Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Generic": "Legendary Ringwraith Nazgul Generic",
+"Primary_5Cape_5Lgnd_Vendetta_DebugGrant": "Cloak of Vengeance - Legendary Vendetta DebugGrant",
+"Primary_5Cape_5Lgnd_Machine": "Threshing Cloak - Legendary Machine",
+"Primary_6Ring_5Lgnd_Mystic": "Arcane Rune - Legendary Mystic",
+"Primary_4Armor_5Lgnd_Feral": "Armor of Beasts - Legendary Feral",
+"Primary_4Armor_ArtSet_Numenor1": "ArtSet Numenor1 Armor",
+"Primary_4Armor_ArtSet_Numenor2": "ArtSet Numenor2 Armor",
+"Primary_4Armor_ArtSet_Numenor3": "ArtSet Numenor3 Armor",
+"Primary_4Armor_ArtSet_Numenor4": "ArtSet Numenor4 Armor",
+"Primary_5Cape_5Lgnd_Terror": "Cloak of Horrors - Legendary Terror",
+"Primary_6Ring_4Epic_DebugGrant": "4Epic DebugGrant Ring",
+"Primary_3Bow_2Standard": "Common Bow",
+"Primary_6Ring_5Lgnd_Machine": "Threshing Rune - Legendary Machine",
+"PrimSnipe_3Bow_5Lgnd_Slaughter": "Blood Longbow - Legendary Slaughter (Sniper bow)",
+"Primary_2Dagger_5Lgnd_Marauder_DebugGrant": "Raider's Dagger - Legendary Marauder DebugGrant",
+"Primary_1Sword_ArtSet_Haradrim1": "ArtSet Haradrim1 Sword",
+"Primary_1Sword_ArtSet_Haradrim2": "ArtSet Haradrim2 Sword",
+"Primary_1Sword_ArtSet_Haradrim3": "ArtSet Haradrim3 Sword",
+"Primary_1Sword_ArtSet_Haradrim4": "ArtSet Haradrim4 Sword",
+"Primary_4Armor_1DarkRanger": "Dark Ranger Armor",
+"Primary_3Bow_5Lgnd_Feral_DebugGrant": "Bow of Beasts - Legendary Feral DebugGrant",
+"Primary_5Cape_5Lgnd_Marauder": "Raider's Cloak - Legendary Marauder",
+"Primary_1Sword_DLC_OfDominion": "DLC OfDominion Sword",
+"Primary_1Sword_5Lgnd_Feral_DebugGrant": "Sword of Beasts - Legendary Feral DebugGrant",
+"Primary_4Armor_5Lgnd_Warmonger": "Armor of War - Legendary Warmonger",
+"Primary_1Sword_ArtSet_Gondor1": "ArtSet Gondor1 Sword",
+"Primary_1Sword_ArtSet_Gondor2": "ArtSet Gondor2 Sword",
+"PrimHam_3Bow_5Lgnd_Ringwraith": "Legendary Ringwraith (Hammer bow)",
+"Primary_2Dagger_1Default": "Default Dagger",
+"Primary_6Ring_5Lgnd_Mystic_DebugGrant": "Arcane Rune - Legendary Mystic DebugGrant",
+"Primary_5Cape_5Lgnd_Machine_DebugGrant": "Threshing Cloak - Legendary Machine DebugGrant",
+"Primary_2Dagger_5Lgnd_Celebrimbor_DebugGrant": "Bright Lord's Dagger - Legendary Celebrimbor DebugGrant",
+"Primary_4Armor_5Lgnd_Vendetta": "Armor of Vengeance - Legendary Vendetta",
+"PrimSnipe_3Bow_4Epic": "Epic Bow (Sniper bow)",
+"Primary_3Bow_ArtSet_Haradrim1": "ArtSet Haradrim1 Bow",
+"Primary_3Bow_ArtSet_Haradrim2": "ArtSet Haradrim2 Bow",
+"Primary_3Bow_ArtSet_Haradrim3": "ArtSet Haradrim3 Bow",
+"Primary_3Bow_ArtSet_Haradrim4": "ArtSet Haradrim4 Bow",
+"Primary_3Bow_3Rare": "Rare Bow",
+"Primary_2Dagger_5Lgnd_Outlaw": "Blackguard Dagger - Legendary Outlaw",
+"Primary_5Cape_1Default": "Default Cloak",
+"Primary_2Dagger_2Standard": "Common Dagger",
+"Primary_1Sword_3Rare": "Rare Sword",
+"Primary_1Sword_5Lgnd_Outlaw_DebugGrant": "Blackguard Sword - Legendary Outlaw DebugGrant",
+"PrimHam_3Bow_ArtSet_Elven1": "ArtSet Elven1 Bow (Hammer bow)",
+"PrimHam_3Bow_ArtSet_Elven2": "ArtSet Elven2 Bow (Hammer bow)",
+"PrimHam_3Bow_ArtSet_Elven3": "ArtSet Elven3 Bow (Hammer bow)",
+"PrimHam_3Bow_ArtSet_Elven4": "ArtSet Elven4 Bow (Hammer bow)",
+"Primary_5Cape_5Lgnd_Celebrimbor_SotP": "Bright Lord's Cloak - Legendary Celebrimbor SotP",
+"Primary_6Ring_5Lgnd_Slaughter_DebugGrant": "Blood Rune - Legendary Slaughter DebugGrant",
+"Primary_4Armor_5Lgnd_Feral_DebugGrant": "Armor of Beasts - Legendary Feral DebugGrant",
+"PrimHam_3Bow_5Lgnd_Warmonger": "Legendary Warmonger (Hammer bow)",
+"Primary_2Dagger_5Lgnd_Dark_DebugGrant": "Darkest Dagger - Legendary Dark DebugGrant",
+"Primary_5Cape_ArtSet_Rohan1": "ArtSet Rohan1 Cloak",
+"Primary_5Cape_ArtSet_Rohan2": "ArtSet Rohan2 Cloak",
+"Primary_5Cape_5Lgnd_Vendetta": "Cloak of Vengeance - Legendary Vendetta",
+"Primary_3Bow_ArtSet_Elven1": "ArtSet Elven1 Bow",
+"Primary_3Bow_ArtSet_Elven2": "ArtSet Elven2 Bow",
+"Primary_3Bow_ArtSet_Elven3": "ArtSet Elven3 Bow",
+"Primary_3Bow_ArtSet_Elven4": "ArtSet Elven4 Bow",
+"Primary_3Bow_ArtSet_Numenor1": "ArtSet Numenor1 Bow",
+"Primary_3Bow_ArtSet_Numenor2": "ArtSet Numenor2 Bow",
+"Primary_3Bow_ArtSet_Numenor3": "ArtSet Numenor3 Bow",
+"Primary_3Bow_ArtSet_Numenor4": "ArtSet Numenor4 Bow",
+"Primary_1Sword_5Lgnd_Machine_DebugGrant": "Threshing Sword - Legendary Machine DebugGrant",
+"Primary_3Bow_5Lgnd_Feral": "Bow of Beasts - Legendary Feral",
+"Primary_4Armor_3Rare": "Rare Armor",
+"PrimHam_3Bow_5Lgnd_Marauder_DebugGrant": "Legendary Marauder DebugGrant (Hammer bow)",
+"Primary_4Armor_5Lgnd_Machine_DebugGrant": "Threshing Armor - Legendary Machine DebugGrant",
+"Primary_5Cape_5Lgnd_Celebrimbor_DebugGrant": "Bright Lord's Cloak - Legendary Celebrimbor DebugGrant",
+"PrimHam_3Bow_5Lgnd_Machine": "Legendary Machine (Hammer bow)",
+"Primary_6Ring_5Lgnd_Warmonger_DebugGrant": "Rune of War - Legendary Warmonger DebugGrant",
+"Primary_2Dagger_AD16": "AD16 Dagger",
+"PrimSnipe_3Bow_5Lgnd_Terror_DebugGrant": "Longbow of Horrors - Legendary Terror DebugGrant (Sniper bow)",
+"Primary_5Cape_5Lgnd_Slaughter": "Blood Cloak - Legendary Slaughter",
+"Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Sist_Alt": "Legendary Ringwraith Nazgul Sist Alt",
+"Primary_3Bow_ArtSet_Ranger1": "ArtSet Ranger1 Bow",
+"Primary_3Bow_ArtSet_Ranger2": "ArtSet Ranger2 Bow",
+"Primary_4Armor_ArtSet_Elven1": "ArtSet Elven1 Armor",
+"Primary_4Armor_ArtSet_Elven2": "ArtSet Elven2 Armor",
+"Primary_4Armor_ArtSet_Elven3": "ArtSet Elven3 Armor",
+"Primary_4Armor_ArtSet_Elven4": "ArtSet Elven4 Armor",
+"Primary_1Sword_5Lgnd_Outlaw": "Blackguard Sword - Legendary Outlaw",
+"Primary_5Cape_ArtSet_Dwarven1": "ArtSet Dwarven1 Cloak",
+"Primary_5Cape_ArtSet_Dwarven2": "ArtSet Dwarven2 Cloak",
+"Primary_5Cape_ArtSet_Dwarven3": "ArtSet Dwarven3 Cloak",
+"Primary_5Cape_ArtSet_Dwarven4": "ArtSet Dwarven4 Cloak",
+"Primary_4Armor_5Lgnd_Mystic_DebugGrant": "Arcane Armor - Legendary Mystic DebugGrant",
+"PrimHam_3Bow_3Rare_DebugGrant": "3Rare DebugGrant Bow (Hammer bow)",
+"Primary_1Sword_5Lgnd_Slaughter_DebugGrant": "Blood Sword - Legendary Slaughter DebugGrant",
+"Primary_5Cape_ArtSet_Numenor1": "ArtSet Numenor1 Cloak",
+"Primary_5Cape_ArtSet_Numenor2": "ArtSet Numenor2 Cloak",
+"Primary_5Cape_5Lgnd_Outlaw_DebugGrant": "Blackguard Cloak - Legendary Outlaw DebugGrant",
+"Primary_6Ring_5Lgnd_Dark_DebugGrant": "Darkest Rune - Legendary Dark DebugGrant",
+"Primary_4Armor_5Lgnd_Dark": "Darkest Armor - Legendary Dark",
+"Primary_3Bow_5Lgnd_Celebrimbor_SotP": "Bright Lord's Bow - Legendary Celebrimbor SotP",
+"Primary_4Armor_5Lgnd_Celebrimbor": "Bright Lord's Armor - Legendary Celebrimbor",
+"Primary_4Armor_1Default": "Default Armor",
+"PrimHam_3Bow_5Lgnd_Warmonger_DebugGrant": "Legendary Warmonger DebugGrant (Hammer bow)",
+"Primary_2Dagger_5Lgnd_Ringwraith": "Acharn - Legendary Ringwraith",
+"Primary_6Ring_5Lgnd_Outlaw": "Blackguard Rune - Legendary Outlaw",
+"Primary_4Armor_5Lgnd_Ringwraith": "Legendary Ringwraith",
+"Primary_1Sword_5Lgnd_Celebrimbor_SotP": "Bright Lord's Sword - Legendary Celebrimbor SotP",
+"Primary_2Dagger_5Lgnd_Mystic_DebugGrant": "Arcane Dagger - Legendary Mystic DebugGrant",
+"PrimHam_3Bow_1Default": "Default Bow (Hammer bow)",
+"PrimSnipe_3Bow_5Lgnd_Slaughter_DebugGrant": "Blood Longbow - Legendary Slaughter DebugGrant (Sniper bow)",
+"Primary_4Armor_5Lgnd_Machine": "Threshing Armor - Legendary Machine",
+"Primary_2Dagger_ArtSet_Ranger1": "ArtSet Ranger1 Dagger",
+"Primary_2Dagger_ArtSet_Ranger2": "ArtSet Ranger2 Dagger",
+"Primary_1Sword_5Lgnd_Warmonger_DebugGrant": "Sword of War - Legendary Warmonger DebugGrant",
+"Primary_5Cape_5Lgnd_Warmonger": "Cloak of War - Legendary Warmonger",
+"PrimSnipe_3Bow_3Rare_DebugGrant": "3Rare DebugGrant Bow (Sniper bow)",
+"Primary_4Armor_5Lgnd_Terror": "Armor of Horrors - Legendary Terror",
+"Primary_2Dagger_5Lgnd_Celebrimbor": "Bright Lord's Dagger - Legendary Celebrimbor",
+"Primary_1Sword_5Lgnd_Dark_DebugGrant": "Darkest Sword - Legendary Dark DebugGrant",
+"Primary_5Cape_5Lgnd_Ringwraith": "Legendary Ringwraith",
+"Primary_5Cape_5Lgnd_Mystic": "Arcane Cloak - Legendary Mystic",
+"Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Isildur": "Legendary Ringwraith Nazgul Isildur",
+"Primary_4Armor_ArtSet_Gondor1": "ArtSet Gondor1 Armor",
+"Primary_4Armor_ArtSet_Gondor2": "ArtSet Gondor2 Armor",
+"PrimHam_3Bow_4Epic_DebugGrant": "4Epic DebugGrant Bow (Hammer bow)",
+"Primary_2Dagger_5Lgnd_Marauder": "Raider's Dagger - Legendary Marauder",
+"Primary_6Ring_5Lgnd_Feral_DebugGrant": "Rune of Beasts - Legendary Feral DebugGrant",
+"PrimHam_3Bow_5Lgnd_Machine_DebugGrant": "Legendary Machine DebugGrant (Hammer bow)",
+"Primary_4Armor_5Lgnd_Slaughter_DebugGrant": "Blood Armor - Legendary Slaughter DebugGrant",
+"Primary_1Sword_5Lgnd_Celebrimbor_Wraith": "Bright Lord's Sword - Legendary Celebrimbor Wraith",
+"Primary_5Cape_5Lgnd_Marauder_DebugGrant": "Raider's Cloak - Legendary Marauder DebugGrant",
+"PrimSnipe_3Bow_3Rare": "Rare Bow (Sniper bow)",
+"PrimHam_3Bow_ArtSet_Rohan1": "ArtSet Rohan1 Bow (Hammer bow)",
+"PrimHam_3Bow_ArtSet_Rohan2": "ArtSet Rohan2 Bow (Hammer bow)",
+"Primary_4Armor_5Lgnd_Celebrimbor_Wraith": "Bright Lord's Armor - Legendary Celebrimbor Wraith",
+"Primary_4Armor_5Lgnd_Dark_DebugGrant": "Darkest Armor - Legendary Dark DebugGrant",
+"Primary_4Armor_5Lgnd_Celebrimbor_SotP": "Bright Lord's Armor - Legendary Celebrimbor SotP",
+"PrimSnipe_3Bow_4Epic_DebugGrant": "4Epic DebugGrant Bow (Sniper bow)",
+"PrimSnipe_3Bow_2Standard": "Common Bow (Sniper bow)",
+"Primary_5Cape_ArtSet_Gondor1": "ArtSet Gondor1 Cloak",
+"Primary_5Cape_ArtSet_Gondor2": "ArtSet Gondor2 Cloak",
+"Primary_6Ring_5Lgnd_Celebrimbor": "Bright Lord's Rune - Legendary Celebrimbor",
+"Primary_3Bow_ArtSet_Rohan1": "ArtSet Rohan1 Bow",
+"Primary_3Bow_ArtSet_Rohan2": "ArtSet Rohan2 Bow",
+"Primary_4Armor_5Lgnd_Warmonger_DebugGrant": "Armor of War - Legendary Warmonger DebugGrant",
+"PrimSnipe_3Bow_5Lgnd_Vendetta_DebugGrant": "Longbow of Vengeance - Legendary Vendetta DebugGrant (Sniper bow)",
+"Primary_1Sword_5Lgnd_Mystic_DebugGrant": "Arcane Sword - Legendary Mystic DebugGrant",
+"Primary_2Dagger_4Epic": "Epic Dagger",
+"Primary_6Ring_5Lgnd_Vendetta_DebugGrant": "Rune of Vengeance - Legendary Vendetta DebugGrant",
+"Primary_2Dagger_3Rare_DebugGrant": "3Rare DebugGrant Dagger",
+"Primary_4Armor_3Rare_DebugGrant": "3Rare DebugGrant Armor",
+"Primary_4Armor_ArtSet_Rohan1": "ArtSet Rohan1 Armor",
+"Primary_4Armor_ArtSet_Rohan2": "ArtSet Rohan2 Armor",
+"PrimSnipe_3Bow_1Default": "Default Bow (Sniper bow)",
+"Primary_2Dagger_5Lgnd_Vendetta": "Dagger of Vengeance - Legendary Vendetta",
+"Primary_6Ring_5Lgnd_Dark": "Darkest Rune - Legendary Dark",
+"PrimSnipe_3Bow_5Lgnd_Vendetta": "Longbow of Vengeance - Legendary Vendetta (Sniper bow)",
+"Primary_5Cape_3Rare_DebugGrant": "3Rare DebugGrant Cloak",
+"Primary_6Ring_4Epic": "Epic Ring",
+"Primary_4Armor_5Lgnd_Vendetta_DebugGrant": "Armor of Vengeance - Legendary Vendetta DebugGrant",
+"PrimHam_3Bow_1DarkRanger": "Dark Ranger Bow (Hammer bow)",
+"Primary_2Dagger_ArtSet_Elven1": "ArtSet Elven1 Dagger",
+"Primary_2Dagger_ArtSet_Elven2": "ArtSet Elven2 Dagger",
+"Primary_2Dagger_ArtSet_Elven3": "ArtSet Elven3 Dagger",
+"Primary_2Dagger_ArtSet_Elven4": "ArtSet Elven4 Dagger",
+"Primary_3Bow_5Lgnd_Celebrimbor": "Bright Lord's Bow - Legendary Celebrimbor",
+"Primary_6Ring_5Lgnd_Terror_DebugGrant": "Rune of Horrors - Legendary Terror DebugGrant",
+"Primary_5Cape_ArtSet_Nazgul3": "ArtSet Nazgul3 Cloak",
+"Primary_5Cape_ArtSet_Nazgul4": "ArtSet Nazgul4 Cloak",
+"PrimHam_3Bow_2Standard": "Common Bow (Hammer bow)",
+"Primary_1Sword_5Lgnd_Vendetta_DebugGrant": "Sword of Vengeance - Legendary Vendetta DebugGrant",
+"Primary_2Dagger_HalfProgression": "HalfProgression Dagger",
+"Primary_1Sword_5Lgnd_Feral": "Sword of Beasts - Legendary Feral",
+"Primary_4Armor_5Lgnd_Ringwraith_Black": "Legendary Ringwraith Black",
+"Primary_6Ring_5Lgnd_Slaughter": "Blood Rune - Legendary Slaughter",
+"Primary_2Dagger_4Epic_DebugGrant": "4Epic DebugGrant Dagger",
+"Primary_2Dagger_5Lgnd_Terror": "Dagger of Horrors - Legendary Terror",
+"Primary_4Armor_4Epic_DebugGrant": "4Epic DebugGrant Armor",
+"Primary_5Cape_5Lgnd_Mystic_DebugGrant": "Arcane Cloak - Legendary Mystic DebugGrant",
+"Primary_1Sword_1DarkRanger": "Dark Ranger Sword",
+"Primary_2Dagger_5Lgnd_Machine": "Threshing Dagger - Legendary Machine",
+"Primary_5Cape_4Epic": "Epic Cloak",
+"Primary_2Dagger_5Lgnd_Dark": "Darkest Dagger - Legendary Dark",
+"PrimSnipe_3Bow_5Lgnd_Dark_DebugGrant": "Darkest Bow - Legendary Dark DebugGrant (Sniper bow)",
+"Primary_5Cape_4Epic_DebugGrant": "4Epic DebugGrant Cloak",
+"Primary_6Ring_5Lgnd_Celebrimbor_SotP": "Bright Lord's Rune - Legendary Celebrimbor SotP",
+"Primary_3Bow_5Lgnd_Outlaw_DebugGrant": "Blackguard Bow - Legendary Outlaw DebugGrant",
+"Primary_5Cape_5Lgnd_Outlaw": "Blackguard Cloak - Legendary Outlaw",
+"Primary_2Dagger_5Lgnd_Machine_DebugGrant": "Threshing Dagger - Legendary Machine DebugGrant",
+"Primary_1Sword_5Lgnd_Ringwraith": "Urfael - Legendary Ringwraith",
+"Primary_3Bow_AD16": "AD16 Bow",
+"Primary_6Ring_5Lgnd_Machine_DebugGrant": "Threshing Rune - Legendary Machine DebugGrant",
+"Primary_2Dagger_5Lgnd_Slaughter": "Blood Dagger - Legendary Slaughter",
+"Primary_4Armor_5Lgnd_Mystic": "Arcane Armor - Legendary Mystic",
+"Primary_2Dagger_ArtSet_Dwarven1": "ArtSet Dwarven1 Dagger",
+"Primary_2Dagger_ArtSet_Dwarven2": "ArtSet Dwarven2 Dagger",
+"Primary_2Dagger_ArtSet_Dwarven3": "ArtSet Dwarven3 Dagger",
+"Primary_2Dagger_ArtSet_Dwarven4": "ArtSet Dwarven4 Dagger",
+"Primary_6Ring_5Lgnd_Warmonger": "Rune of War - Legendary Warmonger",
+"Primary_3Bow_ArtSet_Gondor1": "ArtSet Gondor1 Bow",
+"Primary_3Bow_ArtSet_Gondor2": "ArtSet Gondor2 Bow",
+"PrimHam_3Bow_5Lgnd_Celebrimbor": "Bright Lord's Bow - Legendary Celebrimbor (Hammer bow)",
+"Primary_2Dagger_5Lgnd_Feral": "Dagger of Beasts - Legendary Feral",
+"Primary_2Dagger_ArtSet_Numenor1": "ArtSet Numenor1 Dagger",
+"Primary_2Dagger_ArtSet_Numenor2": "ArtSet Numenor2 Dagger",
+"Primary_2Dagger_ArtSet_Numenor3": "ArtSet Numenor3 Dagger",
+"Primary_2Dagger_ArtSet_Numenor4": "ArtSet Numenor4 Dagger",
+"Primary_1Sword_AD16": "AD16 Sword",
+"Primary_1Sword_5Lgnd_Terror": "Sword of Horrors - Legendary Terror",
+"Primary_2Dagger_1DarkRanger": "Dark Ranger Dagger",
+"Primary_1Sword_ArtSet_Ranger1": "ArtSet Ranger1 Sword",
+"Primary_1Sword_ArtSet_Ranger2": "ArtSet Ranger2 Sword",
+"Primary_4Armor_DEMO_Reward": "DEMO Reward Armor",
+"Primary_2Dagger_5Lgnd_Vendetta_DebugGrant": "Dagger of Vengeance - Legendary Vendetta DebugGrant",
+"Primary_4Armor_5Lgnd_Terror_DebugGrant": "Armor of Horrors - Legendary Terror DebugGrant",
+"Primary_6Ring_5Lgnd_Marauder": "Raider's Rune - Legendary Marauder",
+"PrimHam_3Bow_5Lgnd_Celebrimbor_DebugGrant": "Bright Lord's Bow - Legendary Celebrimbor DebugGrant (Hammer bow)",
+"Primary_2Dagger_5Lgnd_Warmonger": "Dagger of War - Legendary Warmonger",
+"Primary_2Dagger_5Lgnd_Slaughter_DebugGrant": "Blood Dagger - Legendary Slaughter DebugGrant",
+"Primary_6Ring_5Lgnd_Feral": "Rune of Beasts - Legendary Feral",
+"Primary_1Sword_5Lgnd_Celebrimbor": "Bright Lord's Sword - Legendary Celebrimbor",
+"Primary_2Dagger_ArtSet_Gondor1": "ArtSet Gondor1 Dagger",
+"Primary_2Dagger_ArtSet_Gondor2": "ArtSet Gondor2 Dagger",
+"Primary_1Sword_1Default": "Default Sword",
+"Primary_3Bow_5Lgnd_Mystic": "Arcane Bow - Legendary Mystic",
+"PrimHam_3Bow_4Epic": "Epic Bow (Hammer bow)",
+"Primary_5Cape_5Lgnd_Slaughter_DebugGrant": "Blood Cloak - Legendary Slaughter DebugGrant",
+"Primary_2Dagger_3Rare": "Rare Dagger",
+"Primary_1Sword_5Lgnd_Marauder": "Raider's Sword - Legendary Marauder",
+"Primary_6Ring_5Lgnd_Terror": "Rune of Horrors - Legendary Terror",
+"Primary_6Ring_1DarkRanger": "Dark Ranger Ring",
+"Primary_3Bow_5Lgnd_Celebrimbor_DebugGrant": "Bright Lord's Bow - Legendary Celebrimbor DebugGrant",
+"PrimSnipe_3Bow_5Lgnd_Terror": "Longbow of Horrors - Legendary Terror (Sniper bow)",
+"Primary_2Dagger_ArtSet_Haradrim1": "ArtSet Haradrim1 Dagger",
+"Primary_2Dagger_ArtSet_Haradrim2": "ArtSet Haradrim2 Dagger",
+"Primary_2Dagger_ArtSet_Haradrim3": "ArtSet Haradrim3 Dagger",
+"Primary_2Dagger_ArtSet_Haradrim4": "ArtSet Haradrim4 Dagger",
+"Primary_5Cape_AD16": "AD16 Cloak",
+"Primary_2Dagger_5Lgnd_Terror_DebugGrant": "Dagger of Horrors - Legendary Terror DebugGrant",
+"Primary_4Armor_ArtSet_Haradrim1": "ArtSet Haradrim1 Armor",
+"Primary_4Armor_ArtSet_Haradrim2": "ArtSet Haradrim2 Armor",
+"Primary_4Armor_ArtSet_Haradrim3": "ArtSet Haradrim3 Armor",
+"Primary_4Armor_ArtSet_Haradrim4": "ArtSet Haradrim4 Armor",
+"Primary_1Sword_GP_Intro": "GP Intro Sword",
+"Primary_2Dagger_ArtSet_Rohan1": "ArtSet Rohan1 Dagger",
+"Primary_2Dagger_ArtSet_Rohan2": "ArtSet Rohan2 Dagger",
+"Primary_5Cape_ArtSet_BlackNum1": "ArtSet BlackNum1 Cloak",
+"Primary_5Cape_ArtSet_BlackNum2": "ArtSet BlackNum2 Cloak",
+"Primary_5Cape_ArtSet_BlackNum3": "ArtSet BlackNum3 Cloak",
+"Primary_5Cape_ArtSet_BlackNum4": "ArtSet BlackNum4 Cloak",
+"Primary_2Dagger_5Lgnd_Warmonger_DebugGrant": "Dagger of War - Legendary Warmonger DebugGrant",
+"Primary_5Cape_ArtSet_Haradrim1": "ArtSet Haradrim1 Cloak",
+"Primary_5Cape_ArtSet_Haradrim2": "ArtSet Haradrim2 Cloak",
+"Primary_5Cape_ArtSet_Haradrim3": "ArtSet Haradrim3 Cloak",
+"Primary_5Cape_ArtSet_Haradrim4": "ArtSet Haradrim4 Cloak",
+"Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Hmrhand": "Legendary Ringwraith Nazgul Hmrhand",
+"Primary_1Sword_ArtSet_Elven1": "ArtSet Elven1 Sword",
+"Primary_1Sword_ArtSet_Elven2": "ArtSet Elven2 Sword",
+"Primary_1Sword_ArtSet_Elven3": "ArtSet Elven3 Sword",
+"Primary_1Sword_ArtSet_Elven4": "ArtSet Elven4 Sword",
+"Primary_2Dagger_5Lgnd_Feral_DebugGrant": "Dagger of Beasts - Legendary Feral DebugGrant",
+"Primary_6Ring_5Lgnd_Ringwraith": "Legendary Ringwraith",
+"Primary_6Ring_3Rare": "Rare Ring",
+"Primary_5Cape_5Lgnd_Warmonger_DebugGrant": "Cloak of War - Legendary Warmonger DebugGrant",
+"Primary_5Cape_5Lgnd_Dark_DebugGrant": "Darkest Cloak - Legendary Dark DebugGrant",
+"Primary_1Sword_3Rare_DebugGrant": "3Rare DebugGrant Sword",
+"Primary_2Dagger_5Lgnd_Celebrimbor_Wraith": "Bright Lord's Dagger - Legendary Celebrimbor Wraith",
+"Primary_5Cape_5Lgnd_Ringwraith_Nazgul_ArPharzn": "Legendary Ringwraith Nazgul ArPharzn",
+"Primary_6Ring_5Lgnd_Outlaw_DebugGrant": "Blackguard Rune - Legendary Outlaw DebugGrant",
+"Primary_1Sword_5Lgnd_Dark": "Darkest Sword - Legendary Dark",
+"Primary_5Cape_5Lgnd_Dark": "Darkest Cloak - Legendary Dark",
+"PrimHam_3Bow_5Lgnd_Marauder": "Legendary Marauder (Hammer bow)",
+"Primary_6Ring_5Lgnd_Marauder_DebugGrant": "Raider's Rune - Legendary Marauder DebugGrant",
+"PrimSnipe_3Bow_5Lgnd_Dark": "Darkest Bow - Legendary Dark (Sniper bow)",
+"Primary_6Ring_5Lgnd_Vendetta": "Rune of Vengeance - Legendary Vendetta",
+"Primary_5Cape_2Standard": "Common Cloak",
+"Primary_4Armor_AD16": "AD16 Armor",
+"Primary_1Sword_5Lgnd_Machine": "Threshing Sword - Legendary Machine",
+"Primary_4Armor_5Lgnd_Celebrimbor_DebugGrant": "Bright Lord's Armor - Legendary Celebrimbor DebugGrant",
+"Primary_1Sword_5Lgnd_Vendetta": "Sword of Vengeance - Legendary Vendetta",
+"Primary_1Sword_HalfProgression": "HalfProgression Sword",
+"Primary_4Armor_5Lgnd_Marauder_DebugGrant": "Raider's Armor - Legendary Marauder DebugGrant",
+"Primary_3Bow_4Epic": "Epic Bow",
+"Primary_5Cape_3Rare": "Rare Cloak",
+"Primary_3Bow_3Rare_DebugGrant": "3Rare DebugGrant Bow",
+"Primary_2Dagger_5Lgnd_Mystic": "Arcane Dagger - Legendary Mystic",
+"Primary_3Bow_2Standard_MarkEx": "2Standard MarkEx Bow",
+"Primary_1Sword_4Epic": "Epic Sword",
+"Primary_1Sword_4Epic_DebugGrant": "4Epic DebugGrant Sword",
+"Primary_3Bow_1Default": "Default Bow",
+"Primary_1Sword_5Lgnd_Terror_DebugGrant": "Sword of Horrors - Legendary Terror DebugGrant",
+"Primary_4Armor_5Lgnd_Outlaw": "Blackguard Armor - Legendary Outlaw",
+"Primary_1Sword_5Lgnd_Marauder_DebugGrant": "Raider's Sword - Legendary Marauder DebugGrant",
+"Primary_3Bow_5Lgnd_Mystic_DebugGrant": "Arcane Bow - Legendary Mystic DebugGrant",
+"Primary_6Ring_1Default": "Default Ring",
+"Primary_1Sword_2Standard": "Common Sword",
+"Primary_1Sword_5Lgnd_Slaughter": "Blood Sword - Legendary Slaughter",
+"Primary_5Cape_5Lgnd_Feral_DebugGrant": "Cloak of Beasts - Legendary Feral DebugGrant",
+"Primary_4Armor_ArtSet_Ranger1": "ArtSet Ranger1 Armor",
+"Primary_4Armor_ArtSet_Ranger2": "ArtSet Ranger2 Armor",
+"Primary_4Armor_ArtSet_Ranger3": "ArtSet Ranger3 Armor",
+"Primary_4Armor_ArtSet_Ranger4": "ArtSet Ranger4 Armor",
+"Primary_4Armor_4Epic": "Epic Armor"
+}
+}

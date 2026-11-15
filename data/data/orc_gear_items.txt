@@ -1,0 +1,1350 @@
+# Inventory/Items records that equip into a slot (ItemBuilder -> ArmorData.ArmorSlot or EquippedWeaponData.ItemSlot). Live DB read, exe 1.0.8874.
+# columns: slot<TAB>item<TAB>FactionMemberItemReplaceValue<TAB>RequiredCharacterType<TAB>WeaponType<TAB>NemesisGearItem<TAB>appearance record(s)
+armor:Accessory1	BlackNumT1_Scabbard	0				AD_BlackNumT1_Scabbard
+armor:Accessory1	BlackNumT3_Scabbard	0				AD_BlackNumT3_Scabbard
+armor:Accessory1	BladeT1MH_Scabbard	0				AD_BladeT1MH_Scabbard
+armor:Accessory1	BladeT1MH_Scabbard_Tint_Light	0				AD_BladeT1MH_Scabbard_Tint_Light
+armor:Accessory1	BladeT1_Scabbard_Wraith	0				AD_BladeT1_Scabbard_Wraith
+armor:Accessory1	BladeT2MH_Scabbard	0				AD_BladeT2MH_Scabbard
+armor:Accessory1	BladeT2MH_Scabbard_Tint_Light	0				AD_BladeT2MH_Scabbard_Tint_Light
+armor:Accessory1	DesertT1_Scabbard	0				AD_DesertT1_Scabbard
+armor:Accessory1	Desert_Cape	0				AD_Desert_Cape
+armor:Accessory1	Dwarven_Scabbard	0				AD_Dwarven_Scabbard
+armor:Accessory1	Easterling_Quiver_Accessory	2				AD_Easterling_Quiver_Accessory
+armor:Accessory1	Elven_Scabbard	0				AD_Elven_Scabbard
+armor:Accessory1	Elven_Scabbard_Wraith	0				AD_Elven_Scabbard_Wraith
+armor:Accessory1	Gondorian_Scabbard	0				AD_Gondorian_Scabbard
+armor:Accessory1	Graug_A_Pult	1602224220				AD_Graug_A_Pult
+armor:Accessory1	Haradrim_Scabbard	0				AD_Haradrim_Scabbard
+armor:Accessory1	IT_Archer_Quiver	0				AD_Archer_Quiver
+armor:Accessory1	IT_Spearman_Quiver	0				AD_Spearman_Quiver
+armor:Accessory1	Mystic_Quiver	10	Trait_Archers_Spearmen			AD_Mystic_Quiver
+armor:Accessory1	Numenorean_Scabbard	0				AD_Numenorean_Scabbard
+armor:Accessory1	Quiver_Accessory	0				AD_Quiver_Accessory
+armor:Accessory1	RangerT2_Scabbard	0				AD_RangerT2_Scabbard
+armor:Accessory1	Ranger_Scabbard	0				AD_Ranger_Scabbard
+armor:Accessory1	Regal_Quiver	5	Trait_Archers_Spearmen			AD_Regal_Quiver
+armor:Accessory1	Rhovanion_Scabbard	0				AD_Rhovanion_Scabbard
+armor:Accessory1	Rohan_Scabbard	0				AD_Rohan_Scabbard
+armor:Accessory1	Sapper_Accessory	0				AD_Sapper_Accessory
+armor:Accessory1	WoodElfT1MH_Scabbard	0				AD_WoodElfT1MH_Scabbard
+armor:Accessory1	WoodElfT1MH_Scabbard_Tint_Beast	0				AD_WoodElfT1MH_Scabbard_Tint_Beast
+armor:Accessory1	WoodElfT1MH_Scabbard_Tint_Fire	0				AD_WoodElfT1MH_Scabbard_Tint_Fire
+armor:Accessory1	WoodElfT1MH_Scabbard_Tint_Frost	0				AD_WoodElfT1MH_Scabbard_Tint_Frost
+armor:Accessory1	WoodElfT1MH_Scabbard_Tint_Poison	0				AD_WoodElfT1MH_Scabbard_Tint_Poison
+armor:Accessory1	WoodElfT2MH_Scabbard	0				AD_WoodElfT2MH_Scabbard
+armor:Accessory1	WoodElfT2MH_Scabbard_Tint_Beast	0				AD_WoodElfT2MH_Scabbard_Tint_Beast
+armor:Accessory1	WoodElfT2MH_Scabbard_Tint_Fire	0				AD_WoodElfT2MH_Scabbard_Tint_Fire
+armor:Accessory1	WoodElfT2MH_Scabbard_Tint_Frost	0				AD_WoodElfT2MH_Scabbard_Tint_Frost
+armor:Accessory1	WoodElfT2MH_Scabbard_Tint_Poison	0				AD_WoodElfT2MH_Scabbard_Tint_Poison
+armor:Accessory2	Balrog_Back_Weakspot_A	0				Balrog_Weakspot_Back
+armor:Accessory2	Balrog_Weakspot_Chest	0				Balrog_Weakspot_Chest
+armor:Accessory2	BigClawL_Accessory	10				AD_BigClawL_Accessory
+armor:Accessory2	BlackNumDT1_Scabbard	0				AD_BlackNumDT1_Scabbard
+armor:Accessory2	BlackNumDT3_Scabbard	0				AD_BlackNumDT3_Scabbard
+armor:Accessory2	BladeT1OH_Scabbard	0				AD_BladeT1OH_Scabbard
+armor:Accessory2	BladeT1OH_Scabbard_Tint_Light	0				AD_BladeT1OH_Scabbard_Tint_Light
+armor:Accessory2	BladeT2OH_Scabbard	0				AD_BladeT2OH_Scabbard
+armor:Accessory2	BladeT2OH_Scabbard_Tint_Light	0				AD_BladeT2OH_Scabbard_Tint_Light
+armor:Accessory2	Blight_Arms	10				AD_Blight_Arms
+armor:Accessory2	DesertT1D_Scabbard	0				AD_DesertT1D_Scabbard
+armor:Accessory2	DwarvenD_Scabbard	0				AD_DwarvenD_Scabbard
+armor:Accessory2	Easterling_Base_Body	1602224220				AD_Easterling_Base_Body
+armor:Accessory2	Eltariel_Celebrimbor_Ring	0				AD_Eltariel_Celebrimbor_Ring
+armor:Accessory2	ElvenD_Scabbard	0				AD_ElvenD_Scabbard
+armor:Accessory2	ElvenD_Scabbard_Wraith	0				AD_ElvenD_Scabbard_Wraith
+armor:Accessory2	GhulKeeper_Accessory	10				AD_GhulKeeper_Accessory
+armor:Accessory2	GondorianD_Scabbard	0				AD_GondorianD_Scabbard
+armor:Accessory2	Graug_A_Pult_Boxes	1602224220				AD_Graug_A_Pult_Boxes
+armor:Accessory2	HaradrimD_Scabbard	0				AD_HaradrimD_Scabbard
+armor:Accessory2	L_Arm_Claw	20				AD_L_Arm_Claw
+armor:Accessory2	L_Graug_A_Pult_Boxes	1602224220				AD_L_Graug_A_Pult_Boxes
+armor:Accessory2	Maggot_Accessory	0				AD_Maggot_Accessory
+armor:Accessory2	NazgulArm	0				AD_NazgulArm
+armor:Accessory2	NumenoreanD_Scabbard	0				AD_NumenoreanD_Scabbard
+armor:Accessory2	R_Leg_Claw	20				AD_R_Leg_Claw
+armor:Accessory2	RangerDT2_Scabbard	0				AD_RangerDT2_Scabbard
+armor:Accessory2	RangerD_Scabbard	0				AD_RangerD_Scabbard
+armor:Accessory2	RhovanionD_Scabbard	0				AD_RhovanionD_Scabbard
+armor:Accessory2	RohanD_Scabbard	0				AD_RohanD_Scabbard
+armor:Accessory2	Shackles_Accessory	10				AD_Shackles_Accessory
+armor:Accessory2	Shelob_Celebrimbor_Ring	0				AD_Shelob_Celebrimbor_Ring
+armor:Accessory2	Singer_Accessory	10				AD_Singer_Accessory
+armor:Accessory2	Spiders_Accessory	10				AD_Spiders_Accessory
+armor:Accessory2	Stitch_Accessory	21				AD_Stitch_Accessory
+armor:Accessory2	Underclothes	0				AD_Underclothes
+armor:Accessory2	Underclothes_Chest	0				AD_Underclothes_Chest
+armor:Accessory2	Underclothes_Pants	0				AD_Underclothes_Pants
+armor:Accessory2	VatKeeper_Accessory	10				AD_VatKeeper_Accessory
+armor:Accessory2	Vines_Accessory	0				AD_Vines_Accessory
+armor:Accessory2	WoodElfT1OH_Scabbard	0				AD_WoodElfT1OH_Scabbard
+armor:Accessory2	WoodElfT1OH_Scabbard_Tint_Beast	0				AD_WoodElfT1OH_Scabbard_Tint_Beast
+armor:Accessory2	WoodElfT1OH_Scabbard_Tint_Fire	0				AD_WoodElfT1OH_Scabbard_Tint_Fire
+armor:Accessory2	WoodElfT1OH_Scabbard_Tint_Frost	0				AD_WoodElfT1OH_Scabbard_Tint_Frost
+armor:Accessory2	WoodElfT1OH_Scabbard_Tint_Poison	0				AD_WoodElfT1OH_Scabbard_Tint_Poison
+armor:Accessory2	WoodElfT2OH_Scabbard	0				AD_WoodElfT2OH_Scabbard
+armor:Accessory2	WoodElfT2OH_Scabbard_Tint_Beast	0				AD_WoodElfT2OH_Scabbard_Tint_Beast
+armor:Accessory2	WoodElfT2OH_Scabbard_Tint_Fire	0				AD_WoodElfT2OH_Scabbard_Tint_Fire
+armor:Accessory2	WoodElfT2OH_Scabbard_Tint_Frost	0				AD_WoodElfT2OH_Scabbard_Tint_Frost
+armor:Accessory2	WoodElfT2OH_Scabbard_Tint_Poison	0				AD_WoodElfT2OH_Scabbard_Tint_Poison
+armor:Arms	Architect_Arms	50				AD_Architect_Arms
+armor:Arms	Backpack_Accessory	0				AD_Backpack_Accessory
+armor:Arms	Beast_Arms	20				AD_Beast_Arms
+armor:Arms	Beast_Arms_DoNotReplace	10				AD_Beast_Arms
+armor:Arms	Bedroll_Accessory	0				AD_Bedroll_Accessory
+armor:Arms	Berserker_Arms	5				AD_Berserker_Arms
+armor:Arms	Berserker_Arms_DoNotReplace	10				AD_Berserker_Arms
+armor:Arms	Black_Arms	2				AD_Black_Arms
+armor:Arms	Black_Arms_DoNoReplace	10				AD_Black_Arms
+armor:Arms	Bone_Arms	10				AD_Bone_Arms
+armor:Arms	CV_AC_NullArms	5				CV_NullArms
+armor:Arms	CV_Berserker_Arms	2				AD_Berserker_Arms
+armor:Arms	CV_Tribe_NullArms	2				CV_NullArms
+armor:Arms	Chain_Arms	0				AD_Chain_Arms
+armor:Arms	CombatMaster_Arms	5				AD_CombatMaster_Arms
+armor:Arms	CombatMaster_Arms_DoNotReplace	10				AD_CombatMaster_Arms
+armor:Arms	Defender_Arms	0				AD_Defender_Arms
+armor:Arms	Digger_Arms	50				AD_Digger_Arms
+armor:Arms	Doppel_Arms_Industrial	10				AD_Industrial_Arms_BuffOnly
+armor:Arms	Druid_Arms	5				AD_Druid_Arms
+armor:Arms	Druid_Arms_DoNotReplace	10				AD_Druid_Arms
+armor:Arms	Easterling_Light_Arms	1602224220				AD_Easterling_Light_Arms
+armor:Arms	Easterling_Plate_Arms	1602224220				AD_Easterling_Plate_Arms
+armor:Arms	Eltariel_6Light_Base	0			DLC3_Base_6Light	AD_Eltariel_BladeT1_Light
+armor:Arms	Eltariel_6Light_Beast	0			DLC3_Beast_MtnPass_6Light	AD_Eltariel_WoodElfT1_Light_Tint_Beast
+armor:Arms	Eltariel_6Light_Fire	0			DLC3_Fire_Volcano_6Light	AD_Eltariel_WoodElfT1_Light_Tint_Fire
+armor:Arms	Eltariel_6Light_FrostCurse	0			DLC3_FrostCurse_SnowMtn_6Light	AD_Eltariel_WoodElfT1_Light_Tint_Frost
+armor:Arms	Eltariel_6Light_Light	0			DLC3_Light_6Light	AD_Eltariel_BladeT1_Light_Tint_Light
+armor:Arms	Eltariel_6Light_Poison	0			DLC3_Poison_Island_6Light	AD_Eltariel_WoodElfT1_Light_Tint_Poison
+armor:Arms	Enchanted_Arms	50				AD_Enchanted_Arms
+armor:Arms	GP_Acolyte_Arms_Mix	10				AD_Mystic_Arms
+armor:Arms	GP_Fixer_Arms_Mix	10				AD_Black_Arms
+armor:Arms	Heavy_Arms	0				AD_Heavy_Arms
+armor:Arms	IT_empty_arms	1602224220				AD_empty_arms
+armor:Arms	Industrial_Arms	2				AD_Industrial_Arms
+armor:Arms	Industrial_ArmsBling_DoNotReplace	10				AD_Industrial_ArmsBling
+armor:Arms	Industrial_Arms_DoNotReplace	10				AD_Industrial_Arms
+armor:Arms	Mystic_Arms	2				AD_Mystic_Arms
+armor:Arms	Mystic_Arms_DoNotRemove	10				AD_Mystic_Arms
+armor:Arms	R_Graug_A_Pult_Boxes	1602224220				AD_R_Graug_A_Pult_Boxes
+armor:Arms	Ranger_Beast_Arms_Reference	100				AD_Beast_Arms
+armor:Arms	Regal_Arms	2				AD_Regal_Arms
+armor:Arms	Regal_Arms_DoNotRemove	10				AD_Regal_Arms
+armor:Arms	Sauron_Arms	1602224220				AD_Sauron_Arms
+armor:Arms	Scavenger_Arms	2				AD_Scavenger_Arms
+armor:Arms	Scavenger_Arms_DoNotRemove	10				AD_Scavenger_Arms
+armor:Arms	Slaughter_Arms	2				AD_Slaughter_Arms
+armor:Arms	Slaughter_Arms_DoNotReplace	10				AD_Slaughter_Arms
+armor:Arms	Spiders_Arms	10				AD_Spiders_Arms
+armor:Arms	Spikey_Arms	0				AD_Spikey_Arms
+armor:Arms	Spikey_Arms1	5				AD_Spikey_Arms1
+armor:Arms	Spikey_Arms2	5				AD_Spikey_Arms2
+armor:Arms	Stitch_Arms	10				AD_Stitch_Arms
+armor:Arms	Talion_Arms	1602224220				AD_Talion_Arms
+armor:Arms	Talion_Celebrimbor_Ring	0				AD_Talion_Celebrimbor_Ring
+armor:Arms	Talion_Isildur_Ring	0				AD_Talion_Isildur_Ring
+armor:Arms	TheBeast_Arms	50				AD_TheBeast_Arms
+armor:Arms	Torturer_Arms	1602224220				AD_Torturer_Arms
+armor:Arms	Torturer_Arms_DoNotReplace	1602224220				AD_Torturer_Arms
+armor:Arms	Unashamed_Arms	10				AD_Unashamed_Arms
+armor:Arms	Warmonger_Arms	20				AD_Warmonger_Arms
+armor:Arms	Warmonger_Arms_NotTribeDoNotReplace	10				AD_Warmonger_Arms
+armor:Arms	Zog_Arms	10				AD_Zog_Arms
+armor:Arms	olog_burns_body_leftArm	15	Trait_Olog			AD_empty_arms
+armor:Arms	olog_burns_body_rightArm	0	Trait_Olog			AD_empty_arms
+armor:Arms	orc_recordkeeper_body_Arml	12				AD_empty_arms
+armor:BodyReplacement	Body_Scar_BodyReplacement	0				AD_Body_Scar
+armor:BodyReplacement	Dragonborn_Body	50	Trait_Olog			AD_Dragonborn_Body
+armor:BodyReplacement	Flint_Body	20				AD_Flint_Body
+armor:BodyReplacement	Glutton_Body	50				AD_Glutton_Body
+armor:BodyReplacement	IT_Body_Scar	0				AD_Body_Scar
+armor:BodyReplacement	Infested_Body	50	Trait_AllBut_Olog			AD_Infested_Body
+armor:BodyReplacement	Item_BodyModel_Forced_Buff	0				AD_BodyModel_Forced_Buff
+armor:BodyReplacement	Machine_Body	50				AD_Machine_Body
+armor:BodyReplacement	Tinder_Body	0				AD_Tinder_Body
+armor:BodyReplacement	Tower_Body	50				AD_Tower_Body
+armor:BodyReplacement	olog_Bloody_Face	20	Trait_Olog			AD_Body_Scar
+armor:BodyReplacement	olog_Cursed	15	Trait_Olog			AD_Body_Scar
+armor:BodyReplacement	olog_Glutton_Body	20	Trait_Olog			AD_Body_Scar
+armor:BodyReplacement	orc_Bloody_Face	20	Trait_AllBut_Olog			AD_Body_Scar
+armor:BodyReplacement	orc_Cursed	15				AD_Body_Scar
+armor:BodyReplacement	orc_Glutton_Body	20	Trait_AllBut_Olog			AD_Body_Scar
+armor:Chest	Amputator_Chest	10				AD_Amputator_Chest
+armor:Chest	Ancient_Chest	10				AD_Ancient_Chest
+armor:Chest	Apron_Chest	10				AD_Apron_Chest
+armor:Chest	Architect_Chest	50				AD_Architect_Chest
+armor:Chest	Baranor_4Armor_1Default	0				AD_DesertT1_Armor
+armor:Chest	Beast_Chest	2				AD_Beast_Chest
+armor:Chest	Beast_Chest_DoNotReplace	10				AD_Beast_Chest
+armor:Chest	Beastmaster_Chest	5				AD_Beastmaster_Chest
+armor:Chest	Berserker_Chest	5				AD_Berserker_Chest
+armor:Chest	Berserker_Chest_DoNotReplace	10				AD_Berserker_Chest
+armor:Chest	Black_Chest	2				AD_Black_Chest
+armor:Chest	Black_Chest_DoNoReplace	10				AD_Black_Chest
+armor:Chest	Blight_Chest	10				AD_Blight_Chest
+armor:Chest	Bone_Armor_Full	10				AD_Bone_Armor_Full
+armor:Chest	Bone_Chest	10				AD_Bone_Chest
+armor:Chest	CV_AC_NullChest	5				CV_NullChest
+armor:Chest	CV_Berserker_Chest	2				AD_Berserker_Chest
+armor:Chest	CV_Tribe_NullChest	2				CV_NullChest
+armor:Chest	CollectorBottles_Chest	10				AD_CollectorBottles_Chest
+armor:Chest	CollectorMeat_Chest	10				AD_CollectorMeat_Chest
+armor:Chest	CollectorScrolls_Chest	10				AD_CollectorScrolls_Chest
+armor:Chest	Commander_Chest	5				AD_Commander_Chest
+armor:Chest	Commander_Chest_DoNotReplace	10				AD_Commander_Chest
+armor:Chest	CrudeNecklace_Chest	10				AD_CrudeNecklace_Chest
+armor:Chest	Defender_Chest	0				AD_Defender_Chest
+armor:Chest	Defender_Shoulders	0				AD_Defender_Shoulders
+armor:Chest	Destroyer_Chest	5				AD_Destroyer_Chest
+armor:Chest	Destroyer_Chest_DoNotReplace	10				AD_Destroyer_Chest
+armor:Chest	Doppel_Chest_TorturerBling	1602224220				AD_Torturer_ChestBling_BuffOnly
+armor:Chest	Druid_Chest	5				AD_Druid_Chest
+armor:Chest	Druid_Chest_DoNotReplace	10				AD_Druid_Chest
+armor:Chest	DwarfHater_Chest	10				AD_DwarfHater_Chest
+armor:Chest	Easterling_Desert_Grunt	1602224220				AD_Easterling_Desert_Grunt
+armor:Chest	Easterling_Light_Chest	1602224220				AD_Easterling_Light_Chest
+armor:Chest	Easterling_Plate_Chest	1602224220				AD_Easterling_Plate_Chest
+armor:Chest	Eltariel_4Armor_Base	0			DLC3_Base_4Armor	AD_BladeT1_Armor
+armor:Chest	Eltariel_4Armor_Beast	0			DLC3_Beast_MtnPass_4Armor	AD_WoodElfT1_Armor_Tint_Beast
+armor:Chest	Eltariel_4Armor_Fire	0			DLC3_Fire_Volcano_4Armor	AD_WoodElfT1_Armor_Tint_Fire
+armor:Chest	Eltariel_4Armor_FrostCurse	0			DLC3_FrostCurse_SnowMtn_4Armor	AD_WoodElfT1_Armor_Tint_Frost
+armor:Chest	Eltariel_4Armor_Light	0			DLC3_Light_4Armor	AD_BladeT1_Armor_Tint_Light
+armor:Chest	Eltariel_4Armor_Poison	0			DLC3_Poison_Island_4Armor	AD_WoodElfT1_Armor_Tint_Poison
+armor:Chest	Eltariel_4Armor_WoodElf	0			DLC3_Beast_MtnPass_4Armor	AD_WoodElfT1_Armor_Tint_WoodElf
+armor:Chest	Elven_Chest	10				AD_Elven_Chest
+armor:Chest	Enchanted_Chest	10				AD_Enchanted_Chest
+armor:Chest	Executioner_Chest	10				AD_Executioner_Chest
+armor:Chest	FaceCape_Chest	10				AD_FaceCape_Chest
+armor:Chest	Flint_Chest	50				AD_Flint_Chest
+armor:Chest	GP_Acolyte_Chest_Mix	10				AD_Mystic_Chest
+armor:Chest	GP_Fixer_Chest_Mix	10				AD_Leather_Chest
+armor:Chest	GhulKeeper_Chest	10				AD_GhulKeeper_Chest
+armor:Chest	Glutton_Chest	10				AD_Glutton_Chest
+armor:Chest	Grog_Chest	10				AD_Grog_Chest
+armor:Chest	Heavy_Chest	0				AD_Heavy_Chest
+armor:Chest	Hunter_Chest	5				AD_Hunter_Chest
+armor:Chest	Hunter_Chest_DoNotReplace	10				AD_Hunter_Chest
+armor:Chest	IT_Sauron_Savage_Chest	1602224220				AD_Sauron_Savage_Chest
+armor:Chest	IT_Savage_Chest_DoNotReplace	1602224220				AD_Savage_Chest
+armor:Chest	IT_empty_Savage_chest	1602224220				AD_empty_chest
+armor:Chest	IT_empty_chest	1602224220				AD_empty_chest
+armor:Chest	Industrial_Chest	2				AD_Industrial_Chest
+armor:Chest	Industrial_Chest_DoNotReplace	10				AD_Industrial_Chest
+armor:Chest	Item_AI_Talion_Armor	0				AD_BlackNumT4_Armor_Tint_Ringwraith
+armor:Chest	Leather_Chest	10				AD_Leather_Chest
+armor:Chest	Maggot_Chest	20				AD_Maggot_Chest
+armor:Chest	Marksman_Chest	5				AD_Marksman_Chest
+armor:Chest	Mystic_Chest	2				AD_Mystic_Chest
+armor:Chest	Mystic_ChestBling_DoNotReplace	10				AD_Mystic_ChestBling
+armor:Chest	Mystic_Chest_DoNotRemove	10				AD_Mystic_Chest
+armor:Chest	Orc_Backpack_Chest	0				AD_Orc_Backpack
+armor:Chest	Primary_4Armor_1DarkRanger	0				AD_BlackNumT1_Armor_Tint_DarkRanger
+armor:Chest	Primary_4Armor_1Default	0				AD_RangerT1_Armor_Starting
+armor:Chest	Primary_4Armor_2Standard	0				AD_GondorianT1_Armor_Tint1_2Common
+armor:Chest	Primary_4Armor_3Rare	0				AD_GondorianT1_Armor_Tint1_2Common
+armor:Chest	Primary_4Armor_3Rare_DebugGrant	0				AD_GondorianT1_Armor_Tint1_2Common
+armor:Chest	Primary_4Armor_4Epic	0				AD_GondorianT1_Armor_Tint1_2Common
+armor:Chest	Primary_4Armor_4Epic_DebugGrant	0				AD_GondorianT1_Armor_Tint1_2Common
+armor:Chest	Primary_4Armor_5Lgnd_Celebrimbor	1			NG_5Lgnd_Celebrimbor_4Armor	AD_ElvenT1_Armor_Tint_Celebrimbor
+armor:Chest	Primary_4Armor_5Lgnd_Celebrimbor_DebugGrant	1			NG_5Lgnd_Celebrimbor_4Armor	AD_ElvenT1_Armor_Tint_Celebrimbor
+armor:Chest	Primary_4Armor_5Lgnd_Celebrimbor_SotP	0				AD_ElvenT4_Armor_Tint_Celebrimbor
+armor:Chest	Primary_4Armor_5Lgnd_Celebrimbor_Wraith	0			NG_5Lgnd_Celebrimbor_4Armor_Wraith	AD_ElvenT4_Armor_Tint_Celebrimbor
+armor:Chest	Primary_4Armor_5Lgnd_Dark	0				AD_BlackNumT1_Armor_Tint_Dark
+armor:Chest	Primary_4Armor_5Lgnd_Dark_DebugGrant	0				AD_BlackNumT1_Armor_Tint_Dark
+armor:Chest	Primary_4Armor_5Lgnd_Feral	0				AD_HaradrimT1_Armor_Tint_Feral
+armor:Chest	Primary_4Armor_5Lgnd_Feral_DebugGrant	0				AD_HaradrimT1_Armor_Tint_Feral
+armor:Chest	Primary_4Armor_5Lgnd_Machine	0				AD_DwarvenT1_Armor_Light_Blue_Machine
+armor:Chest	Primary_4Armor_5Lgnd_Machine_DebugGrant	0				AD_DwarvenT1_Armor_Light_Blue_Machine
+armor:Chest	Primary_4Armor_5Lgnd_Marauder	0				AD_HaradrimT1_Armor_Tint_Marauder
+armor:Chest	Primary_4Armor_5Lgnd_Marauder_DebugGrant	0				AD_HaradrimT1_Armor_Tint_Marauder
+armor:Chest	Primary_4Armor_5Lgnd_Mystic	0				AD_ElvenT1_Armor_Tint_Mystic
+armor:Chest	Primary_4Armor_5Lgnd_Mystic_DebugGrant	0				AD_ElvenT1_Armor_Tint_Mystic
+armor:Chest	Primary_4Armor_5Lgnd_Outlaw	0				AD_RhovanionT1_Armor_Tint_Outlaw
+armor:Chest	Primary_4Armor_5Lgnd_Outlaw_DebugGrant	0				AD_RhovanionT1_Armor_Tint_Outlaw
+armor:Chest	Primary_4Armor_5Lgnd_Ringwraith	0			NG_5Lgnd_Ringwraith_4Armor	AD_BlackNumT2_Armor_Tint_Ringwraith
+armor:Chest	Primary_4Armor_5Lgnd_Ringwraith_Black	0			NG_5Lgnd_Ringwraith_4Armor_Black	AD_BlackNumT4_Armor_Tint_Nazgul
+armor:Chest	Primary_4Armor_5Lgnd_Slaughter	0				AD_ElvenT1_Armor_Tint_Slaughter
+armor:Chest	Primary_4Armor_5Lgnd_Slaughter_DebugGrant	0				AD_ElvenT1_Armor_Tint_Slaughter
+armor:Chest	Primary_4Armor_5Lgnd_Terror	0				AD_BlackNumT1_Armor_Tint_Terror
+armor:Chest	Primary_4Armor_5Lgnd_Terror_DebugGrant	0				AD_BlackNumT1_Armor_Tint_Terror
+armor:Chest	Primary_4Armor_5Lgnd_Vendetta	1			NG_5Lgnd_Vendetta_4Armor	AD_BlackNumT1_Armor_Tint_Vendetta
+armor:Chest	Primary_4Armor_5Lgnd_Vendetta_DebugGrant	1			NG_5Lgnd_Vendetta_4Armor	AD_BlackNumT1_Armor_Tint_Vendetta
+armor:Chest	Primary_4Armor_5Lgnd_Warmonger	0				AD_DwarvenT1_Armor_Dark_Blue_Warmonger
+armor:Chest	Primary_4Armor_5Lgnd_Warmonger_DebugGrant	0				AD_DwarvenT1_Armor_Dark_Blue_Warmonger
+armor:Chest	Primary_4Armor_AD16	0				AD_RangerT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Dwarven1	0				AD_DwarvenT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Dwarven2	0				AD_DwarvenT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Dwarven3	0				AD_DwarvenT3_Armor
+armor:Chest	Primary_4Armor_ArtSet_Dwarven4	0				AD_DwarvenT4_Armor
+armor:Chest	Primary_4Armor_ArtSet_Elven1	0				AD_ElvenT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Elven2	0				AD_ElvenT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Elven3	0				AD_ElvenT3_Armor
+armor:Chest	Primary_4Armor_ArtSet_Elven4	0				AD_ElvenT4_Armor
+armor:Chest	Primary_4Armor_ArtSet_Gondor1	0				AD_GondorianT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Gondor2	0				AD_GondorianT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Haradrim1	0				AD_HaradrimT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Haradrim2	0				AD_HaradrimT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Haradrim3	0				AD_HaradrimT3_Armor
+armor:Chest	Primary_4Armor_ArtSet_Haradrim4	0				AD_HaradrimT4_Armor
+armor:Chest	Primary_4Armor_ArtSet_Numenor1	0				AD_BlackNumT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Numenor2	0				AD_BlackNumT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Numenor3	0				AD_BlackNumT3_Armor
+armor:Chest	Primary_4Armor_ArtSet_Numenor4	0				AD_BlackNumT4_Armor
+armor:Chest	Primary_4Armor_ArtSet_Ranger1	0				AD_RangerT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Ranger2	0				AD_RangerT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Ranger3	0				AD_RangerT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Ranger4	0				AD_RangerT2_Armor
+armor:Chest	Primary_4Armor_ArtSet_Rohan1	0				AD_RohanT1_Armor
+armor:Chest	Primary_4Armor_ArtSet_Rohan2	0				AD_RohanT2_Armor
+armor:Chest	Primary_4Armor_DEMO_Reward	0				AD_RohanT2_Armor
+armor:Chest	Ranger_Beast_Chest_Reference	100				AD_Beast_Chest
+armor:Chest	RavenCloak_Chest	10				AD_RavenCloak_Chest
+armor:Chest	Regal_Chest	2				AD_Regal_Chest
+armor:Chest	Regal_Chest_DoNotRemove	10				AD_Regal_Chest
+armor:Chest	Rogue_Chest	10				AD_Rogue_Chest
+armor:Chest	Rogue_Chest_NoVest	10				AD_Rogue_Chest_NoVest
+armor:Chest	Sauron_Chest	1602224220				AD_Sauron_Chest
+armor:Chest	Scavenger_Chest	2				AD_Scavenger_Chest
+armor:Chest	Scavenger_ChestBling_DoNotReplace	10				AD_Scavenger_ChestBling
+armor:Chest	Scavenger_Chest_DoNotRemove	10				AD_Scavenger_Chest
+armor:Chest	Shopkeeper_Chest	10				AD_Shopkeeper_Chest
+armor:Chest	Slaughter_Chest	2				AD_Slaughter_Chest
+armor:Chest	Slaughter_Chest_DoNotReplace	10				AD_Slaughter_Chest
+armor:Chest	Slayer_Chest	10				AD_Slayer_Chest
+armor:Chest	Spiked_Chest	10				AD_Spiked_Chest
+armor:Chest	Spikey_Chest	0				AD_Spikey_Chest
+armor:Chest	Spikey_Chest1	5				AD_Spikey_Chest1
+armor:Chest	Spikey_Chest2	5				AD_Spikey_Chest2
+armor:Chest	Stitch_Chest	10				AD_Stitch_Chest
+armor:Chest	Tailor_Chest	10				AD_Tailor_Chest
+armor:Chest	Talion_Chest	1602224220				AD_Talion_Chest
+armor:Chest	Tank_Chest	5				AD_Tank_Chest
+armor:Chest	Tank_Chest_DoNotReplace	10				AD_Tank_Chest
+armor:Chest	TheBeast_Chest	10				AD_TheBeast_Chest
+armor:Chest	Thrall_Chest	20				AD_Thrall_Chest
+armor:Chest	Tinder_Chest	50				AD_Tinder_Chest
+armor:Chest	Torturer_Chest	1602224220				AD_Torturer_Chest
+armor:Chest	Torturer_ChestBling_DoNotRemove	1602224220				AD_Torturer_ChestBling
+armor:Chest	Torturer_Chest_DoNotRemove	1602224220				AD_Torturer_Chest
+armor:Chest	Tracker_Chest	5				AD_Tracker_Chest
+armor:Chest	Tracker_Chest_DoNotReplace	10				AD_Tracker_Chest
+armor:Chest	Trickster_Chest	5				AD_Trickster_Chest
+armor:Chest	Tumor_Chest	20				AD_Tumor_Chest
+armor:Chest	Unashamed_Chest	1602224220				AD_Unashamed_Chest
+armor:Chest	VatKeeper_Chest	10				AD_VatKeeper_Chest
+armor:Chest	WargRare_Armor_Chest	0				AD_Warg_Rare_Armor_Chest
+armor:Chest	Warg_Armor_Chest	1602224220				AD_Warg_Armor_Chest
+armor:Chest	Warmonger_Chest	2				AD_Warmonger_Chest
+armor:Chest	Warmonger_ChestBling_DoNotReplace	10				AD_Warmonger_ChestBling
+armor:Chest	Warmonger_Chest_DoNotReplace	10				AD_Warmonger_Chest
+armor:Chest	Zog_Chest	10				AD_Zog_Chest
+armor:Chest	olog_burns_body_leftChest	1602224220	Trait_Olog			AD_empty_chest
+armor:Chest	olog_burns_body_rightChest	1602224220	Trait_Olog			AD_empty_chest
+armor:Chest	olog_curse_body_LeftBody	0	Trait_Olog			AD_empty_chest
+armor:Chest	orc_burns_body_leftChest	1602224220				AD_empty_chest
+armor:Chest	orc_burns_body_rightChest	1602224220				AD_empty_chest
+armor:Chest	orc_multipleScars_body_01	12				AD_empty_chest
+armor:Chest	orc_recordkeeper_body_chest	12				AD_empty_chest
+armor:HeadAccessory1	Cine_Carnun_Hair	0				Cine_Carnun_Hair
+armor:HeadAccessory1	Easterling_Mask	1602224220				AD_Easterling_Mask
+armor:HeadAccessory1	GoldTooth_Helmet	10				AD_GoldTooth_Helmet
+armor:HeadAccessory1	Idril_Hair	0				AD_Idril_Hair
+armor:HeadAccessory1	L_Graug_A_Pult_BoxesUpper	1602224220				AD_L_Graug_A_Pult_BoxesUpper
+armor:HeadAccessory1	MetalJaw_Helmet	1602224220				AD_MetalJaw_Helmet
+armor:HeadAccessory1	Sauron_FairForm_Hair	0				AD_Sauron_FairForm_Hair
+armor:HeadAccessory1	Talion_Hair	0				AD_Talion_Hair
+armor:HeadAccessory1	Talion_Hair_Right	0				AD_Talion_Hair
+armor:HeadAccessory1	Talion_Hood	0				AD_Talion_Hood
+armor:HeadAccessory1	Talion_Hood_Right	0				AD_Talion_Hood
+armor:HeadReplacement	Architect_Head	1602224220	Trait_Olog			AD_Architect_Head
+armor:HeadReplacement	Beast_Head	1602224220	Trait_Olog			AD_Beast_Head
+armor:HeadReplacement	Blight_Head	20				AD_Blight_Head
+armor:HeadReplacement	Doppel_Head01_G_BuffOnly	20				AD_Head01_G
+armor:HeadReplacement	Fixer_Head	1602224220	Trait_AllBut_Olog			AD_Fixer_Head
+armor:HeadReplacement	Flint_Head	20				AD_Flint_Head
+armor:HeadReplacement	GP_Fixer_Head_Mix	10				AD_Fixer_Head
+armor:HeadReplacement	Glutton_Head	1602224220	Trait_Olog			AD_Glutton_Head
+armor:HeadReplacement	Head01_G	20				AD_Head01_G
+armor:HeadReplacement	Infested_Head	20	Trait_AllBut_Olog			AD_Infested_Head
+armor:HeadReplacement	LongTooth_Head	0				AD_LongTooth_Head
+armor:HeadReplacement	Machine_Head	0				AD_Machine_Head
+armor:HeadReplacement	Merchent_HeadReplacement	20				AD_Merchant_Head
+armor:HeadReplacement	Metal_Head	19				AD_Metal_Head
+armor:HeadReplacement	Sack_Head	19				AD_Sack_Head
+armor:HeadReplacement	Stitch_Head	0	Trait_Olog			AD_Stitch_Head
+armor:HeadReplacement	Tinder_Head	0	Trait_AllBut_Olog			AD_Tinder_Head
+armor:HeadReplacement	Tower_Head	20				AD_Tower_Head
+armor:HeadReplacement	Tumor_Head	20	Trait_AllBut_Olog			AD_Tumor_Head
+armor:HeadReplacement	Twin_Head	20				AD_Twin_Head
+armor:Helmet	Amputator_Helmet	10				AD_Amputator_Helmet
+armor:Helmet	Architect_Helmet	50				AD_Architect_Helmet
+armor:Helmet	Bane_Helmet	10				AD_Bane_Helmet
+armor:Helmet	Beast_Helmet	1602224220				AD_Beast_Helmet
+armor:Helmet	Beast_Helmet_DoNotReplace	1602224220				AD_Beast_Helmet
+armor:Helmet	Beastmaster_Helmet	10				AD_Beastmaster_Helmet
+armor:Helmet	Beheader_Helmet	10				AD_Beheader_Helmet
+armor:Helmet	Beheader_Helmet_noHead	10				AD_Beheader_Helmet_noHead
+armor:Helmet	BigNose_Helmet	10				AD_BigNose_Helmet
+armor:Helmet	Black_Helmet	2				AD_Black_Helmet
+armor:Helmet	Black_HelmetBling_DoNotReplace	10				AD_Black_HelmetBling
+armor:Helmet	Black_Helmet_DoNotReplace	10				AD_Black_Helmet
+armor:Helmet	Black_Helmet_Hood	2				AD_Black_Helmet_Hood
+armor:Helmet	Black_Helmet_Hood_DoNotReplace	10				AD_Black_Helmet_Hood
+armor:Helmet	Blight_Helmet	10				AD_Blight_Helmet
+armor:Helmet	Blood_Helmet	10				AD_Blood_Helmet
+armor:Helmet	BrokenShield_Helmet	10				AD_BrokenShield_Helmet
+armor:Helmet	Bug_Helmet	10				AD_Bug_Helmet
+armor:Helmet	CV_AC_NullHelmet	5				CV_NullHelmet
+armor:Helmet	CV_Tribe_NullHelmet	2				CV_NullHelmet
+armor:Helmet	Chain_Helmet	0				AD_Chain_Helmet
+armor:Helmet	CombatMaster_Helmet	5				AD_CombatMaster_Helmet
+armor:Helmet	Commander_Helmet	5				AD_Commander_Helmet
+armor:Helmet	Commander_Helmet_DoNotReplace	5				AD_Commander_Helmet
+armor:Helmet	CrackedBeast_Helmet	10				AD_CrackedBeast_Helmet
+armor:Helmet	Deadeye_Helmet	10				AD_Deadeye_Helmet
+armor:Helmet	DeathBone_Helmet	10				AD_DeathBone_Helmet
+armor:Helmet	Destroyer_Helmet	5				AD_Destroyer_Helmet
+armor:Helmet	Destroyer_Helmet_DoNotReplace	5				AD_Destroyer_Helmet
+armor:Helmet	Digger_Helmet	10				AD_Digger_Helmet
+armor:Helmet	Doppel_Helmet_IndustrialBling	10				AD_Industrial_HelmetBling_BuffOnly
+armor:Helmet	Druid_Helmet	10				AD_Druid_Helmet
+armor:Helmet	Drunk_Helmet	10				AD_Drunk_Helmet
+armor:Helmet	DwarfHater_Helmet	10				AD_DwarfHater_Helmet
+armor:Helmet	Easterling_Light_Helmet	1602224220				AD_Easterling_Light_Helmet
+armor:Helmet	Easterling_Light_Helmet1	1602224220				AD_Easterling_Light_Helmet1
+armor:Helmet	Easterling_Light_Helmet2	1602224220				AD_Easterling_Light_Helmet2
+armor:Helmet	Easterling_Light_Helmet3	1602224220				AD_Easterling_Light_Helmet3
+armor:Helmet	Easterling_Light_Helmet4	1602224220				AD_Easterling_Light_Helmet4
+armor:Helmet	Easterling_Light_Helmet5	1602224220				AD_Easterling_Light_Helmet5
+armor:Helmet	Easterling_Plate_Helmet	1602224220				AD_Easterling_Plate_Helmet
+armor:Helmet	Easterling_Plate_Helmet1	1602224220				AD_Easterling_Plate_Helmet1
+armor:Helmet	Easterling_Plate_Helmet2	1602224220				AD_Easterling_Plate_Helmet2
+armor:Helmet	Easterling_Plate_Helmet3	1602224220				AD_Easterling_Plate_Helmet3
+armor:Helmet	Easterling_Plate_Helmet4	1602224220				AD_Easterling_Plate_Helmet4
+armor:Helmet	Easterling_Plate_Helmet5	1602224220				AD_Easterling_Plate_Helmet5
+armor:Helmet	Elven_Helmet	10				AD_Elven_Helmet
+armor:Helmet	Enchanted_Helmet	10				AD_Enchanted_Helmet
+armor:Helmet	Executioner_Helmet	10				AD_Executioner_Helmet
+armor:Helmet	Feather_Helmet	10				AD_Feather_Helmet
+armor:Helmet	Fire_Helmet	10				AD_Fire_Helmet
+armor:Helmet	FlintHair_Helmet	50				AD_FlintHair_Helmet
+armor:Helmet	GP_Acolyte_Helm_Mix	10				AD_Black_Helmet_Hood
+armor:Helmet	GP_Fixer_Helm_Mix	10				AD_empty_head
+armor:Helmet	GhulKeeper_Helmet	10				AD_GhulKeeper_Helmet
+armor:Helmet	Grog_Helmet	10				AD_Grog_Helmet
+armor:Helmet	HalfMask_Helmet	10				AD_HalfMask_Helmet
+armor:Helmet	Hangman_Helmet	10				AD_Hangman_Helmet
+armor:Helmet	Heavy_Helmet	0				AD_Heavy_Helmet
+armor:Helmet	Heavy_Helmet1	5				AD_Heavy_Helmet1
+armor:Helmet	Heavy_Helmet2	5				AD_Heavy_Helmet2
+armor:Helmet	Heavy_Helmet3	5				AD_Heavy_Helmet3
+armor:Helmet	Hunter_Helmet	5				AD_Hunter_Helmet
+armor:Helmet	Hunter_Helmet_DoNotReplace	10				AD_Hunter_Helmet
+armor:Helmet	IT_empty_head	1602224220				AD_empty_head
+armor:Helmet	IT_empty_head_HighWeight	1602224220				AD_empty_head_NoHair
+armor:Helmet	IT_empty_head_LowWeight	1602224220				AD_empty_head
+armor:Helmet	IT_empty_head_NoHair	1602224220				AD_empty_head_NoHair
+armor:Helmet	Industrial_Helmet	2				AD_Industrial_Helmet
+armor:Helmet	Industrial_HelmetBling_DoNotReplace	10				AD_Industrial_HelmetBling
+armor:Helmet	Industrial_Helmet_DoNotReplace	10				AD_Industrial_Helmet
+armor:Helmet	Juggernaut_Helmet	10				AD_Juggernaut_Helmet
+armor:Helmet	Marksman_Helmet	5				AD_Marksman_Helmet
+armor:Helmet	Marksman_Helmet_DoNotReplace	10				AD_Marksman_Helmet
+armor:Helmet	Master_Helmet	10				AD_Master_Helmet
+armor:Helmet	MetalBandage_Helmet	15				AD_MetalBandage_Helmet
+armor:Helmet	MetalBeard_Helmet	10				AD_MetalBeard_Helmet
+armor:Helmet	MetalCap_Helmet	15				AD_MetalCap_Helmet
+armor:Helmet	Mystic_Helmet	1602224220				AD_Mystic_Helmet
+armor:Helmet	Mystic_HelmetBling_DoNotReplace	1602224220				AD_Mystic_HelmetBling
+armor:Helmet	Mystic_Helmet_DoNotRemove	1602224220				AD_Mystic_Helmet
+armor:Helmet	RamSkull_Helmet	10				AD_RamSkull_Helmet
+armor:Helmet	Ranger_Beast_Helmet_Reference	1602224220				AD_Beast_Helmet
+armor:Helmet	Regal_Helmet	2				AD_Regal_Helmet
+armor:Helmet	Regal_HelmetBling_DoNotRemove	10				AD_Regal_HelmetBling
+armor:Helmet	Regal_Helmet_DoNotRemove	10				AD_Regal_Helmet
+armor:Helmet	Rogue_Helmet	10				AD_Rogue_Helmet
+armor:Helmet	Sauron_Helmet	1602224220				AD_Sauron_Helmet
+armor:Helmet	Scavenger_Helmet	2				AD_Scavenger_Helmet
+armor:Helmet	Scavenger_HelmetBling_DoNotReplace	10				AD_Scavenger_HelmetBling
+armor:Helmet	Scavenger_Helmet_DoNotRemove	10				AD_Scavenger_Helmet
+armor:Helmet	Serpent_Helmet	10				AD_Serpent_Helmet
+armor:Helmet	Shaman_Helmet	10				AD_Shaman_Helmet
+armor:Helmet	Singer_Helmet	10				AD_Singer_Helmet
+armor:Helmet	SkullAxe_Helmet	12				AD_SkullAxe_Helmet
+armor:Helmet	SkullDagger_Helmet	12				AD_SkullDagger_Helmet
+armor:Helmet	Slaughter_Helmet	2				AD_Slaughter_Helmet
+armor:Helmet	Slaughter_Helmet_DontReplace	10				AD_Slaughter_Helmet
+armor:Helmet	Slaver_Helmet	10				AD_Slaver_Helmet
+armor:Helmet	Slayer_Helmet	10				AD_Slayer_Helmet
+armor:Helmet	Sniper_Hair_Helmet	50				AD_Sniper_Hair_Helmet
+armor:Helmet	Spiders_Helmet	10				AD_Spiders_Helmet
+armor:Helmet	Spikey_Helmet	0				AD_Spikey_Helmet
+armor:Helmet	Spikey_Helmet1	5				AD_Spikey_Helmet1
+armor:Helmet	Spikey_Helmet2	5				AD_Spikey_Helmet2
+armor:Helmet	Tailor_Helmet	10				AD_Tailor_Helmet
+armor:Helmet	Talion_Helmet	1602224220				AD_Talion_Helmet
+armor:Helmet	Thrall_Helmet	20				AD_Thrall_Helmet
+armor:Helmet	TinderHair_Helmet	50				AD_TinderHair_Helmet
+armor:Helmet	Torturer_Helmet	1602224220				AD_Torturer_Helmet
+armor:Helmet	Torturer_HelmetBling_DoNotRemove	1602224220				AD_Torturer_Helmet_Bling
+armor:Helmet	Torturer_Helmet_DoNotRemove	1602224220				AD_Torturer_Helmet
+armor:Helmet	Tracker_Helmet	5				AD_Tracker_Helmet
+armor:Helmet	Tracker_Helmet_DoNotReplace	10				AD_Tracker_Helmet
+armor:Helmet	TrollTusk_Helmet	10				AD_TrollTusk_Helmet
+armor:Helmet	Unashamed_Helmet	1602224220				AD_Unashamed_Helmet
+armor:Helmet	Warmonger_Helmet	2				AD_Warmonger_Helmet
+armor:Helmet	Warmonger_HelmetBling_DoNotReplace	10				AD_Warmonger_HelmetBling
+armor:Helmet	Warmonger_Helmet_DoNotReplace	10				AD_Warmonger_Helmet
+armor:Helmet	Zog_Helmet	10				AD_Zog_Helmet
+armor:Helmet	olog_Exposed_Brain_01	15	Trait_Olog			AD_MetalBandage_Helmet
+armor:Helmet	olog_Exposed_Brain_02	15	Trait_Olog			AD_MetalCap_Helmet
+armor:Helmet	olog_burns_head_leftFace_01	1602224220	Trait_Olog			AD_empty_head
+armor:Helmet	olog_burns_head_leftFace_02	15	Trait_Olog			AD_empty_head
+armor:Helmet	olog_burns_head_massive_01	1602224220	Trait_Olog			AD_empty_head
+armor:Helmet	olog_gouge_head_01	12	Trait_Olog			AD_empty_head
+armor:Helmet	olog_maggot_head_01	1602224220				AD_empty_head_NoHair
+armor:Helmet	olog_poison_head_01	15	Trait_Olog			AD_empty_head
+armor:Helmet	olog_poison_head_02	15	Trait_Olog			AD_empty_head
+armor:Helmet	orc_Exposed_Brain_01	1602224220				AD_MetalBandage_Helmet
+armor:Helmet	orc_Exposed_Brain_02	1602224220				AD_MetalCap_Helmet
+armor:Helmet	orc_burns_head_leftFace_01	15				AD_empty_head
+armor:Helmet	orc_burns_head_leftFace_02	15				AD_empty_head
+armor:Helmet	orc_burns_head_massive_01	15				AD_empty_head
+armor:Helmet	orc_maggot_head_01	1602224220				AD_empty_head_NoHair
+armor:Helmet	orc_mauled_head_01	0				AD_empty_head
+armor:Helmet	orc_mauled_head_02	0				AD_empty_head
+armor:Helmet	orc_mauled_head_03	0				AD_empty_head
+armor:Helmet	orc_mauled_head_04	0				AD_empty_head
+armor:Helmet	orc_poison_head_01	15				AD_empty_head
+armor:Helmet	orc_poison_head_02	15				AD_empty_head
+armor:Helmet	orc_recordkeeper_head_01	12				AD_empty_head
+armor:Helmet	orc_sauron_brand	1602224220				AD_empty_head
+armor:Legs	Beast_Legs	2				AD_Beast_Legs
+armor:Legs	Beast_Legs_DoNotReplace	10				AD_Beast_Legs
+armor:Legs	Black_Legs	2				AD_Black_Legs
+armor:Legs	Black_Legs_DoNotReplace	10				AD_Black_Legs
+armor:Legs	CV_AC_NullLegs	5				CV_NullLegs
+armor:Legs	CV_Tribe_NullLegs	2				CV_NullLegs
+armor:Legs	Chained_Accessory	0				AD_Chained_Accessory
+armor:Legs	Defender_Legs	0				AD_Defender_Legs
+armor:Legs	DesertGauntletT1_Gauntlet	0				AD_DesertGauntletT1_Gauntlet
+armor:Legs	Doppel_Legs_Industrial	10				AD_Industrial_Legs_BuffOnly
+armor:Legs	Druid_Legs	0				AD_Druid_Legs
+armor:Legs	Easterling_Light_Legs	1602224220				AD_Easterling_Light_Legs
+armor:Legs	Easterling_Plate_Legs	1602224220				AD_Easterling_Plate_Legs
+armor:Legs	Enchanted_Legs	10				AD_Enchanted_Legs
+armor:Legs	GP_Acolyte_Legs_Mix	10				AD_Mystic_Legs
+armor:Legs	GP_Fixer_Legs_Mix	10				AD_Black_Legs
+armor:Legs	Heavy_Legs	0				AD_Heavy_Legs
+armor:Legs	Heavy_Legs1	5				AD_Heavy_Legs1
+armor:Legs	Heavy_Legs2	5				AD_Heavy_Legs2
+armor:Legs	IT_empty_legs	1602224220				AD_empty_legs
+armor:Legs	Industrial_Legs	2				AD_Industrial_Legs
+armor:Legs	Industrial_Legs_DoNotReplace	10				AD_Industrial_Legs
+armor:Legs	Mystic_Legs	2				AD_Mystic_Legs
+armor:Legs	Mystic_Legs_DoNotRemove	10				AD_Mystic_Legs
+armor:Legs	Ranger_Beast_Legs_Reference	100				AD_Beast_Legs
+armor:Legs	Regal_Legs	2				AD_Regal_Legs
+armor:Legs	Regal_Legs_DoNotRemove	10				AD_Regal_Legs
+armor:Legs	Rogue_Legs	10				AD_Rogue_Legs
+armor:Legs	Scavenger_Legs	2				AD_Scavenger_Legs
+armor:Legs	Scavenger_Legs_DoNotRemove	10				AD_Scavenger_Legs
+armor:Legs	Slaughter_Legs	2				AD_Slaughter_Legs
+armor:Legs	Slaughter_Legs_DoNotReplace	10				AD_Slaughter_Legs
+armor:Legs	Spikey_Legs	0				AD_Spikey_Legs
+armor:Legs	Spikey_Legs1	5				AD_Spikey_Legs1
+armor:Legs	Spikey_Legs2	5				AD_Spikey_Legs2
+armor:Legs	Torturer_Legs	1602224220				AD_Torturer_Legs
+armor:Legs	Torturer_Legs_DoNotRemove	1602224220				AD_Torturer_Legs
+armor:Legs	Warmonger_Legs	2				AD_Warmonger_Legs
+armor:Legs	Warmonger_Legs_DoNotReplace	10				AD_Warmonger_Legs
+armor:Legs	Zog_Legs	10				AD_Zog_Legs
+armor:LowLOD	Flint_BodyLOD	50				AD_Flint_BodyLOD
+armor:LowLOD	IT_Easterling_UniBody_CaptainLOD	9001				AD_UniBody_CaptainLOD
+armor:LowLOD	IT_Easterling_UniBody_bodyLOD	0				AD_UniBody_bodyLOD
+armor:LowLOD	IT_Orc_Body_BlackBlade_LOD	0				AD_Orc_Body_LOD
+armor:LowLOD	IT_Orc_Body_Gravewalker_LOD	0				AD_Orc_Body_LOD
+armor:LowLOD	IT_Orc_Body_LOD	0				AD_Orc_Body_LOD
+armor:LowLOD	IT_Orc_Body_LOD_BuffOnly	1				AD_Orc_Body_LOD_BuffOnly
+armor:LowLOD	IT_Orc_Body_Rogue_LOD	0				AD_Orc_Body_LOD
+armor:LowLOD	IT_Orc_Body_Slave_LOD	0				AD_Orc_Body_LOD
+armor:LowLOD	IT_Orc_Body_Unashamed_LOD	0				AD_Orc_Body_LOD
+armor:LowLOD	Machine_BodyLOD	50				AD_Machine_BodyLOD
+armor:LowLOD	Tinder_BodyLOD	50				AD_Tinder_BodyLOD
+armor:Pants	Amputator_Pants	10				AD_Amputator_Pants
+armor:Pants	BaranorNoGauntlet	0				AD_Baranor_DesertT1_Hands
+armor:Pants	Baranor_DesertT1_Hands	0				AD_Baranor_DesertT1_Hands
+armor:Pants	Beast_Pants	2				AD_Beast_Pants
+armor:Pants	Beast_Pants_DoNotReplace	10				AD_Beast_Pants
+armor:Pants	Black_Grunt	2				AD_Black_Grunt
+armor:Pants	Black_Pants	2				AD_Black_Pants
+armor:Pants	Black_Pants_DoNotReplace	10				AD_Black_Pants
+armor:Pants	Blight_Pants	10				AD_Blight_Pants
+armor:Pants	CV_AC_NullPants	5				CV_NullPants
+armor:Pants	CV_Tribe_NullPants	2				CV_NullPants
+armor:Pants	Chain_Pants	0				AD_Chain_Pants
+armor:Pants	CombatMaster_Pants	5				AD_CombatMaster_Pants
+armor:Pants	CombatMaster_Pants_DoNotReplace	10				AD_CombatMaster_Pants
+armor:Pants	Defender_Pants	0				AD_Defender_Pants
+armor:Pants	Doppel_Pants_Industrial	10				AD_Industrial_Pants_BuffOnly
+armor:Pants	Druid_Pants	0				AD_Druid_Pants
+armor:Pants	DwarfHater_Pants	10				AD_DwarfHater_Pants
+armor:Pants	Easterling_Light_Pants	1602224220				AD_Easterling_Light_Pants
+armor:Pants	Easterling_Plate_Pants	1602224220				AD_Easterling_Plate_Pants
+armor:Pants	Eltariel_Bare_Hands	0				AD_Eltariel_Bare_Hands
+armor:Pants	Enchanted_Pants	10				AD_Enchanted_Pants
+armor:Pants	Flint_Pants	0				AD_Flint_Pants
+armor:Pants	Flint_Pants_DoNotReplace	10				AD_Flint_Pants
+armor:Pants	GP_Acolyte_Pants_Mix	10				AD_Mystic_Pants
+armor:Pants	GP_Fixer_Pants_Mix	10				AD_Leather_Pants
+armor:Pants	Glutton_Pants	0				AD_Glutton_Pants
+armor:Pants	Graug_A_Pult_BoxesUpper	1602224220				AD_Graug_A_Pult_BoxesUpper
+armor:Pants	Gravewalker_Pants	10				AD_Gravewalker_Pants
+armor:Pants	Grog_Pants	10				AD_Grog_Pants
+armor:Pants	Heavy_Pants	0				AD_Heavy_Pants
+armor:Pants	Heavy_Pants1	5				AD_Heavy_Pants1
+armor:Pants	Heavy_Pants2	5				AD_Heavy_Pants2
+armor:Pants	IT_Ratbag_Pants	1602224220				AD_Ratbag_Pants
+armor:Pants	IT_empty_pants	1602224220				AD_empty_pants
+armor:Pants	Industrial_Grunt	2				AD_Industrial_Grunt
+armor:Pants	Industrial_Pants	2				AD_Industrial_Pants
+armor:Pants	Industrial_Pants_DoNotReplace	10				AD_Industrial_Pants
+armor:Pants	Leather_Pants	10				AD_Leather_Pants
+armor:Pants	Marksman_Pants	5				AD_Marksman_Pants
+armor:Pants	Marksman_Pants_DoNotReplace	10				AD_Marksman_Pants
+armor:Pants	Mystic_Pants	2				AD_Mystic_Pants
+armor:Pants	Mystic_Pants_DoNotRemove	10				AD_Mystic_Pants
+armor:Pants	Player_RhovanionBare_Hands	0				AD_Player_TalionRhovanion_Hands
+armor:Pants	Player_TalionBare_Hands	0				AD_Player_TalionBare_Hands
+armor:Pants	Player_TalionBlackNum_Hands	0				AD_Player_TalionBlackNum_Hands
+armor:Pants	Player_TalionElvenT3_Hands	0				AD_Player_TalionElvenT3_Hands
+armor:Pants	Player_TalionElvenT3_Hands_Celebrimbor	0				AD_Player_TalionElvenT3_Hands_Celebrimbor
+armor:Pants	Player_TalionElvenT3_Hands_Mystic	0				AD_Player_TalionElvenT3_Hands_Mystic
+armor:Pants	Player_TalionElvenT3_Hands_Slaughter	0				AD_Player_TalionElvenT3_Hands_Slaughter
+armor:Pants	Player_TalionElvenT4_Hands	0				AD_Player_TalionElvenT4_Hands
+armor:Pants	Player_TalionElvenT4_Hands_Celebrimbor	0				AD_Player_TalionElvenT4_Hands_Celebrimbor
+armor:Pants	Player_TalionElvenT4_Hands_Mystic	0				AD_Player_TalionElvenT4_Hands_Mystic
+armor:Pants	Player_TalionElvenT4_Hands_Slaughter	0				AD_Player_TalionElvenT4_Hands_Slaughter
+armor:Pants	R_Graug_A_Pult_BoxesUpper	1602224220				AD_R_Graug_A_Pult_BoxesUpper
+armor:Pants	Ranger_Beast_Pants_Reference	100				AD_Beast_Pants
+armor:Pants	Regal_Pants	2				AD_Regal_Pants
+armor:Pants	Regal_Pants_DoNotRemove	10				AD_Regal_Pants
+armor:Pants	Regal_Pants_NoHolsters	10				AD_Regal_Pants_NoHolsters
+armor:Pants	Sauron_Armor	1602224220				AD_Sauron_Armor
+armor:Pants	Sauron_Armor_FullSet	1602224220				AD_Sauron_Armor_FullSet
+armor:Pants	Sauron_Gondor1	1602224220				AD_Sauron_Gondor1
+armor:Pants	Sauron_Pants	1602224220				AD_Sauron_Pants
+armor:Pants	Scavenger_Pants	2				AD_Scavenger_Pants
+armor:Pants	Scavenger_Pants_DoNotRemove	10				AD_Scavenger_Pants
+armor:Pants	Slaughter_Pants	2				AD_Slaughter_Pants
+armor:Pants	Slaughter_Pants_DoNotReplace	10				AD_Slaughter_Pants
+armor:Pants	Slayer_Pants	10				AD_Slayer_Pants
+armor:Pants	Standalone_Pants	0				AD_Standalone_Pants
+armor:Pants	Tailor_Pants	10				AD_Tailor_Pants
+armor:Pants	Talion_Armor	1602224220				AD_Talion_Armor
+armor:Pants	Talion_Armor_FullSet	1602224220				AD_Talion_Armor_Fullset
+armor:Pants	Talion_Pants	1602224220				AD_Talion_Pants
+armor:Pants	Thrall_Pants	20				AD_Thrall_Pants
+armor:Pants	Tinder_Pants	10				AD_Tinder_Pants
+armor:Pants	Torturer_Pants	1602224220				AD_Torturer_Pants
+armor:Pants	Torturer_Pants_DoNotRemove	1602224220				AD_Torturer_Pants
+armor:Pants	Trickster_Pants	5				AD_Trickster_Pants
+armor:Pants	Trickster_Pants_DoNotRemove	10				AD_Trickster_Pants
+armor:Pants	Unashamed_Pants	10				AD_Unashamed_Pants
+armor:Pants	VatKeeper_Pants	10				AD_VatKeeper_Pants
+armor:Pants	Warmonger_Pants	2				AD_Warmonger_Pants
+armor:Pants	Warmonger_Pants_DoNotReplace	10				AD_Warmonger_Pants
+armor:Pants	Zog_Pants	10				AD_Zog_Pants
+armor:Ring	Baranor_6Ring_1Default	0				AD_Talion_Ringcraft_Starting
+armor:Ring	Item_AI_Talion_Ring	0				6Ring_5Lgnd_Ringwraith
+armor:Ring	Primary_6Ring_1DarkRanger	0				AD_Talion_Ringcraft_DarkRanger
+armor:Ring	Primary_6Ring_1Default	0				AD_Talion_Ringcraft_Starting
+armor:Ring	Primary_6Ring_2Standard	0				AD_Talion_Ringcraft_Tint1_2Common
+armor:Ring	Primary_6Ring_3Rare	0				AD_Talion_Ringcraft_Tint1_2Common
+armor:Ring	Primary_6Ring_3Rare_DebugGrant	0				AD_Talion_Ringcraft_Tint1_2Common
+armor:Ring	Primary_6Ring_4Epic	0				AD_Talion_Ringcraft_Tint1_2Common
+armor:Ring	Primary_6Ring_4Epic_DebugGrant	0				AD_Talion_Ringcraft_Tint1_2Common
+armor:Ring	Primary_6Ring_5Lgnd_Celebrimbor	1			NG_5Lgnd_Celebrimbor_6Ring	6Ring_5Lgnd_Celebrimbor
+armor:Ring	Primary_6Ring_5Lgnd_Celebrimbor_DebugGrant	1			NG_5Lgnd_Celebrimbor_6Ring	6Ring_5Lgnd_Celebrimbor
+armor:Ring	Primary_6Ring_5Lgnd_Celebrimbor_SotP	0				6Ring_5Lgnd_Celebrimbor
+armor:Ring	Primary_6Ring_5Lgnd_Dark	0				6Ring_5Lgnd_Dark
+armor:Ring	Primary_6Ring_5Lgnd_Dark_DebugGrant	0				6Ring_5Lgnd_Dark
+armor:Ring	Primary_6Ring_5Lgnd_Feral	0				6Ring_5Lgnd_Feral
+armor:Ring	Primary_6Ring_5Lgnd_Feral_DebugGrant	0				6Ring_5Lgnd_Feral
+armor:Ring	Primary_6Ring_5Lgnd_Machine	0				6Ring_5Lgnd_Machine
+armor:Ring	Primary_6Ring_5Lgnd_Machine_DebugGrant	0				6Ring_5Lgnd_Machine
+armor:Ring	Primary_6Ring_5Lgnd_Marauder	0				6Ring_5Lgnd_Marauder
+armor:Ring	Primary_6Ring_5Lgnd_Marauder_DebugGrant	0				6Ring_5Lgnd_Marauder
+armor:Ring	Primary_6Ring_5Lgnd_Mystic	0				6Ring_5Lgnd_Mystic
+armor:Ring	Primary_6Ring_5Lgnd_Mystic_DebugGrant	0				6Ring_5Lgnd_Mystic
+armor:Ring	Primary_6Ring_5Lgnd_Outlaw	0				6Ring_5Lgnd_Outlaw
+armor:Ring	Primary_6Ring_5Lgnd_Outlaw_DebugGrant	0				6Ring_5Lgnd_Outlaw
+armor:Ring	Primary_6Ring_5Lgnd_Ringwraith	0			NG_5Lgnd_Ringwraith_6Ring	6Ring_5Lgnd_Ringwraith
+armor:Ring	Primary_6Ring_5Lgnd_Slaughter	0				6Ring_5Lgnd_Slaughter
+armor:Ring	Primary_6Ring_5Lgnd_Slaughter_DebugGrant	0				6Ring_5Lgnd_Slaughter
+armor:Ring	Primary_6Ring_5Lgnd_Terror	0				6Ring_5Lgnd_Terror
+armor:Ring	Primary_6Ring_5Lgnd_Terror_DebugGrant	0				6Ring_5Lgnd_Terror
+armor:Ring	Primary_6Ring_5Lgnd_Vendetta	1			NG_5Lgnd_Vendetta_6Ring	6Ring_5Lgnd_Vendetta
+armor:Ring	Primary_6Ring_5Lgnd_Vendetta_DebugGrant	1			NG_5Lgnd_Vendetta_6Ring	6Ring_5Lgnd_Vendetta
+armor:Ring	Primary_6Ring_5Lgnd_Warmonger	0				6Ring_5Lgnd_Warmonger
+armor:Ring	Primary_6Ring_5Lgnd_Warmonger_DebugGrant	0				6Ring_5Lgnd_Warmonger
+armor:Shoulder	Ancient_Shoulders	10				AD_Ancient_Shoulders
+armor:Shoulder	Baranor_5Cape_1Default	0				AD_DesertT1_Cloak
+armor:Shoulder	Beast_Shoulders	2				AD_Beast_Shoulders
+armor:Shoulder	Beast_Shoulders_DoNotReplace	10				AD_Beast_Shoulders
+armor:Shoulder	Beheader_Shoulders	10				AD_Beheader_Shoulders
+armor:Shoulder	Berserker_Shoulders	5				AD_Berserker_Shoulders
+armor:Shoulder	Berserker_Shoulders_DoNotReplace	10				AD_Berserker_Shoulders
+armor:Shoulder	Black_Shoulders	2				AD_Black_Shoulders
+armor:Shoulder	Black_ShouldersBling_DoNotReplace	10				AD_Black_ShouldersBling
+armor:Shoulder	Black_Shoulders_DoNotReplace	10				AD_Black_Shoulders
+armor:Shoulder	Blight_Shoulders	10				AD_Blight_Shoulders
+armor:Shoulder	Blood_Shoulders	10				AD_Blood_Shoulders
+armor:Shoulder	CV_AC_NullShoulders	5				CV_NullShoulders
+armor:Shoulder	CV_Berserker_Shoulders	2				AD_Berserker_Shoulders
+armor:Shoulder	CV_Tribe_NullShoulders	2				CV_NullShoulders
+armor:Shoulder	Chain_Shoulders	0				AD_Chain_Shoulders
+armor:Shoulder	Commander_Shoulders	5				AD_Commander_Shoulders
+armor:Shoulder	Commander_Shoulders_DoNotReplace	10				AD_Commander_Shoulders
+armor:Shoulder	Destroyer_Shoulders	5				AD_Destroyer_Shoulders
+armor:Shoulder	Destroyer_Shoulders_DoNotReplace	10				AD_Destroyer_Shoulders
+armor:Shoulder	Doppel_Shoulders_IndustrialBling	10				AD_Industrial_ShouldersBling_BuffOnly
+armor:Shoulder	Druid_Shoulders	5				AD_Druid_Shoulders
+armor:Shoulder	Druid_Shoulders_DoNotReplace	10				AD_Druid_Shoulders
+armor:Shoulder	Easterling_Light_Shoulders	1602224220				AD_Easterling_Light_Shoulders
+armor:Shoulder	Easterling_Plate_Shoulders	1602224220				AD_Easterling_Plate_Shoulders
+armor:Shoulder	Eltariel_5Cape_Base	0			DLC3_Base_5Cape	AD_BladeT1_Cloak
+armor:Shoulder	Eltariel_5Cape_Beast	0			DLC3_Beast_MtnPass_5Cape	AD_WoodElfT1_Cloak_Tint_Beast
+armor:Shoulder	Eltariel_5Cape_Fire	0			DLC3_Fire_Volcano_5Cape	AD_WoodElfT1_Cloak_Tint_Fire
+armor:Shoulder	Eltariel_5Cape_FrostCurse	0			DLC3_FrostCurse_SnowMtn_5Cape	AD_WoodElfT1_Cloak_Tint_Frost
+armor:Shoulder	Eltariel_5Cape_Light	0			DLC3_Light_5Cape	AD_BladeT1_Cloak_Tint_Light
+armor:Shoulder	Eltariel_5Cape_Poison	0			DLC3_Poison_Island_5Cape	AD_WoodElfT1_Cloak_Tint_Poison
+armor:Shoulder	Elven_Shoulders	10				AD_Elven_Shoulders
+armor:Shoulder	Enchanted_Shoulders	10				AD_Enchanted_Shoulders
+armor:Shoulder	GhulKeeper_Shoulders	10				AD_GhulKeeper_Shoulders
+armor:Shoulder	Heavy_Shoulders	0				AD_Heavy_Shoulders
+armor:Shoulder	IT_empty_shoulders	1602224220				AD_empty_shoulders
+armor:Shoulder	Industrial_Shoulders	2				AD_Industrial_Shoulders
+armor:Shoulder	Industrial_ShouldersBling_DoNotReplace	10				AD_Industrial_ShouldersBling
+armor:Shoulder	Industrial_Shoulders_DoNotReplace	10				AD_Industrial_Shoulders
+armor:Shoulder	Item_AI_Talion_Cape	0				AD_BlackNumT4_Cloak_Tint_Ringwraith
+armor:Shoulder	Leather_Shoulders	10				AD_Leather_Shoulders
+armor:Shoulder	Mystic_Shoulders	1602224220				AD_Mystic_Shoulders
+armor:Shoulder	Mystic_Shoulders_DoNotRemove	1602224220				AD_Mystic_Shoulders
+armor:Shoulder	Primary_5Cape_1DarkRanger	0				AD_BlackNumT2_Cloak_Tint_DarkRanger
+armor:Shoulder	Primary_5Cape_1Default	0				AD_RangerT1_Cloak_Starting
+armor:Shoulder	Primary_5Cape_2Standard	0				AD_GondorianT1_Cloak_Tint1_2Common
+armor:Shoulder	Primary_5Cape_3Rare	0				AD_GondorianT1_Cloak_Tint1_2Common
+armor:Shoulder	Primary_5Cape_3Rare_DebugGrant	0				AD_GondorianT1_Cloak_Tint1_2Common
+armor:Shoulder	Primary_5Cape_4Epic	0				AD_GondorianT1_Cloak_Tint1_2Common
+armor:Shoulder	Primary_5Cape_4Epic_DebugGrant	0				AD_GondorianT1_Cloak_Tint1_2Common
+armor:Shoulder	Primary_5Cape_5Lgnd_Celebrimbor	1			NG_5Lgnd_Celebrimbor_5Cape	AD_ElvenT1_Cloak_Tint_Celebrimbor
+armor:Shoulder	Primary_5Cape_5Lgnd_Celebrimbor_DebugGrant	1			NG_5Lgnd_Celebrimbor_5Cape	AD_ElvenT1_Cloak_Tint_Celebrimbor
+armor:Shoulder	Primary_5Cape_5Lgnd_Celebrimbor_SotP	0				AD_ElvenT4_Cloak_Tint_Celebrimbor
+armor:Shoulder	Primary_5Cape_5Lgnd_Dark	0				AD_BlackNumT1_Cloak_Tint_Dark
+armor:Shoulder	Primary_5Cape_5Lgnd_Dark_DebugGrant	0				AD_BlackNumT1_Cloak_Tint_Dark
+armor:Shoulder	Primary_5Cape_5Lgnd_Feral	0				AD_HaradrimT1_Cloak_Tint_Feral
+armor:Shoulder	Primary_5Cape_5Lgnd_Feral_DebugGrant	0				AD_HaradrimT1_Cloak_Tint_Feral
+armor:Shoulder	Primary_5Cape_5Lgnd_Machine	0				AD_DwarvenT1_Cloak_Tint_Machine
+armor:Shoulder	Primary_5Cape_5Lgnd_Machine_DebugGrant	0				AD_DwarvenT1_Cloak_Tint_Machine
+armor:Shoulder	Primary_5Cape_5Lgnd_Marauder	0				AD_HaradrimT1_Cloak_Tint_Marauder
+armor:Shoulder	Primary_5Cape_5Lgnd_Marauder_DebugGrant	0				AD_HaradrimT1_Cloak_Tint_Marauder
+armor:Shoulder	Primary_5Cape_5Lgnd_Mystic	0				AD_ElvenT1_Cloak_Tint_Mystic
+armor:Shoulder	Primary_5Cape_5Lgnd_Mystic_DebugGrant	0				AD_ElvenT1_Cloak_Tint_Mystic
+armor:Shoulder	Primary_5Cape_5Lgnd_Outlaw	0				AD_RhovanionT1_Cloak_Tint_Outlaw
+armor:Shoulder	Primary_5Cape_5Lgnd_Outlaw_DebugGrant	0				AD_RhovanionT1_Cloak_Tint_Outlaw
+armor:Shoulder	Primary_5Cape_5Lgnd_Ringwraith	0			NG_5Lgnd_Ringwraith_5Cape	AD_BlackNumT2_Cloak_Tint_Ringwraith
+armor:Shoulder	Primary_5Cape_5Lgnd_Ringwraith_Nazgul_ArPharzn	0			NG_5Lgnd_Ringwraith_5Cape_Nazgul_ArPharzn	AD_AlpharazonT1_Cloak_Tint_Nazgul
+armor:Shoulder	Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Generic	0			NG_5Lgnd_Ringwraith_5Cape_Nazgul_Generic	AD_NazgulT1_Cloak_Tint_Nazgul
+armor:Shoulder	Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Hmrhand	0			NG_5Lgnd_Ringwraith_5Cape_Nazgul_Hmrhand	AD_HammerHandT1_Cloak_Tint_Nazgul
+armor:Shoulder	Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Isildur	0			NG_5Lgnd_Ringwraith_5Cape_Nazgul_Isildur	AD_IsildurT1_Cloak_Tint_Nazgul
+armor:Shoulder	Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Sist_Alt	0			NG_5Lgnd_Ringwraith_5Cape_Nazgul_Sisters_Alt	AD_SistersT1_Cloak_Tint_Nazgul
+armor:Shoulder	Primary_5Cape_5Lgnd_Ringwraith_Nazgul_Sisters	0			NG_5Lgnd_Ringwraith_5Cape_Nazgul_Sisters	AD_SistersT1_Cloak_Tint_Nazgul
+armor:Shoulder	Primary_5Cape_5Lgnd_Slaughter	0				AD_ElvenT1_Cloak_Tint_Slaughter
+armor:Shoulder	Primary_5Cape_5Lgnd_Slaughter_DebugGrant	0				AD_ElvenT1_Cloak_Tint_Slaughter
+armor:Shoulder	Primary_5Cape_5Lgnd_Terror	0				AD_BlackNumT1_Cloak_Tint_Terror
+armor:Shoulder	Primary_5Cape_5Lgnd_Terror_DebugGrant	0				AD_BlackNumT1_Cloak_Tint_Terror
+armor:Shoulder	Primary_5Cape_5Lgnd_Vendetta	1			NG_5Lgnd_Vendetta_5Cape	AD_BlackNumT1_Cloak_Tint_Vendetta
+armor:Shoulder	Primary_5Cape_5Lgnd_Vendetta_DebugGrant	1			NG_5Lgnd_Vendetta_5Cape	AD_BlackNumT1_Cloak_Tint_Vendetta
+armor:Shoulder	Primary_5Cape_5Lgnd_Warmonger	0				AD_DwarvenT1_Cloak_Tint_Warmonger
+armor:Shoulder	Primary_5Cape_5Lgnd_Warmonger_DebugGrant	0				AD_DwarvenT1_Cloak_Tint_Warmonger
+armor:Shoulder	Primary_5Cape_AD16	0				AD_RangerT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_BlackNum1	0				AD_BlackNumT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_BlackNum2	0				AD_BlackNumT2_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_BlackNum3	0				AD_BlackNumT3_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_BlackNum4	0				AD_BlackNumT4_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Dwarven1	0				AD_DwarvenT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Dwarven2	0				AD_DwarvenT2_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Dwarven3	0				AD_DwarvenT3_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Dwarven4	0				AD_DwarvenT4_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Elven1	0				AD_ElvenT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Elven2	0				AD_ElvenT2_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Elven3	0				AD_ElvenT3_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Elven4	0				AD_ElvenT4_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Gondor1	0				AD_GondorianT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Gondor2	0				AD_GondorianT2_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Haradrim1	0				AD_HaradrimT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Haradrim2	0				AD_HaradrimT2_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Haradrim3	0				AD_HaradrimT3_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Haradrim4	0				AD_HaradrimT4_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Nazgul3	0				AD_BlackNumT3_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Nazgul4	0				AD_BlackNumT3_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Numenor1	0				AD_NumenoreanT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Numenor2	0				AD_BlackNumT2_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Ranger1	0				AD_RangerT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Ranger2	0				AD_RangerT2_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Rohan1	0				AD_RohanT1_Cloak
+armor:Shoulder	Primary_5Cape_ArtSet_Rohan2	0				AD_RohanT2_Cloak
+armor:Shoulder	Ranger_Beast_Shoulders_Reference	100				AD_Beast_Shoulders
+armor:Shoulder	Regal_Shoulders	2				AD_Regal_Shoulders
+armor:Shoulder	Regal_ShouldersBling_DoNotRemove	10				AD_Regal_ShouldersBling
+armor:Shoulder	Regal_Shoulders_DoNotRemove	10				AD_Regal_Shoulders
+armor:Shoulder	Sauron_Shoulders	1602224220				AD_Sauron_Shoulders
+armor:Shoulder	Scavenger_Shoulders	2				AD_Scavenger_Shoulders
+armor:Shoulder	Scavenger_ShouldersBling_DoNotRemove	10				AD_Scavenger_ShouldersBling
+armor:Shoulder	Scavenger_Shoulders_DoNotRemove	10				AD_Scavenger_Shoulders
+armor:Shoulder	Serpent_Shoulders	10				AD_Serpent_Shoulders
+armor:Shoulder	Slaughter_Shoulders	2				AD_Slaughter_Shoulders
+armor:Shoulder	Slaughter_Shoulders_DoNotReplace	10				AD_Slaughter_Shoulders
+armor:Shoulder	Spikey_Shoulders	0				AD_Spikey_Shoulders
+armor:Shoulder	Spikey_Shoulders1	5				AD_Spikey_Shoulders1
+armor:Shoulder	Spikey_Shoulders2	5				AD_Spikey_Shoulders2
+armor:Shoulder	Stitch_Shoulders	10				AD_Stitch_Shoulders
+armor:Shoulder	Tailor_Shoulders	10				AD_Tailor_Shoulders
+armor:Shoulder	Talion_Shoulders	1602224220				AD_Talion_Shoulders
+armor:Shoulder	Tank_Shoulders	5				AD_Tank_Shoulders
+armor:Shoulder	Tank_Shoulders_DoNotReplace	10				AD_Tank_Shoulders
+armor:Shoulder	Thrall_Shoulders	20				AD_Thrall_Shoulders
+armor:Shoulder	Torturer_Shoulders	1602224220				AD_Torturer_Shoulders
+armor:Shoulder	Torturer_ShouldersBling_DoNotRemove	1602224220				AD_Torturer_ShouldersBling
+armor:Shoulder	Torturer_Shoulders_DoNotRemove	1602224220				AD_Torturer_Shoulders
+armor:Shoulder	Tracker_Shoulders	5				AD_Tracker_Shoulders
+armor:Shoulder	Trickster_Shoulders	5				AD_empty_shoulders
+armor:Shoulder	Warmonger_Shoulders	2				AD_Warmonger_Shoulders
+armor:Shoulder	Warmonger_ShouldersBling_DoNotReplace	10				AD_Warmonger_ShouldersBling
+armor:Shoulder	Warmonger_Shoulders_DoNotReplace	10				AD_Warmonger_Shoulders
+armor:Shoulder	Zog_Shoulders	10				AD_Zog_Shoulders
+armor:Shoulder	orc_recordkeeper_body_Armu	12				AD_empty_shoulders
+weapon:AlwaysActiveShield	PLBoG_PreventDamageShield_OneHit	0				PLBoG_PreventDamageShield_OneHit
+weapon:Melee	BL_Companion_Sword	1602224220				Eltariel_1HS_BaseX2_Wraith
+weapon:Melee	Balrog_1H_Whip	0				Balrog_1H_Whip
+weapon:Melee	Balrog_Melee_Whip	0				Balrog_Melee_Whip
+weapon:Melee	Baranor_1Sword_1Default	0				Baranor_1HS_DesertSwordT1
+weapon:Melee	BlackHand_1_Initial_Encounter_Melee	0				BlackCaptain01_Belroth
+weapon:Melee	BlackHand_1_Melee	0				BlackCaptain01_Belroth
+weapon:Melee	BlackHand_2_Melee	0				BlackHand_2
+weapon:Melee	BlackHand_3_Melee	0				BlackHand_Sword
+weapon:Melee	BlackHand_4_Melee	0				BlackHand_Sword
+weapon:Melee	Easterling_1HS_Scimitar	0		Orc_Infantry_Melee		Easterling_1HS_Scimitar
+weapon:Melee	Easterling_Shld_War_and_1HSp_Pike	1602224220		Orc_Defender_Melee		Easterling_Shld_War_and_1HSp_Pike
+weapon:Melee	Eltariel_1Sword_1HS_BaseX2	0			DLC3_Base_1Sword	Eltariel_1HS_BladeSwordT1_MH
+weapon:Melee	Eltariel_1Sword_Beast	0			DLC3_Beast_MtnPass_1Sword	Eltariel_1HS_WoodElfSwordT1_MH_Tint_Beast
+weapon:Melee	Eltariel_1Sword_Fire	0			DLC3_Fire_Volcano_1Sword	Eltariel_1HS_WoodElfSwordT1_MH_Tint_Fire
+weapon:Melee	Eltariel_1Sword_FrostCurse	0			DLC3_FrostCurse_SnowMtn_1Sword	Eltariel_1HS_WoodElfSwordT1_MH_Tint_Frost
+weapon:Melee	Eltariel_1Sword_Light	0			DLC3_Light_1Sword	Eltariel_1HS_BladeSwordT1_MH_Tint_Light
+weapon:Melee	Eltariel_1Sword_Poison	0			DLC3_Poison_Island_1Sword	Eltariel_1HS_WoodElfSwordT1_MH_Tint_Poison
+weapon:Melee	FellBeast_Melee	1602224220				FellBeast_Melee
+weapon:Melee	Goblin_Claws	1602224220		Goblin_Claws		Goblin_Claws
+weapon:Melee	Goblin_Rare_Claws	1602224220		Goblin_Rare		Goblin_Claws
+weapon:Melee	Gondorian_1HD_GondorianDagger	0				Gondorian_1HD_GondorianDagger
+weapon:Melee	Gondorian_1HS_CaptainSword	0		Orc_Infantry_Melee		Gondorian_1HS_CaptainSword
+weapon:Melee	Gondorian_1HS_CaptainSword_Undead	0		Gondorian_Undead		Gondorian_1HS_CaptainSword_Undead
+weapon:Melee	Gondorian_1HS_Longsword	0		Orc_Infantry_Melee		Gondorian_1HS_Longsword
+weapon:Melee	Gondorian_1HS_Longsword_Undead	0		Gondorian_Undead		Gondorian_1HS_Longsword_Undead
+weapon:Melee	Gondorian_1HS_Longsword_Undead_CannotSheathe	0		Gondorian_Undead		Gondorian_1HS_Longsword_Undead
+weapon:Melee	Gondorian_Shld_Defender_and_1HSp_Halberd	0		Orc_Defender_Melee		Gondorian_Shld_Defender_and_1HSp_Halberd
+weapon:Melee	Hirgon_Melee	0				Orc_1HS_FlatBlade
+weapon:Melee	Item_AI_Talion_Sword	0				Player_1HS_BlackNumSwordT4_Tint_Ringwraith
+weapon:Melee	Item_AI_Talion_Sword_Enemy	0				Player_1HS_BlackNumSwordT4_Tint_Ringwraith
+weapon:Melee	Nazgul_1HB_WarHammer	0				Nazgul_1HB_WarHammer
+weapon:Melee	Nazgul_1HB_WitchKing	0		WitchKing_Mace		Nazgul_1HB_WitchKing
+weapon:Melee	Nazgul_1HS_BlackBlade	0		Nazgul_Sword		Nazgul_1HS_BlackBlade
+weapon:Melee	Nazgul_1HS_Isildur	0				Nazgul_1HS_Isildur
+weapon:Melee	Nazgul_1HS_Suladan	0				Nazgul_1HS_Suladan
+weapon:Melee	Nazgul_Melee_Chain_Kusarigama	0		Nazgul_Chain		Nazgul_Misc_SickleChain
+weapon:Melee	Nazgul_Melee_DualWield	0		Nazgul_DualWield		Nazgul_Melee_DualWield
+weapon:Melee	Nazgul_Melee_Hammer	0		Nazgul_Mace		Nazgul_1HB_WarHammer
+weapon:Melee	Nazgul_Melee_Mace	0		Nazgul_Mace		Nazgul_Melee_Mace
+weapon:Melee	Nazgul_Melee_Mace_SauronFair	1602224220		Sauron_Mace_Fair		Sauron_1HB_FlangedMace
+weapon:Melee	Nazgul_Melee_Mace_SauronWar	1602224220		Sauron_Mace_War		Sauron_1HB_FlangedMace
+weapon:Melee	Nazgul_Melee_Mace_WitchKing	0		WitchKing_Mace		Nazgul_Melee_Mace_WitchKing
+weapon:Melee	Nazgul_Melee_Sword_ArPharazon	0		Nazgul_Sword		Nazgul_Melee_Sword_ArPharazon
+weapon:Melee	Nazgul_Misc_SickleBlade	0				Nazgul_Misc_SickleChain
+weapon:Melee	Nazgul_Misc_SickleChain	0				Nazgul_Misc_SickleChain
+weapon:Melee	Nazgul_SauronFF_Melee_Sword	0		Nazgul_Sword		Nazgul_Melee_Sword_FF
+weapon:Melee	Olog_1HB_ArchitectHammer	20		Olog_Infantry_Melee		Olog_1HB_ArchitectHammer
+weapon:Melee	Olog_1HB_BlackWarClub	1602224220	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_BlackWarClub
+weapon:Melee	Olog_1HB_ChopperMace	0	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_ChopperMace
+weapon:Melee	Olog_1HB_FlangedMace	0	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_FlangedMace
+weapon:Melee	Olog_1HB_Heavy	0	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_Heavy
+weapon:Melee	Olog_1HB_HookedMace	0	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_HookedMace
+weapon:Melee	Olog_1HB_Lute	10	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_Lute
+weapon:Melee	Olog_1HB_MeatBoneClub	1602224220	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_MeatBoneClub
+weapon:Melee	Olog_1HB_Mix	0	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_FlangedMace,Olog_1HB_HookedMace,Olog_1HB_ChopperMace,Olog_1HB_Heavy
+weapon:Melee	Olog_1HB_StarMace	0	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_StarMace
+weapon:Melee	Olog_1HB_StitchClub	0	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_StitchClub
+weapon:Melee	Olog_1HB_ThrallClub	1602224220	OlogHai_All	Olog_Infantry_Melee		Olog_1HB_ThrallClub
+weapon:Melee	Olog_Dark_Mix	0	Trait_Olog	Olog_Infantry_Melee		Olog_1HB_BlackWarClub,Olog_1HB_FlangedMace
+weapon:Melee	Orc_1HA_BloodAxeX2	0	Berzerker	Orc_Berserker_Melee		Orc_1HA_BloodAxeX2
+weapon:Melee	Orc_1HA_BoneAxeX2	1602224220	Berzerker	Orc_Berserker_Melee		Orc_1HA_BoneAxeX2
+weapon:Melee	Orc_1HA_BrandingIronX2	1602224220	Berzerker	Orc_Berserker_Melee		Orc_1HA_BrandingIronX2
+weapon:Melee	Orc_1HA_DragonAxeX2	0	Berzerker	Orc_Berserker_Melee		Orc_1HA_DragonAxeX2
+weapon:Melee	Orc_1HA_FangAxeX2	1602224220	Berzerker	Orc_Berserker_Melee		Orc_1HA_FangAxeX2
+weapon:Melee	Orc_1HA_MaulerAxeX2	0	Berzerker	Orc_Berserker_Melee		Orc_1HA_MaulerAxeX2
+weapon:Melee	Orc_1HA_StuddedAxeX2	0	Berzerker	Orc_Berserker_Melee		Orc_1HA_StuddedAxeX2
+weapon:Melee	Orc_1HB_BelrothsMace	5	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_BelrothsMace
+weapon:Melee	Orc_1HB_BlackWarClub	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_BlackWarClub
+weapon:Melee	Orc_1HB_BloodAxe	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_BloodAxe
+weapon:Melee	Orc_1HB_BrandingIron	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_BrandingIron
+weapon:Melee	Orc_1HB_HookedMace	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_HookedMace
+weapon:Melee	Orc_1HB_HugeHammer	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_HugeHammer
+weapon:Melee	Orc_1HB_IronMace	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_IronMace
+weapon:Melee	Orc_1HB_Lute	5	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_Lute
+weapon:Melee	Orc_1HB_MeatBoneClub	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_MeatBoneClub
+weapon:Melee	Orc_1HB_MeatBoneClubX2	1602224220	Berzerker	Orc_Berserker_Melee		Orc_1HB_MeatBoneClubX2
+weapon:Melee	Orc_1HB_RatFork	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_MeatFork
+weapon:Melee	Orc_1HB_SmithHammer	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_SmithHammer
+weapon:Melee	Orc_1HB_SpikedClub	1602224220	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_SpikedClub
+weapon:Melee	Orc_1HR_ThrowingSpear_Melee	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_ThrowingSpear_Melee
+weapon:Melee	Orc_1HS_AncientSword	5	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HS_AncientSword
+weapon:Melee	Orc_1HS_BlackBlade	5	Infantry	Orc_Infantry_Melee		Orc_1HS_BlackBlade
+weapon:Melee	Orc_1HS_EliteSword	1602224220	Infantry	Orc_Infantry_Melee		Orc_1HS_EliteSword
+weapon:Melee	Orc_1HS_EliteSwordX2	1602224220	Berzerker	Orc_Berserker_Melee		Orc_1HS_EliteSwordX2
+weapon:Melee	Orc_1HS_FineSword	1602224220	Infantry	Orc_Infantry_Melee		Orc_1HS_FineSword
+weapon:Melee	Orc_1HS_FlatBlade	0	Infantry	Orc_Infantry_Melee		Orc_1HS_FlatBlade
+weapon:Melee	Orc_1HS_FlatBlade_Infantry	0	Infantry	Orc_Infantry_Melee		Orc_1HS_FlatBlade
+weapon:Melee	Orc_1HS_FlatBlade_Infantry_Unkown	0	Infantry	Orc_Infantry_Melee		Orc_1HS_FlatBlade_Unknown
+weapon:Melee	Orc_1HS_GondorianCaptainSword	5	Infantry	Orc_Infantry_Melee		Gondorian_1HS_CaptainSword
+weapon:Melee	Orc_1HS_GondorianCaptainSwordX2	1602224220	Berzerker	Orc_Berserker_Melee		Orc_1HS_GondorianCaptainSwordX2
+weapon:Melee	Orc_1HS_Greatsword	1602224220	Infantry	Orc_Infantry_Melee		Orc_1HS_Greatsword
+weapon:Melee	Orc_1HS_SawSword	1602224220	Infantry	Orc_Infantry_Melee		Orc_1HS_SawSword
+weapon:Melee	Orc_1H_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_PickClub,Orc_1HB_SpikedCudgel,Orc_1HS_BoneCrescent,Orc_1HS_Falchion,Orc_1HS_FlatBlade
+weapon:Melee	Orc_1H_Mix_Defender	0	Defender	Orc_Infantry_Melee		Orc_1HB_PickClub,Orc_1HB_SpikedCudgel,Orc_1HS_BoneCrescent,Orc_1HS_Falchion,Orc_1HS_FlatBlade
+weapon:Melee	Orc_2HR_Crossbow_Melee	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow_Melee
+weapon:Melee	Orc_Ber_Feral_Mix	1602224220	Berzerker	Orc_Berserker_Melee		Orc_1HA_BoneAxeX2,Orc_1HA_FangAxeX2,Orc_1HA_StuddedAxeX2
+weapon:Melee	Orc_Def_Blackguard_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_Metal_and_1HSp_Jagged,Orc_Shld_MetalV2_and_1HSp_Chopper,Orc_Shld_MetalV2_and_1HSp_Halberd,Orc_Shld_MetalV2_and_1HSp_Jagged,Orc_Shld_MetalV4_and_1HSp_Chopper,Orc_Shld_MetalV4_and_1HSp_Halberd,Orc_Shld_MetalV4_and_1HSp_Jagged,Orc_Shld_MetalV5_and_1HSp_Master
+weapon:Melee	Orc_Def_Dark_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_Metal_and_1HSp_Master,Orc_Shld_MetalV4_and_1HSp_Chopper,Orc_Shld_MetalV4_and_1HSp_Halberd
+weapon:Melee	Orc_Def_Ferral_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Beastmaster,Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_MetalV2_and_1HSp_Chopper,Orc_Shld_MetalV2_and_1HSp_Halberd,Orc_Shld_MetalV2_and_1HSp_Jagged,Orc_Shld_MetalV3_and_1HSp_Chopper,Orc_Shld_MetalV3_and_1HSp_Jagged,Orc_Shld_MetalV4_and_1HSp_Chopper,Orc_Shld_MetalV4_and_1HSp_Jagged,Orc_Shld_MetalV5_and_1HSp_Master,Orc_Shld_Metal_and_1HSp_Jagged
+weapon:Melee	Orc_Def_Industrial_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_Metal_and_1HSp_Master,Orc_Shld_MetalV4_and_1HSp_Chopper,Orc_Shld_MetalV4_and_1HSp_Halberd,Orc_Shld_MetalV5_and_1HSp_Master
+weapon:Melee	Orc_Def_Marauder_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_Metal_and_1HSp_Master,Orc_Shld_MetalV5_and_1HSp_Master,Orc_Shld_Regal_and_1HSp_Chopper,Orc_Shld_Regal_and_1HSp_Halberd,Orc_Shld_Regal_and_1HSp_Jagged
+weapon:Melee	Orc_Def_Mystic_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_MetalV4_and_1HSp_Chopper,Orc_Shld_MetalV4_and_1HSp_Halberd,Orc_Shld_MetalV5_and_1HSp_Master
+weapon:Melee	Orc_Def_Slaughter_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_MetalV2_and_1HSp_Chopper,Orc_Shld_MetalV2_and_1HSp_Halberd,Orc_Shld_MetalV3_and_1HSp_Chopper,Orc_Shld_MetalV3_and_1HSp_Halberd,Orc_Shld_Rib_and_1HSp_Chopper,Orc_Shld_Rib_and_1HSp_Halberd
+weapon:Melee	Orc_Def_Terror_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_MetalV2_and_1HSp_Chopper,Orc_Shld_MetalV2_and_1HSp_Halberd,Orc_Shld_MetalV3_and_1HSp_Chopper,Orc_Shld_MetalV3_and_1HSp_Halberd
+weapon:Melee	Orc_Def_Warmonger_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_Metal_and_1HSp_Master,Orc_Shld_MetalV3_and_1HSp_Chopper,Orc_Shld_MetalV3_and_1HSp_Halberd,Orc_Shld_MetalV5_and_1HSp_Master
+weapon:Melee	Orc_Inf_Blackguard_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_PickClub,Orc_1HB_SpikedCudgel,Orc_1HS_BoneCrescent,Orc_1HS_FineSword
+weapon:Melee	Orc_Inf_Dark_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_BlackWarClub,Orc_1HB_HookedMace,Orc_1HS_EliteSword,Orc_1HS_Falchion,Orc_1HS_FlatBlade
+weapon:Melee	Orc_Inf_Ferral_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_PickClub,Orc_1HB_SpikedCudgel,Orc_1HS_BoneCrescent
+weapon:Melee	Orc_Inf_Industrial_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_IronMace,Orc_1HB_SmithHammer,Orc_1HS_EliteSword,Orc_1HS_Falchion,Orc_1HS_FlatBlade
+weapon:Melee	Orc_Inf_Marauder_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_IronMace,Orc_1HS_EliteSword,Orc_1HS_Falchion,Orc_1HS_FineSword,Orc_1HS_FlatBlade
+weapon:Melee	Orc_Inf_Mystic_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_BlackWarClub,Orc_1HB_IronMace,Orc_1HS_BoneCrescent,Orc_1HS_EliteSword,Orc_1HS_Falchion,Orc_1HS_Greatsword
+weapon:Melee	Orc_Inf_Slaughter_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_HookedMace,Orc_1HB_MeatBoneClub,Orc_1HB_SpikedCudgel,Orc_1HS_BoneCrescent,Orc_1HS_SawSword
+weapon:Melee	Orc_Inf_Terror_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_BlackWarClub,Orc_1HB_BrandingIron,Orc_1HB_HookedMace,Orc_1HB_SpikedCudgel,Orc_1HS_BoneCrescent,Orc_1HS_FlatBlade
+weapon:Melee	Orc_Inf_Warmonger_Mix	0	Infantry	Orc_Infantry_Melee		Orc_1HB_IronMace,Orc_1HB_PickClub,Orc_1HB_SpikedCudgel,Orc_1HS_BoneCrescent,Orc_1HS_EliteSword,Orc_1HS_Falchion,Orc_1HS_FineSword,Orc_1HS_FlatBlade,Orc_1HS_Greatsword
+weapon:Melee	Orc_Misc_PoisonVial	0				Orc_Misc_PoisonVial
+weapon:Melee	Orc_Shld_BrokenShield_and_1HSp_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Broken_and_1HSp_Chopper,Orc_Shld_Broken_and_1HSp_Halberd,Orc_Shld_Broken_and_1HSp_Jagged
+weapon:Melee	Orc_Shld_Gondorian_1HSp_Halberd	0	Defender	Orc_Defender_Melee		Orc_Shld_Gondorian_and_1HSp_Halberd
+weapon:Melee	Orc_Shld_MetalShieldV2_and_1HSp_MasterSpear	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_MetalV2_and_1HSp_Master
+weapon:Melee	Orc_Shld_MetalShieldV2_and_1HSp_Mix	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_MetalV2_and_1HSp_Chopper,Orc_Shld_MetalV2_and_1HSp_Halberd,Orc_Shld_MetalV2_and_1HSp_Jagged
+weapon:Melee	Orc_Shld_MetalShieldV3_and_1HSp_Mix	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_MetalV3_and_1HSp_Chopper,Orc_Shld_MetalV3_and_1HSp_Jagged,Orc_Shld_MetalV3_and_1HSp_Halberd
+weapon:Melee	Orc_Shld_MetalShieldV4_and_1HB_ShamanStaff	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_MetalV4_and_1HB_Shaman
+weapon:Melee	Orc_Shld_MetalShieldV4_and_1Hsp_Mix	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_MetalV4_and_1HSp_Chopper,Orc_Shld_MetalV4_and_1HSp_Halberd,Orc_Shld_MetalV4_and_1HSp_Jagged
+weapon:Melee	Orc_Shld_MetalShieldV5_and_1HSp_MasterSpear	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_MetalV5_and_1HSp_Master
+weapon:Melee	Orc_Shld_MetalShield_and_1HSp_Beastmaster	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Beastmaster
+weapon:Melee	Orc_Shld_MetalShield_and_1HSp_Halberd	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Halberd
+weapon:Melee	Orc_Shld_MetalShield_and_1HSp_Heavy5Point	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Heavy5Point
+weapon:Melee	Orc_Shld_MetalShield_and_1HSp_MasterSpear	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Master
+weapon:Melee	Orc_Shld_MetalShield_and_1HSp_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Metal_and_1HSp_Chopper,Orc_Shld_Metal_and_1HSp_Halberd,Orc_Shld_Metal_and_1HSp_Jagged
+weapon:Melee	Orc_Shld_RangerKiller_1HSp_GonHalberd	0	Defender	Orc_Defender_Melee		Orc_Shld_RangerKiller_and_1HSp_GonHalberd
+weapon:Melee	Orc_Shld_RangerkillerShield_and_1HSp_Mix	10	Defender	Orc_Defender_Melee		Orc_Shld_Rangerkiller_and_1HSp_Chopper,Orc_Shld_Rangerkiller_and_1HSp_Halberd,Orc_Shld_Rangerkiller_and_1HSp_Jagged
+weapon:Melee	Orc_Shld_RangerkillerShield_and_Heavy5Point	10	Defender	Orc_Defender_Melee		Orc_Shld_RangerKiller_and_1HSp_Heavy5Point
+weapon:Melee	Orc_Shld_RegalShield_and_1HSp_Mix	5	Defender	Orc_Defender_Melee		Orc_Shld_Regal_and_1HSp_Chopper,Orc_Shld_Regal_and_1HSp_Halberd,Orc_Shld_Regal_and_1HSp_Jagged
+weapon:Melee	Orc_Shld_RibShield_and_1HSp_BeastmasterSpear	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_Rib_and_1HSp_Beastmaster
+weapon:Melee	Orc_Shld_RibShield_and_1HSp_MeatFork	0	Defender	Orc_Defender_Melee		Orc_Shld_Rib_and_1HSp_MeatFork
+weapon:Melee	Orc_Shld_RibShield_and_1HSp_Mix	1602224220	Defender	Orc_Defender_Melee		Orc_Shld_Rib_and_1HSp_Chopper,Orc_Shld_Rib_and_1HSp_Halberd,Orc_Shld_Rib_and_1HSp_Jagged
+weapon:Melee	Orc_Shld_WoodenShield_and_1HSp_Mix	0	Defender	Orc_Defender_Melee		Orc_Shld_Wooden_and_1HSp_Chopper,Orc_Shld_Wooden_and_1HSp_Halberd,Orc_Shld_Wooden_and_1HSp_Jagged
+weapon:Melee	PC_Companion_Sword	1602224220				PC_Companion_Sword
+weapon:Melee	PC_Sword_Celebrimbor	0				PC_Companion_Sword
+weapon:Melee	Player_1HS_RangerSword	0				Player_1HS_RangerSwordT1
+weapon:Melee	Player_1HSp_DEMOTEST_TalionGlaive	0				Player_1HSp_DEMOTEST_TalionGlaive
+weapon:Melee	Primary_1Sword_1DarkRanger	0				Player_1HS_BlackNumSwordT2_Tint_DarkRanger
+weapon:Melee	Primary_1Sword_1Default	0				Player_1HS_RangerSwordT1_Starting
+weapon:Melee	Primary_1Sword_2Standard	0				Player_1HS_GondorianSwordT1_Tint1_2Common,Player_1HS_GondorianSwordT1_Tint2_2Common,Player_1HS_GondorianSwordT1_Tint3_2Common,Player_1HS_GondorianSwordT1_Tint4_2Common,Player_1HS_GondorianSwordT1_Tint5_2Common,Player_1HS_GondorianSwordT1_Tint6_2Common,Player_1HS_GondorianSwordT1_Tint7_2Common,Player_1HS_GondorianSwordT1_Tint8_2Common,Player_1HS_GondorianSwordT1_Tint9_2Common,Player_1HS_GondorianSwordT1_Tint10_2Common,Player_1HS_NumenoreanSwordT1_Tint1_2Common,Player_1HS_NumenoreanSwordT1_Tint2_2Common,Player_1HS_NumenoreanSwordT1_Tint3_2Common,Player_1HS_NumenoreanSwordT1_Tint4_2Common,Player_1HS_NumenoreanSwordT1_Tint5_2Common,Player_1HS_NumenoreanSwordT1_Tint6_2Common,Player_1HS_NumenoreanSwordT1_Tint7_2Common,Player_1HS_NumenoreanSwordT1_Tint8_2Common,Player_1HS_NumenoreanSwordT1_Tint9_2Common,Player_1HS_NumenoreanSwordT1_Tint10_2Common,Player_1HS_RangerSwordT1_Tint1_2Common,Player_1HS_RangerSwordT1_Tint2_2Common,Player_1HS_RangerSwordT1_Tint3_2Common,Player_1HS_RangerSwordT1_Tint4_2Common,Player_1HS_RangerSwordT1_Tint5_2Common,Player_1HS_RangerSwordT1_Tint6_2Common,Player_1HS_RangerSwordT1_Tint7_2Common,Player_1HS_RangerSwordT1_Tint8_2Common,Player_1HS_RangerSwordT1_Tint9_2Common,Player_1HS_RangerSwordT1_Tint10_2Common,Player_1HS_RohanSwordT1_Tint1_2Common,Player_1HS_RohanSwordT1_Tint2_2Common,Player_1HS_RohanSwordT1_Tint3_2Common,Player_1HS_RohanSwordT1_Tint4_2Common,Player_1HS_RohanSwordT1_Tint5_2Common,Player_1HS_RohanSwordT1_Tint6_2Common,Player_1HS_RohanSwordT1_Tint7_2Common,Player_1HS_RohanSwordT1_Tint8_2Common,Player_1HS_RohanSwordT1_Tint9_2Common,Player_1HS_RohanSwordT1_Tint10_2Common
+weapon:Melee	Primary_1Sword_3Rare	0				Player_1HS_GondorianSwordT1_Tint1_2Common,Player_1HS_NumenoreanSwordT1_Tint1_2Common,Player_1HS_RangerSwordT1_Tint1_2Common,Player_1HS_RohanSwordT1_Tint1_2Common
+weapon:Melee	Primary_1Sword_3Rare_DebugGrant	0				Player_1HS_GondorianSwordT1_Tint1_2Common,Player_1HS_NumenoreanSwordT1_Tint1_2Common,Player_1HS_RangerSwordT1_Tint1_2Common,Player_1HS_RohanSwordT1_Tint1_2Common
+weapon:Melee	Primary_1Sword_4Epic	0				Player_1HS_GondorianSwordT1_Tint1_2Common,Player_1HS_NumenoreanSwordT1_Tint1_2Common,Player_1HS_RangerSwordT1_Tint1_2Common,Player_1HS_RohanSwordT1_Tint1_2Common
+weapon:Melee	Primary_1Sword_4Epic_DebugGrant	0				Player_1HS_GondorianSwordT1_Tint1_2Common,Player_1HS_NumenoreanSwordT1_Tint1_2Common,Player_1HS_RangerSwordT1_Tint1_2Common,Player_1HS_RohanSwordT1_Tint1_2Common
+weapon:Melee	Primary_1Sword_5Lgnd_Celebrimbor	1			NG_5Lgnd_Celebrimbor_1Sword	Player_1HS_ElvenSwordT1_Tint_Celebrimbor
+weapon:Melee	Primary_1Sword_5Lgnd_Celebrimbor_DebugGrant	1			NG_5Lgnd_Celebrimbor_1Sword	Player_1HS_ElvenSwordT1_Tint_Celebrimbor
+weapon:Melee	Primary_1Sword_5Lgnd_Celebrimbor_SotP	0				Player_1HS_ElvenSwordT4_Tint_Celebrimbor
+weapon:Melee	Primary_1Sword_5Lgnd_Celebrimbor_Wraith	0				PC_Companion_Sword
+weapon:Melee	Primary_1Sword_5Lgnd_Dark	0				Player_1HS_BlackNumSwordT1_Tint_Dark
+weapon:Melee	Primary_1Sword_5Lgnd_Dark_DebugGrant	0				Player_1HS_BlackNumSwordT1_Tint_Dark
+weapon:Melee	Primary_1Sword_5Lgnd_Feral	0				Player_1HS_HaradrimSwordT1_Tint_Feral
+weapon:Melee	Primary_1Sword_5Lgnd_Feral_DebugGrant	0				Player_1HS_HaradrimSwordT1_Tint_Feral
+weapon:Melee	Primary_1Sword_5Lgnd_Machine	0				Player_1HS_DwarvenSwordT1_Tint_Machine
+weapon:Melee	Primary_1Sword_5Lgnd_Machine_DebugGrant	0				Player_1HS_DwarvenSwordT1_Tint_Machine
+weapon:Melee	Primary_1Sword_5Lgnd_Marauder	0				Player_1HS_HaradrimSwordT1_Tint_Marauder
+weapon:Melee	Primary_1Sword_5Lgnd_Marauder_DebugGrant	0				Player_1HS_HaradrimSwordT1_Tint_Marauder
+weapon:Melee	Primary_1Sword_5Lgnd_Mystic	0				Player_1HS_ElvenSwordT1_Tint_Mystic
+weapon:Melee	Primary_1Sword_5Lgnd_Mystic_DebugGrant	0				Player_1HS_ElvenSwordT1_Tint_Mystic
+weapon:Melee	Primary_1Sword_5Lgnd_Outlaw	0				Player_1HS_RhovanionSwordT1_Tint_Outlaw
+weapon:Melee	Primary_1Sword_5Lgnd_Outlaw_DebugGrant	0				Player_1HS_RhovanionSwordT1_Tint_Outlaw
+weapon:Melee	Primary_1Sword_5Lgnd_Ringwraith	0			NG_5Lgnd_Ringwraith_1Sword	Player_1HS_BlackNumSwordT2_Tint_Ringwraith
+weapon:Melee	Primary_1Sword_5Lgnd_Slaughter	0				Player_1HS_ElvenSwordT1_Tint_Slaughter
+weapon:Melee	Primary_1Sword_5Lgnd_Slaughter_DebugGrant	0				Player_1HS_ElvenSwordT1_Tint_Slaughter
+weapon:Melee	Primary_1Sword_5Lgnd_Terror	0				Player_1HS_BlackNumSwordT1_Tint_Terror
+weapon:Melee	Primary_1Sword_5Lgnd_Terror_DebugGrant	0				Player_1HS_BlackNumSwordT1_Tint_Terror
+weapon:Melee	Primary_1Sword_5Lgnd_Vendetta	1			NG_5Lgnd_Vendetta_1Sword	Player_1HS_BlackNumSwordT1_Tint_Vendetta
+weapon:Melee	Primary_1Sword_5Lgnd_Vendetta_DebugGrant	1			NG_5Lgnd_Vendetta_1Sword	Player_1HS_BlackNumSwordT1_Tint_Vendetta
+weapon:Melee	Primary_1Sword_5Lgnd_Warmonger	0				Player_1HS_DwarvenSwordT1_Tint_Warmonger
+weapon:Melee	Primary_1Sword_5Lgnd_Warmonger_DebugGrant	0				Player_1HS_DwarvenSwordT1_Tint_Warmonger
+weapon:Melee	Primary_1Sword_AD16	0				Player_1HS_RangerSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Dwarven1	0				Player_1HS_DwarvenSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Dwarven2	0				Player_1HS_DwarvenSwordT2
+weapon:Melee	Primary_1Sword_ArtSet_Dwarven3	0				Player_1HS_DwarvenSwordT3
+weapon:Melee	Primary_1Sword_ArtSet_Dwarven4	0				Player_1HS_DwarvenSwordT4
+weapon:Melee	Primary_1Sword_ArtSet_Elven1	0				Player_1HS_ElvenSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Elven2	0				Player_1HS_ElvenSwordT2
+weapon:Melee	Primary_1Sword_ArtSet_Elven3	0				Player_1HS_ElvenSwordT3
+weapon:Melee	Primary_1Sword_ArtSet_Elven4	0				Player_1HS_ElvenSwordT4
+weapon:Melee	Primary_1Sword_ArtSet_Gondor1	0				Player_1HS_GondorianSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Gondor2	0				Player_1HS_GondorianSwordT2
+weapon:Melee	Primary_1Sword_ArtSet_Haradrim1	0				Player_1HS_HaradrimSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Haradrim2	0				Player_1HS_HaradrimSwordT2
+weapon:Melee	Primary_1Sword_ArtSet_Haradrim3	0				Player_1HS_HaradrimSwordT3
+weapon:Melee	Primary_1Sword_ArtSet_Haradrim4	0				Player_1HS_HaradrimSwordT4
+weapon:Melee	Primary_1Sword_ArtSet_Numenor1	0				Player_1HS_BlackNumSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Numenor2	0				Player_1HS_BlackNumSwordT2
+weapon:Melee	Primary_1Sword_ArtSet_Numenor3	0				Player_1HS_BlackNumSwordT3
+weapon:Melee	Primary_1Sword_ArtSet_Numenor4	0				Player_1HS_BlackNumSwordT4
+weapon:Melee	Primary_1Sword_ArtSet_Ranger1	0				Player_1HS_RangerSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Ranger2	0				Player_1HS_RangerSwordT2
+weapon:Melee	Primary_1Sword_ArtSet_Rohan1	0				Player_1HS_RohanSwordT1
+weapon:Melee	Primary_1Sword_ArtSet_Rohan2	0				Player_1HS_RohanSwordT2
+weapon:Melee	Primary_1Sword_DLC_OfDominion	0			NG_1Sword_DLC_OfDominion_4E	Player_1HS_RohanSwordDLC
+weapon:Melee	Primary_1Sword_GP_Intro	0				Player_1HS_RohanSwordT1_Tint1_2Common
+weapon:Melee	Primary_1Sword_HalfProgression	0				Player_1HS_GondorianSwordT1_Tint1_2Common,Player_1HS_GondorianSwordT1_Tint2_2Common,Player_1HS_GondorianSwordT1_Tint3_2Common,Player_1HS_GondorianSwordT1_Tint4_2Common,Player_1HS_GondorianSwordT1_Tint5_2Common,Player_1HS_GondorianSwordT1_Tint6_2Common,Player_1HS_GondorianSwordT1_Tint7_2Common,Player_1HS_GondorianSwordT1_Tint8_2Common,Player_1HS_GondorianSwordT1_Tint9_2Common,Player_1HS_GondorianSwordT1_Tint10_2Common,Player_1HS_NumenoreanSwordT1_Tint1_2Common,Player_1HS_NumenoreanSwordT1_Tint2_2Common,Player_1HS_NumenoreanSwordT1_Tint3_2Common,Player_1HS_NumenoreanSwordT1_Tint4_2Common,Player_1HS_NumenoreanSwordT1_Tint5_2Common,Player_1HS_NumenoreanSwordT1_Tint6_2Common,Player_1HS_NumenoreanSwordT1_Tint7_2Common,Player_1HS_NumenoreanSwordT1_Tint8_2Common,Player_1HS_NumenoreanSwordT1_Tint9_2Common,Player_1HS_NumenoreanSwordT1_Tint10_2Common,Player_1HS_RangerSwordT1_Tint1_2Common,Player_1HS_RangerSwordT1_Tint2_2Common,Player_1HS_RangerSwordT1_Tint3_2Common,Player_1HS_RangerSwordT1_Tint4_2Common,Player_1HS_RangerSwordT1_Tint5_2Common,Player_1HS_RangerSwordT1_Tint6_2Common,Player_1HS_RangerSwordT1_Tint7_2Common,Player_1HS_RangerSwordT1_Tint8_2Common,Player_1HS_RangerSwordT1_Tint9_2Common,Player_1HS_RangerSwordT1_Tint10_2Common,Player_1HS_RohanSwordT1_Tint1_2Common,Player_1HS_RohanSwordT1_Tint2_2Common,Player_1HS_RohanSwordT1_Tint3_2Common,Player_1HS_RohanSwordT1_Tint4_2Common,Player_1HS_RohanSwordT1_Tint5_2Common,Player_1HS_RohanSwordT1_Tint6_2Common,Player_1HS_RohanSwordT1_Tint7_2Common,Player_1HS_RohanSwordT1_Tint8_2Common,Player_1HS_RohanSwordT1_Tint9_2Common,Player_1HS_RohanSwordT1_Tint10_2Common
+weapon:Melee	Ranger_1HS_Sword03	0		Orc_Infantry_Melee		Ranger_1HS_Sword03
+weapon:Melee	Raptor_Body	0				Raptor_Body
+weapon:Melee	Resistance_Prisoner_Unarmed	1602224220		Prop_Unarmed		Resistance_Prisoner_Unarmed
+weapon:Melee	Sauron	1602224220				Sauron_Mace
+weapon:Melee	Sauron_1HS_ElvenSwordT3	0				Sauron_1HS_ElvenSwordT3
+weapon:Melee	Spider_Fake_Weapon	0				Spider_Fake_Weapon
+weapon:Melee	Spider_Poison_Fangs	0				Spider_Poison_Fangs
+weapon:Melee	Spider_Rare_Fangs	0				Spider_Poison_Fangs
+weapon:Melee	Torch_Unlit	0	Infantry	Orc_Infantry_Melee		Orc_Misc_Torch_Unlit
+weapon:Melee	Troll_Cave_MeleeWeapon	0				Troll_Cave_MeleeWeapon
+weapon:Melee	Troll_Legendary_MeleeWeapon	0				Troll_Cave_MeleeWeapon
+weapon:Melee	Warg_Brown_Jaws	0		Warg_Jaws_All		Warg_Brown_Jaws
+weapon:Melee	Warg_InCage	1602224220				Warg_Brown_Jaws
+weapon:Melee	Warg_Rare_Jaws	0		Warg_Jaws_All		Warg_Brown_Jaws
+weapon:Melee	Warg_Stealth_Jaws	0		Warg_Jaws_All		Warg_Stealth_Jaws
+weapon:Melee	Wep_BoG_Melee	0		BoG_Melee		Eltariel_1HS_BaseX2
+weapon:Melee	frs_previewMulti	1602224220				frs_previewMulti
+weapon:MeleeAux	BL_Companion_Dagger	1602224220				Eltariel_1HS_StealthX2_Wraith
+weapon:MeleeAux	Baranor_2Dagger_1Default	0				Baranor_1HD_DesertDaggerT1
+weapon:MeleeAux	Celebrimbor_Dagger	1602224220				Player_1HD_RangerDaggerT1
+weapon:MeleeAux	Eltariel_2Dagger_1HS_BaseX2	0			DLC3_Base_2Dagger	Eltariel_1HS_BladeSwordT1_Stealth
+weapon:MeleeAux	Eltariel_2Dagger_Beast	0			DLC3_Beast_MtnPass_2Dagger	Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Beast
+weapon:MeleeAux	Eltariel_2Dagger_Fire	0			DLC3_Fire_Volcano_2Dagger	Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Fire
+weapon:MeleeAux	Eltariel_2Dagger_FrostCurse	0			DLC3_FrostCurse_SnowMtn_2Dagger	Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Frost
+weapon:MeleeAux	Eltariel_2Dagger_Light	0			DLC3_Light_2Dagger	Eltariel_1HS_BladeSwordT1_Stealth_Tint_Light
+weapon:MeleeAux	Eltariel_2Dagger_Poison	0			DLC3_Poison_Island_2Dagger	Eltariel_1HS_WoodElfSwordT1_Stealth_Tint_Poison
+weapon:MeleeAux	Gondorian_1HD_SoldierDagger	0				Gondorian_1HD_SoldierDagger
+weapon:MeleeAux	Item_AI_Talion_Dagger	0				Player_1HD_BlackNumDaggerT4_Tint_Ringwraith
+weapon:MeleeAux	Orc_Misc_Grenade	1602224220				Orc_Misc_Grenade
+weapon:MeleeAux	PC_Companion_Dagger	1602224220				PC_Companion_Dagger
+weapon:MeleeAux	PC_Dagger_Celebrimbor	0				PC_Companion_Dagger
+weapon:MeleeAux	Player_1HD_RangerDagger	0				Player_1HD_RangerDaggerT1
+weapon:MeleeAux	Primary_2Dagger_1DarkRanger	0				Player_1HD_BlackNumDaggerT2_Tint_DarkRanger
+weapon:MeleeAux	Primary_2Dagger_1Default	0				Player_1HD_RangerDaggerT1_Starting
+weapon:MeleeAux	Primary_2Dagger_2Standard	0				Player_1HD_GondorianDaggerT1_Tint1_2Common,Player_1HD_GondorianDaggerT1_Tint2_2Common,Player_1HD_GondorianDaggerT1_Tint3_2Common,Player_1HD_GondorianDaggerT1_Tint4_2Common,Player_1HD_GondorianDaggerT1_Tint5_2Common,Player_1HD_GondorianDaggerT1_Tint6_2Common,Player_1HD_GondorianDaggerT1_Tint7_2Common,Player_1HD_GondorianDaggerT1_Tint8_2Common,Player_1HD_GondorianDaggerT1_Tint9_2Common,Player_1HD_GondorianDaggerT1_Tint10_2Common,Player_1HD_NumenoreanDaggerT1_Tint1_2Common,Player_1HD_NumenoreanDaggerT1_Tint2_2Common,Player_1HD_NumenoreanDaggerT1_Tint3_2Common,Player_1HD_NumenoreanDaggerT1_Tint4_2Common,Player_1HD_NumenoreanDaggerT1_Tint5_2Common,Player_1HD_NumenoreanDaggerT1_Tint6_2Common,Player_1HD_NumenoreanDaggerT1_Tint7_2Common,Player_1HD_NumenoreanDaggerT1_Tint8_2Common,Player_1HD_NumenoreanDaggerT1_Tint9_2Common,Player_1HD_NumenoreanDaggerT1_Tint10_2Common,Player_1HD_RangerDaggerT1_Tint1_2Common,Player_1HD_RangerDaggerT1_Tint2_2Common,Player_1HD_RangerDaggerT1_Tint3_2Common,Player_1HD_RangerDaggerT1_Tint4_2Common,Player_1HD_RangerDaggerT1_Tint5_2Common,Player_1HD_RangerDaggerT1_Tint6_2Common,Player_1HD_RangerDaggerT1_Tint7_2Common,Player_1HD_RangerDaggerT1_Tint8_2Common,Player_1HD_RangerDaggerT1_Tint9_2Common,Player_1HD_RangerDaggerT1_Tint10_2Common,Player_1HD_RohanDaggerT1_Tint1_2Common,Player_1HD_RohanDaggerT1_Tint2_2Common,Player_1HD_RohanDaggerT1_Tint3_2Common,Player_1HD_RohanDaggerT1_Tint4_2Common,Player_1HD_RohanDaggerT1_Tint5_2Common,Player_1HD_RohanDaggerT1_Tint6_2Common,Player_1HD_RohanDaggerT1_Tint7_2Common,Player_1HD_RohanDaggerT1_Tint8_2Common,Player_1HD_RohanDaggerT1_Tint9_2Common,Player_1HD_RohanDaggerT1_Tint10_2Common
+weapon:MeleeAux	Primary_2Dagger_3Rare	0				Player_1HD_GondorianDaggerT1_Tint1_2Common,Player_1HD_NumenoreanDaggerT1_Tint1_2Common,Player_1HD_RangerDaggerT1_Tint1_2Common,Player_1HD_RohanDaggerT1_Tint1_2Common
+weapon:MeleeAux	Primary_2Dagger_3Rare_DebugGrant	0				Player_1HD_GondorianDaggerT1_Tint1_2Common,Player_1HD_NumenoreanDaggerT1_Tint1_2Common,Player_1HD_RangerDaggerT1_Tint1_2Common,Player_1HD_RohanDaggerT1_Tint1_2Common
+weapon:MeleeAux	Primary_2Dagger_4Epic	0				Player_1HD_GondorianDaggerT1_Tint1_2Common,Player_1HD_NumenoreanDaggerT1_Tint1_2Common,Player_1HD_RangerDaggerT1_Tint1_2Common,Player_1HD_RohanDaggerT1_Tint1_2Common
+weapon:MeleeAux	Primary_2Dagger_4Epic_DebugGrant	0				Player_1HD_GondorianDaggerT1_Tint1_2Common,Player_1HD_NumenoreanDaggerT1_Tint1_2Common,Player_1HD_RangerDaggerT1_Tint1_2Common,Player_1HD_RohanDaggerT1_Tint1_2Common
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Celebrimbor	1			NG_5Lgnd_Celebrimbor_2Dagger	Player_1HD_ElvenDaggerT1_Tint_Celebrimbor
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Celebrimbor_DebugGrant	1			NG_5Lgnd_Celebrimbor_2Dagger	Player_1HD_ElvenDaggerT1_Tint_Celebrimbor
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Celebrimbor_SotP	0				Player_1HD_ElvenDaggerT4_Tint_Celebrimbor
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Celebrimbor_Wraith	0				PC_Companion_Dagger
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Dark	0				Player_1HD_BlackNumDaggerT1_Tint_Dark
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Dark_DebugGrant	0				Player_1HD_BlackNumDaggerT1_Tint_Dark
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Feral	0				Player_1HD_HaradrimDaggerT1_Tint_Feral
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Feral_DebugGrant	0				Player_1HD_HaradrimDaggerT1_Tint_Feral
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Machine	0				Player_1HD_DwarvenDaggerT1_Tint_Machine
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Machine_DebugGrant	0				Player_1HD_DwarvenDaggerT1_Tint_Machine
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Marauder	0				Player_1HD_HaradrimDaggerT1_Tint_Marauder
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Marauder_DebugGrant	0				Player_1HD_HaradrimDaggerT1_Tint_Marauder
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Mystic	0				Player_1HD_ElvenDaggerT1_Tint_Mystic
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Mystic_DebugGrant	0				Player_1HD_ElvenDaggerT1_Tint_Mystic
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Outlaw	0				Player_1HD_RhovanionDaggerT1_Tint_Outlaw
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Outlaw_DebugGrant	0				Player_1HD_RhovanionDaggerT1_Tint_Outlaw
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Ringwraith	0			NG_5Lgnd_Ringwraith_2Dagger	Player_1HD_BlackNumDaggerT2_Tint_Ringwraith
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Slaughter	0				Player_1HD_ElvenDaggerT1_Tint_Slaughter
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Slaughter_DebugGrant	0				Player_1HD_ElvenDaggerT1_Tint_Slaughter
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Terror	0				Player_1HD_BlackNumDaggerT1_Tint_Terror
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Terror_DebugGrant	0				Player_1HD_BlackNumDaggerT1_Tint_Terror
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Vendetta	1			NG_5Lgnd_Vendetta_2Dagger	Player_1HD_BlackNumDaggerT1_Tint_Vendetta
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Vendetta_DebugGrant	1			NG_5Lgnd_Vendetta_2Dagger	Player_1HD_BlackNumDaggerT1_Tint_Vendetta
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Warmonger	0				Player_1HD_DwarvenDaggerT1_Tint_Warmonger
+weapon:MeleeAux	Primary_2Dagger_5Lgnd_Warmonger_DebugGrant	0				Player_1HD_DwarvenDaggerT1_Tint_Warmonger
+weapon:MeleeAux	Primary_2Dagger_AD16	0				Player_1HD_RangerDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Dwarven1	0				Player_1HD_DwarvenDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Dwarven2	0				Player_1HD_DwarvenDaggerT2
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Dwarven3	0				Player_1HD_DwarvenDaggerT3
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Dwarven4	0				Player_1HD_DwarvenDaggerT4
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Elven1	0				Player_1HD_ElvenDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Elven2	0				Player_1HD_ElvenDaggerT2
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Elven3	0				Player_1HD_ElvenDaggerT3
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Elven4	0				Player_1HD_ElvenDaggerT4
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Gondor1	0				Player_1HD_GondorianDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Gondor2	0				Player_1HD_GondorianDaggerT2
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Haradrim1	0				Player_1HD_HaradrimDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Haradrim2	0				Player_1HD_HaradrimDaggerT2
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Haradrim3	0				Player_1HD_HaradrimDaggerT3
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Haradrim4	0				Player_1HD_HaradrimDaggerT4
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Numenor1	0				Player_1HD_BlackNumDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Numenor2	0				Player_1HD_BlackNumDaggerT2
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Numenor3	0				Player_1HD_BlackNumDaggerT3
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Numenor4	0				Player_1HD_BlackNumDaggerT4
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Ranger1	0				Player_1HD_RangerDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Ranger2	0				Player_1HD_RangerDaggerT2
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Rohan1	0				Player_1HD_RohanDaggerT1
+weapon:MeleeAux	Primary_2Dagger_ArtSet_Rohan2	0				Player_1HD_RohanDaggerT2
+weapon:MeleeAux	Primary_2Dagger_HalfProgression	0				Player_1HD_GondorianDaggerT1_Tint1_2Common,Player_1HD_GondorianDaggerT1_Tint2_2Common,Player_1HD_GondorianDaggerT1_Tint3_2Common,Player_1HD_GondorianDaggerT1_Tint4_2Common,Player_1HD_GondorianDaggerT1_Tint5_2Common,Player_1HD_GondorianDaggerT1_Tint6_2Common,Player_1HD_GondorianDaggerT1_Tint7_2Common,Player_1HD_GondorianDaggerT1_Tint8_2Common,Player_1HD_GondorianDaggerT1_Tint9_2Common,Player_1HD_GondorianDaggerT1_Tint10_2Common,Player_1HD_NumenoreanDaggerT1_Tint1_2Common,Player_1HD_NumenoreanDaggerT1_Tint2_2Common,Player_1HD_NumenoreanDaggerT1_Tint3_2Common,Player_1HD_NumenoreanDaggerT1_Tint4_2Common,Player_1HD_NumenoreanDaggerT1_Tint5_2Common,Player_1HD_NumenoreanDaggerT1_Tint6_2Common,Player_1HD_NumenoreanDaggerT1_Tint7_2Common,Player_1HD_NumenoreanDaggerT1_Tint8_2Common,Player_1HD_NumenoreanDaggerT1_Tint9_2Common,Player_1HD_NumenoreanDaggerT1_Tint10_2Common,Player_1HD_RangerDaggerT1_Tint1_2Common,Player_1HD_RangerDaggerT1_Tint2_2Common,Player_1HD_RangerDaggerT1_Tint3_2Common,Player_1HD_RangerDaggerT1_Tint4_2Common,Player_1HD_RangerDaggerT1_Tint5_2Common,Player_1HD_RangerDaggerT1_Tint6_2Common,Player_1HD_RangerDaggerT1_Tint7_2Common,Player_1HD_RangerDaggerT1_Tint8_2Common,Player_1HD_RangerDaggerT1_Tint9_2Common,Player_1HD_RangerDaggerT1_Tint10_2Common,Player_1HD_RohanDaggerT1_Tint1_2Common,Player_1HD_RohanDaggerT1_Tint2_2Common,Player_1HD_RohanDaggerT1_Tint3_2Common,Player_1HD_RohanDaggerT1_Tint4_2Common,Player_1HD_RohanDaggerT1_Tint5_2Common,Player_1HD_RohanDaggerT1_Tint6_2Common,Player_1HD_RohanDaggerT1_Tint7_2Common,Player_1HD_RohanDaggerT1_Tint8_2Common,Player_1HD_RohanDaggerT1_Tint9_2Common,Player_1HD_RohanDaggerT1_Tint10_2Common
+weapon:MeleeAux	Troll_Cave_HamstrungPrototype	0				Troll_Cave_HamstrungPrototype
+weapon:MeleeAux	Wep_BoG_Stealth	0				Eltariel_1HS_StealthX2
+weapon:MeleeAux	Wep_Gondorian_Stealth	0				Gondorian_1HD_SoldierDagger
+weapon:MeleeOffhand	Baranor_1Shield_1Default	0				Baranor_Shld_DesertT1
+weapon:MeleeOffhand	Eltariel_1HS_BladeSwordT1_OH	0				Eltariel_1HS_BladeSwordT1_OH
+weapon:MeleeOffhand	Eltariel_1HS_BladeSwordT1_OH_Tint_Light	0				Eltariel_1HS_BladeSwordT1_OH_Tint_Light
+weapon:MeleeOffhand	Eltariel_1HS_BladeSwordT2_OH	0				Eltariel_1HS_BladeSwordT2_OH
+weapon:MeleeOffhand	Eltariel_1HS_BladeSwordT2_OH_Tint_Light	0				Eltariel_1HS_BladeSwordT2_OH_Tint_Light
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT1_OH	0				Eltariel_1HS_WoodElfSwordT1_OH
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT1_OH_Tint_Beast	0				Eltariel_1HS_WoodElfSwordT1_OH_Tint_Beast
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT1_OH_Tint_Fire	0				Eltariel_1HS_WoodElfSwordT1_OH_Tint_Fire
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT1_OH_Tint_Frost	0				Eltariel_1HS_WoodElfSwordT1_OH_Tint_Frost
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT1_OH_Tint_Poison	0				Eltariel_1HS_WoodElfSwordT1_OH_Tint_Poison
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT2_OH	0				Eltariel_1HS_WoodElfSwordT2_OH
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT2_OH_Tint_Beast	0				Eltariel_1HS_WoodElfSwordT2_OH_Tint_Beast
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT2_OH_Tint_Fire	0				Eltariel_1HS_WoodElfSwordT2_OH_Tint_Fire
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT2_OH_Tint_Frost	0				Eltariel_1HS_WoodElfSwordT2_OH_Tint_Frost
+weapon:MeleeOffhand	Eltariel_1HS_WoodElfSwordT2_OH_Tint_Poison	0				Eltariel_1HS_WoodElfSwordT2_OH_Tint_Poison
+weapon:MeleeOffhand	Torvin_1Shield	0				Torvin_Shld_DesertT1
+weapon:QuickThrow	BlackHand_QuickThrow	1602224220				BH_Cast_QT
+weapon:Ranged	AI_BoG_Ranged_Attacks	0				AI_BoG_Ranged
+weapon:Ranged	AI_BoG_Ranged_Attacks_BuddyCommand	0				AI_BoG_Ranged
+weapon:Ranged	AI_BoG_Ranged_Attacks_Infinite	0				AI_BoG_Ranged
+weapon:Ranged	AI_TrollBaleFire_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	AI_TrollFire_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	AI_TrollIce_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	AI_Troll_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	BL_Companion_Bow	1602224220				Eltariel_2HR_BladeBowT1_Wraith
+weapon:Ranged	BL_Companion_Hammer	0				BL_Companion_Hammer
+weapon:Ranged	Balrog_Ranged_Whip	1602224220				Balrog_Ranged_Whip
+weapon:Ranged	Baranor_3Bow_1Default	0				Baranor_Misc_DesertXBowT1
+weapon:Ranged	BlackHand_1_Proj	0				BlackHand_Bow
+weapon:Ranged	BlackHand_2_Proj	1602224220				BlackHand_Bow
+weapon:Ranged	BlackHand_3_Proj	0				BlackHand_Bow
+weapon:Ranged	BlackHand_4_Proj	0				BlackHand_Bow
+weapon:Ranged	Celebrimbor_Hammer_Wraith	1602224220				Player_1HB_CelebrimborHammer
+weapon:Ranged	Easterling_2HR_WarbowAndArrow	0		Easterling_Archer_Bow		Easterling_2HR_WarbowAndArrow
+weapon:Ranged	Eltariel_2HR_Longbow	1602224220				Eltariel_2HR_Longbow
+weapon:Ranged	Eltariel_3Bow_Base	0			DLC3_Base_3Bow	Eltariel_2HR_BladeBowT1
+weapon:Ranged	Eltariel_3Bow_Beast	0			DLC3_Beast_MtnPass_3Bow	Eltariel_2HR_WoodElfBowT1_Tint_Beast
+weapon:Ranged	Eltariel_3Bow_Fire	0			DLC3_Fire_Volcano_3Bow	Eltariel_2HR_WoodElfBowT1_Tint_Fire
+weapon:Ranged	Eltariel_3Bow_FrostCurse	0			DLC3_FrostCurse_SnowMtn_3Bow	Eltariel_2HR_WoodElfBowT1_Tint_Frost
+weapon:Ranged	Eltariel_3Bow_Light	0			DLC3_Light_3Bow	Eltariel_2HR_BladeBowT1_Tint_Light
+weapon:Ranged	Eltariel_3Bow_Poison	0			DLC3_Poison_Island_3Bow	Eltariel_2HR_WoodElfBowT1_Tint_Poison
+weapon:Ranged	FellBeast_Carnun_Ranged	1602224220				FellBeast_Ranged
+weapon:Ranged	FellBeast_InvisibleProjectile	0				FellBeast_Ranged
+weapon:Ranged	FellBeast_Ranged	1602224220				FellBeast_Ranged
+weapon:Ranged	Goblin_Projectile	0				Goblin_Projectile
+weapon:Ranged	Goblin_Rare_Projectile	0				Spider_Poison_Projectile
+weapon:Ranged	Goblin_Spitter	1602224220		Goblin_Spitter		Goblin_Projectile
+weapon:Ranged	Gondorian_1HR_Javelin	1602224220				Orc_1HR_Javelin
+weapon:Ranged	Gondorian_1HR_ThrowingAxe	1602224220				Gondorian_1HR_ThrowingDagger
+weapon:Ranged	Gondorian_1HR_ThrowingDagger	0				Gondorian_1HR_ThrowingDagger
+weapon:Ranged	Gondorian_2HR_Longbow	0		Gondorian_Archer_Bow		Gondorian_2HR_Longbow
+weapon:Ranged	Item_AI_Talion_Ranged	0				Player_1HB_RohamHamT2_Tint_RingwraithT4
+weapon:Ranged	Mounted_FellBeast_Carnun_Ranged	0				FellBeast_Ranged
+weapon:Ranged	Mounted_FellBeast_Ranged	0				FellBeast_Ranged
+weapon:Ranged	Mounted_TrollBaleFire_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	Mounted_TrollFire_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	Mounted_TrollIce_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	Mounted_TrollPsn_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	Mounted_Troll_RangedProjectile	0				Mounted_Troll_RangedWeapon
+weapon:Ranged	Nazgul_Ranged_Curse	0				Nazgul_Ranged_Curse
+weapon:Ranged	Olog_1HR_ThrowingHammer	1602224220	OlogHai_All	Olog_Infantry_Melee		Olog_1HR_ThrowingHammer
+weapon:Ranged	Olog_1HR_ThrowingHammer_Named_Vs_FellBeast	1602224220	OlogHai_All	Olog_Infantry_Melee		Olog_1HR_ThrowingHammer
+weapon:Ranged	Olog_1HR_ThrowingHammer_Vs_FellBeast	1602224220	OlogHai_All	Olog_Infantry_Melee		Olog_1HR_ThrowingHammer
+weapon:Ranged	Orc_1HR_HunterDagger	0				Orc_1HR_HunterDagger
+weapon:Ranged	Orc_1HR_Javelin_Defender	5	Orc_ClassDefender_FactionAll	Orc_Defender_Projectile		Orc_1HR_Javelin
+weapon:Ranged	Orc_1HR_Javelin_Defender_Vs_FellBeast	5	Orc_ClassDefender_FactionAll	Orc_Defender_Projectile		Orc_1HR_Javelin
+weapon:Ranged	Orc_1HR_RegalThrowingSpear	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_RegalThrowingSpear
+weapon:Ranged	Orc_1HR_RegalThrowingSpear_Range	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_RegalThrowingSpear
+weapon:Ranged	Orc_1HR_ThrowingAxe_Berserker	5	Berzerker			Orc_1HR_ThrowingAxe
+weapon:Ranged	Orc_1HR_ThrowingAxe_Berserker_Named_V_FellBeast	5	Berzerker			Orc_1HR_ThrowingAxe
+weapon:Ranged	Orc_1HR_ThrowingAxe_Berserker_Vs_FellBeast	5	Berzerker			Orc_1HR_ThrowingAxe
+weapon:Ranged	Orc_1HR_ThrowingAxe_Infantry	5	Orc_ClassInfantry_FactionAll	Orc_Infantry_Projectile		Orc_1HR_ThrowingAxe
+weapon:Ranged	Orc_1HR_ThrowingAxe_Named_Vs_FellBeast	5	Orc_ClassInfantry_FactionAll	Orc_Infantry_Projectile		Orc_1HR_ThrowingAxe
+weapon:Ranged	Orc_1HR_ThrowingAxe_Vs_FellBeast	5	Orc_ClassInfantry_FactionAll	Orc_Infantry_Projectile		Orc_1HR_ThrowingAxe
+weapon:Ranged	Orc_1HR_ThrowingSpear	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_ThrowingSpear_Range
+weapon:Ranged	Orc_1HR_ThrowingSpear_EagleEye	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_ThrowingSpear_Range
+weapon:Ranged	Orc_1HR_ThrowingSpear_Named_Vs_FellBeast	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_ThrowingSpear_Range
+weapon:Ranged	Orc_1HR_ThrowingSpear_Range	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_ThrowingSpear_Range
+weapon:Ranged	Orc_1HR_ThrowingSpear_Vs_FellBeast	0	Orc_ClassSpearman_FactionAll	Orc_Spearman_Projectile		Orc_1HR_ThrowingSpear_Range
+weapon:Ranged	Orc_2HR_Crossbow	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	Orc_2HR_Crossbow_EagleEye	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	Orc_2HR_Crossbow_Explode	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	Orc_2HR_Crossbow_NotPCFromFortWall	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	Orc_2HR_Crossbow_PowerShot	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	Orc_2HR_Crossbow_SniperShot	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	Orc_2HR_Crossbow_VS_FellBeast	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	Orc_2HR_DeadeyeCrossbow	1602224220	Archer	Orc_Archer_Projectile		Orc_2HR_DeadeyeCrossbow
+weapon:Ranged	Orc_2HR_Fancy_Crossbow	0	Archer	Orc_Archer_Projectile		Orc_2HR_Fancy_Crossbow
+weapon:Ranged	Orc_2HR_Skullbow	1602224220	Archer	Orc_Archer_Projectile		Orc_2HR_Skullbow
+weapon:Ranged	Orc_Named_1HR_Javelin_Defender_Vs_FellBeast	5	Orc_ClassDefender_FactionAll	Orc_Defender_Projectile		Orc_1HR_Javelin
+weapon:Ranged	Orc_Named_2HR_Crossbow_VS_FellBeast	0	Archer	Orc_Archer_Projectile		Orc_2HR_Crossbow
+weapon:Ranged	PC_Companion_Bow	1602224220				PC_Companion_Bow
+weapon:Ranged	PC_Companion_Hammer	0				PC_Companion_Hammer
+weapon:Ranged	Player_1HB_CelebrimborHammer	0				Player_1HB_CelebrimborHammer
+weapon:Ranged	PrimHam_3Bow_1DarkRanger	1				Player_1HB_RohanHamT2_Tint_DarkRanger
+weapon:Ranged	PrimHam_3Bow_1Default	1				Player_2HR_RohanHamT1_Tint1_2Common
+weapon:Ranged	PrimHam_3Bow_2Standard	0				Player_2HR_RohanHamT1_Tint1_2Common,Player_2HR_RohanHamT1_Tint2_2Common,Player_2HR_RohanHamT1_Tint3_2Common,Player_2HR_RohanHamT1_Tint4_2Common
+weapon:Ranged	PrimHam_3Bow_3Rare	0				Player_2HR_RohanHamT1_Tint1_2Common
+weapon:Ranged	PrimHam_3Bow_3Rare_DebugGrant	0				Player_2HR_RohanHamT1_Tint1_2Common
+weapon:Ranged	PrimHam_3Bow_4Epic	0				Player_2HR_RohanHamT1_Tint1_2Common
+weapon:Ranged	PrimHam_3Bow_4Epic_DebugGrant	0				Player_2HR_RohanHamT1_Tint1_2Common
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Celebrimbor	0			NG_5Lgnd_Celebrimbor_3BowHam	Player_1HB_ElvenHammerT1_Tint_Celebrimbor
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Celebrimbor_DebugGrant	0			NG_5Lgnd_Celebrimbor_3BowHam	Player_1HB_ElvenHammerT1_Tint_Celebrimbor
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Celebrimbor_SotP	1			NG_5Lgnd_Celebrimbor_3BowHam_SotP	Player_1HB_ElvenHammerT4_Tint_Celebrimbor
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Machine	0				Player_1HB_ElvenHammerT1_Tint_Machine
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Machine_DebugGrant	0				Player_1HB_ElvenHammerT1_Tint_Machine
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Marauder	0				Player_1HB_ElvenHammerT1_Tint_Marauder
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Marauder_DebugGrant	0				Player_1HB_ElvenHammerT1_Tint_Marauder
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Ringwraith	0			NG_5Lgnd_Ringwraith_3BowHam	Player_1HB_RohamHamT2_Tint_RingwraithT3
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Warmonger	0				Player_1HB_ElvenHammerT1_Tint_Warmonger
+weapon:Ranged	PrimHam_3Bow_5Lgnd_Warmonger_DebugGrant	0				Player_1HB_ElvenHammerT1_Tint_Warmonger
+weapon:Ranged	PrimHam_3Bow_ArtSet_Rohan1	0				Player_1HB_RohanHammerT1
+weapon:Ranged	PrimHam_3Bow_ArtSet_Rohan2	0				Player_1HB_RohanHammerT2
+weapon:Ranged	PrimSnipe_3Bow_1Default	1				Player_2HR_RangerBowSnipeT1_Tint1_2Common
+weapon:Ranged	PrimSnipe_3Bow_2Standard	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_GondorianBowSnipeT1_Tint2_2Common,Player_2HR_GondorianBowSnipeT1_Tint3_2Common,Player_2HR_GondorianBowSnipeT1_Tint4_2Common,Player_2HR_GondorianBowSnipeT1_Tint5_2Common,Player_2HR_GondorianBowSnipeT1_Tint6_2Common,Player_2HR_GondorianBowSnipeT1_Tint7_2Common,Player_2HR_GondorianBowSnipeT1_Tint8_2Common,Player_2HR_GondorianBowSnipeT1_Tint9_2Common,Player_2HR_GondorianBowSnipeT1_Tint10_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint2_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint3_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint4_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint5_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint6_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint7_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint8_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint9_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint10_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint2_2Common,Player_2HR_RangerBowSnipeT1_Tint3_2Common,Player_2HR_RangerBowSnipeT1_Tint4_2Common,Player_2HR_RangerBowSnipeT1_Tint5_2Common,Player_2HR_RangerBowSnipeT1_Tint6_2Common,Player_2HR_RangerBowSnipeT1_Tint7_2Common,Player_2HR_RangerBowSnipeT1_Tint8_2Common,Player_2HR_RangerBowSnipeT1_Tint9_2Common,Player_2HR_RangerBowSnipeT1_Tint10_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint2_2Common,Player_2HR_RohanBowSnipeT1_Tint3_2Common,Player_2HR_RohanBowSnipeT1_Tint4_2Common,Player_2HR_RohanBowSnipeT1_Tint5_2Common,Player_2HR_RohanBowSnipeT1_Tint6_2Common,Player_2HR_RohanBowSnipeT1_Tint7_2Common,Player_2HR_RohanBowSnipeT1_Tint8_2Common,Player_2HR_RohanBowSnipeT1_Tint9_2Common,Player_2HR_RohanBowSnipeT1_Tint10_2Common
+weapon:Ranged	PrimSnipe_3Bow_3Rare	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	PrimSnipe_3Bow_3Rare_DebugGrant	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	PrimSnipe_3Bow_4Epic	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	PrimSnipe_3Bow_4Epic_DebugGrant	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Dark	0				Player_2HR_BlackNumBowT1_Tint_Dark
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Dark_DebugGrant	0				Player_2HR_BlackNumBowT1_Tint_Dark
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Slaughter	0				Player_2HR_ElvenBowT1_Tint_Slaughter
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Slaughter_DebugGrant	0				Player_2HR_ElvenBowT1_Tint_Slaughter
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Terror	0				Player_2HR_BlackNumBowT1_Tint_Terror
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Terror_DebugGrant	0				Player_2HR_BlackNumBowT1_Tint_Terror
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Vendetta	0			NG_5Lgnd_Vendetta_3BowSnipe	Player_2HR_BlackNumBowT1_Tint_Vendetta
+weapon:Ranged	PrimSnipe_3Bow_5Lgnd_Vendetta_DebugGrant	0			NG_5Lgnd_Vendetta_3BowSnipe	Player_2HR_BlackNumBowT1_Tint_Vendetta
+weapon:Ranged	Primary_3Bow_1Default	1				Player_2HR_RangerBowT1_Starting
+weapon:Ranged	Primary_3Bow_2Standard	0				Player_2HR_GondorianBowT1_Tint1_2Common,Player_2HR_GondorianBowT1_Tint2_2Common,Player_2HR_GondorianBowT1_Tint3_2Common,Player_2HR_GondorianBowT1_Tint4_2Common,Player_2HR_GondorianBowT1_Tint5_2Common,Player_2HR_GondorianBowT1_Tint6_2Common,Player_2HR_GondorianBowT1_Tint7_2Common,Player_2HR_GondorianBowT1_Tint8_2Common,Player_2HR_GondorianBowT1_Tint9_2Common,Player_2HR_GondorianBowT1_Tint10_2Common,Player_2HR_NumenoreanBowT1_Tint1_2Common,Player_2HR_NumenoreanBowT1_Tint2_2Common,Player_2HR_NumenoreanBowT1_Tint3_2Common,Player_2HR_NumenoreanBowT1_Tint4_2Common,Player_2HR_NumenoreanBowT1_Tint5_2Common,Player_2HR_NumenoreanBowT1_Tint6_2Common,Player_2HR_NumenoreanBowT1_Tint7_2Common,Player_2HR_NumenoreanBowT1_Tint8_2Common,Player_2HR_NumenoreanBowT1_Tint9_2Common,Player_2HR_NumenoreanBowT1_Tint10_2Common,Player_2HR_RangerBowT1_Tint1_2Common,Player_2HR_RangerBowT1_Tint2_2Common,Player_2HR_RangerBowT1_Tint3_2Common,Player_2HR_RangerBowT1_Tint4_2Common,Player_2HR_RangerBowT1_Tint5_2Common,Player_2HR_RangerBowT1_Tint6_2Common,Player_2HR_RangerBowT1_Tint7_2Common,Player_2HR_RangerBowT1_Tint8_2Common,Player_2HR_RangerBowT1_Tint9_2Common,Player_2HR_RangerBowT1_Tint10_2Common,Player_2HR_RohanBowT1_Tint1_2Common,Player_2HR_RohanBowT1_Tint2_2Common,Player_2HR_RohanBowT1_Tint3_2Common,Player_2HR_RohanBowT1_Tint4_2Common,Player_2HR_RohanBowT1_Tint5_2Common,Player_2HR_RohanBowT1_Tint6_2Common,Player_2HR_RohanBowT1_Tint7_2Common,Player_2HR_RohanBowT1_Tint8_2Common,Player_2HR_RohanBowT1_Tint9_2Common,Player_2HR_RohanBowT1_Tint10_2Common
+weapon:Ranged	Primary_3Bow_2Standard_MarkEx	0				Player_2HR_GondorianBowT1_Tint1_2Common,Player_2HR_GondorianBowT1_Tint2_2Common,Player_2HR_GondorianBowT1_Tint3_2Common,Player_2HR_GondorianBowT1_Tint4_2Common,Player_2HR_GondorianBowT1_Tint5_2Common,Player_2HR_GondorianBowT1_Tint6_2Common,Player_2HR_GondorianBowT1_Tint7_2Common,Player_2HR_GondorianBowT1_Tint8_2Common,Player_2HR_GondorianBowT1_Tint9_2Common,Player_2HR_GondorianBowT1_Tint10_2Common,Player_2HR_NumenoreanBowT1_Tint1_2Common,Player_2HR_NumenoreanBowT1_Tint2_2Common,Player_2HR_NumenoreanBowT1_Tint3_2Common,Player_2HR_NumenoreanBowT1_Tint4_2Common,Player_2HR_NumenoreanBowT1_Tint5_2Common,Player_2HR_NumenoreanBowT1_Tint6_2Common,Player_2HR_NumenoreanBowT1_Tint7_2Common,Player_2HR_NumenoreanBowT1_Tint8_2Common,Player_2HR_NumenoreanBowT1_Tint9_2Common,Player_2HR_NumenoreanBowT1_Tint10_2Common,Player_2HR_RangerBowT1_Tint1_2Common,Player_2HR_RangerBowT1_Tint2_2Common,Player_2HR_RangerBowT1_Tint3_2Common,Player_2HR_RangerBowT1_Tint4_2Common,Player_2HR_RangerBowT1_Tint5_2Common,Player_2HR_RangerBowT1_Tint6_2Common,Player_2HR_RangerBowT1_Tint7_2Common,Player_2HR_RangerBowT1_Tint8_2Common,Player_2HR_RangerBowT1_Tint9_2Common,Player_2HR_RangerBowT1_Tint10_2Common,Player_2HR_RohanBowT1_Tint1_2Common,Player_2HR_RohanBowT1_Tint2_2Common,Player_2HR_RohanBowT1_Tint3_2Common,Player_2HR_RohanBowT1_Tint4_2Common,Player_2HR_RohanBowT1_Tint5_2Common,Player_2HR_RohanBowT1_Tint6_2Common,Player_2HR_RohanBowT1_Tint7_2Common,Player_2HR_RohanBowT1_Tint8_2Common,Player_2HR_RohanBowT1_Tint9_2Common,Player_2HR_RohanBowT1_Tint10_2Common
+weapon:Ranged	Primary_3Bow_3Rare	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	Primary_3Bow_3Rare_DebugGrant	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	Primary_3Bow_4Epic	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	Primary_3Bow_4Epic_DebugGrant	0				Player_2HR_GondorianBowSnipeT1_Tint1_2Common,Player_2HR_NumenoreanBowSnipeT1_Tint1_2Common,Player_2HR_RangerBowSnipeT1_Tint1_2Common,Player_2HR_RohanBowSnipeT1_Tint1_2Common
+weapon:Ranged	Primary_3Bow_5Lgnd_Celebrimbor	1			NG_5Lgnd_Celebrimbor_3Bow	Player_2HR_ElvenBowT1_Tint_Celebrimbor
+weapon:Ranged	Primary_3Bow_5Lgnd_Celebrimbor_DebugGrant	0			NG_5Lgnd_Celebrimbor_3Bow	Player_2HR_ElvenBowT1_Tint_Celebrimbor
+weapon:Ranged	Primary_3Bow_5Lgnd_Celebrimbor_SotP	0			NG_5Lgnd_Celebrimbor_3Bow_SotP	Player_2HR_ElvenBowT4_Tint_Celebrimbor
+weapon:Ranged	Primary_3Bow_5Lgnd_Feral	0				Player_2HR_HaradrimBowT1_Tint_Feral
+weapon:Ranged	Primary_3Bow_5Lgnd_Feral_DebugGrant	0				Player_2HR_HaradrimBowT1_Tint_Feral
+weapon:Ranged	Primary_3Bow_5Lgnd_Mystic	0				Player_2HR_ElvenBowT1_Tint_Mystic
+weapon:Ranged	Primary_3Bow_5Lgnd_Mystic_DebugGrant	0				Player_2HR_ElvenBowT1_Tint_Mystic
+weapon:Ranged	Primary_3Bow_5Lgnd_Outlaw	0				Player_2HR_RhovanionBowT1_Tint_Outlaw
+weapon:Ranged	Primary_3Bow_5Lgnd_Outlaw_DebugGrant	0				Player_2HR_RhovanionBowT1_Tint_Outlaw
+weapon:Ranged	Primary_3Bow_AD16	0				Player_2HR_RangerBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Elven1	0				Player_2HR_ElvenBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Elven2	0				Player_2HR_ElvenBowT2
+weapon:Ranged	Primary_3Bow_ArtSet_Elven3	0				Player_2HR_ElvenBowT3
+weapon:Ranged	Primary_3Bow_ArtSet_Elven4	0				Player_2HR_ElvenBowT4
+weapon:Ranged	Primary_3Bow_ArtSet_Gondor1	0				Player_2HR_GondorianBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Gondor2	0				Player_2HR_GondorianBowT2
+weapon:Ranged	Primary_3Bow_ArtSet_Haradrim1	0				Player_2HR_HaradrimBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Haradrim2	0				Player_2HR_HaradrimBowT2
+weapon:Ranged	Primary_3Bow_ArtSet_Haradrim3	0				Player_2HR_HaradrimBowT3
+weapon:Ranged	Primary_3Bow_ArtSet_Haradrim4	0				Player_2HR_HaradrimBowT4
+weapon:Ranged	Primary_3Bow_ArtSet_Numenor1	0				Player_2HR_NumenoreanBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Numenor2	0				Player_2HR_NumenoreanBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Numenor3	0				Player_2HR_NumenoreanBowT2
+weapon:Ranged	Primary_3Bow_ArtSet_Numenor4	0				Player_2HR_NumenoreanBowT2
+weapon:Ranged	Primary_3Bow_ArtSet_Ranger1	0				Player_2HR_RangerBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Ranger2	0				Player_2HR_RangerBowT2
+weapon:Ranged	Primary_3Bow_ArtSet_Rohan1	0				Player_2HR_RohanBowT1
+weapon:Ranged	Primary_3Bow_ArtSet_Rohan2	0				Player_2HR_RohanBowT2
+weapon:Ranged	Spider_Poison_Projectile	0				Spider_Poison_Projectile
+weapon:Ranged	Spider_Rare_Projectile	0				Spider_Poison_Projectile
+weapon:Ranged	Torvin_3Bow	0				Torvin_Misc_DesertXBowT1
+weapon:Ranged	Troll_Cave_RangedProjectile	1602224220				Troll_Cave_RangedWeapon
+weapon:Ranged	Troll_Poison_RangedProjectile	1602224220				Troll_Poison_RangedWeapon
+weapon:Ranged	Troll_Poison_RangedProjectile_GC	1602224220				Troll_Poison_RangedWeapon
+weapon:Ranged	Troll_ThrowObject	0				Troll_ThrowObject
+weapon:Ranged	Wep_BoG_Ranged	0		BoG_Ranged		Eltariel_2HR_Longbow
+weapon:RangedAux	DEMOTEMP_Dragonborn_Flamethrower	1602224220				DEMOTEMP_Dragonborn_Flamethrower
+weapon:RangedAux	Easterling_2HR_Warbow	0		Easterling_Archer_Bow		Easterling_2HR_Warbow
+weapon:RangedAux	Olog_2HR_Arquebus	1602224220	OlogHai_All	Olog_Infantry_Cannon		Olog_2HR_Arquebus
+weapon:RangedAux	Olog_2HR_Flamethrower	1602224220	OlogHai_All	Olog_Infantry_Melee		Olog_2HR_Flamethrower
+weapon:RangedAux	Olog_2HR_Harpoon	0	OlogHai_All	Olog_Infantry_Melee		Olog_2HR_Harpoon
+weapon:RangedAux	PC_Bow_Celebrimbor	1602224220				Kraken_Equipped_Weapon_Bow_Celebrimbor
+weapon:RangedAux	Spider_Web_WebGrabShot	0				Spider_Web_WebGrabShot
+weapon:Tribe	Orc_TrbHide_Black_KarambitX2	0				Orc_Trb_Black_KarambitX2
+weapon:Tribe	Orc_TrbHide_Industrial_Harpoon	0				Orc_Trb_Industrial_Harpoon
+weapon:Tribe	Orc_TrbHide_Mystic_Dagger	1602224220				Orc_Trb_Mystic_Dagger
+weapon:Tribe	Orc_TrbHide_Regal_HandCrossbowX2	0				Orc_Trb_Regal_HandCrossbowX2
+weapon:Tribe	Orc_TrbHide_Slaughter_CleaverX2	0		Orc_Infantry_Melee		Orc_Trb_Slaughter_CleaverX2
+weapon:Tribe	Orc_TrbHide_Torturer_ChainHookX2	0				Orc_Trb_Torturer_ChainHookX2
+weapon:Tribe	Orc_TrbVis_Black_KarambitX2	0				Orc_TrbVis_Black_KarambitX2
+weapon:Tribe	Orc_TrbVis_Industrial_Harpoon	0				Orc_TrbVis_Industrial_Harpoon
+weapon:Tribe	Orc_TrbVis_Mystic_Dagger	1602224220				Orc_TrbVis_Mystic_Dagger
+weapon:Tribe	Orc_TrbVis_Regal_HandCrossbowX2	0				Orc_TrbVis_Regal_HandCrossbowX2
+weapon:Tribe	Orc_TrbVis_Slaughter_CleaverX2	0		Orc_Infantry_Melee		Orc_TrbVis_Slaughter_CleaverX2
+weapon:Tribe	Orc_TrbVis_Torturer_ChainHookX2	0				Orc_TrbVis_Torturer_ChainHookX2
+weapon:Tribe	Orc_Trb_Beast_ClawX2	0				Orc_Trb_Beast_ClawsX2
+weapon:Tribe	Orc_Trb_Blackguard_Bola	0				Orc_Trb_Blackguard_Bola
+weapon:Tribe	Orc_Trb_Blackguard_Bola_Ranged	0				Orc_Trb_Blackguard_Bola
+weapon:Tribe	PC_Glaive_Ground	0				Player_1HSp_RangerSpearOnGround
+weapon:Tribe	Player_1HSp_RangerSpearOnGround	0				Player_1HSp_RangerSpearOnGround
+weapon:Utility	Baranor_Misc_Backpack	0				Baranor_Misc_Backpack
+weapon:Utility	Broom	0		Prop_Generic		Orc_Misc_Broom
+weapon:Utility	Celebrimbor_Dagger_Wraith	1602224220				Celebrimbor_Dagger_Wraith
+weapon:Utility	Easterling_Misc_WarBanner	0		Prop_WarBanner		Easterling_Misc_WarBanner
+weapon:Utility	GP_Orc_Misc_Dagger	5	Trait_AllBut_Olog	Orc_Infantry_Melee		Orc_Misc_Dagger
+weapon:Utility	Hoe	0		Prop_Generic		Orc_Misc_Hoe
+weapon:Utility	Olog_Torch	0	OlogHai_All	Olog_Torch		Olog_Misc_Torch
+weapon:Utility	Orc_1HB_Lute_Presentation	5	Orc_ClassInfantry_FactionAll	Orc_Infantry_Melee		Orc_1HB_Lute_Presentation
+weapon:Utility	Orc_Misc_CarryBoulder	0		Prop_CarryProp		Orc_Misc_CarryBoulder
+weapon:Utility	Orc_Misc_CarryChest	0		Prop_CarryProp		Orc_Misc_CarryChest
+weapon:Utility	Orc_Misc_CarryLog	0		Prop_CarryProp		Orc_Misc_CarryLog
+weapon:Utility	Orc_Misc_CarryMeat	0		Prop_CarryProp		Orc_Misc_CarryMeat
+weapon:Utility	Orc_Misc_CarryOre	0		Prop_CarryProp		Orc_Misc_CarryOre
+weapon:Utility	Orc_Misc_Cleaver	5	Trait_AllBut_Olog	Prop_Generic		Orc_Misc_Cleaver
+weapon:Utility	Orc_Misc_ConqueringBanner	0		Prop_ConqueringBanner		Orc_Misc_WarBanner
+weapon:Utility	Orc_Misc_Dagger	5	Trait_AllBut_Olog	Orc_Infantry_Melee		Orc_Misc_Dagger
+weapon:Utility	Orc_Misc_Drumstick	0		Prop_Generic		Orc_Misc_Drumstick
+weapon:Utility	Orc_Misc_Falchion	5	Trait_AllBut_Olog	Prop_Generic		Orc_Misc_Falchion
+weapon:Utility	Orc_Misc_FirePoker	0		Prop_Generic		Orc_Misc_FirePoker
+weapon:Utility	Orc_Misc_Hammer	0		Prop_Generic		Orc_Misc_Hammer
+weapon:Utility	Orc_Misc_PracticeThrowingAxe	5	Orc_BerserkerInfantry	Prop_Generic		Orc_Misc_PracticeThrowingAxe
+weapon:Utility	Orc_Misc_SapperPack	0		Orc_Infantry_Melee		Sapper_Torch
+weapon:Utility	Orc_Misc_SapperPack_PoisonFX	0		Orc_Infantry_Melee		Sapper_Torch_Poison
+weapon:Utility	Orc_Misc_Snare	0				Orc_Misc_Snare
+weapon:Utility	Orc_Misc_Snare_Range	0	All_Orcs	Orc_Spearman_Projectile		Orc_Misc_Snare
+weapon:Utility	Orc_Misc_WarBanner	0		Prop_WarBanner		Orc_Misc_WarBanner
+weapon:Utility	Orc_Misc_WarBanner_Sauron	0		Prop_WarBanner		Orc_Misc_WarBanner
+weapon:Utility	Orc_Misc_WarBanner_Talion	0		Prop_WarBanner		Orc_Misc_WarBanner
+weapon:Utility	Orc_Misc_WoodcutterAxe	0		Prop_Generic		Orc_Misc_WoodcutterAxe
+weapon:Utility	PC_Glaive	0				Player_1HSp_RangerSpear
+weapon:Utility	Pick	0		Prop_Generic		Orc_Misc_Pick
+weapon:Utility	Player_1HSp_RangerSpear	0				Player_1HSp_RangerSpear
+weapon:Utility	Shovel	0		Prop_Generic		Orc_Misc_Shovel
+weapon:Utility	Torch	0		Orc_Torch		Orc_Misc_Torch
+weapon:Utility	Torvin_Misc_Map	0				Torvin_Misc_Map
+weapon:Utility	Wep_Graug_A_Pult	1602224220		Prop_Graugapult		Graug_A_Pult
+weapon:Utility	Wep_Graug_A_Pult_Curse	1602224220		Prop_Graugapult		Graug_A_Pult
+weapon:Utility	Wep_Graug_A_Pult_Fire	1602224220		Prop_Graugapult		Graug_A_Pult
+weapon:Utility	Wep_Graug_A_Pult_Poison	1602224220		Prop_Graugapult		Graug_A_Pult

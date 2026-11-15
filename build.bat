@@ -1,0 +1,35 @@
+@echo off
+rem Shadow of War Trainer - build script (Visual Studio 2022 or newer, x64).
+rem Output: build\ShadowOfWarTrainer.dll + build\ShadowOfWarTrainer.exe
+setlocal
+set ROOT=%~dp0
+set TP=%ROOT%third_party
+set MH=%TP%\minhook
+set IMG=%TP%\imgui-1.91.9b
+set OUT=%ROOT%build
+set OBJ=%ROOT%build\obj
+if not exist "%OBJ%" mkdir "%OBJ%"
+if "%VCINSTALLDIR%"=="" (
+  for /f "usebackq tokens=*" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -property installationPath`) do set VSDIR=%%i
+)
+if "%VCINSTALLDIR%"=="" call "%VSDIR%\VC\Auxiliary\Build\vcvars64.bat" >nul || (echo Visual Studio C++ tools not found & exit /b 1)
+set INC=/I"%ROOT%src" /I"%IMG%" /I"%IMG%\backends" /I"%TP%" /I"%MH%\include"
+set FLAGS=/nologo /O2 /MT /EHsc /std:c++17 /utf-8 /W3 /DNDEBUG /DNOMINMAX /wd4996 /wd4244 /wd4267
+
+if not exist "%OBJ%\hde64.obj" (
+  echo === minhook
+  cl %FLAGS% %INC% /c /Fo"%OBJ%\\" "%MH%\src\buffer.c" "%MH%\src\hook.c" "%MH%\src\trampoline.c" "%MH%\src\hde\hde64.c" || exit /b 1
+)
+if not exist "%OBJ%\imgui_impl_dx11.obj" (
+  echo === imgui
+  cl %FLAGS% %INC% /c /Fo"%OBJ%\\" "%IMG%\imgui.cpp" "%IMG%\imgui_draw.cpp" "%IMG%\imgui_tables.cpp" "%IMG%\imgui_widgets.cpp" "%IMG%\backends\imgui_impl_dx11.cpp" "%IMG%\backends\imgui_impl_win32.cpp" || exit /b 1
+)
+echo === trainer
+cl %FLAGS% %INC% /c /Fo"%OBJ%\\" "%ROOT%src\core.cpp" "%ROOT%src\server.cpp" "%ROOT%src\sigs.cpp" "%ROOT%src\calls.cpp" "%ROOT%src\overlay.cpp" "%ROOT%src\panel.cpp" "%ROOT%src\skin.cpp" "%ROOT%src\sow.cpp" "%ROOT%src\sow_prog.cpp" "%ROOT%src\sow_army.cpp" "%ROOT%src\sow_gear.cpp" || exit /b 1
+echo === link
+link /nologo /DLL /OUT:"%OUT%\ShadowOfWarTrainer.dll" "%OBJ%\*.obj" user32.lib psapi.lib d3d11.lib dxgi.lib windowscodecs.lib ole32.lib || exit /b 1
+echo === loader
+cl /nologo /O2 /MT /EHsc /std:c++17 /DUNICODE /D_UNICODE "%ROOT%loader\loader.cpp" /Fo"%OBJ%\loader.obj.tmp" /Fe"%OUT%\ShadowOfWarTrainer.exe" /link user32.lib shell32.lib || exit /b 1
+del "%OBJ%\loader.obj.tmp" 2>nul
+echo BUILD OK
+endlocal

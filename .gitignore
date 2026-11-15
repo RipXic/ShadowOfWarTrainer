@@ -1,0 +1,13 @@
+build/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.log
+logs/
+loaded/
+panel_state.json
+hotkeys.json
+data/data/gear_originals*.json
+data/data/loot_templates.json
