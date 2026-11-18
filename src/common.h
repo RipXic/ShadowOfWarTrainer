@@ -37,6 +37,13 @@ void save_config();
 // ---- logging
 void log(const char* fmt, ...);
 std::vector<std::string> log_tail(size_t n);
+// crash logs (core.cpp): the previous session ended without a normal exit -> its log was saved in logs\crashes
+bool crash_last_session();
+int crash_log_count();
+std::string crash_log_dir();
+// loaded-DLL snapshot: "Name.dll+0x1234" for an address, lock-free (safe inside an exception handler)
+void modsnap_refresh();
+bool modsnap_find(uintptr_t addr, char* out, size_t n, bool* system);
 
 // ---- modules / memory
 struct ModuleInfo { std::string name; uintptr_t base = 0; size_t size = 0; };

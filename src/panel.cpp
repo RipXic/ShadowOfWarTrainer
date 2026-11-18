@@ -20,6 +20,8 @@
 #include <cmath>
 #include "imgui.h"
 #include "imgui_internal.h"
+#include <shellapi.h>
+#pragma comment(lib, "shell32.lib")
 
 namespace wb {
 
@@ -62,6 +64,7 @@ struct Item {
     bool pending_reapply = false;
     uint64_t req_seq = 0;            // bridge requests sent for this item (only the newest one may revert the switch)
     ULONGLONG live_after = 0;   // ignore getter values reported before this (the action is still on its way to the game)
+    ULONGLONG last_vlog = 0;    // last "[option] .. value" log line (locked values are re-sent often: at most one per 5 s)
     std::vector<std::string> options;   // 'select' items
     std::string live_str;       // cvar items: value cached by the main-thread tick
     bool live_ok = false;
@@ -388,7 +391,7 @@ static bool run_action(Item& it, const json& a, const std::string& phase, std::s
                   // and the next change the user makes saves the switch as OFF.
                   if (!okr && turning_on && x.req_seq == seq) x.on = false;   // a newer click wins
               } }
-            if (!okr) toast(label + " - " + msg);
+            if (!okr) { toast(label + " - " + msg); log("[option] %s: failed - %s", label.c_str(), msg.c_str()); }
             else if (!quiet) {
                 const json d = r.value("data", json::object());
                 std::string extra;
@@ -403,6 +406,11 @@ static bool run_action(Item& it, const json& a, const std::string& phase, std::s
 }
 
 static void apply(Item& it, const std::string& phase) {
+    // every option the user (or the saved-state reapply) uses goes to the log: "what was switched on before the crash"
+    if (phase == "value") {
+        const ULONGLONG now = GetTickCount64();
+        if (now - it.last_vlog > 5000) { it.last_vlog = now; log("[option] %s = %g%s", it.label.c_str(), it.val, it.lock ? " (locked)" : ""); }
+    } else log("[option] %s: %s", it.label.c_str(), phase.c_str());
     std::string err;
     it.last_err = run_action(it, it.action, phase, err) ? "" : err;
     // refused because the game is loading: nothing ran, so the toggle must not show ON
@@ -1476,6 +1484,15 @@ static void draw_bridge_tab() {
     section_header("About");
     ImGui::Text("Game version"); ImGui::SameLine(S(160)); ImGui::TextDisabled("%s", sow_game_supported() ? "1.0.8874 (supported)" : "not supported - trainer features are off");
     ImGui::Text("Open / close"); ImGui::SameLine(S(160)); ImGui::TextDisabled("Insert");
+    section_header("Crash logs");
+    ImGui::TextWrapped("If the game crashes, the trainer keeps that session's log in the logs\\crashes folder, so it is not "
+                       "overwritten. Send the newest crashes_###.log file when you report a crash (Nexus Bugs tab or Discord).");
+    ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetStyleColorVec4(ImGuiCol_TextDisabled));
+    ImGui::TextWrapped("%d crash log%s saved (20 per file, old ones are always kept).%s", crash_log_count(), crash_log_count() == 1 ? "" : "s",
+                       crash_last_session() ? " The last game session ended unexpectedly." : "");
+    ImGui::PopStyleColor();
+    if (ImGui::Button("Open crash logs folder", ImVec2(S(220), 0)) && !crash_log_dir().empty())
+        ShellExecuteA(nullptr, "open", crash_log_dir().c_str(), nullptr, nullptr, SW_SHOWNORMAL);
     section_header("Panel");
     if (ImGui::Button("Reload panel.json", ImVec2(S(180), 0))) panel_reload();
     ImGui::SameLine(); ImGui::TextDisabled("%s", g_load_msg.c_str());

@@ -44,13 +44,18 @@ HMODULE self_module() { return g_self; }
 static std::mutex g_log_mtx;
 static std::deque<std::string> g_log_ring;
 static FILE* g_log_file = nullptr;
+static char g_log_path[MAX_PATH] = {};          // trainer.log, for the end-of-session marker written from DllMain
+static thread_local bool t_in_log = false;      // a fault while this thread writes the log must not log again (deadlock)
 
 void log(const char* fmt, ...) {
+    if (t_in_log) return;
     char msg[2048];
     va_list ap; va_start(ap, fmt); vsnprintf(msg, sizeof msg, fmt, ap); va_end(ap);
     SYSTEMTIME t; GetLocalTime(&t);
     char line[2200];
     sprintf_s(line, "[%02d:%02d:%02d.%03d] %s", t.wHour, t.wMinute, t.wSecond, t.wMilliseconds, msg);
+    t_in_log = true;
+    struct Reset { ~Reset() { t_in_log = false; } } reset;
     std::lock_guard<std::mutex> lk(g_log_mtx);
     g_log_ring.push_back(line);
     while (g_log_ring.size() > 800) g_log_ring.pop_front();
@@ -118,6 +123,76 @@ uintptr_t game_base(size_t* size) {
     if (!b) b = module_base(kGameExe, &s);
     if (size) *size = s;
     return b;
+}
+
+// ------------------------------------------------------------------ module snapshot (crash recorder + mod list)
+// The crash recorder runs inside an exception handler, where asking Windows which DLL owns an address can deadlock
+// (loader lock). So a background thread keeps a snapshot of every loaded DLL in two buffers and flips between them;
+// the handler only reads the active one. It also logs which non-Windows DLLs are loaded (other mods, overlays): that
+// is the first thing to know when a crash report comes in.
+namespace {
+struct ModSnap { char name[64]; uintptr_t base; size_t size; bool system; };
+constexpr int kSnapMax = 768;
+ModSnap g_snap[2][kSnapMax];
+int g_snap_n[2] = { 0, 0 };
+std::atomic<int> g_snap_cur{ -1 };
+std::mutex g_snap_mtx;
+std::vector<std::string> g_seen_mods;            // module paths already written to the log
+bool starts_with_i(const std::string& s, const std::string& p) { return s.size() >= p.size() && _strnicmp(s.c_str(), p.c_str(), p.size()) == 0; }
+}
+
+void modsnap_refresh() {
+    std::lock_guard<std::mutex> lk(g_snap_mtx);
+    char win[MAX_PATH] = {}; GetWindowsDirectoryA(win, MAX_PATH);
+    char exe[MAX_PATH] = {}; GetModuleFileNameA(nullptr, exe, MAX_PATH);
+    std::string game_dir = exe; game_dir = game_dir.substr(0, game_dir.find_last_of("\\/"));     // ...\ShadowOfWar\x64
+    std::string game_root = game_dir.substr(0, game_dir.find_last_of("\\/"));                  // ...\ShadowOfWar
+    const int dst = g_snap_cur.load() == 0 ? 1 : 0;
+    int n = 0;
+    std::vector<std::string> fresh;
+    HMODULE mods[1024]; DWORD needed = 0;
+    if (EnumProcessModules(GetCurrentProcess(), mods, sizeof mods, &needed)) {
+        for (DWORD i = 0; i < needed / sizeof(HMODULE) && i < 1024 && n < kSnapMax; ++i) {
+            MODULEINFO mi{}; char path[MAX_PATH] = {};
+            if (!GetModuleInformation(GetCurrentProcess(), mods[i], &mi, sizeof mi)) continue;
+            GetModuleFileNameExA(GetCurrentProcess(), mods[i], path, MAX_PATH);
+            std::string p = path, base = p.substr(p.find_last_of("\\/") + 1);
+            ModSnap& m = g_snap[dst][n++];
+            strncpy_s(m.name, base.c_str(), _TRUNCATE);
+            m.base = (uintptr_t)mi.lpBaseOfDll; m.size = mi.SizeOfImage;
+            m.system = starts_with_i(p, win);
+            if (m.system || mods[i] == GetModuleHandleA(nullptr) || mods[i] == g_self) continue;
+            if (std::find(g_seen_mods.begin(), g_seen_mods.end(), p) != g_seen_mods.end()) continue;
+            g_seen_mods.push_back(p);
+            // never write a full path from outside the game folder: logs get shared, paths can hold the user name
+            std::string shown = starts_with_i(p, game_root + "\\") ? p.substr(game_root.size() + 1) : base + " (outside the game folder)";
+            WIN32_FILE_ATTRIBUTE_DATA fa{}; char sz[32] = "";
+            if (GetFileAttributesExA(path, GetFileExInfoStandard, &fa)) sprintf_s(sz, " %lu KB", (unsigned long)((fa.nFileSizeLow + 1023) / 1024));
+            fresh.push_back(shown + sz);
+        }
+    }
+    g_snap_n[dst] = n;
+    g_snap_cur = dst;
+    if (fresh.empty()) return;
+    static bool first = true;
+    if (first) { log("[mods] other DLLs in the game (mods, loaders, overlays): %zu", fresh.size()); for (auto& f : fresh) log("[mods]   %s", f.c_str()); }
+    else for (auto& f : fresh) log("[mods] DLL loaded later: %s", f.c_str());
+    first = false;
+}
+
+// lock-free lookup for the crash recorder; false = not inside any known DLL
+bool modsnap_find(uintptr_t a, char* out, size_t n, bool* system) {
+    const int cur = g_snap_cur.load();
+    if (cur < 0) return false;
+    for (int i = 0; i < g_snap_n[cur]; ++i) {
+        const ModSnap& m = g_snap[cur][i];
+        if (a >= m.base && a < m.base + m.size) {
+            sprintf_s(out, n, "%s+0x%llX", m.name, (unsigned long long)(a - m.base));
+            if (system) *system = m.system;
+            return true;
+        }
+    }
+    return false;
 }
 
 bool safe_read(uintptr_t addr, void* out, size_t n) {
@@ -309,7 +384,9 @@ static void run_tick_fns() {
 
 json run_on_main(std::function<json()> fn, DWORD timeout_ms) {
     if (GetCurrentThreadId() == g_main_tid) return fn();
-    if (!g_main_tid) return fail("NO_MAIN_THREAD", "Main-thread hook is not installed (trainer.log).");
+    // 2026-11-18: the game script tick only starts once a save is loading/loaded, so a click in the main menu used to
+    // say "Main-thread hook is not installed" (user report). Nothing is wrong then: the game is just not in a world yet.
+    if (!g_main_tid) return fail("NOT_IN_WORLD", "wait until you are in the game world (the game is still starting up)");
     // review 2026-11-14: a job that timed out (loading screen) used to run later anyway - "failed" Give clicked twice
     // then gave two items - and its event handle leaked. Now a timed-out job is dropped, the handle closes with the state.
     struct State { HANDLE ev = nullptr; json result; std::atomic<int> phase{ 0 };   /* 0 queued, 1 running, 2 cancelled */ ~State() { if (ev) CloseHandle(ev); } };
@@ -376,15 +453,102 @@ static void rotate_logs(const std::string& dir) {
     for (size_t i = 0; i + kLogKeep < files.size(); ++i) DeleteFileA((ld + "\\" + files[i]).c_str());
 }
 
+// ------------------------------------------------------------------ crash logs
+// Every session starts its log with kSessionStart. When the game exits normally, DllMain writes kSessionEnd. A log
+// that has the start line but no end line belonged to a game that crashed (or was force-closed): before it is rotated
+// away it is copied into logs\crashes, where the normal 20-log rotation never deletes it. To keep that folder small,
+// one file collects up to kCrashPerFile crashes, then a new file starts. Old crash files are never deleted: the whole
+// crash history stays available for tracing a problem (20 crashes per file keeps the folder small).
+static const char kSessionStart[] = "[session] started - crash logs on";
+static const char kSessionEnd[] = "[session] game closed normally";
+static constexpr int kCrashPerFile = 20;
+static const char kCrashHeader[] = "==================== CRASH ";
+static std::atomic<int> g_crash_total{ 0 };
+static std::atomic<bool> g_prev_crashed{ false };
+static std::string g_crash_dir;
+
+bool crash_last_session() { return g_prev_crashed.load(); }
+int crash_log_count() { return g_crash_total.load(); }
+std::string crash_log_dir() { return g_crash_dir; }
+
+static std::vector<std::string> crash_files() {
+    std::vector<std::string> v; WIN32_FIND_DATAA fd{};
+    HANDLE h = FindFirstFileA((g_crash_dir + "\\crashes_*.log").c_str(), &fd);
+    if (h != INVALID_HANDLE_VALUE) { do v.push_back(fd.cFileName); while (FindNextFileA(h, &fd)); FindClose(h); }
+    std::sort(v.begin(), v.end());                                              // crashes_001, crashes_002 ...
+    return v;
+}
+static int count_headers(const std::string& file) {
+    std::ifstream f(file); std::string ln; int n = 0;
+    while (std::getline(f, ln)) if (ln.rfind(kCrashHeader, 0) == 0) ++n;
+    return n;
+}
+static std::string last_line_with(const std::vector<std::string>& lines, const char* tag) {
+    for (auto it = lines.rbegin(); it != lines.rend(); ++it) if (it->find(tag) != std::string::npos) return *it;
+    return "(none)";
+}
+
+static void archive_crash(const std::string& dir) {
+    g_crash_dir = dir + "\\logs\\crashes";
+    CreateDirectoryA((dir + "\\logs").c_str(), nullptr);
+    CreateDirectoryA(g_crash_dir.c_str(), nullptr);
+    const std::string cur = dir + "\\trainer.log";
+    std::vector<std::string> lines;
+    { std::ifstream f(cur); std::string ln; while (std::getline(f, ln)) lines.push_back(ln); }
+    // "Ready." = the trainer got past the game window: the exe's first stub process (it restarts itself while it
+    // unpacks) can be killed before that, which is not a crash
+    bool started = false, ended = false, ready = false;
+    for (auto& l : lines) {
+        if (l.find(kSessionStart) != std::string::npos) started = true;
+        if (l.find(kSessionEnd) != std::string::npos || l.find("[session] trainer unloaded") != std::string::npos) ended = true;
+        if (l.find("] Ready.") != std::string::npos) ready = true;
+    }
+    if (started && ready && !ended) {
+        auto files = crash_files();
+        int num = 1, in_file = 0;
+        if (!files.empty()) {
+            num = atoi(files.back().c_str() + 8);                               // "crashes_" + number
+            in_file = count_headers(g_crash_dir + "\\" + files.back());
+            WIN32_FILE_ATTRIBUTE_DATA fa{};
+            const bool big = GetFileAttributesExA((g_crash_dir + "\\" + files.back()).c_str(), GetFileExInfoStandard, &fa) && fa.nFileSizeLow > 8u * 1024 * 1024;
+            if (in_file >= kCrashPerFile || big) { ++num; in_file = 0; }
+        }
+        char name[48]; sprintf_s(name, "\\crashes_%03d.log", num);
+        WIN32_FILE_ATTRIBUTE_DATA fa{}; SYSTEMTIME st{};
+        if (GetFileAttributesExA(cur.c_str(), GetFileExInfoStandard, &fa)) { FILETIME lt; FileTimeToLocalFileTime(&fa.ftLastWriteTime, &lt); FileTimeToSystemTime(&lt, &st); }
+        std::ofstream o(g_crash_dir + name, std::ios::app);
+        char when[64]; sprintf_s(when, "%04d-%02d-%02d %02d:%02d:%02d", st.wYear, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond);
+        o << kCrashHeader << (in_file + 1) << " of this file ====================\n"
+          << "The game closed unexpectedly: it crashed, or it was force-closed (Task Manager).\n"
+          << "Last log line written at: " << when << "\n"
+          << "Last error recorded:      " << last_line_with(lines, "[crash-rec]") << "\n"
+          << "Last trainer option used: " << last_line_with(lines, "[option]") << "\n"
+          << "Last world change:        " << last_line_with(lines, "[world]") << "\n"
+          << "---------- full trainer log of that game session ----------\n";
+        for (auto& l : lines) o << l << "\n";
+        o << "\n";
+        o.close();
+        g_prev_crashed = true;
+    }
+    int total = 0;
+    for (auto& f : crash_files()) total += count_headers(g_crash_dir + "\\" + f);
+    g_crash_total = total;
+}
+
 // ------------------------------------------------------------------ entry
 static DWORD WINAPI init_thread(LPVOID) {
     char path[MAX_PATH]; GetModuleFileNameA(g_self, path, MAX_PATH);
     std::string dir = path; dir = dir.substr(0, dir.find_last_of("\\/"));
     if (dir.size() > 7 && _stricmp(dir.substr(dir.size() - 7).c_str(), "\\loaded") == 0) dir = dir.substr(0, dir.size() - 7);
     g_cfg.root = dir;
+    archive_crash(dir);                                                         // last session crashed? keep its log
     rotate_logs(dir);                                                           // keep the last 20 sessions' logs
-    g_log_file = _fsopen((dir + "\\trainer.log").c_str(), "w", _SH_DENYNO);   // readable while the game runs
-    log(WB_PRODUCT " %s attached to pid %lu, game base %s", kVersion, GetCurrentProcessId(), hexstr(game_base()).c_str());
+    strcpy_s(g_log_path, (dir + "\\trainer.log").c_str());
+    g_log_file = _fsopen(g_log_path, "w", _SH_DENYNO);                         // readable while the game runs
+    { SYSTEMTIME st; GetLocalTime(&st);
+      log(WB_PRODUCT " %s attached to pid %lu, game base %s, %04d-%02d-%02d", kVersion, GetCurrentProcessId(), hexstr(game_base()).c_str(), st.wYear, st.wMonth, st.wDay); }
+    log("%s (saved crash logs: %d, in logs\\crashes)", kSessionStart, g_crash_total.load());
+    if (g_prev_crashed) log("[session] the previous game session ended unexpectedly - its log was saved in logs\\crashes");
     load_config();
     MH_Initialize();
     log("Waiting for the game window (the exe unpacks itself first)...");
@@ -394,12 +558,31 @@ static DWORD WINAPI init_thread(LPVOID) {
     install_main_thread_hook();     // engine BeginFrame tick
     install_overlay();
     log("Ready.");
+    if (g_prev_crashed) toast("The game closed unexpectedly last time. The trainer saved a crash log in its logs\\crashes folder (Settings > Crash logs).");
+    // DLL list for the log now, then every 5 s (DLLs loaded later, and fresh addresses for the crash recorder)
+    std::thread([]() { while (!g_stopping) { modsnap_refresh(); Sleep(5000); } }).detach();
+    if (sow_game_supported()) sow_world_ready();   // starts the player watcher now: "[world]" lines from the first load on
     return 0;
 }
 
+// End-of-session marker, written from DllMain. Other threads are gone or frozen then and may hold the log mutex or
+// the CRT file lock, so this uses a fresh handle and WriteFile only (no locks).
+static void write_session_end(const char* what) {
+    if (!g_log_path[0]) return;
+    HANDLE h = CreateFileA(g_log_path, FILE_APPEND_DATA, FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE, nullptr, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, nullptr);
+    if (h == INVALID_HANDLE_VALUE) return;
+    SYSTEMTIME t; GetLocalTime(&t);
+    char line[160]; const int n = sprintf_s(line, "[%02d:%02d:%02d.%03d] %s\r\n", t.wHour, t.wMinute, t.wSecond, t.wMilliseconds, what);
+    DWORD w = 0; if (n > 0) WriteFile(h, line, (DWORD)n, &w, nullptr);
+    CloseHandle(h);
+}
+void session_end_marker(bool process_exit) { write_session_end(process_exit ? kSessionEnd : "[session] trainer unloaded"); }
+
 } // namespace wb
 
-BOOL APIENTRY DllMain(HMODULE h, DWORD reason, LPVOID) {
+BOOL APIENTRY DllMain(HMODULE h, DWORD reason, LPVOID reserved) {
+    // process exit (reserved != null): a normal quit runs this, a crash does not - that is how the next start knows
+    if (reason == DLL_PROCESS_DETACH && wb::g_self) wb::session_end_marker(reserved != nullptr);
     if (reason == DLL_PROCESS_ATTACH) {
         char nm[64]; sprintf_s(nm, "Local\\ShadowOfWarTrainerActive_%lu", GetCurrentProcessId());
         HANDLE m = CreateMutexA(nullptr, TRUE, nm);

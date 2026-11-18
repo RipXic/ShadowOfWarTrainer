@@ -46,6 +46,11 @@ KNOWN ISSUES / TIPS
 - Options are refused while the game is loading ("wait until you are in the game world"): try again once
   you are playing.
 - If something goes wrong, the trainer writes trainer.log next to ShadowOfWarTrainer.dll. Include it in a report.
+  Older sessions are kept in the logs folder (the last 20).
+- If the game crashes, the trainer saves that session's log in logs\crashes (crashes_001.log, ...), where it is
+  never overwritten or deleted (20 crashes per file, then a new file starts, so older crashes stay there for
+  tracing). You will see a message about it the next time you start the game. Send the newest
+  crashes_###.log when you report a crash. Settings > Crash logs opens the folder.
 
 REMOVING IT
 Close the game and delete the ShadowOfWarTrainer folder. Nothing in the game folder is changed.

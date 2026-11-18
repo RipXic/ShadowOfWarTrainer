@@ -129,8 +129,17 @@ bool sow_world_ready() {
     if (gb && safe_read(gb + 0x26FFA98, &root, 8) && root) safe_read(root + 0x888, &P, 8);
     const ULONGLONG now = GetTickCount64();
     std::lock_guard<std::mutex> lk(g_ready_mtx);
-    if (P != g_ready_P) { g_ready_P = P; g_ready_since = now; ++g_world_epoch; }
-    return P != 0 && now - g_ready_since >= 15000;   // 15 s: load-time game scripts run well after the player exists (crash 2026-11-13 04:04)
+    static bool s_logged_ready = false;
+    if (P != g_ready_P) {
+        // world changes go to the log: a crash report then shows whether the game was loading, in the world or in a menu
+        if (!g_ready_P) log("[world] player loaded (a save is loading)");
+        else if (!P) log("[world] player gone (loading screen or main menu)");
+        else log("[world] new player object (reload, death or travel)");
+        g_ready_P = P; g_ready_since = now; ++g_world_epoch; s_logged_ready = false;
+    }
+    const bool ready = P != 0 && now - g_ready_since >= 15000;   // 15 s: load-time game scripts run well after the player exists (crash 2026-11-13 04:04)
+    if (ready && !s_logged_ready) { s_logged_ready = true; log("[world] in the game world - trainer options can be used"); }
+    return ready;
 }
 // which world load this is (bumped by every player-pointer change the watcher or a caller sees)
 uint64_t sow_world_epoch() { sow_world_ready(); return g_world_epoch.load(); }
@@ -148,26 +157,57 @@ bool hks_run(const std::string& code, std::string* out, std::string* err) {
 }
 
 // ------------------------------------------------------------------ crash recorder (observe only)
-// First-chance access violations / illegal instructions anywhere in the process are written to bridge.log with the
-// faulting address and every stack slot that points into the game exe or this DLL (newest first). Returns
-// CONTINUE_SEARCH: the game's own handling is unchanged. Max 40 records per run.
-static std::atomic<int> g_veh_count{0};
+// First-chance access violations / illegal instructions anywhere in the process are written to trainer.log with the
+// faulting place and every stack slot that points into the game exe, the trainer or another non-Windows DLL (a mod),
+// each named "Name.dll+0x..". Returns CONTINUE_SEARCH: the game's own handling is unchanged.
+// Many of these are caught by whoever caused them and are harmless; a real crash is usually the LAST one before the
+// log ends. 2026-11-18: a mod's handled fault repeated 40x during loading filled the old 40-line cap, so the fatal one
+// was never written. Now each place is written the first 3 times, then only at its 10th / 100th / 1000th time, and
+// the total cap is 200 lines - a new place is always written.
+static std::atomic<int> g_veh_lines{0};
+static constexpr int kVehSites = 64;
+static std::atomic<uintptr_t> g_veh_site[kVehSites];
+static std::atomic<uint32_t> g_veh_hits[kVehSites];
+static uint32_t veh_hit(uintptr_t at) {
+    for (int i = 0; i < kVehSites; ++i) {
+        uintptr_t cur = g_veh_site[i].load();
+        if (cur == at) return ++g_veh_hits[i];
+        if (cur == 0) { uintptr_t z = 0; if (g_veh_site[i].compare_exchange_strong(z, at) || z == at) return ++g_veh_hits[i]; }
+    }
+    return 1;                                                   // table full: treat as new
+}
+// a register / stack value that points at readable text (error messages the game passes to its fatal handler)
+static bool text_at(uintptr_t p, char* out, size_t n) {
+    if (p < 0x10000) return false;
+    char b[121] = {};
+    if (!safe_read(p, b, 120)) return false;
+    size_t len = 0;
+    while (len < 120 && b[len] >= 0x20 && b[len] < 0x7F) ++len;
+    if (len < 12 || (len < 120 && b[len] != 0)) return false;   // must be a whole, readable C string
+    int letters = 0; for (size_t i = 0; i < len; ++i) if (isalpha((unsigned char)b[i])) ++letters;
+    if (letters < (int)len / 2) return false;
+    b[len] = 0; strncpy_s(out, n, b, _TRUNCATE);
+    return true;
+}
 static LONG CALLBACK veh_recorder(EXCEPTION_POINTERS* ep) {
     const DWORD code = ep->ExceptionRecord->ExceptionCode;
     if (code != EXCEPTION_ACCESS_VIOLATION && code != EXCEPTION_ILLEGAL_INSTRUCTION && code != EXCEPTION_STACK_OVERFLOW
         && code != 0xC0000409 /*fail fast*/ && code != EXCEPTION_INT_DIVIDE_BY_ZERO) return EXCEPTION_CONTINUE_SEARCH;
-    if (g_veh_count.fetch_add(1) >= 40) return EXCEPTION_CONTINUE_SEARCH;
-    const uintptr_t gb = game_base(); HMODULE me = nullptr;
-    GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS | GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT, (LPCSTR)&veh_recorder, &me);
-    MODULEINFO mi{}; GetModuleInformation(GetCurrentProcess(), me, &mi, sizeof mi);
-    const uintptr_t mb = (uintptr_t)me, me_end = mb + mi.SizeOfImage;
-    auto nm = [&](uintptr_t a, char* b, size_t n) {
-        if (a >= gb && a < gb + 0x8000000) sprintf_s(b, n, "exe+0x%llX", (unsigned long long)(a - gb));
-        else if (a >= mb && a < me_end) sprintf_s(b, n, "bridge+0x%llX", (unsigned long long)(a - mb));
-        else sprintf_s(b, n, "0x%llX", (unsigned long long)a);
+    const uintptr_t at_a = (uintptr_t)ep->ExceptionRecord->ExceptionAddress;
+    const uint32_t hit = veh_hit(at_a);
+    if (hit > 3 && hit != 10 && hit != 100 && hit != 1000) return EXCEPTION_CONTINUE_SEARCH;
+    if (g_veh_lines.fetch_add(1) >= 200) return EXCEPTION_CONTINUE_SEARCH;
+    const uintptr_t gb = game_base();
+    // exe+0x.. / ShadowOfWarTrainer.dll+0x.. / FuryPatch.dll+0x..; Windows DLLs only for the faulting place itself
+    auto nm = [&](uintptr_t a, char* b, size_t n, bool keep_system) -> bool {
+        if (gb && a >= gb && a < gb + 0x8000000) { sprintf_s(b, n, "exe+0x%llX", (unsigned long long)(a - gb)); return true; }
+        bool sys = false;
+        if (modsnap_find(a, b, n, &sys)) return keep_system || !sys;
+        sprintf_s(b, n, "0x%llX", (unsigned long long)a);
+        return false;
     };
-    char at[48], acc[48] = "";
-    nm((uintptr_t)ep->ExceptionRecord->ExceptionAddress, at, sizeof at);
+    char at[96], acc[48] = "";
+    nm(at_a, at, sizeof at, true);
     if (code == EXCEPTION_ACCESS_VIOLATION && ep->ExceptionRecord->NumberParameters >= 2)
         sprintf_s(acc, " (%s 0x%llX)", ep->ExceptionRecord->ExceptionInformation[0] == 1 ? "write" : ep->ExceptionRecord->ExceptionInformation[0] == 8 ? "exec" : "read",
                   (unsigned long long)ep->ExceptionRecord->ExceptionInformation[1]);
@@ -176,10 +216,24 @@ static LONG CALLBACK veh_recorder(EXCEPTION_POINTERS* ep) {
     int found = 0;
     for (int i = 0; i < 512 && found < 14; ++i) {
         uintptr_t v; if (!safe_read((uintptr_t)(sp + i), &v, 8)) break;
-        if ((v >= gb && v < gb + 0x8000000) || (v >= mb && v < me_end)) { char b[48]; nm(v, b, sizeof b); st += " "; st += b; ++found; }
+        char b[96]; if (nm(v, b, sizeof b, false)) { st += " "; st += b; ++found; }
     }
-    log("[crash-rec] 0x%08lX at %s%s thread %lu%s | stack:%s", code, at, acc, GetCurrentThreadId(),
-        GetCurrentThreadId() == main_thread_id() ? " (game thread)" : "", st.c_str());
+    // text the game (or a mod) handed over just before: its fatal-error handler gets the message in a register
+    std::string txt;
+    { const CONTEXT* c = ep->ContextRecord;
+      const uintptr_t regs[] = { c->Rcx, c->Rdx, c->R8, c->R9, c->Rbx, c->Rsi, c->Rdi, c->Rax };
+      int got = 0; char t[128];
+      auto add = [&](uintptr_t p) {
+          if (got >= 2 || !text_at(p, t, sizeof t)) return;
+          const std::string piece = std::string(" | text: \"") + t + "\"";
+          if (txt.find(piece) == std::string::npos) { txt += piece; ++got; }   // the same message in a register and on the stack: once
+      };
+      for (uintptr_t r : regs) add(r);
+      for (int i = 0; i < 24 && got < 2; ++i) { uintptr_t v; if (!safe_read((uintptr_t)(sp + i), &v, 8)) break; add(v); } }
+    char rep[48] = "";
+    if (hit > 1) sprintf_s(rep, " [%u%s time here]", hit, hit == 2 ? "nd" : hit == 3 ? "rd" : "th");
+    log("[crash-rec] 0x%08lX at %s%s thread %lu%s%s | stack:%s%s", code, at, acc, GetCurrentThreadId(),
+        GetCurrentThreadId() == main_thread_id() ? " (game thread)" : "", rep, st.c_str(), txt.c_str());
     return EXCEPTION_CONTINUE_SEARCH;
 }
 
