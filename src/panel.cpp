@@ -883,6 +883,7 @@ bool skin_draw(ImDrawList* dl, const char* sprite, ImVec2 a, ImVec2 b, ImU32 tin
 namespace sk {
 struct Piece { std::string kind; float w = 0, h = 0, l = 0, r = 0; };
 static bool g_loaded = false, g_ok = false, g_classic = false;
+static float g_max_user = 1.4f;                              // largest size at which the panel still fits the screen
 static float g_user = 1.f;                                 // config.json skin_scale (Bridge tab)
 static std::map<std::string, Piece> g_p;
 static json g_lay = json::object();
@@ -1486,9 +1487,17 @@ static void draw_bridge_tab() {
         section_header("Look");
         bool classic = sk::g_classic;
         if (ImGui::Checkbox(tr("Classic look"), &classic)) { sk::g_classic = classic; sk::save_cfg(); }
-        if (!sk::g_classic) { ImGui::SameLine(0, S(30)); ImGui::SetNextItemWidth(S(220));
-            float s = sk::g_user; if (ImGui::SliderFloat(tr("Panel size"), &s, 0.6f, 1.4f, "%.2f")) { sk::g_user = s; }
-            if (ImGui::IsItemDeactivatedAfterEdit()) sk::save_cfg(); }
+        if (!sk::g_classic) { ImGui::SameLine(0, S(30));
+            // the size is applied when the mouse is let go: resizing while dragging moves the slider under the mouse, which
+            // changes the value again (the panel flickered between small and large)
+            static float pend = 0.f; static bool drag = false;
+            const float vmax = std::max(0.7f, std::min(1.4f, sk::g_max_user));      // never larger than the screen
+            float v = drag ? pend : std::clamp(sk::g_user, 0.6f, vmax);
+            const char* lb = tr("Panel size");
+            ImGui::SetNextItemWidth(std::max(S(60), std::min(S(220), ImGui::GetContentRegionAvail().x - ImGui::CalcTextSize(lb).x - S(20))));
+            ImGui::SliderFloat((std::string(lb) + "###panel_size").c_str(), &v, 0.6f, vmax, "%.2f", ImGuiSliderFlags_AlwaysClamp);
+            if (ImGui::IsItemActive()) { pend = v; drag = true; }
+            else if (drag) { drag = false; if (pend != sk::g_user) { sk::g_user = pend; sk::save_cfg(); } } }
     }
     section_header("Language");
     {   const std::string cur = lang_code(); std::string cur_name = cur;
@@ -1554,9 +1563,17 @@ static void panel_draw_skin(bool* visible) {
     using namespace sk;
     const ImVec2 ds = ImGui::GetIO().DisplaySize;
     const float RW = g_lay.value("ref_w", 1620.f), RH = g_lay.value("ref_h", 971.f);
-    K = std::clamp(std::min(ds.y * (RH > RW ? .88f : .72f) / RH, ds.x * .72f / RW) * g_user, 0.45f, 2.2f);   // tall art (SoW 1122x1402) may use more height
+    const float k1 = std::min(ds.y * (RH > RW ? .88f : .72f) / RH, ds.x * .72f / RW);      // size 1.00
+    if (k1 > 0) g_max_user = std::min(ds.y * .98f / RH, ds.x * .98f / RW) / k1;
+    const float oldK = K;
+    K = std::clamp(std::min(ds.y * (RH > RW ? .88f : .72f) / RH, ds.x * .72f / RW) * std::min(g_user, g_max_user), 0.45f, 2.2f);   // tall art (SoW 1122x1402) may use more height
     ImGui::SetNextWindowSize(ImVec2(RW * K, RH * K), ImGuiCond_Always);
-    ImGui::SetNextWindowPos(ImVec2((ds.x - RW * K) * .5f, (ds.y - RH * K) * .5f), ImGuiCond_FirstUseEver);
+    static bool placed = false;
+    if (placed && oldK != K) {                             // resized: keep the centre, stay on the screen
+        const ImVec2 c(O.x + RW * oldK * .5f, O.y + RH * oldK * .5f);
+        ImGui::SetNextWindowPos(ImVec2(std::clamp(c.x - RW * K * .5f, 0.f, std::max(0.f, ds.x - RW * K)), std::clamp(c.y - RH * K * .5f, 0.f, std::max(0.f, ds.y - RH * K))), ImGuiCond_Always);
+    } else ImGui::SetNextWindowPos(ImVec2((ds.x - RW * K) * .5f, (ds.y - RH * K) * .5f), ImGuiCond_FirstUseEver);
+    placed = true;
     ui::theme_push();
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
     ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.f);
