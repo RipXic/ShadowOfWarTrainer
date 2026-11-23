@@ -114,6 +114,10 @@ def main():
     for k in ('Run', 'Hide (Insert)', 'Bridge & look settings', 'Effect #{1} is checked: ADD will replace it', 'Check an effect to replace it with the next ADD.  X removes it.', 'Removed effect #{1}',
               'Loaded {1} items', 'Crash logs saved: {1} (20 per file, old ones are always kept)', '(no gear)', '{1} - done', '{1} - failed', '{1}: ON', '{1}: OFF'): add(k)
     for bad in ('ok', 'message', ': ON', ': OFF', ' - done', ' - failed', 'done', 'failed'): keys.pop(bad, None)
+    # developer-only messages nobody meets in the panel: not worth translating
+    skip = os.path.join(ROOT, 'tools', 'lang_skip.json')
+    if os.path.isfile(skip):
+        for k in json.load(io.open(skip, encoding='utf-8')): keys.pop(k, None)
     os.makedirs(LANG, exist_ok=True)
 
     def write(path, head, vals):

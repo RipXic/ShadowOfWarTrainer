@@ -15,4 +15,5 @@ The line starting with [lang] in trainer.log says where.
 "_font" is normally empty. If letters still show as ?, put a .ttf font in this folder and write its file name there.
 Right-to-left and joined scripts (Arabic, Hebrew, Persian) and Thai marks are not laid out correctly yet.
 Item, orc and effect names come from the game's data and stay English, and so does trainer.log.
-es.json and zh-CN.json are drafts (names and buttons only). Corrections are welcome on Nexus or Discord.
+The included languages are machine-made drafts, not checked by native speakers. Corrections are welcome on Nexus or
+Discord.

@@ -20,6 +20,10 @@ An in-game trainer for **Middle-earth: Shadow of War** (single player), with its
 
 Options you switch on are remembered and switched on again once you are back in the game world.
 
+**Languages:** Settings > Language. German, Spanish, French, Italian, Japanese, Korean, Polish, Portuguese (Brazil), Russian,
+Turkish and Chinese (simplified, traditional) are machine-made drafts; corrections are welcome. Anyone can add a language
+with a text file, see [data/lang/README.txt](data/lang/README.txt).
+
 ## Using it
 
 1. Download the release zip and unzip the `ShadowOfWarTrainer` folder anywhere (keep its files together).
@@ -39,12 +43,12 @@ and Python 3 for packaging.
 
 ```bat
 build.bat
-python package.py 1.0.0
+python package.py 1.1.0
 ```
 
 `build.bat` finds Visual Studio with `vswhere`, builds MinHook and Dear ImGui once, then the trainer
 (`build\ShadowOfWarTrainer.dll` and `build\ShadowOfWarTrainer.exe`). `package.py` puts the binaries next to the
-contents of `data\` in `release\ShadowOfWarTrainer\`, zips it as `release\ShadowOfWarTrainer_1.0.0.zip` - the same
+contents of `data\` in `release\package\ShadowOfWarTrainer\`, zips it as `release\ShadowOfWarTrainer_1.1.0.zip` - the same
 layout as the release download - and prints SHA-256 checksums.
 
 ## What the trainer does (and does not do)
@@ -74,6 +78,7 @@ builds of it. See [LICENSE](LICENSE). Official download: https://www.nexusmods.c
 | --- | --- |
 | `src/` | The trainer DLL: overlay and panel (`overlay.cpp`, `panel.cpp`, `skin.cpp`, `ui_kit.h`), core helpers (`core.cpp`, `calls.cpp`, `sigs.cpp`), the command table (`server.cpp`) and the game features (`sow*.cpp`) |
 | `loader/` | `ShadowOfWarTrainer.exe`: starts the game if needed and attaches the DLL |
+| `tools/` | `lang_template.py` collects the texts to translate |
 | `data/` | Files shipped next to the DLL: the panel layout, byte signatures, skin art, the game-script helper and name lists |
 | `third_party/` | [MinHook](https://github.com/TsudaKageyu/minhook), [Dear ImGui](https://github.com/ocornut/imgui) 1.91.9b, [nlohmann/json](https://github.com/nlohmann/json) - each under its own license |
 
@@ -86,6 +91,7 @@ builds of it. See [LICENSE](LICENSE). Official download: https://www.nexusmods.c
 - Options are refused while the game is loading ("wait until you are in the game world") - try again once you are
   playing.
 - If something goes wrong, the trainer writes `trainer.log` next to the DLL. Include it in a report.
+- If the game crashes, that session's log is kept in `logs\crashes` (Settings > Crash logs). Send the newest file.
 
 ## Credits
 

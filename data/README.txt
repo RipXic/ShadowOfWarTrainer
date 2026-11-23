@@ -38,6 +38,10 @@ Army       Edit followers: level, intel, bodyguard, upgrades, gear, role, name, 
            recruit any orc, create new orcs.
 World      Infinite Mission Time.
 
+LANGUAGES
+Settings > Language. The translations are machine-made drafts: corrections are welcome. To change one or add your
+own language, see lang\README.txt.
+
 KNOWN ISSUES / TIPS
 - Instant Dominate: switch it OFF for story or side quests that ask you to interrogate an orc. The quest
   script expects the normal domination time and can get stuck.

@@ -1,8 +1,8 @@
 """Build the release folder + zip from build\ (run build.bat first).
 
-    python package.py 1.0.0
+    python package.py 1.1.0
 
-Output: release\ShadowOfWarTrainer\ (ready-to-run folder) and release\ShadowOfWarTrainer_<version>.zip,
+Output: release\package\ShadowOfWarTrainer\ (ready-to-run folder) and release\ShadowOfWarTrainer_<version>.zip,
 plus the SHA-256 of the zip and of both binaries.
 """
 import hashlib, os, shutil, sys, zipfile
@@ -10,7 +10,7 @@ import hashlib, os, shutil, sys, zipfile
 ROOT = os.path.dirname(os.path.abspath(__file__))
 BUILD, DATA = os.path.join(ROOT, 'build'), os.path.join(ROOT, 'data')
 VERSION = sys.argv[1] if len(sys.argv) > 1 else '1.0.0'
-OUT = os.path.join(ROOT, 'release', 'ShadowOfWarTrainer')
+OUT = os.path.join(ROOT, 'release', 'package', 'ShadowOfWarTrainer')   # its own folder: release\ShadowOfWarTrainer may be in use (settings, logs)
 
 
 def sha256(p):
