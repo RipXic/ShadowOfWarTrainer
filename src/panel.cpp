@@ -759,13 +759,19 @@ static bool toggle_switch(const char* id, bool* v) {
     return clicked;
 }
 
+// tooltips: translated and wrapped (option descriptions are long)
+static void tip(const std::string& t) {
+    if (t.empty() || !ImGui::BeginTooltip()) return;
+    ImGui::PushFont(g_font_body); ImGui::PushTextWrapPos(S(560)); ImGui::TextUnformatted(t.c_str()); ImGui::PopTextWrapPos(); ImGui::PopFont();
+    ImGui::EndTooltip();
+}
 namespace sk { static bool on(); static void section(const char* name); }
 static void section_header(const char* name) {
     if (sk::on()) { sk::section(name); return; }
     ImGui::Dummy(ImVec2(0, 4));
     ImGui::PushFont(g_font_bold);
     ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kGoldHi));
-    std::string up = name; std::transform(up.begin(), up.end(), up.begin(), ::toupper);
+    const std::string up = upper_utf8(tr(name));
     ImGui::TextUnformatted(up.c_str());
     ImGui::PopStyleColor(); ImGui::PopFont();
     ImVec2 p = ImGui::GetCursorScreenPos();
@@ -776,8 +782,7 @@ static void section_header(const char* name) {
 
 static bool matches(const Item& it) {
     if (!g_search[0]) return true;
-    std::string a = it.label + " " + it.desc, b = g_search;
-    std::transform(a.begin(), a.end(), a.begin(), ::tolower); std::transform(b.begin(), b.end(), b.begin(), ::tolower);
+    const std::string a = lower_utf8(it.label + " " + it.desc + " " + tr(it.label) + " " + tr(it.desc)), b = lower_utf8(g_search);
     return a.find(b) != std::string::npos;
 }
 
@@ -812,7 +817,7 @@ static void fav_star(const std::string& id) {
     ImVec2 p = ImGui::GetCursorScreenPos(); p.y += (ImGui::GetFrameHeight() - sz) * 0.5f;
     if (ImGui::InvisibleButton("##fav", ImVec2(sz, ImGui::GetFrameHeight()))) set_fav(id, !f);
     bool hov = ImGui::IsItemHovered();
-    if (hov) ImGui::SetTooltip(f ? "Remove from Favorites" : "Add to Favorites");
+    if (hov) tip(f ? tr("Remove from Favorites") : tr("Add to Favorites"));
     ImDrawList* dl = ImGui::GetWindowDrawList();
     ImVec2 c(p.x + sz * 0.5f, p.y + sz * 0.5f); ImVec2 pts[10];
     for (int i = 0; i < 10; ++i) { float r = (i & 1) ? sz * 0.22f : sz * 0.5f; float a = -1.5707963f + i * 0.6283185f; pts[i] = ImVec2(c.x + cosf(a) * r, c.y + sinf(a) * r); }
@@ -839,11 +844,11 @@ static bool hk_bindable(int vk) { return vk >= 0x08 && vk != VK_SHIFT && vk != V
 static void hotkey_box(Item& it) {
     if (!g_hk_loaded) hk_load();
     const bool cap = g_hk_capture == it.id; auto f = g_hk.find(it.id);
-    std::string lbl = cap ? "Press a key..." : (f != g_hk.end() ? key_name(f->second) : "Set key");
+    std::string lbl = cap ? std::string(tr("Press a key...")) : (f != g_hk.end() ? key_name(f->second) : std::string(tr("Set key")));
     ImGui::PushStyleColor(ImGuiCol_Text, cap ? ui::rgbv(ui::kGoldHi) : f != g_hk.end() ? ui::rgbv(ui::kBone) : ui::rgbv(ui::kDim));
     if (ImGui::Button((lbl + "##hk").c_str(), ImVec2(S(96), 0))) { g_hk_capture = cap ? "" : it.id; for (int k = 0; k < 256; ++k) g_hk_prev[k] = (GetAsyncKeyState(k) & 0x8000) != 0; }
     ImGui::PopStyleColor();
-    if (ImGui::IsItemHovered()) ImGui::SetTooltip(cap ? "Press the key to use. Backspace/Delete clears, Esc cancels." : "Hotkey: click, then press a key");
+    if (ImGui::IsItemHovered()) tip(cap ? tr("Press the key to use. Backspace/Delete clears, Esc cancels.") : tr("Hotkey: click, then press a key"));
 }
 // render thread, every frame (overlay.cpp)
 void panel_hotkeys_poll() {
@@ -917,7 +922,10 @@ static bool draw(ImDrawList* dl, const char* n, ImVec2 a, ImVec2 b, ImU32 tint =
     return skin_draw(dl, spec, a, b, tint);
 }
 static ImU32 c_(uint32_t c, float a = 1.f) { return ui::rgb(c, a); }
-static std::string upper(std::string s) { std::transform(s.begin(), s.end(), s.begin(), ::toupper); return s; }
+static std::string upper(const std::string& s) { return upper_utf8(s); }
+// largest size <= px at which s fits in w (never below 60 %): translated words are often longer than English
+static float tw(ImFont* f, float px, const char* s);
+static float fit(ImFont* f, float px, float w, const char* s) { if (lang_code() == "en") return px; const float t = tw(f, px, s); return t <= w || t <= 0 ? px : std::max(px * .6f, px * w / t); }
 // text at font size px (reference px * K), aligned in [a,b] (ax 0 left .5 centre 1 right), vertically centred
 static float text(ImDrawList* dl, ImFont* f, float px, ImVec2 a, ImVec2 b, ImU32 col, const char* s, float ax = 0.f, bool shadow = true) {
     if (!f) f = g_font_body;
@@ -959,7 +967,7 @@ static void section(const char* name) {
     const ImVec2 p = ImGui::GetCursorScreenPos(); const float w = ImGui::GetContentRegionAvail().x;
     const ImVec2 is = psize("sec_icon"); const float ih = 30 * K, iw = is.y > 0 ? ih * is.x / is.y : ih;
     draw(dl, "sec_icon", ImVec2(p.x + 4 * K, p.y), ImVec2(p.x + 4 * K + iw, p.y + ih));
-    const float tx = text(dl, g_font_skin, 25.f * K, ImVec2(p.x + 12 * K + iw, p.y), ImVec2(p.x + w, p.y + ih), c_(col("section", kGoldT)), upper(name).c_str(), 0.f);
+    const float tx = text(dl, g_font_skin, 25.f * K, ImVec2(p.x + 12 * K + iw, p.y), ImVec2(p.x + w, p.y + ih), c_(col("section", kGoldT)), upper(tr(name)).c_str(), 0.f);
     const float lx = p.x + 12 * K + iw + tx + 14 * K;
     if (has("sec_line") && lx < p.x + w - 40 * K) draw(dl, "sec_line", ImVec2(lx, p.y + ih * .5f - 7 * K), ImVec2(p.x + w - 4 * K, p.y + ih * .5f + 8 * K));
     else if (!has("sec_line")) dl->AddLine(ImVec2(p.x + 4 * K, p.y + ih + 3 * K), ImVec2(p.x + w - 6 * K, p.y + ih + 3 * K), c_(0xC8A04A, .75f), std::max(1.f, 1.5f * K));
@@ -1001,14 +1009,14 @@ static void select_pick(Item& it, size_t oi) {
 
 /* HOME2_2026_11_06 */
 static void home_group(const char* title, const char* text) {
-    ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kGoldHi)); ImGui::TextUnformatted(title); ImGui::PopStyleColor();
-    ImGui::PushTextWrapPos(0.f); ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kBone)); ImGui::TextWrapped("%s", text); ImGui::PopStyleColor(); ImGui::PopTextWrapPos();
+    ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kGoldHi)); ImGui::TextUnformatted(tr(title)); ImGui::PopStyleColor();
+    ImGui::PushTextWrapPos(0.f); ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kBone)); ImGui::TextWrapped("%s", tr(text)); ImGui::PopStyleColor(); ImGui::PopTextWrapPos();
     ImGui::Dummy(ImVec2(0, S(6)));
 }
 static void draw_home_tab() {
     ImGui::PushTextWrapPos(0.f);
     ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kBone));
-    ImGui::TextWrapped("Welcome to " WB_PRODUCT ", an in-game trainer for Middle-earth: Shadow of War. Everything runs inside the game and works through the game's own systems: skills are activated the way the skill menu does it, items arrive through the game's own inventory code, and gear changes are recalculated by the game itself.");
+    ImGui::TextWrapped("%s", tr("Welcome to " WB_PRODUCT ", an in-game trainer for Middle-earth: Shadow of War. Everything runs inside the game and works through the game's own systems: skills are activated the way the skill menu does it, items arrive through the game's own inventory code, and gear changes are recalculated by the game itself."));
     ImGui::PopStyleColor(); ImGui::PopTextWrapPos();
     ImGui::Dummy(ImVec2(0, S(6))); ui::gold_rule(.35f); ImGui::Dummy(ImVec2(0, S(6)));
     section_header("What it can do");
@@ -1019,10 +1027,10 @@ static void draw_home_tab() {
     home_group("Stays on", "Options you switch on come back automatically once you are back in the game world.");
     section_header("Quick tips");
     ImGui::PushTextWrapPos(0.f); ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kBone));
-    ImGui::BulletText("Insert opens and closes the trainer.");
-    ImGui::BulletText("Click the star next to any option to pin it to Favorites.");
-    ImGui::BulletText("Hover any option to see what it does.");
-    ImGui::BulletText("Make a manual save in a new slot before big changes.");
+    ImGui::BulletText("%s", tr("Insert opens and closes the trainer."));
+    ImGui::BulletText("%s", tr("Click the star next to any option to pin it to Favorites."));
+    ImGui::BulletText("%s", tr("Hover any option to see what it does."));
+    ImGui::BulletText("%s", tr("Make a manual save in a new slot before big changes."));
     ImGui::PopStyleColor(); ImGui::PopTextWrapPos();
     ImGui::Dummy(ImVec2(0, S(10))); ui::gold_rule(.25f);
     ImGui::TextDisabled(WB_PRODUCT " - build %s   |   Shadow of War %s", __DATE__, game_version().c_str());
@@ -1031,7 +1039,7 @@ static void draw_favorites_tab() {
     if (!g_favs_loaded) favs_load();
     int shown = 0;
     for (auto fid : std::vector<std::string>(g_favs)) if (Item* it = find_item(fid)) { ImGui::PushID("fav"); draw_item(*it); ImGui::PopID(); ++shown; }
-    if (!shown) { ImGui::Dummy(ImVec2(0, S(10))); ImGui::TextDisabled("Star any option with the \xE2\x98\x86 to pin it here."); }
+    if (!shown) { ImGui::Dummy(ImVec2(0, S(10))); ImGui::TextDisabled("%s", tr("Star any option with the \xE2\x98\x86 to pin it here.")); }
 }
 json panel_favorites(const json& a) {
     std::lock_guard<std::recursive_mutex> lk(g_mtx);
@@ -1079,11 +1087,11 @@ static void draw_fxlist(Item& it) {
         const int ck = (int)it.val;
         const std::string hint = ck >= 0 ? "Effect #" + std::to_string(ck) + " is checked: ADD will replace it" : "Check an effect to replace it with the next ADD.  X removes it.";
         const float hpx = (skin ? 20.f : 15.f) * K;
-        dl->AddText(hf, hpx, ImVec2(p.x + 10 * K, p.y + 4 * K), ui::rgb(ui::kGold), it.label.c_str());
-        const float lw = hf->CalcTextSizeA(hpx, FLT_MAX, 0, it.label.c_str()).x;
-        dl->AddText(g_font_body, 14.f * K, ImVec2(p.x + 24 * K + lw, p.y + 7 * K), ui::rgb(ck >= 0 ? 0x7CD17C : 0x9A9384), hint.c_str());
+        dl->AddText(hf, hpx, ImVec2(p.x + 10 * K, p.y + 4 * K), ui::rgb(ui::kGold), tr(it.label).c_str());
+        const float lw = hf->CalcTextSizeA(hpx, FLT_MAX, 0, tr(it.label).c_str()).x;
+        dl->AddText(g_font_body, 14.f * K, ImVec2(p.x + 24 * K + lw, p.y + 7 * K), ui::rgb(ck >= 0 ? 0x7CD17C : 0x9A9384), tr_msg(hint).c_str());
         ImGui::Dummy(ImVec2(w, 30 * K)); }
-    if (rows.empty()) { ImGui::TextDisabled("   (no effects)"); ImGui::Dummy(ImVec2(0, 4 * K)); return; }
+    if (rows.empty()) { ImGui::TextDisabled("   %s", tr("(no effects)")); ImGui::Dummy(ImVec2(0, 4 * K)); return; }
     int remove = -1;
     for (size_t i = 0; i < rows.size(); ++i) {
         const json& r = rows[i]; const int idx = r.value("index", (int)i);
@@ -1098,7 +1106,7 @@ static void draw_fxlist(Item& it) {
         const float cs = 22 * K; const ImVec2 ca(p0.x + 14 * K, p0.y + (rh - cs) * .5f), cb(ca.x + cs, ca.y + cs);
         ImGui::SetCursorScreenPos(ca);
         if (ImGui::InvisibleButton("##ck", ImVec2(cs, cs))) it.val = checked ? -1 : idx;
-        if (ImGui::IsItemHovered()) ImGui::SetTooltip(checked ? "Un-check" : "Replace this effect with the next ADD");
+        if (ImGui::IsItemHovered()) tip(checked ? tr("Un-check") : tr("Replace this effect with the next ADD"));
         if (!(skin && sk::draw(dl, checked ? "check_on" : "check_off", ca, cb))) {
             dl->AddRect(ca, cb, ui::rgb(ui::kGold), 3 * K, 0, std::max(1.f, 1.5f * K));
             if (checked) { dl->AddLine(ImVec2(ca.x + cs * .2f, ca.y + cs * .55f), ImVec2(ca.x + cs * .42f, ca.y + cs * .78f), ui::rgb(0x7CD17C), 2.5f * K);
@@ -1108,7 +1116,7 @@ static void draw_fxlist(Item& it) {
         const float xs = 24 * K; const ImVec2 xa(p1.x - 14 * K - xs, p0.y + (rh - xs) * .5f), xb(xa.x + xs, xa.y + xs);
         ImGui::SetCursorScreenPos(xa);
         if (ImGui::InvisibleButton("##x", ImVec2(xs, xs))) remove = idx;
-        const bool xh = ImGui::IsItemHovered(); if (xh) ImGui::SetTooltip("Remove this effect");
+        const bool xh = ImGui::IsItemHovered(); if (xh) tip(tr("Remove this effect"));
         dl->AddRectFilled(xa, xb, xh ? IM_COL32(170, 40, 35, 230) : IM_COL32(90, 25, 22, 200), 3 * K);
         const float m = xs * .3f;
         dl->AddLine(ImVec2(xa.x + m, xa.y + m), ImVec2(xb.x - m, xb.y - m), IM_COL32_WHITE, 2.f * K);
@@ -1142,12 +1150,12 @@ static void draw_item(Item& it) {
     ImGui::AlignTextToFramePadding();
     if (it.type != "text") fav_star(it.id);
     if (it.type == "button") {
-        ImGui::TextUnformatted(it.label.c_str());
-    } else ImGui::TextUnformatted(it.label.c_str());
-    if (!it.desc.empty() && ImGui::IsItemHovered()) ImGui::SetTooltip("%s", it.desc.c_str());
+        ImGui::TextUnformatted(tr(it.label).c_str());
+    } else ImGui::TextUnformatted(tr(it.label).c_str());
+    if (!it.desc.empty() && ImGui::IsItemHovered()) tip(tr(it.desc));
     if (!it.last_err.empty()) {
         ImGui::SameLine(); ImGui::TextColored(ImVec4(1.f, 0.48f, 0.44f, 1), "!");
-        if (ImGui::IsItemHovered()) ImGui::SetTooltip("%s", it.last_err.c_str());
+        if (ImGui::IsItemHovered()) tip(tr_msg(it.last_err));
     }
     const json& a = it.action;
     bool is_mem = a.value("kind", "local") == "mem";
@@ -1183,17 +1191,17 @@ static void draw_item(Item& it) {
             ImGui::PushStyleColor(ImGuiCol_Button, it.lock ? ImVec4(0.76f, 0.11f, 0.15f, 1) : ImGui::GetStyleColorVec4(ImGuiCol_Button));
             if (ImGui::Button(it.lock ? "L" : "-", ImVec2(ImGui::GetFrameHeight(), 0))) { it.lock = !it.lock; save_state(); }
             ImGui::PopStyleColor();
-            if (ImGui::IsItemHovered()) ImGui::SetTooltip(it.lock ? "Locked: value is held every tick" : "Lock this value");
+            if (ImGui::IsItemHovered()) tip(it.lock ? tr("Locked: value is held every tick") : tr("Lock this value"));
         }
     } else if (it.type == "button") {
         ImGui::SameLine(ImGui::GetWindowContentRegionMax().x - ctrl_w - S(104)); hotkey_box(it); ImGui::SameLine(ImGui::GetWindowContentRegionMax().x - ctrl_w);
-        if (ImGui::Button(a.value("button", "Run").c_str(), ImVec2(ctrl_w, 0))) apply(it, "press");
+        if (ImGui::Button(tr(a.value("button", std::string("Run"))).c_str(), ImVec2(ctrl_w, 0))) apply(it, "press");
     } else if (it.type == "input") {
         ImGui::SameLine(ImGui::GetWindowContentRegionMax().x - ctrl_w);
         ImGui::SetNextItemWidth(ctrl_w - S(60));
         bool enter = ImGui::InputText("##t", it.text, sizeof it.text, ImGuiInputTextFlags_EnterReturnsTrue);
         ImGui::SameLine();
-        if (ImGui::Button("Go", ImVec2(S(52), 0)) || enter) {
+        if (ImGui::Button(tr("Go"), ImVec2(S(52), 0)) || enter) {
             json a2 = a; std::string cmd = a.value("cmd", "{text}"); size_t p = cmd.find("{text}");
             if (p != std::string::npos) cmd.replace(p, 6, it.text);
             a2["cmd"] = cmd; std::string err; run_action(it, a2, "press", err); it.last_err = err; save_state();
@@ -1203,18 +1211,18 @@ static void draw_item(Item& it) {
         ImGui::SetNextItemWidth(ctrl_w);
         if (a.contains("options")) { std::string ol; if (live_value(a, it.id + "#opts", ol)) { it.options.clear(); size_t p = 0; while (p < ol.size()) { size_t q = ol.find('\n', p); if (q == std::string::npos) q = ol.size(); if (q > p) it.options.push_back(ol.substr(p, q - p)); p = q + 1; } } }
         const char* shown = (a.contains("get") && it.live_ok && !it.live_str.empty()) ? it.live_str.c_str() : it.text;
-        if (ImGui::BeginCombo("##sel", shown, ImGuiComboFlags_HeightLarge)) {
+        if (ImGui::BeginCombo("##sel", tr(shown), ImGuiComboFlags_HeightLarge)) {
             static char filter[64] = {};
             if (ImGui::IsWindowAppearing()) { filter[0] = 0; ImGui::SetKeyboardFocusHere(); }
             ImGui::SetNextItemWidth(-1);
-            ImGui::InputTextWithHint("##flt", "filter...", filter, sizeof filter);
-            std::string f = filter; std::transform(f.begin(), f.end(), f.begin(), ::tolower);
+            ImGui::InputTextWithHint("##flt", tr("filter..."), filter, sizeof filter);
+            const std::string f = lower_utf8(filter);
             for (size_t oi = 0; oi < it.options.size(); ++oi) {
                 const std::string& o = it.options[oi];
-                std::string lo = o; std::transform(lo.begin(), lo.end(), lo.begin(), ::tolower);
+                const std::string lo = f.empty() ? std::string() : lower_utf8(o + " " + tr(o));
                 if (!f.empty() && lo.find(f) == std::string::npos) continue;
                 ImGui::PushID((int)oi);
-                if (ImGui::Selectable(o.c_str(), o == shown)) select_pick(it, oi);
+                if (ImGui::Selectable(tr(o).c_str(), o == shown)) select_pick(it, oi);
                 ImGui::PopID();
             }
             ImGui::EndCombo();
@@ -1223,10 +1231,10 @@ static void draw_item(Item& it) {
         if (is_mem) { double live; std::string e; ImGui::SameLine(); if (mem_read_value(a, live, e)) ImGui::TextDisabled("%g", live); else ImGui::TextDisabled("--"); }
         if (is_cvar) {
             if (it.live_ok && it.live_str.find('\n') != std::string::npos) { ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kDim)); ImGui::TextUnformatted(it.live_str.c_str()); ImGui::PopStyleColor(); }
-            else { ImGui::SameLine(); ImGui::TextDisabled("%s", it.live_ok ? it.live_str.c_str() : "--"); }
+            else { ImGui::SameLine(); ImGui::TextDisabled("%s", it.live_ok ? tr_msg(it.live_str).c_str() : "--"); }
         }
     }
-    if (!it.desc.empty()) { ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kDim)); ImGui::PushTextWrapPos(ImGui::GetWindowContentRegionMax().x - S(70)); ImGui::TextUnformatted(it.desc.c_str()); ImGui::PopTextWrapPos(); ImGui::PopStyleColor(); }
+    if (!it.desc.empty()) { ImGui::PushStyleColor(ImGuiCol_Text, ui::rgbv(ui::kDim)); ImGui::PushTextWrapPos(ImGui::GetWindowContentRegionMax().x - S(70)); ImGui::TextUnformatted(tr(it.desc).c_str()); ImGui::PopTextWrapPos(); ImGui::PopStyleColor(); }
     ImGui::Dummy(ImVec2(0, S(1)));
     {   const ImVec2 row_p1(ImGui::GetWindowPos().x + ImGui::GetWindowContentRegionMax().x + S(5), ImGui::GetCursorScreenPos().y - S(3));
         row_dl->ChannelsSetCurrent(0);
@@ -1247,12 +1255,12 @@ static void hk_badge(Item& it, ImVec2 a, ImVec2 b) {
     ImGui::SetCursorScreenPos(a);
     if (ImGui::InvisibleButton("##hk", ImVec2(b.x - a.x, b.y - a.y))) { g_hk_capture = cap ? "" : it.id; for (int k = 0; k < 256; ++k) g_hk_prev[k] = (GetAsyncKeyState(k) & 0x8000) != 0; }
     const bool hov = ImGui::IsItemHovered();
-    if (hov) ImGui::SetTooltip(cap ? "Press the key to use. Backspace/Delete clears, Esc cancels." : "Hotkey: click, then press a key");
+    if (hov) tip(cap ? tr("Press the key to use. Backspace/Delete clears, Esc cancels.") : tr("Hotkey: click, then press a key"));
     const bool has = f != g_hk.end();
     if (!cap && !has && !hov) return;
     ImDrawList* dl = ImGui::GetWindowDrawList();
     draw(dl, "field", a, b, hov ? IM_COL32(255, 255, 255, 255) : IM_COL32(220, 220, 220, 255));
-    text(dl, g_font_skin_row, 15.f * K, a, b, c_(cap ? kGoldL : has ? kGoldT : 0x9A9384), cap ? "press a key" : has ? key_name(f->second).c_str() : "set key", .5f, false);
+    text(dl, g_font_skin_row, 15.f * K, a, b, c_(cap ? kGoldL : has ? kGoldT : 0x9A9384), cap ? tr("press a key") : has ? key_name(f->second).c_str() : tr("set key"), .5f, false);
 }
 static void draw_item_skin(Item& it) {
     using namespace sk;
@@ -1293,7 +1301,7 @@ static void draw_item_skin(Item& it) {
         const bool f = is_fav(it.id);
         if (it.type != "text" && ImGui::InvisibleButton("##fav", ImVec2(sz, sz))) set_fav(it.id, !f);
         const bool sh = ImGui::IsItemHovered() && it.type != "text";
-        if (sh) ImGui::SetTooltip(f ? "Remove from Favorites" : "Add to Favorites");
+        if (sh) tip(f ? tr("Remove from Favorites") : tr("Add to Favorites"));
         draw(dl, ri.c_str(), sp, ImVec2(sp.x + sz, sp.y + sz), sh ? IM_COL32(255, 255, 255, 255) : IM_COL32(225, 225, 225, 255));
         if (f) { const float s = 9.f * K; ImVec2 c(sp.x + sz - s * .3f, sp.y + s * .6f), pts[10];
                  for (int i = 0; i < 10; ++i) { float r = (i & 1) ? s * 0.22f : s * 0.5f; float an = -1.5707963f + i * 0.6283185f; pts[i] = ImVec2(c.x + cosf(an) * r, c.y + sinf(an) * r); }
@@ -1305,7 +1313,7 @@ static void draw_item_skin(Item& it) {
         const bool f = is_fav(it.id);
         if (it.type != "text" && ImGui::InvisibleButton("##fav", ImVec2(sz, sz))) set_fav(it.id, !f);
         const bool sh = ImGui::IsItemHovered() && it.type != "text";
-        if (sh) ImGui::SetTooltip(f ? "Remove from Favorites" : "Add to Favorites");
+        if (sh) tip(f ? tr("Remove from Favorites") : tr("Add to Favorites"));
         if (it.type != "text") {
             ImVec2 c(sp.x + sz * .5f, sp.y + sz * .5f), pts[10];
             for (int i = 0; i < 10; ++i) { float r = (i & 1) ? sz * 0.22f : sz * 0.5f; float an = -1.5707963f + i * 0.6283185f; pts[i] = ImVec2(c.x + cosf(an) * r, c.y + sinf(an) * r); }
@@ -1377,14 +1385,14 @@ static void draw_item_skin(Item& it) {
             const float ls = 24 * K; const ImVec2 la(left - ls, top + (rh1 - ls) * .5f);
             ImGui::SetCursorScreenPos(la);
             if (ImGui::InvisibleButton("##lock", ImVec2(ls, ls))) { it.lock = !it.lock; save_state(); }
-            if (ImGui::IsItemHovered()) ImGui::SetTooltip(it.lock ? "Locked: value is held every tick" : "Lock this value");
+            if (ImGui::IsItemHovered()) tip(it.lock ? tr("Locked: value is held every tick") : tr("Lock this value"));
             draw(dl, "field", la, ImVec2(la.x + ls, la.y + ls), it.lock ? IM_COL32(255, 255, 255, 255) : IM_COL32(180, 180, 180, 255));
             text(dl, g_font_skin, 15.f * K, la, ImVec2(la.x + ls, la.y + ls), c_(it.lock ? kGoldL : 0x8A8474), "L", .5f, false);
             left = la.x - 10 * K;
         }
         ctrl_l = left; lit = it.lock;
     } else if (it.type == "button") {
-        const std::string cap = upper(a.value("button", std::string("Run")));
+        const std::string cap = upper(tr(a.value("button", std::string("Run"))));
         const ImVec2 bs(std::max(L("button_w", 170) * .8f, tw(g_font_skin, 17.f * K, cap.c_str()) + 40 * K), L("button_h", 30) > 0 ? L("button_h", 30) : 30 * K);
         const ImVec2 ba(cr - bs.x, top + (rh1 - bs.y) * .5f);
         if (plate_button("##b", cap.c_str(), ba, bs, it.style == "primary")) apply(it, "press");
@@ -1398,7 +1406,7 @@ static void draw_item_skin(Item& it) {
         ImGui::SetCursorScreenPos(ImVec2(fa.x + 6 * K, cy)); ImGui::SetNextItemWidth(fw - 12 * K);
         const bool enter = ImGui::InputText("##t", it.text, sizeof it.text, ImGuiInputTextFlags_EnterReturnsTrue);
         widget_colors_pop();
-        if (plate_button("##go", "GO", ga, ImVec2(gw, 28 * K)) || enter) {
+        if (plate_button("##go", tr("GO"), ga, ImVec2(gw, 28 * K)) || enter) {
             json a2 = a; std::string cmd = a.value("cmd", "{text}"); size_t pp = cmd.find("{text}");
             if (pp != std::string::npos) cmd.replace(pp, 6, it.text);
             a2["cmd"] = cmd; std::string err; run_action(it, a2, "press", err); it.last_err = err; save_state();
@@ -1422,25 +1430,25 @@ static void draw_item_skin(Item& it) {
         ImGui::SetCursorScreenPos(ImVec2(vb.x - cap, va.y));
         if (ImGui::InvisibleButton("##next", ImVec2(cap, vh)) && n) select_pick(it, (size_t)((cur + 1) % n));
         dl->PushClipRect(ImVec2(va.x + cap, va.y), ImVec2(vb.x - cap, vb.y), true);
-        text(dl, g_font_skin_row, 18.f * K, ImVec2(va.x + cap, va.y), ImVec2(vb.x - cap, vb.y), c_(kWhite), shown, tw(g_font_skin_row, 18.f * K, shown) > vw - 2 * cap ? 0.f : .5f, false);
+        text(dl, g_font_skin_row, 18.f * K, ImVec2(va.x + cap, va.y), ImVec2(vb.x - cap, vb.y), c_(kWhite), tr(shown), tw(g_font_skin_row, 18.f * K, tr(shown)) > vw - 2 * cap ? 0.f : .5f, false);
         dl->PopClipRect();
         widget_colors_push();
         ImGui::SetCursorScreenPos(ImVec2(va.x + cap, cy)); ImGui::SetNextItemWidth(vw - 2 * cap);
         ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(0, 0, 0, 0));
-        const bool open = ImGui::BeginCombo("##sel", shown, ImGuiComboFlags_HeightLarge | ImGuiComboFlags_NoArrowButton);
+        const bool open = ImGui::BeginCombo("##sel", tr(shown), ImGuiComboFlags_HeightLarge | ImGuiComboFlags_NoArrowButton);
         ImGui::PopStyleColor();
         widget_colors_pop();
         if (open) {
             static char filter[64] = {};
             if (ImGui::IsWindowAppearing()) { filter[0] = 0; ImGui::SetKeyboardFocusHere(); }
             ImGui::SetNextItemWidth(-1);
-            ImGui::InputTextWithHint("##flt", "filter...", filter, sizeof filter);
-            std::string f = filter; std::transform(f.begin(), f.end(), f.begin(), ::tolower);
+            ImGui::InputTextWithHint("##flt", tr("filter..."), filter, sizeof filter);
+            const std::string f = lower_utf8(filter);
             for (size_t oi = 0; oi < it.options.size(); ++oi) {
-                std::string lo = it.options[oi]; std::transform(lo.begin(), lo.end(), lo.begin(), ::tolower);
+                const std::string lo = f.empty() ? std::string() : lower_utf8(it.options[oi] + " " + tr(it.options[oi]));
                 if (!f.empty() && lo.find(f) == std::string::npos) continue;
                 ImGui::PushID((int)oi);
-                if (ImGui::Selectable(it.options[oi].c_str(), it.options[oi] == shown)) select_pick(it, oi);
+                if (ImGui::Selectable(tr(it.options[oi]).c_str(), it.options[oi] == shown)) select_pick(it, oi);
                 ImGui::PopID();
             }
             ImGui::EndCombo();
@@ -1449,7 +1457,7 @@ static void draw_item_skin(Item& it) {
     } else if (it.type == "text" && !multi) {
         std::string v = "--";
         if (is_mem) { double live; std::string e; if (mem_read_value(a, live, e)) { char b[64]; sprintf_s(b, "%g", live); v = b; } }
-        if (is_cvar && it.live_ok) v = it.live_str;
+        if (is_cvar && it.live_ok) v = tr_msg(it.live_str);
         const float vw = std::min(tw(g_font_skin_row, 18.f * K, v.c_str()) + 6 * K, w * .55f);
         dl->PushClipRect(ImVec2(cr - vw, top), ImVec2(cr, top + rh1), true);
         text(dl, g_font_skin_row, 18.f * K, ImVec2(cr - vw, top), ImVec2(cr, top + rh1), c_(kGoldL), v.c_str(), 1.f, false);
@@ -1459,12 +1467,13 @@ static void draw_item_skin(Item& it) {
     // label
     {   const ImVec2 la(p0.x + label_x * K, top), lb(std::max(p0.x + (label_x + 26) * K, ctrl_l - 8 * K), top + rh1);
         dl->PushClipRect(la, lb, true);
-        const float lw = text(dl, g_font_skin_row, (plates ? 22.f : 21.f) * K, la, lb, c_(plates ? (lit ? 0xFFFFFF : col("label", kWhite)) : (lit ? kGoldL : kWhite)), it.label.c_str(), 0.f);
+        const std::string lbl = tr(it.label);
+        const float lw = text(dl, g_font_skin_row, fit(g_font_skin_row, (plates ? 22.f : 21.f) * K, lb.x - la.x, lbl.c_str()), la, lb, c_(plates ? (lit ? 0xFFFFFF : col("label", kWhite)) : (lit ? kGoldL : kWhite)), lbl.c_str(), 0.f);
         if (!it.last_err.empty()) text(dl, g_font_skin, 17.f * K, ImVec2(la.x + lw + 8 * K, top), lb, c_(0xFF6A5A), "!", 0.f);
         dl->PopClipRect();
         if (ImGui::IsMouseHoveringRect(la, lb) && ImGui::IsWindowHovered()) {
-            std::string tip = it.desc; if (!it.last_err.empty()) tip += (tip.empty() ? "" : "\n\n") + std::string("! ") + it.last_err;
-            if (!tip.empty()) ImGui::SetTooltip("%s", tip.c_str());
+            std::string tt = tr(it.desc); if (!it.last_err.empty()) tt += (tt.empty() ? "" : "\n\n") + std::string("! ") + tr_msg(it.last_err);
+            tip(tt);
         } }
     if (multi) { float y = top + rh1 - 4 * K;
         for (auto& l : lines) { text(dl, g_font_skin_row, 15.f * K, ImVec2(p0.x + 40 * K, y), ImVec2(p1.x - 10 * K, y + 18 * K), c_(0xA8A08C), l.c_str(), 0.f, false); y += 18 * K; } }
@@ -1476,26 +1485,41 @@ static void draw_bridge_tab() {
     if (sk::g_ok) {                                       // look settings (the skin needs bin\skin)
         section_header("Look");
         bool classic = sk::g_classic;
-        if (ImGui::Checkbox("Classic look", &classic)) { sk::g_classic = classic; sk::save_cfg(); }
+        if (ImGui::Checkbox(tr("Classic look"), &classic)) { sk::g_classic = classic; sk::save_cfg(); }
         if (!sk::g_classic) { ImGui::SameLine(0, S(30)); ImGui::SetNextItemWidth(S(220));
-            float s = sk::g_user; if (ImGui::SliderFloat("Panel size", &s, 0.6f, 1.4f, "%.2f")) { sk::g_user = s; }
+            float s = sk::g_user; if (ImGui::SliderFloat(tr("Panel size"), &s, 0.6f, 1.4f, "%.2f")) { sk::g_user = s; }
             if (ImGui::IsItemDeactivatedAfterEdit()) sk::save_cfg(); }
     }
+    section_header("Language");
+    {   const std::string cur = lang_code(); std::string cur_name = cur;
+        for (auto& l : lang_list()) if (l.code == cur) cur_name = l.name;
+        ImGui::SetNextItemWidth(S(220));
+        if (ImGui::BeginCombo("##lang", cur_name.c_str())) {
+            for (auto& l : lang_list()) if (ImGui::Selectable((l.name + "##" + l.code).c_str(), l.code == cur)) {
+                json j = read_cfg_json(); j["language"] = l.code; { std::ofstream f(g_cfg.root + "\\config.json"); f << j.dump(2); }
+                lang_request(l.code);              // applied before the next frame
+                break;
+            }
+            ImGui::EndCombo();
+        }
+        ImGui::SameLine(); if (ImGui::Button(tr("Reload languages"))) lang_request(cur);
+        ImGui::TextWrapped("%s", tr("Translations are text files in the trainer's lang folder. Anyone can add one: see lang\\README.txt.")); }
     section_header("About");
-    ImGui::Text("Game version"); ImGui::SameLine(S(160)); ImGui::TextDisabled("%s", sow_game_supported() ? "1.0.8874 (supported)" : "not supported - trainer features are off");
-    ImGui::Text("Open / close"); ImGui::SameLine(S(160)); ImGui::TextDisabled("Insert");
+    const float ax = std::max(S(160), std::max(ImGui::CalcTextSize(tr("Game version")).x, ImGui::CalcTextSize(tr("Open / close")).x) + S(24));
+    ImGui::TextUnformatted(tr("Game version")); ImGui::SameLine(ax); ImGui::TextDisabled("%s", sow_game_supported() ? tr("1.0.8874 (supported)") : tr("not supported - trainer features are off"));
+    ImGui::TextUnformatted(tr("Open / close")); ImGui::SameLine(ax); ImGui::TextDisabled("Insert");
     section_header("Crash logs");
-    ImGui::TextWrapped("If the game crashes, the trainer keeps that session's log in the logs\\crashes folder, so it is not "
-                       "overwritten. Send the newest crashes_###.log file when you report a crash (Nexus Bugs tab or Discord).");
+    ImGui::TextWrapped("%s", tr("If the game crashes, the trainer keeps that session's log in the logs\\crashes folder, so it is not "
+                                "overwritten. Send the newest crashes_###.log file when you report a crash (Nexus Bugs tab or Discord)."));
     ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetStyleColorVec4(ImGuiCol_TextDisabled));
-    ImGui::TextWrapped("%d crash log%s saved (20 per file, old ones are always kept).%s", crash_log_count(), crash_log_count() == 1 ? "" : "s",
-                       crash_last_session() ? " The last game session ended unexpectedly." : "");
+    ImGui::TextWrapped("%s", tr_msg("Crash logs saved: " + std::to_string(crash_log_count()) + " (20 per file, old ones are always kept)").c_str());
+    if (crash_last_session()) ImGui::TextWrapped("%s", tr("The last game session ended unexpectedly."));
     ImGui::PopStyleColor();
-    if (ImGui::Button("Open crash logs folder", ImVec2(S(220), 0)) && !crash_log_dir().empty())
+    if (ImGui::Button(tr("Open crash logs folder")) && !crash_log_dir().empty())
         ShellExecuteA(nullptr, "open", crash_log_dir().c_str(), nullptr, nullptr, SW_SHOWNORMAL);
     section_header("Panel");
-    if (ImGui::Button("Reload panel.json", ImVec2(S(180), 0))) panel_reload();
-    ImGui::SameLine(); ImGui::TextDisabled("%s", g_load_msg.c_str());
+    if (ImGui::Button(tr("Reload panel.json"))) { panel_reload(); lang_request(lang_code()); }   // fonts too: new letters
+    ImGui::SameLine(); ImGui::TextDisabled("%s", tr_msg(g_load_msg).c_str());
     section_header("Log");
     ImGui::BeginChild("##log", ImVec2(0, 0), ImGuiChildFlags_Borders);
     for (auto& l : log_tail(120)) ImGui::TextUnformatted(l.c_str());
@@ -1551,7 +1575,7 @@ static void panel_draw_skin(bool* visible) {
         for (auto& b : wbs) { const ImVec4 r = box(b.key); if (r.z <= r.x) continue;
             ImGui::SetCursorScreenPos(ImVec2(r.x, r.y));
             if (ImGui::InvisibleButton(b.key, ImVec2(r.z - r.x, r.w - r.y))) { if (b.act == 0) g_tab = kBridge; else *visible = false; }
-            if (ImGui::IsItemHovered()) { dl->AddRect(ImVec2(r.x, r.y), ImVec2(r.z, r.w), c_(kGoldL, .6f), 6 * K, 0, std::max(1.f, 1.5f * K)); ImGui::SetTooltip("%s", b.tip); } } }
+            if (ImGui::IsItemHovered()) { dl->AddRect(ImVec2(r.x, r.y), ImVec2(r.z, r.w), c_(kGoldL, .6f), 6 * K, 0, std::max(1.f, 1.5f * K)); tip(tr(b.tip)); } } }
 
     // tabs (spec pages + Bridge)
     {   const int total = ntab + 1;
@@ -1566,7 +1590,7 @@ static void panel_draw_skin(bool* visible) {
         const json ico = g_lay.contains("tab_icons") ? g_lay["tab_icons"] : json::object();
         for (int i = 0; i < total; ++i) {
             const bool sel = g_tab == i;
-            const std::string name = i < ntab ? g_tabs[i].name : std::string(kSettingsTabName), up = upper(name);
+            const std::string name = i < ntab ? g_tabs[i].name : std::string(kSettingsTabName), up = upper(name), shown_name = upper(tr(name));
             const ImVec2 a(x, y0 + i * step), b(x + tw_, a.y + h);
             ImGui::SetCursorScreenPos(a); ImGui::PushID(i);
             if (ImGui::InvisibleButton("##tab", ImVec2(tw_, h))) g_tab = i;
@@ -1575,13 +1599,13 @@ static void panel_draw_skin(bool* visible) {
             const std::string icn = ico.contains(up) && ico[up].is_string() ? ico[up].get<std::string>() : std::string("ico_utility");
             const float isz = std::min(h - 8 * K, L("tab_icon_size", 46)), icx = a.x + L("tab_icon_cx", 42);
             draw(dl, icn.c_str(), ImVec2(icx - isz * .5f, a.y + (h - isz) * .5f), ImVec2(icx + isz * .5f, a.y + (h + isz) * .5f));
-            text(dl, g_font_skin, std::min(22.f * K, h * .48f), ImVec2(a.x + L("tab_text_x", 82), a.y), ImVec2(b.x - 14 * K, b.y),
-                 c_(sel ? col("tab_text_sel", 0xFFFFFF) : hov ? col("accent", kGoldL) : col("tab_text", kCream)), up.c_str(), 0.f);
+            text(dl, g_font_skin, fit(g_font_skin, std::min(22.f * K, h * .48f), b.x - 14 * K - a.x - L("tab_text_x", 82), shown_name.c_str()), ImVec2(a.x + L("tab_text_x", 82), a.y), ImVec2(b.x - 14 * K, b.y),
+                 c_(sel ? col("tab_text_sel", 0xFFFFFF) : hov ? col("accent", kGoldL) : col("tab_text", kCream)), shown_name.c_str(), 0.f);
         } }
 
     // page title on the red plate + search beside it
     {   const ImVec4 tb = box("title_box");
-        const std::string title = upper(g_tab < ntab ? g_tabs[g_tab].name : std::string(kSettingsTabName));
+        const std::string title = upper(tr(g_tab < ntab ? g_tabs[g_tab].name : std::string(kSettingsTabName)));
         float px = (has("row") ? 40.f : 28.f) * K; while (px > 12.f * K && tw(g_font_skin_big, px, title.c_str()) > (tb.z - tb.x)) px -= 1.f;
         text(dl, g_font_skin_big, px, ImVec2(tb.x, tb.y), ImVec2(tb.z, tb.w), c_(col("title", kGoldL)), title.c_str(), .5f);
         if (g_tab < ntab) {
@@ -1594,7 +1618,7 @@ static void panel_draw_skin(bool* visible) {
             widget_colors_push();
             ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(12 * K, std::max(1.f, (sh - ImGui::GetFontSize()) * .5f)));
             ImGui::SetCursorScreenPos(sa); ImGui::SetNextItemWidth(sw - mag);
-            ImGui::InputTextWithHint("##search", "Search...", g_search, sizeof g_search);
+            ImGui::InputTextWithHint("##search", tr("Search..."), g_search, sizeof g_search);
             ImGui::PopStyleVar(); widget_colors_pop();
         } }
 
@@ -1635,7 +1659,8 @@ static void panel_draw_skin(bool* visible) {
         if (live) { const ImVec2 pts[3] = { ImVec2(c.x - r * .5f, c.y + r * .02f), ImVec2(c.x - r * .12f, c.y + r * .42f), ImVec2(c.x + r * .55f, c.y - r * .38f) };
                     dl->AddPolyline(pts, 3, sc, 0, std::max(1.5f, 3.2f * K)); }
         else dl->AddLine(ImVec2(c.x, c.y - r * .45f), ImVec2(c.x, c.y + r * .45f), sc, std::max(1.5f, 3.f * K));
-        text(dl, g_font_skin, 27.f * K, ImVec2(st.x, st.y), ImVec2(st.z, st.w), sc, live ? "TRAINER ACTIVE" : "WAITING FOR GAME", 0.f);
+        const char* stxt = live ? tr("TRAINER ACTIVE") : tr("WAITING FOR GAME");
+        text(dl, g_font_skin, fit(g_font_skin, 27.f * K, st.z - st.x, stxt), ImVec2(st.x, st.y), ImVec2(st.z, st.w), sc, stxt, 0.f);
         text(dl, g_font_skin, 28.f * K, ImVec2(vb.x, vb.y), ImVec2(vb.z, vb.w), c_(col("version", kGoldL)), (std::string("v") + kVersion).c_str(), .5f); }
 
     ImGui::End();
@@ -1673,8 +1698,8 @@ void panel_draw(bool* visible) {
         ui::brand(t1.c_str(), t2.c_str(), "SHADOW OF WAR  /  TRAINER");
         const std::string bid = game_build_id(); const std::string ver = bid.substr(0, bid.find('|'));
         char vb[64]; sprintf_s(vb, "Game %s", ver.c_str());
-        ui::pill(game_base() ? "Game linked" : "Game not found", game_base() ? ui::kGreen : ui::kAmber); ImGui::SameLine(0, S(6));
-        ui::pill("Engine linked", main_ticks() ? ui::kGreen : ui::kAmber); ImGui::SameLine(0, S(6));
+        ui::pill(game_base() ? tr("Game linked") : tr("Game not found"), game_base() ? ui::kGreen : ui::kAmber); ImGui::SameLine(0, S(6));
+        ui::pill(tr("Engine linked"), main_ticks() ? ui::kGreen : ui::kAmber); ImGui::SameLine(0, S(6));
         ui::pill(vb, ui::kCyan);
     }
     ImGui::SameLine(ImGui::GetWindowContentRegionMax().x - S(28));
@@ -1704,7 +1729,7 @@ void panel_draw(bool* visible) {
                        nd->AddRectFilled(p, ImVec2(p.x + S(3), p.y + h), ui::rgb(ui::kGold));
                        ui::gold_frame(nd, p, ImVec2(p.x + w - 1, p.y + h - 1), 1.f, .55f); }
             else if (hov) nd->AddRectFilled(p, ImVec2(p.x + w, p.y + h), ui::rgb(0xFFFFFF, .04f));
-            std::string up = name; std::transform(up.begin(), up.end(), up.begin(), ::toupper);
+            const std::string up = upper_utf8(tr(name));
             const ImVec2 ts = ImGui::CalcTextSize(up.c_str());
             nd->AddText(ImVec2(p.x + S(14), p.y + (h - ts.y) * .5f), sel ? ui::rgb(ui::kGoldHi) : hov ? ui::rgb(ui::kBone) : ui::rgb(ui::kDim), up.c_str()); }
         ImGui::PopID();
@@ -1714,8 +1739,8 @@ void panel_draw(bool* visible) {
     ImGui::BeginChild("##content", ImVec2(0, -footer), ImGuiChildFlags_Borders);
     if (g_tab < (int)g_tabs.size()) {
         ImGui::SetNextItemWidth(-1);
-        ImGui::InputTextWithHint("##search", "Search...", g_search, sizeof g_search);
-        ui::page_title(g_tabs[g_tab].name.c_str());
+        ImGui::InputTextWithHint("##search", tr("Search..."), g_search, sizeof g_search);
+        ui::page_title(tr(g_tabs[g_tab].name).c_str());
         if (_stricmp(g_tabs[g_tab].name.c_str(), "Home") == 0 && !g_search[0]) draw_home_tab();
         if (_stricmp(g_tabs[g_tab].name.c_str(), "Favorites") == 0) draw_favorites_tab();
         for (auto& s : g_tabs[g_tab].sections) {
@@ -1735,9 +1760,9 @@ void panel_draw(bool* visible) {
         ImGui::Dummy(ImVec2(12, h)); ImGui::SameLine();
     };
     ImGui::AlignTextToFramePadding();
-    dot(game_base() != 0); ImGui::TextDisabled("GAME"); ImGui::SameLine(0, 18);
-    dot(main_ticks() != 0); ImGui::TextDisabled("ENGINE");
-    ImGui::SameLine(ImGui::GetWindowContentRegionMax().x - S(120)); ImGui::TextDisabled("INSERT  hide");
+    dot(game_base() != 0); ImGui::TextDisabled("%s", tr("GAME")); ImGui::SameLine(0, 18);
+    dot(main_ticks() != 0); ImGui::TextDisabled("%s", tr("ENGINE"));
+    ImGui::SameLine(ImGui::GetWindowContentRegionMax().x - S(120)); ImGui::TextDisabled("%s", tr("INSERT  hide"));
     ImGui::End();
     ImGui::PopFont();
     ui::theme_pop();

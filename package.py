@@ -32,7 +32,7 @@ def main():
         shutil.copy2(os.path.join(BUILD, b), OUT)
     for f in ('panel.json', 'signatures.json', 'config.json', 'README.txt'):
         shutil.copy2(os.path.join(DATA, f), OUT)
-    for d in ('skin', 'scripts', 'data'):
+    for d in ('skin', 'scripts', 'data', 'lang'):
         shutil.copytree(os.path.join(DATA, d), os.path.join(OUT, d))
     z = os.path.join(ROOT, 'release', 'ShadowOfWarTrainer_%s.zip' % VERSION)
     with zipfile.ZipFile(z, 'w', zipfile.ZIP_DEFLATED) as zf:

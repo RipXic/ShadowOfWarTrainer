@@ -7,6 +7,9 @@ typedef unsigned __int64 QWORD;
 #include <dxgi.h>
 #include <atomic>
 #include <deque>
+#include <fstream>
+#include <vector>
+#include <initializer_list>
 #include <algorithm>
 #include "imgui.h"
 #include "imgui_internal.h"
@@ -61,33 +64,93 @@ void toast(const std::string& text) {
 }
 
 // ------------------------------------------------------------------ fonts
+// Every font gets its own letters first; letters it does not have (Cyrillic, Chinese, ...) are merged in from Windows
+// fonts. Only letters that appear in the panel and the chosen language are loaded (lang_glyph_text).
 static void load_fonts() {
     const float k = g_ui_scale;
     ImGuiIO& io = ImGui::GetIO();
     io.IniFilename = nullptr;                  // layout lives in panel.json
     char win[MAX_PATH]; GetWindowsDirectoryA(win, MAX_PATH);
-    std::string f = std::string(win) + "\\Fonts\\";
+    const std::string f = std::string(win) + "\\Fonts\\";
     auto exists = [](const std::string& p) { return GetFileAttributesA(p.c_str()) != INVALID_FILE_ATTRIBUTES; };
     static const ImWchar ranges[] = { 0x0020, 0x00FF, 0x2013, 0x2026, 0x2190, 0x21FF, 0x2600, 0x26FF, 0 };   // latin, dashes, arrows, stars
-    if (exists(f + "segoeui.ttf")) g_font_body = io.Fonts->AddFontFromFileTTF((f + "segoeui.ttf").c_str(), 17.f * k, nullptr, ranges);
-    if (exists(f + "seguisym.ttf")) { ImFontConfig mc; mc.MergeMode = true; io.Fonts->AddFontFromFileTTF((f + "seguisym.ttf").c_str(), 17.f * k, &mc, ranges); }
-    if (exists(f + "seguisb.ttf")) {
-        g_font_bold = io.Fonts->AddFontFromFileTTF((f + "seguisb.ttf").c_str(), 16.f * k, nullptr, ranges);
-        g_font_title = io.Fonts->AddFontFromFileTTF((f + "seguisb.ttf").c_str(), 25.f * k, nullptr, ranges);
+
+    // letters beyond that set
+    ImFontGlyphRangesBuilder gb; gb.AddText(lang_glyph_text().c_str());
+    bool any = false, han = false, kana = false, hangul = false, thai = false;
+    for (unsigned c = 0x20; c <= 0xFFFF; ++c) {
+        if (!gb.GetBit(c)) continue;
+        bool base = false; for (const ImWchar* r = ranges; *r; r += 2) if (c >= r[0] && c <= r[1]) base = true;
+        if (base) continue;
+        any = true;
+        if (c >= 0x3040 && c <= 0x30FF) kana = true;
+        else if ((c >= 0x1100 && c <= 0x11FF) || (c >= 0xAC00 && c <= 0xD7AF)) hangul = true;
+        else if (c >= 0x0E00 && c <= 0x0E7F) thai = true;
+        else if (c >= 0x2E80 && c <= 0xFAFF) han = true;
+        else if (c >= 0xFF00 && c <= 0xFFEF) han = true;
     }
+    ImVector<ImWchar> extra; if (any) gb.BuildRanges(&extra);
+    std::vector<std::string> fb;               // fallback fonts, best first
+    if (any) {
+        auto first = [&](std::initializer_list<const char*> names) { for (auto n : names) if (exists(f + n)) { fb.push_back(f + n); return; } };
+        const std::string lc = lang_code(), own = lang_font_file();
+        if (!own.empty() && exists(own)) fb.push_back(own);
+        first({ "segoeui.ttf" });
+        const bool ja = lc.rfind("ja", 0) == 0, tw = lc.rfind("zh-TW", 0) == 0 || lc.rfind("zh-HK", 0) == 0;
+        if (ja) first({ "YuGothM.ttc", "meiryo.ttc", "msgothic.ttc" });
+        if (han && tw) first({ "msjh.ttc", "mingliu.ttc" });
+        if (hangul) first({ "malgun.ttf" });
+        if (han) first({ "msyh.ttc", "simsun.ttc" });
+        if (kana && !ja) first({ "YuGothM.ttc", "meiryo.ttc", "msgothic.ttc" });
+        if (thai) first({ "LeelawUI.ttf", "tahoma.ttf" });
+    }
+    // each font file is read once and shared (the Chinese ones are ~20 MB); all of it is freed after Build()
+    std::vector<std::pair<std::string, std::vector<char>>> files; files.reserve(32);
+    auto add = [&](const std::string& path, float px, const ImWchar* r, bool merge) -> ImFont* {
+        std::vector<char>* d = nullptr;
+        for (auto& x : files) if (x.first == path) d = &x.second;
+        if (!d) {
+            std::ifstream in(path, std::ios::binary); if (!in) return nullptr;
+            files.push_back({ path, std::vector<char>((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>()) });
+            d = &files.back().second;
+        }
+        if (d->size() < 256) return nullptr;
+        ImFontConfig c; c.FontDataOwnedByAtlas = false; c.MergeMode = merge;
+        return io.Fonts->AddFontFromMemoryTTF(d->data(), (int)d->size(), px, &c, r);
+    };
+    auto font = [&](const std::string& path, float px, bool symbols = false) -> ImFont* {
+        ImFont* o = add(path, px, ranges, false);
+        if (!o) return nullptr;
+        if (symbols && exists(f + "seguisym.ttf")) add(f + "seguisym.ttf", px, ranges, true);
+        if (any) { add(path, px, extra.Data, true); for (auto& p : fb) if (p != path) add(p, px, extra.Data, true); }
+        return o;
+    };
+    g_font_body = g_font_bold = g_font_title = g_font_skin = g_font_skin_big = g_font_skin_row = nullptr;
+    if (exists(f + "segoeui.ttf")) g_font_body = font(f + "segoeui.ttf", 17.f * k, true);
+    if (exists(f + "seguisb.ttf")) { g_font_bold = font(f + "seguisb.ttf", 16.f * k); g_font_title = font(f + "seguisb.ttf", 25.f * k); }
     // skin fonts: loaded at the size they have in the 1620x971 reference times a margin, the panel draws them at K
     {   const float sk = std::max(1.f, k) * 1.25f;
         // Shadow of War skin: bin\skin\font.ttf (titles, tabs) and bin\skin\font_row.ttf (row labels) win when present
         // (e.g. Cinzel / Alegreya); otherwise Palatino Bold + Palatino (serif like the reference art)
         const std::string own = g_cfg.root + "\\skin\\font.ttf", own_row = g_cfg.root + "\\skin\\font_row.ttf";
         const std::string pal = exists(own) ? own : exists(f + "palab.ttf") ? f + "palab.ttf" : exists(f + "georgiab.ttf") ? f + "georgiab.ttf" : "";
-        if (!pal.empty()) { g_font_skin = io.Fonts->AddFontFromFileTTF(pal.c_str(), 24.f * sk, nullptr, ranges);
-                            g_font_skin_big = io.Fonts->AddFontFromFileTTF(pal.c_str(), 34.f * sk, nullptr, ranges); }
+        if (!pal.empty()) { g_font_skin = font(pal, 24.f * sk); g_font_skin_big = font(pal, 34.f * sk); }
         const std::string row = exists(own_row) ? own_row : exists(f + "pala.ttf") ? f + "pala.ttf" : exists(f + "segoeui.ttf") ? f + "segoeui.ttf" : "";
-        if (!row.empty()) g_font_skin_row = io.Fonts->AddFontFromFileTTF(row.c_str(), 19.f * sk, nullptr, ranges); }
+        if (!row.empty()) g_font_skin_row = font(row, 19.f * sk); }
     if (!g_font_body) g_font_body = io.Fonts->AddFontDefault();
     if (!g_font_bold) g_font_bold = g_font_body;
     if (!g_font_title) g_font_title = g_font_bold;
+    io.Fonts->Build();
+    // the shared file buffers go away with this function. Not ClearInputData(): it also drops the custom rects, and the
+    // software mouse cursor the open panel draws is one of them (crash)
+    for (ImFontConfig& c : io.Fonts->Sources) if (!c.FontDataOwnedByAtlas) c.FontData = nullptr;
+    log("[fonts] %s, atlas %dx%d, %zu fallback fonts", lang_code().c_str(), io.Fonts->TexWidth, io.Fonts->TexHeight, fb.size());
+}
+// between two frames only
+static void reload_fonts() {
+    ImGui_ImplDX11_InvalidateDeviceObjects();  // drops the old font texture; the next ImplDX11_NewFrame makes the new one
+    ImGui::GetIO().Fonts->Clear();
+    load_fonts();
 }
 
 // ------------------------------------------------------------------ input
@@ -190,6 +253,7 @@ static void init_ui(IDXGISwapChain* sc) {
     g_hwnd = d.OutputWindow; g_sc = sc;
     g_ui_scale = std::min(2.5f, std::max(1.f, d.BufferDesc.Height / 1080.f));
     ImGui::CreateContext();
+    lang_init();
     load_fonts();
     ImGui::StyleColorsDark();
     ImGui::GetStyle().ScaleAllSizes(g_ui_scale);
@@ -205,7 +269,7 @@ static void init_ui(IDXGISwapChain* sc) {
 static void draw_toasts() {
     ULONGLONG now = GetTickCount64();
     std::vector<std::pair<std::string, float>> show;
-    if (now - g_ready_ms < 8000) show.push_back({ WB_PRODUCT " attached - press INSERT for the trainer", 1.f - std::max(0.f, (float)(now - g_ready_ms) - 6500.f) / 1500.f });
+    if (now - g_ready_ms < 8000) show.push_back({ tr(WB_PRODUCT " attached - press INSERT for the trainer"), 1.f - std::max(0.f, (float)(now - g_ready_ms) - 6500.f) / 1500.f });
     {
         std::lock_guard<std::mutex> lk(g_toast_mtx);
         while (!g_toasts.empty() && now - g_toasts.front().second > 5000) g_toasts.pop_front();
@@ -220,7 +284,7 @@ static void draw_toasts() {
         ImGui::Begin(id, nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoFocusOnAppearing | ImGuiWindowFlags_NoNav | ImGuiWindowFlags_NoSavedSettings);
         ImVec2 p = ImGui::GetWindowPos(), sz = ImGui::GetWindowSize();
         ImGui::GetWindowDrawList()->AddRectFilled(p, ImVec2(p.x + 3 * g_ui_scale, p.y + sz.y), IM_COL32(0xC8, 0xA4, 0x64, (int)(255 * a)));
-        ImGui::PushFont(g_font_bold); ImGui::TextUnformatted(show[i].first.c_str()); ImGui::PopFont();
+        ImGui::PushFont(g_font_bold); ImGui::TextUnformatted(tr_msg(show[i].first).c_str()); ImGui::PopFont();
         y += ImGui::GetWindowSize().y + 6 * g_ui_scale;
         ImGui::End();
         ImGui::PopStyleVar();
@@ -282,6 +346,7 @@ static HRESULT __stdcall hk_Present(IDXGISwapChain* sc, UINT sync, UINT flags) {
             ID3D11Texture2D* bb = nullptr;
             if (SUCCEEDED(sc->GetBuffer(0, __uuidof(ID3D11Texture2D), (void**)&bb))) { g_dev->CreateRenderTargetView(bb, nullptr, &g_rtv); bb->Release(); }
         }
+        if (lang_apply_pending()) reload_fonts();
         ImGui_ImplDX11_NewFrame();
         ImGui_ImplWin32_NewFrame();
         bool vis = g_visible;

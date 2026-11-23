@@ -25,7 +25,7 @@ if not exist "%OBJ%\imgui_impl_dx11.obj" (
   cl %FLAGS% %INC% /c /Fo"%OBJ%\\" "%IMG%\imgui.cpp" "%IMG%\imgui_draw.cpp" "%IMG%\imgui_tables.cpp" "%IMG%\imgui_widgets.cpp" "%IMG%\backends\imgui_impl_dx11.cpp" "%IMG%\backends\imgui_impl_win32.cpp" || exit /b 1
 )
 echo === trainer
-cl %FLAGS% %INC% /c /Fo"%OBJ%\\" "%ROOT%src\core.cpp" "%ROOT%src\server.cpp" "%ROOT%src\sigs.cpp" "%ROOT%src\calls.cpp" "%ROOT%src\overlay.cpp" "%ROOT%src\panel.cpp" "%ROOT%src\skin.cpp" "%ROOT%src\sow.cpp" "%ROOT%src\sow_prog.cpp" "%ROOT%src\sow_army.cpp" "%ROOT%src\sow_gear.cpp" || exit /b 1
+cl %FLAGS% %INC% /c /Fo"%OBJ%\\" "%ROOT%src\core.cpp" "%ROOT%src\server.cpp" "%ROOT%src\sigs.cpp" "%ROOT%src\calls.cpp" "%ROOT%src\overlay.cpp" "%ROOT%src\panel.cpp" "%ROOT%src\skin.cpp" "%ROOT%src\lang.cpp" "%ROOT%src\sow.cpp" "%ROOT%src\sow_prog.cpp" "%ROOT%src\sow_army.cpp" "%ROOT%src\sow_gear.cpp" || exit /b 1
 echo === link
 link /nologo /DLL /OUT:"%OUT%\ShadowOfWarTrainer.dll" "%OBJ%\*.obj" user32.lib psapi.lib d3d11.lib dxgi.lib windowscodecs.lib ole32.lib || exit /b 1
 echo === loader

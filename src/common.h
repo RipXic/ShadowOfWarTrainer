@@ -45,6 +45,16 @@ std::string crash_log_dir();
 void modsnap_refresh();
 bool modsnap_find(uintptr_t addr, char* out, size_t n, bool* system);
 
+// ---- languages (lang.cpp, render thread): English text in, translated text out (English when there is none)
+struct LangInfo { std::string code, name; };
+const char* tr(const char* s);
+std::string tr(const std::string& s);
+std::string tr_msg(const std::string& s);          // toasts / errors: patterns and "label - message"
+std::string upper_utf8(const std::string& s); std::string lower_utf8(const std::string& s);
+void lang_init(); const std::vector<LangInfo>& lang_list(); const std::string& lang_code();
+void lang_request(const std::string& code); bool lang_apply_pending();
+std::string lang_font_file(); std::string lang_glyph_text();
+
 // ---- modules / memory
 struct ModuleInfo { std::string name; uintptr_t base = 0; size_t size = 0; };
 std::vector<ModuleInfo> list_modules(bool refresh = false);
