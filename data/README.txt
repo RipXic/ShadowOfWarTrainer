@@ -9,10 +9,9 @@ REQUIREMENTS
 - Windows 10 or 11, 64-bit.
 
 HOW TO USE
-1. Unzip the ShadowOfWarTrainer folder anywhere (keep all of its files together).
-2. Run ShadowOfWarTrainer.exe.
-   - If the game is not running, it starts the game through Steam and attaches by itself.
-   - If the game is already running, it attaches right away.
+1. Copy xinput9_1_0.dll and this ShadowOfWarTrainer folder into the game's x64 folder (next to ShadowOfWar.exe).
+   INSTALL.txt has the steps.
+2. Start the game from Steam as usual. The game loads the trainer by itself.
 3. In game, press INSERT to open or close the trainer (mouse, keyboard or gamepad).
 
 Your choices are remembered between sessions. Options that were on are switched on again once you are back in
@@ -57,4 +56,5 @@ KNOWN ISSUES / TIPS
   crashes_###.log when you report a crash. Settings > Crash logs opens the folder.
 
 REMOVING IT
-Close the game and delete the ShadowOfWarTrainer folder. Nothing in the game folder is changed.
+Close the game, then delete xinput9_1_0.dll and the ShadowOfWarTrainer folder from the x64 folder. Nothing else in the
+game folder is changed. To play without it for a while, rename xinput9_1_0.dll to xinput9_1_0.dll.off.

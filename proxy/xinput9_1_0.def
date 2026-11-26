@@ -1,0 +1,6 @@
+LIBRARY xinput9_1_0
+EXPORTS
+    XInputGetCapabilities=p_XInputGetCapabilities                     @2
+    XInputGetDSoundAudioDeviceGuids=p_XInputGetDSoundAudioDeviceGuids @3
+    XInputGetState=p_XInputGetState                                   @4
+    XInputSetState=p_XInputSetState                                   @5

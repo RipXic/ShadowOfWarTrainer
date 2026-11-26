@@ -26,15 +26,17 @@ with a text file, see [data/lang/README.txt](data/lang/README.txt).
 
 ## Using it
 
-1. Download the release zip and unzip the `ShadowOfWarTrainer` folder anywhere (keep its files together).
-2. Run `ShadowOfWarTrainer.exe`. If the game is not running it starts it through Steam and attaches by itself; if it
-   is running it attaches right away.
-3. In game press **Insert** to open or close the trainer (mouse, keyboard or gamepad).
+1. In Steam right-click the game > Manage > Browse local files, and open the `x64` folder (with `ShadowOfWar.exe`).
+2. From the release zip copy `xinput9_1_0.dll` **and** the `ShadowOfWarTrainer` folder into it.
+3. Start the game from Steam as usual - the game loads the trainer by itself, there is nothing else to run.
+4. In game press **Insert** to open or close the trainer (mouse, keyboard or gamepad).
+
+Uninstall: delete `xinput9_1_0.dll` and the `ShadowOfWarTrainer` folder. Play without it: rename `xinput9_1_0.dll` to
+`xinput9_1_0.dll.off`. Updating from 1.0.0 / 1.1.0 (the exe version): see `INSTALL.txt`.
 
 **Back up your saves first** - gear, level, skill and item edits are saved into your game.
 Steam saves: `C:\Program Files (x86)\Steam\userdata\<your id>\356190\remote`. Single player only.
 
-Nothing in the game folder is changed. To remove it, close the game and delete the folder.
 
 ## Building from source
 
@@ -43,24 +45,26 @@ and Python 3 for packaging.
 
 ```bat
 build.bat
-python package.py 1.1.0
+python package.py 1.2.0
 ```
 
 `build.bat` finds Visual Studio with `vswhere`, builds MinHook and Dear ImGui once, then the trainer
-(`build\ShadowOfWarTrainer.dll` and `build\ShadowOfWarTrainer.exe`). `package.py` puts the binaries next to the
-contents of `data\` in `release\package\ShadowOfWarTrainer\`, zips it as `release\ShadowOfWarTrainer_1.1.0.zip` - the same
-layout as the release download - and prints SHA-256 checksums.
+(`build\ShadowOfWarTrainer.dll`) and the loader (`build\xinput9_1_0.dll`). `package.py` lays them out with the contents
+of `data\` in `release\package\` and zips that as `release\ShadowOfWarTrainer_1.2.0.zip` - the same layout as the release
+download - and prints SHA-256 checksums.
 
 ## What the trainer does (and does not do)
 
-- `ShadowOfWarTrainer.exe` (`loader/loader.cpp`) starts the game through Steam if needed and loads
-  `ShadowOfWarTrainer.dll` into `ShadowOfWar.exe` with `LoadLibraryW`. It copies the DLL into a `loaded\` folder next to
-  itself first, so the original file is never locked.
+- `xinput9_1_0.dll` (`proxy/`) is a small loader placed next to `ShadowOfWar.exe`. The game loads it by itself, because
+  Windows looks in the game folder first. It passes the four XInput functions on, unchanged, to the real
+  `xinput9_1_0.dll` in System32, and starts one thread that loads `ShadowOfWarTrainer\ShadowOfWarTrainer.dll` (through a
+  copy in `ShadowOfWarTrainer\loaded\`, so the DLL itself is never locked). Nothing runs outside the game and nothing is
+  injected.
 - The DLL (`src/`) draws its panel through a DX11 Present hook (MinHook) and changes the game only in memory: code
   patches and data edits listed in `data/signatures.json` / `data/panel.json`, and calls to the game's own functions
   (`src/sow*.cpp`).
 - No network code: the DLL does not link `ws2_32` or any other network library and opens no sockets.
-- Nothing in the game folder is changed. Gear, level, skill and item edits end up in your save because the game saves
+- Apart from adding `xinput9_1_0.dll` and the `ShadowOfWarTrainer` folder, nothing in the game folder is changed. Gear, level, skill and item edits end up in your save because the game saves
   them itself.
 - Files it writes, all inside its own folder: `trainer.log` (+ `logs\`), `panel_state.json` (switched-on options),
   `hotkeys.json`, `config.json`, and `data\gear_originals*.json` / `data\loot_templates.json` (gear editor undo data
@@ -77,7 +81,7 @@ builds of it. See [LICENSE](LICENSE). Official download: https://www.nexusmods.c
 | Path | Contents |
 | --- | --- |
 | `src/` | The trainer DLL: overlay and panel (`overlay.cpp`, `panel.cpp`, `skin.cpp`, `ui_kit.h`), core helpers (`core.cpp`, `calls.cpp`, `sigs.cpp`), the command table (`server.cpp`) and the game features (`sow*.cpp`) |
-| `loader/` | `ShadowOfWarTrainer.exe`: starts the game if needed and attaches the DLL |
+| `proxy/` | `xinput9_1_0.dll`: the loader the game loads by itself (XInput pass-through + loads the trainer) |
 | `tools/` | `lang_template.py` collects the texts to translate |
 | `data/` | Files shipped next to the DLL: the panel layout, byte signatures, skin art, the game-script helper and name lists |
 | `third_party/` | [MinHook](https://github.com/TsudaKageyu/minhook), [Dear ImGui](https://github.com/ocornut/imgui) 1.91.9b, [nlohmann/json](https://github.com/nlohmann/json) - each under its own license |

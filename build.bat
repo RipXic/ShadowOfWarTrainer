@@ -1,6 +1,6 @@
 @echo off
 rem Shadow of War Trainer - build script (Visual Studio 2022 or newer, x64).
-rem Output: build\ShadowOfWarTrainer.dll + build\ShadowOfWarTrainer.exe
+rem Output: build\ShadowOfWarTrainer.dll (the trainer) + build\xinput9_1_0.dll (the loader the game loads by itself)
 setlocal
 set ROOT=%~dp0
 set TP=%ROOT%third_party
@@ -28,8 +28,12 @@ echo === trainer
 cl %FLAGS% %INC% /c /Fo"%OBJ%\\" "%ROOT%src\core.cpp" "%ROOT%src\server.cpp" "%ROOT%src\sigs.cpp" "%ROOT%src\calls.cpp" "%ROOT%src\overlay.cpp" "%ROOT%src\panel.cpp" "%ROOT%src\skin.cpp" "%ROOT%src\lang.cpp" "%ROOT%src\sow.cpp" "%ROOT%src\sow_prog.cpp" "%ROOT%src\sow_army.cpp" "%ROOT%src\sow_gear.cpp" || exit /b 1
 echo === link
 link /nologo /DLL /OUT:"%OUT%\ShadowOfWarTrainer.dll" "%OBJ%\*.obj" user32.lib psapi.lib d3d11.lib dxgi.lib windowscodecs.lib ole32.lib || exit /b 1
-echo === loader
-cl /nologo /O2 /MT /EHsc /std:c++17 /DUNICODE /D_UNICODE "%ROOT%loader\loader.cpp" /Fo"%OBJ%\loader.obj.tmp" /Fe"%OUT%\ShadowOfWarTrainer.exe" /link user32.lib shell32.lib || exit /b 1
-del "%OBJ%\loader.obj.tmp" 2>nul
+echo === loader (xinput9_1_0.dll proxy, goes next to ShadowOfWar.exe)
+rem its own object folder: everything in %OBJ% is linked into the trainer DLL
+set POBJ=%ROOT%build\proxy_obj
+if not exist "%POBJ%" mkdir "%POBJ%"
+rc /nologo /fo "%POBJ%\proxy.res" "%ROOT%proxy\proxy.rc" || exit /b 1
+cl /nologo /O2 /MT /EHsc /std:c++17 /W3 /DUNICODE /D_UNICODE /c /Fo"%POBJ%\\" "%ROOT%proxy\xinput_proxy.cpp" || exit /b 1
+link /nologo /DLL /DEF:"%ROOT%proxy\xinput9_1_0.def" /OUT:"%OUT%\xinput9_1_0.dll" "%POBJ%\xinput_proxy.obj" "%POBJ%\proxy.res" kernel32.lib || exit /b 1
 echo BUILD OK
 endlocal

@@ -1,0 +1,34 @@
+SHADOW OF WAR TRAINER - INSTALL
+===============================
+Needs: Shadow of War on Steam, game version 1.0.8874, Windows 10 or 11 (64-bit).
+
+INSTALL
+1. In Steam, right-click Middle-earth: Shadow of War > Manage > Browse local files.
+2. Open the x64 folder (the folder with ShadowOfWar.exe).
+3. Copy xinput9_1_0.dll AND the ShadowOfWarTrainer folder into it.
+4. Start the game from Steam as usual. The game loads the trainer by itself - there is nothing else to run.
+5. In game press INSERT to open or close the trainer.
+
+Back up your saves first: gear, level, skill and item edits are saved into your game.
+Steam saves: C:\Program Files (x86)\Steam\userdata\<your id>\356190\remote
+
+HOW IT WORKS
+xinput9_1_0.dll is a small loader. The game loads it by itself (Windows looks in the game folder first); it passes
+every controller call on, unchanged, to the real xinput9_1_0.dll of Windows and loads ShadowOfWarTrainer.dll from the
+ShadowOfWarTrainer folder. Nothing runs outside the game and nothing is injected.
+
+UPDATING FROM 1.0.0 / 1.1.0 (the version with ShadowOfWarTrainer.exe)
+- Do not run ShadowOfWarTrainer.exe any more. Install as above.
+- To keep your settings, copy config.json, panel_state.json and hotkeys.json (and the data folder, for your gear
+  editor templates) from the old trainer folder into the new ShadowOfWarTrainer folder. Then delete the old folder.
+
+PLAY WITHOUT IT / UNINSTALL
+- Play without the trainer: rename xinput9_1_0.dll to xinput9_1_0.dll.off (rename it back to use it again).
+- Uninstall: delete xinput9_1_0.dll and the ShadowOfWarTrainer folder. Nothing else in the game folder is changed.
+
+GOOD TO KNOW
+- Steam's "Verify integrity of game files" does not remove these files (they are not game files).
+- Another mod that also uses a file named xinput9_1_0.dll cannot be installed at the same time.
+- Mod loaders that use bink2w64.dll (Shadow of War DLL Loader, ReaperAnon's mod loader) work alongside it.
+- Some antivirus programs flag trainers. The full source code is public:
+  https://github.com/RipXic/ShadowOfWarTrainer

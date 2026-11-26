@@ -1,0 +1,26 @@
+#include <winver.h>
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "CompanyName", "RipXic"
+      VALUE "FileDescription", "Shadow of War Trainer loader (passes XInput calls on to Windows and loads the ShadowOfWarTrainer folder)"
+      VALUE "FileVersion", "1.2.0"
+      VALUE "InternalName", "xinput9_1_0"
+      VALUE "OriginalFilename", "xinput9_1_0.dll"
+      VALUE "ProductName", "Shadow of War Trainer"
+      VALUE "ProductVersion", "1.2.0"
+      VALUE "LegalCopyright", "RipXic"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END
