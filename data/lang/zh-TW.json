@@ -100,7 +100,7 @@
  "Adds the New Effect to the item. If an effect is checked in the list above, it replaces that one instead (the check stays, so you can try several in a row).": "將新效果加到物品上。 如果上方清單中勾選了某個效果， 則改為替換該效果（勾選會保留， 因此可連續嘗試多個）。",
  "ADD": "新增",
  "Value": "數值",
- "A number for effect #.": "效果 # 的數值。",
+ "The new number for the checked effect, in the same units as the list above: for a percent effect type 50 for 50%.": "所勾選效果的新數值，單位與上方列表相同：百分比效果輸入 50 即為 50%。",
  "Set Value (live only)": "設定數值（僅本次）",
  "Sets the value of the checked effect (live only: the game recalculates values when it loads a save).": "設定所勾選效果的數值（僅本次：遊戲載入存檔時會重新計算數值）。",
  "SET": "設定",

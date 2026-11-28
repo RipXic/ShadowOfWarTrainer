@@ -100,7 +100,7 @@
  "Adds the New Effect to the item. If an effect is checked in the list above, it replaces that one instead (the check stays, so you can try several in a row).": "Yeni Etki'yi eşyaya ekler. Yukarıdaki listede bir etki işaretliyse onun yerine geçer (işaret kalır, böylece art arda birkaçını deneyebilirsin).",
  "ADD": "EKLE",
  "Value": "Değer",
- "A number for effect #.": "Etki # için bir sayı.",
+ "The new number for the checked effect, in the same units as the list above: for a percent effect type 50 for 50%.": "İşaretli etki için yeni sayı, yukarıdaki listeyle aynı birimde: yüzdelik bir etki için %50 için 50 yazın.",
  "Set Value (live only)": "Değeri Ayarla (yalnızca canlı)",
  "Sets the value of the checked effect (live only: the game recalculates values when it loads a save).": "İşaretli etkinin değerini ayarlar (yalnızca canlı: oyun bir kayıt yüklerken değerleri yeniden hesaplar).",
  "SET": "AYARLA",

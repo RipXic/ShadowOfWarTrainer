@@ -99,7 +99,7 @@
  "Adds the New Effect to the item. If an effect is checked in the list above, it replaces that one instead (the check stays, so you can try several in a row).": "",
  "ADD": "",
  "Value": "",
- "A number for effect #.": "",
+ "The new number for the checked effect, in the same units as the list above: for a percent effect type 50 for 50%.": "",
  "Set Value (live only)": "",
  "Sets the value of the checked effect (live only: the game recalculates values when it loads a save).": "",
  "SET": "",

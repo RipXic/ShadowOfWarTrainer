@@ -900,8 +900,9 @@
        "type": "float",
        "min": -100000,
        "max": 100000,
+       "default": 0,
        "icon": "skill",
-       "desc": "A number for effect #.",
+       "desc": "The new number for the checked effect, in the same units as the list above: for a percent effect type 50 for 50%.",
        "action": {
         "kind": "local"
        }

@@ -45,12 +45,12 @@ and Python 3 for packaging.
 
 ```bat
 build.bat
-python package.py 1.2.1
+python package.py 1.2.2
 ```
 
 `build.bat` finds Visual Studio with `vswhere`, builds MinHook and Dear ImGui once, then the trainer
 (`build\ShadowOfWarTrainer.dll`) and the loader (`build\xinput9_1_0.dll`). `package.py` lays them out with the contents
-of `data\` in `release\package\` and zips that as `release\ShadowOfWarTrainer_1.2.1.zip` - the same layout as the release
+of `data\` in `release\package\` and zips that as `release\ShadowOfWarTrainer_1.2.2.zip` - the same layout as the release
 download - and prints SHA-256 checksums.
 
 ## What the trainer does (and does not do)

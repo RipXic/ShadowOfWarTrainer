@@ -22,7 +22,7 @@ using json = nlohmann::json;
 #define WB_PRODUCT_UP "SHADOW OF WAR TRAINER"
 namespace wb {
 
-constexpr const char* kVersion = "1.2.1";
+constexpr const char* kVersion = "1.2.2";
 constexpr const char* kGameExe = "ShadowOfWar.exe";
 
 struct Config {

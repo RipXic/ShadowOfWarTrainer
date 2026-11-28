@@ -100,7 +100,7 @@
  "Adds the New Effect to the item. If an effect is checked in the list above, it replaces that one instead (the check stays, so you can try several in a row).": "新しい効果をアイテムに追加します。 上のリストで効果にチェックが入っている場合は、 追加ではなくその効果を置き換えます(チェックは残るので、 続けて何種類も試せます)。",
  "ADD": "追加",
  "Value": "値",
- "A number for effect #.": "効果#の数値。",
+ "The new number for the checked effect, in the same units as the list above: for a percent effect type 50 for 50%.": "チェックした効果の新しい数値。上のリストと同じ単位です。パーセントの効果なら、50%には50と入力します。",
  "Set Value (live only)": "値を設定(ライブのみ)",
  "Sets the value of the checked effect (live only: the game recalculates values when it loads a save).": "チェックした効果の値を設定します(ライブのみ。 ゲームはセーブをロードするときに値を再計算します)。",
  "SET": "設定",

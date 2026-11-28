@@ -765,6 +765,16 @@ static void tip(const std::string& t) {
     ImGui::PushFont(g_font_body); ImGui::PushTextWrapPos(S(560)); ImGui::TextUnformatted(t.c_str()); ImGui::PopTextWrapPos(); ImGui::PopFont();
     ImGui::EndTooltip();
 }
+// Selection lists (BeginCombo) open at one fixed width, inside the panel and right-aligned with the box (user report
+// 2026-11-28: the list sized itself to its longest entry, stuck out to the left of the panel and slid right while
+// typing in its filter). Entries wider than the list show their full text in a tooltip.
+static void combo_width(float W) {
+    const float h = ImGui::GetTextLineHeightWithSpacing() * 20.f + ImGui::GetFrameHeightWithSpacing() + ImGui::GetStyle().WindowPadding.y * 2.f;
+    ImGui::SetNextWindowSizeConstraints(ImVec2(W, 0.f), ImVec2(W, h));
+}
+static void combo_item_tip(const char* label, float W) {
+    if (ImGui::IsItemHovered() && ImGui::CalcTextSize(label).x > W - ImGui::GetStyle().FramePadding.x * 4.f) tip(label);
+}
 namespace sk { static bool on(); static void section(const char* name); }
 static void section_header(const char* name) {
     if (sk::on()) { sk::section(name); return; }
@@ -1212,7 +1222,9 @@ static void draw_item(Item& it) {
         ImGui::SetNextItemWidth(ctrl_w);
         if (a.contains("options")) { std::string ol; if (live_value(a, it.id + "#opts", ol)) { it.options.clear(); size_t p = 0; while (p < ol.size()) { size_t q = ol.find('\n', p); if (q == std::string::npos) q = ol.size(); if (q > p) it.options.push_back(ol.substr(p, q - p)); p = q + 1; } } }
         const char* shown = (a.contains("get") && it.live_ok && !it.live_str.empty()) ? it.live_str.c_str() : it.text;
-        if (ImGui::BeginCombo("##sel", tr(shown), ImGuiComboFlags_HeightLarge)) {
+        const float listW = std::max(ctrl_w, ImGui::GetWindowContentRegionMax().x - ImGui::GetWindowContentRegionMin().x);
+        combo_width(listW);
+        if (ImGui::BeginCombo("##sel", tr(shown), ImGuiComboFlags_HeightLarge | ImGuiComboFlags_PopupAlignLeft)) {
             static char filter[64] = {};
             if (ImGui::IsWindowAppearing()) { filter[0] = 0; ImGui::SetKeyboardFocusHere(); }
             ImGui::SetNextItemWidth(-1);
@@ -1224,6 +1236,7 @@ static void draw_item(Item& it) {
                 if (!f.empty() && lo.find(f) == std::string::npos) continue;
                 ImGui::PushID((int)oi);
                 if (ImGui::Selectable(tr(o).c_str(), o == shown)) select_pick(it, oi);
+                combo_item_tip(tr(o).c_str(), listW);
                 ImGui::PopID();
             }
             ImGui::EndCombo();
@@ -1436,7 +1449,9 @@ static void draw_item_skin(Item& it) {
         widget_colors_push();
         ImGui::SetCursorScreenPos(ImVec2(va.x + cap, cy)); ImGui::SetNextItemWidth(vw - 2 * cap);
         ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(0, 0, 0, 0));
-        const bool open = ImGui::BeginCombo("##sel", tr(shown), ImGuiComboFlags_HeightLarge | ImGuiComboFlags_NoArrowButton);
+        const float listW = std::max(vw - 2 * cap, (vb.x - cap) - (p0.x + 8 * K));
+        combo_width(listW);
+        const bool open = ImGui::BeginCombo("##sel", tr(shown), ImGuiComboFlags_HeightLarge | ImGuiComboFlags_NoArrowButton | ImGuiComboFlags_PopupAlignLeft);
         ImGui::PopStyleColor();
         widget_colors_pop();
         if (open) {
@@ -1450,6 +1465,7 @@ static void draw_item_skin(Item& it) {
                 if (!f.empty() && lo.find(f) == std::string::npos) continue;
                 ImGui::PushID((int)oi);
                 if (ImGui::Selectable(tr(it.options[oi]).c_str(), it.options[oi] == shown)) select_pick(it, oi);
+                combo_item_tip(tr(it.options[oi]).c_str(), listW);
                 ImGui::PopID();
             }
             ImGui::EndCombo();

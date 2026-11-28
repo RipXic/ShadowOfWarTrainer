@@ -100,7 +100,7 @@
  "Adds the New Effect to the item. If an effect is checked in the list above, it replaces that one instead (the check stays, so you can try several in a row).": "Добавляет Новый эффект предмету. Если в списке выше отмечен эффект, то он заменяется вместо этого (отметка остаётся, так что можно пробовать несколько подряд).",
  "ADD": "ДОБАВИТЬ",
  "Value": "Значение",
- "A number for effect #.": "Число для эффекта №.",
+ "The new number for the checked effect, in the same units as the list above: for a percent effect type 50 for 50%.": "Новое число для отмеченного эффекта, в тех же единицах, что и в списке выше: для эффекта в процентах введите 50 для 50%.",
  "Set Value (live only)": "Задать значение (только сейчас)",
  "Sets the value of the checked effect (live only: the game recalculates values when it loads a save).": "Задаёт значение отмеченного эффекта (только сейчас: игра пересчитывает значения при загрузке сохранения).",
  "SET": "ЗАДАТЬ",

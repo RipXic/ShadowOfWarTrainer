@@ -100,7 +100,7 @@
  "Adds the New Effect to the item. If an effect is checked in the list above, it replaces that one instead (the check stays, so you can try several in a row).": "Ajoute le Nouvel effet à l'objet. Si un effet est coché dans la liste ci-dessus, il remplace celui-ci à la place (la coche reste, tu peux donc en essayer plusieurs à la suite).",
  "ADD": "AJOUTER",
  "Value": "Valeur",
- "A number for effect #.": "Un nombre pour l'effet #.",
+ "The new number for the checked effect, in the same units as the list above: for a percent effect type 50 for 50%.": "Le nouveau nombre pour l'effet coché, dans les mêmes unités que la liste ci-dessus : pour un effet en pourcentage, tape 50 pour 50%.",
  "Set Value (live only)": "Définir la valeur (en direct seulement)",
  "Sets the value of the checked effect (live only: the game recalculates values when it loads a save).": "Définit la valeur de l'effet coché (en direct seulement : le jeu recalcule les valeurs au chargement d'une sauvegarde).",
  "SET": "DÉFINIR",

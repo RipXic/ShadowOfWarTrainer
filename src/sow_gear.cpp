@@ -419,17 +419,33 @@ json sow_cmd_gear_affix(const json& a) {
     }, 4000);
 }
 
-// SOW.GEAR_VALUE {id, index, value} - effect value, LIVE ONLY (the game re-derives values on load)
+// The effects list shows values times the effect's display scale (gear_names.json "s": 100 for percent effects, which
+// the game stores as fractions: 25% = 0.25). The Value box uses the same units as the list (user report 2026-11-28:
+// typing 50 for 50% gave 5000%).
+static double affix_scale(const std::string& rec) {
+    const json& j = gear_names();
+    if (!j.contains("affix") || !j["affix"].contains(rec)) return 1.0;
+    const double sc = j["affix"][rec].value("s", 1.0);
+    return (std::isfinite(sc) && sc != 0.0) ? sc : 1.0;
+}
+// SOW.GEAR_VALUE {id, index, value} - effect value, LIVE ONLY (the game re-derives values on load).
+// value is in the units the effects list shows (50 = 50%); raw:true writes the stored number as it is.
 json sow_cmd_gear_value(const json& a) {
     const uint32_t id = parse_id(a); const int idx = (int)a.value("index", (int64_t)-1); const double val = a.value("value", 0.0);
+    const bool raw = a.value("raw", false);
     if (idx < 0) return fail("BAD_ARGS", "check an effect in the list first");
     if (!std::isfinite(val)) return fail("BAD_ARGS", "a finite value is required");
-    return run_on_main([id, idx, val]() -> json {
+    return run_on_main([id, idx, val, raw]() -> json {
         Gear g; uintptr_t INV; std::string err; if (!find_gear(id, g, INV, err)) return fail("NO_ITEM", err); snapshot(g);
         const auto fx = affixes(g.eq); if (idx >= (int)fx.size()) return fail("BAD_ARGS", "no effect #" + std::to_string(idx));
-        const float before = gf(fx[idx] + 8), v = (float)val;
+        const std::string rec = rname(gq(fx[idx]));
+        const double sc = raw ? 1.0 : affix_scale(rec);
+        const float before = gf(fx[idx] + 8), v = (float)(val / sc);
         if (!safe_write(fx[idx] + 8, &v, 4)) return fail("WRITE", "could not write the value");
-        return ok({ {"before", before}, {"after", gf(fx[idx] + 8)}, {"note", "live only: the game recalculates values when it loads a save"} });
+        const float after = gf(fx[idx] + 8);
+        return ok({ {"effect", rec}, {"scale", sc}, {"before", before * sc}, {"after", after * sc}, {"stored", after},
+                    {"text", effect_text(rec, after, true)},
+                    {"note", "live only: the game recalculates values when it loads a save"} });
     }, 4000);
 }
 
