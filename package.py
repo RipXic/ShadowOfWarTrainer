@@ -1,6 +1,6 @@
 """Build the release folder + zip from build\ (run build.bat first).
 
-    python package.py 1.2.0
+    python package.py 1.2.1
 
 Output: release\package\ (ready to copy into the game's x64 folder) and release\ShadowOfWarTrainer_<version>.zip,
 plus the SHA-256 of the zip and of both DLLs. Zip layout (everything goes next to ShadowOfWar.exe):
@@ -13,7 +13,7 @@ import hashlib, os, re, shutil, sys, zipfile
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 BUILD, DATA = os.path.join(ROOT, 'build'), os.path.join(ROOT, 'data')
-VERSION = sys.argv[1] if len(sys.argv) > 1 else '1.2.0'
+VERSION = sys.argv[1] if len(sys.argv) > 1 else '1.2.1'
 OUT = os.path.join(ROOT, 'release', 'package')     # its own folder: a trainer folder in use keeps its settings and logs
 TRAINER = os.path.join(OUT, 'ShadowOfWarTrainer')
 # words that must never ship in a text file (developer paths, user names, tools)

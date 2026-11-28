@@ -838,15 +838,38 @@ void rd_put(uintptr_t a, uintptr_t v, int bytes) {
     else if (!safe_write(a, &v, 8)) return;
     g_rd_all.push_back({ a, { o, bytes } });
 }
+// Enemy captains (user request 2026-11-28): clearing MustBeAlly on the captain tick (Undying Loyalty) also raises ENEMY
+// captains as followers, and a raised captain no longer comes back through the Nemesis system. Kept apart from the
+// other patches so SOW.RAISE_CAPTAINS can switch it live. Off = the game's own rule: only YOUR fallen captains rise.
+std::set<uintptr_t> g_rd_ticks; std::vector<std::pair<uintptr_t, uintptr_t>> g_rd_ally; bool g_rd_caps = false;
+constexpr uint32_t H_ALLY = 0x59FCD14C;
+json rd_enemy_caps(bool on) {
+    json out = json::object();
+    if (!on) {
+        int n = 0; for (auto& p : g_rd_ally) if (rq(p.first) == 0 && wq(p.first, p.second)) ++n;
+        if (!g_rd_ally.empty()) log("[raise] enemy captains off: %d captain tick(s) back to the game's own rule (only your captains rise)", n);
+        g_rd_ally.clear(); out["restored"] = n; return out;
+    }
+    int added = 0;
+    for (uintptr_t t : g_rd_ticks) {
+        uintptr_t a; int c; if (!tick_field(t, H_ALLY, a, c) || c != 1) continue;
+        const uintptr_t v = rq(a); if (!v) continue;
+        if (wq(a, 0)) { g_rd_ally.push_back({ a, v }); ++added; }
+    }
+    if (added) log("[raise] enemy captains on: %d captain tick(s) now raise enemy captains too", added);
+    out["patched"] = g_rd_ally.size();
+    return out;
+}
 json rd_everything(bool on) {
     json out = json::object(); std::string err;
-    if (!on) { int n = 0; for (auto it = g_rd_all.rbegin(); it != g_rd_all.rend(); ++it) if (safe_write(it->first, &it->second.first, it->second.second)) ++n;
+    if (!on) { out["enemy_captains"] = rd_enemy_caps(false); g_rd_ticks.clear();
+               int n = 0; for (auto it = g_rd_all.rbegin(); it != g_rd_all.rend(); ++it) if (safe_write(it->first, &it->second.first, it->second.second)) ++n;
                g_rd_all.clear(); g_rd_all_done = false; out["restored"] = n; return out; }
-    if (g_rd_all_done) { out["patched"] = g_rd_all.size(); return out; }
+    if (g_rd_all_done) { out["patched"] = g_rd_all.size(); out["enemy_captains"] = rd_enemy_caps(g_rd_caps); return out; }
     const uintptr_t atk = find_record(kTblAttack, "Necro_AoE_RaiseGrunts_Tick", err);
     const uintptr_t aiAll = find_record(kTblCharType, "AI_All", err), orcs = find_record(kTblCharType, "All_Orcs", err), orcsOlog = find_record(kTblCharType, "All_Orcs_OlogHai", err);
     if (!atk || !aiAll || !orcs || !orcsOlog) { out["error"] = err; return out; }
-    const uint32_t H_ATTACK = 0x4B301C78, H_MAX = 0x6129249C, H_ALLY = 0x59FCD14C, H_EXITEMS = 0xE44C8883, H_INC = 0xDD4EA5F7, H_EXC = 0xF15EA6B9;
+    const uint32_t H_ATTACK = 0x4B301C78, H_MAX = 0x6129249C, H_EXITEMS = 0xE44C8883, H_INC = 0xDD4EA5F7, H_EXC = 0xF15EA6B9;
     const uintptr_t desc = rq(game_base() + kTblAOE); uint32_t n = 0; safe_read(desc + 0x28, &n, 4); const uintptr_t ents = rq(desc + 0x38);
     std::set<uintptr_t> ticks; char nb[96];
     for (uint32_t i = 0; i < n && ents; ++i) {
@@ -863,7 +886,6 @@ json rd_everything(bool on) {
     for (uintptr_t t : ticks) {
         uintptr_t a; int c;
         if (tick_field(t, H_MAX, a, c) && c == 1) rd_put(a, 30, 4);
-        if (tick_field(t, H_ALLY, a, c) && c == 1 && rq(a)) rd_put(a, 0, 8);
         if (tick_field(t, H_EXITEMS, a, c) && c == 1 && rq(a)) rd_put(a, 0, 8);
         uintptr_t ea; int ec;
         if (tick_field(t, H_EXC, ea, ec) && ec == 1 && rq(ea) == orcs) {          // the beast tick
@@ -872,6 +894,9 @@ json rd_everything(bool on) {
             ++beasts;
         }
     }
+    g_rd_ticks = ticks; out["enemy_captains"] = rd_enemy_caps(g_rd_caps);
+    { int ally = 0; for (uintptr_t t : ticks) { uintptr_t a; int c; if (tick_field(t, H_ALLY, a, c) && c == 1 && rq(a)) ++ally; }
+      log("[raise] raise ticks: %d, enemy captains %s (%d tick(s) still only raise your own captains)", (int)ticks.size(), g_rd_caps ? "on" : "off", ally); }
     g_rd_all_done = true; out["ticks"] = ticks.size(); out["beast_ticks"] = beasts; out["patched"] = g_rd_all.size();
     return out;
 }
@@ -992,6 +1017,16 @@ json sow_cmd_raise_dead(const json& a) {
         out["added"] = added;
         return ok(out);
     }, a.value("timeout_ms", 8000));
+}
+// SOW.RAISE_CAPTAINS {on}: Raise the Dead also raises ENEMY captains (as followers). Off (default) = only your own fallen
+// captains rise, like the game's Undying Loyalty, so enemy captains keep coming back through the Nemesis system.
+json sow_cmd_raise_captains(const json& a) {
+    const bool on = a.value("on", true);
+    return run_on_main([=]() -> json {
+        g_rd_caps = on; json out = { {"enemy_captains", on} };
+        if (g_rd_all_done) out["patch"] = rd_enemy_caps(on); else out["patch"] = "applied when Raise the Dead is on";
+        return ok(out);
+    }, 3000);
 }
 // ================================ Instant Dominate (the fill gauge) ================================
 // The domination gauge (hold on a grabbed / standing enemy) is the looping hold attack's LoopingForcedDuration =

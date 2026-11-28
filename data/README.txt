@@ -27,7 +27,8 @@ Player     Infinite Health, No Summon Cooldown, Heal Now, Infinite Focus / Might
            Might Never Drains, Elven Rage Refills After Use,
            Wraith Chain: chain without aiming, no slow-motion, fast chain.
 Skills     Level, Skill Points, Mirian, Give Item, Choose Multiple Skills, Unlock All Skills in the Menu,
-           Activate All Upgrades, Raise the Dead (Dark Talion), Prestige for every gear slot.
+           Activate All Upgrades, Raise the Dead (Dark Talion) + Raise Enemy Captains,
+           Prestige for every gear slot.
 Gear       Edit any item: level, effects (add / replace / remove, values), look (transmog with preview),
            rarity / type, Auto-Complete Gear Challenges.
 Inventory  Copy or remove gear, add any captain gear, add an edited item.

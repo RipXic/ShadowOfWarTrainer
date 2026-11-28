@@ -11,7 +11,7 @@ An in-game trainer for **Middle-earth: Shadow of War** (single player), with its
 | Tab | What it does |
 | --- | --- |
 | Player | Infinite Health, No Summon Cooldown, Heal Now, Infinite Focus / Might / Elf Shot / Elven Rage, Might Never Drains, Elven Rage Refills After Use, Wraith Chain tweaks (chain without aiming, no slow-motion, fast chain) |
-| Skills | Level, Skill Points, Mirian, Give Item, Choose Multiple Skills, Unlock All Skills in the Menu, Activate All Upgrades, Raise the Dead (Dark Talion), Prestige for every gear slot |
+| Skills | Level, Skill Points, Mirian, Give Item, Choose Multiple Skills, Unlock All Skills in the Menu, Activate All Upgrades, Raise the Dead (Dark Talion) with an optional Raise Enemy Captains, Prestige for every gear slot |
 | Gear | Edit any item: level, effects (add / replace / remove, values), look (transmog with preview), rarity / type, Auto-Complete Gear Challenges |
 | Inventory | Copy or remove gear, add any captain gear, add an edited item |
 | Loot | Choose what captains drop and how often, or make them drop an edited item |
@@ -45,12 +45,12 @@ and Python 3 for packaging.
 
 ```bat
 build.bat
-python package.py 1.2.0
+python package.py 1.2.1
 ```
 
 `build.bat` finds Visual Studio with `vswhere`, builds MinHook and Dear ImGui once, then the trainer
 (`build\ShadowOfWarTrainer.dll`) and the loader (`build\xinput9_1_0.dll`). `package.py` lays them out with the contents
-of `data\` in `release\package\` and zips that as `release\ShadowOfWarTrainer_1.2.0.zip` - the same layout as the release
+of `data\` in `release\package\` and zips that as `release\ShadowOfWarTrainer_1.2.1.zip` - the same layout as the release
 download - and prints SHA-256 checksums.
 
 ## What the trainer does (and does not do)

@@ -77,6 +77,7 @@ static std::vector<Cmd>& commands() {
         {"SOW.GEAR_REFRESH", "Re-equip a worn item live so edits show right away {id}", sow_cmd_gear_refresh},
         {"SOW.GEAR_VALUE", "Set effect #index's value - live only {id, index, value}", sow_cmd_gear_value},
         {"SOW.SKILL_COMPAT", "Fix upgrades that block each other with Choose Multiple Skills (Shadow Dominate + Shadow Pull) {on}", sow_cmd_skill_compat},
+        {"SOW.RAISE_CAPTAINS", "Raise the Dead also raises enemy captains {on} (off = only your own fallen captains)", sow_cmd_raise_captains},
         {"SOW.RAISE_DEAD", "Raise Dead now: skill-menu node in the Story row + PS_Raise_* items + Dark Talion switch {on, dark_talion, upgrades}", sow_cmd_raise_dead},
         {"SOW.LEVEL","Player level (read) or set it through the game's own level setter {set: 1..80}", sow_cmd_level},
     };
